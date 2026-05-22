@@ -15,6 +15,8 @@ function showHelp(): void {
     --enrich, -e       Sve: dostupnost + Google Books
     --help, -h         Prikazi pomoc
 
+  Delfi.rs podaci se uvek prikupljaju (besplatno, brzo).
+
   Primeri:
     npm run search -- ljubav
     npm run search -- ljubav --available
@@ -115,6 +117,14 @@ async function main() {
         if (g.averageRating) console.log(`       Ocena: ${"*".repeat(Math.round(g.averageRating))} (${g.averageRating}/5)`)
         if (g.pageCount) console.log(`       Strane: ${g.pageCount}`)
         if (g.subtitle) console.log(`       Podnaslov: ${g.subtitle}`)
+      }
+      if (("delfi" in book) && book.delfi) {
+        const d = book.delfi
+        const cats = d.genres?.map(g => g.genreName).filter(Boolean).join(", ")
+        if (cats) console.log(`       Kategorije: ${cats}`)
+        const pages = d.attributes?.find(a => a.k === "numberOfPages")?.v
+        if (pages) console.log(`       Strane: ${pages}`)
+        if (d.publisher) console.log(`       Izdavac: ${d.publisher}`)
       }
       if ("description" in book && book.description) {
         console.log(`       Opis: ${book.description.slice(0, 200).replace(/\n/g, " ")}`)

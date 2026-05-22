@@ -96,6 +96,7 @@ export interface BookWithDetails extends BookEntry {
   availability?: Availability
   google?: GoogleDetails | null
   openLibrary?: OpenLibraryData | null
+  delfi?: DelfiProduct | null
   imageUrl?: string | null
   description?: string
   aiContext?: string

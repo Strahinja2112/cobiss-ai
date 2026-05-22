@@ -1,0 +1,662 @@
+{
+  "query": "orvel 1984",
+  "totalHits": 11,
+  "page": 0,
+  "limit": 11,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "128999436",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orvel, Džordž",
+      "type": "roman",
+      "language": "srpski",
+      "year": "1999 tj. 2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/128999436",
+      "cobiss": {
+        "authors": [
+          "Orvel, Džordž"
+        ],
+        "fullTitle": "1984 / Džordž Orvel ; [preveo Vlada Stojiljković ; predgovor napisao Đuro Šušnjić]",
+        "uniformTitle": "Nineteen Eighty-Four. scc",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Čigoja štampa, 1999 tj. 2006 (Beograd : Čigoja štampa)",
+        "publishYear": "1999 tj. 2006",
+        "isbn": "8675584156",
+        "udk": "821.111-31 <br> 821.111.09-31 Orvel Dž.",
+        "series": "ǂBiblioteka ǂTreći milenijum / [Čigoja štampa]",
+        "physicalDescription": "239 str. ; 21 cm",
+        "notes": "Prevod dela: Nineteen Eighty-Four / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 1.000 <br> Napomene uz tekst <br> Orvelijana : utopija koju živimo: 5-19.",
+        "otherAuthors": "Stojiljković, Vlada (prevodilac) <br> Šušnjić, Đuro (autor dodatnog teksta)",
+        "otherSubjects": "Orvel, Džordž, 1903-1905 -- \"Hiljadu devetsto osamdeset četvrta\""
+      },
+      "availability": {
+        "cobissId": "128999436",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Prevod dela: Nineteen Eighty-Four / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 1.000 <br> Napomene uz tekst <br> Orvelijana : utopija koju živimo: 5-19.",
+      "aiContext": "Naslov: 1984\nAutor: Orvel, Džordž\nGodina: 1999 tj. 2006\nTip: roman\nJezik: srpski\nPuni naslov: 1984 / Džordž Orvel ; [preveo Vlada Stojiljković ; predgovor napisao Đuro Šušnjić]\nUniformni naslov: Nineteen Eighty-Four. scc\nDrugi autori: Stojiljković, Vlada (prevodilac) <br> Šušnjić, Đuro (autor dodatnog teksta)\nIzdavac: Beograd : Čigoja štampa, 1999 tj. 2006 (Beograd : Čigoja štampa)\nGodina izdanja: 1999 tj. 2006\nISBN: 8675584156\nUDK: 821.111-31 <br> 821.111.09-31 Orvel Dž.\nSerija: ǂBiblioteka ǂTreći milenijum / [Čigoja štampa]\nFizicki opis: 239 str. ; 21 cm\nDodatne teme: Orvel, Džordž, 1903-1905 -- \"Hiljadu devetsto osamdeset četvrta\"\nNapomene: Prevod dela: Nineteen Eighty-Four / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 1.000 <br> Napomene uz tekst <br> Orvelijana : utopija koju živimo: 5-19."
+    },
+    {
+      "position": 2,
+      "cobissId": "160693255",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orvel, Džordž",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2000",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/160693255",
+      "cobiss": {
+        "authors": [
+          "Orvel, Džordž"
+        ],
+        "fullTitle": "1984 / Džordž Orvel ; [preveo s engleskog Vlada Stojiljković]",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Verzal press, 2000 (Beograd : Publikum)",
+        "publishYear": "2000",
+        "isbn": "8673881374",
+        "udk": "821.111-31",
+        "series": "Klasici",
+        "physicalDescription": "335 str. ; 20 cm",
+        "notes": "Prevod dela: Nineteen eighty-four / George Orwell <br> Pravo ime autora: Erik Artur Bler <br> Tiraž 2000 <br> Biografija: str. 335.",
+        "otherAuthors": "Stojiljković, Vlada (prevodilac)",
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/160693255/26050/1984.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+      },
+      "availability": {
+        "cobissId": "160693255",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/160693255",
+      "description": "Prevod dela: Nineteen eighty-four / George Orwell <br> Pravo ime autora: Erik Artur Bler <br> Tiraž 2000 <br> Biografija: str. 335.",
+      "aiContext": "Naslov: 1984\nAutor: Orvel, Džordž\nGodina: 2000\nTip: roman\nJezik: srpski\nPuni naslov: 1984 / Džordž Orvel ; [preveo s engleskog Vlada Stojiljković]\nDrugi autori: Stojiljković, Vlada (prevodilac)\nIzdavac: Beograd : Verzal press, 2000 (Beograd : Publikum)\nGodina izdanja: 2000\nISBN: 8673881374\nUDK: 821.111-31\nSerija: Klasici\nFizicki opis: 335 str. ; 20 cm\nNapomene: Prevod dela: Nineteen eighty-four / George Orwell <br> Pravo ime autora: Erik Artur Bler <br> Tiraž 2000 <br> Biografija: str. 335."
+    },
+    {
+      "position": 3,
+      "cobissId": "220764428",
+      "database": "gbvk-1",
+      "title": "1984 ; Životinjska farma",
+      "author": "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2016",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/220764428",
+      "cobiss": {
+        "authors": [
+          "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950"
+        ],
+        "fullTitle": "1984 ; Životinjska farma / Džordž Orvel ; [prevod Vlada Stojiljković (1984), Konstantin Popović (Životinjska farma)]",
+        "uniformTitle": "1984. Animal Farm. српски језик",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Kontrast izdavaštvo, 2016 ([Beograd] : \"Karganović\")",
+        "publishYear": "2016",
+        "isbn": "9788689203196",
+        "udk": "821.111-31",
+        "physicalDescription": "335 str. ; 20 cm",
+        "notes": "Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na koricama beleška o autoru.",
+        "otherAuthors": "Stojiljković, Vlada, 1938-2002 (prevodilac) <br> Стојиљковић, Влада, 1938-2002 (prevodilac) <br> Popović, Konstantin (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "220764428",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na koricama beleška o autoru.",
+      "aiContext": "Naslov: 1984 ; Životinjska farma\nAutor: Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950\nGodina: 2016\nTip: roman\nJezik: srpski\nPuni naslov: 1984 ; Životinjska farma / Džordž Orvel ; [prevod Vlada Stojiljković (1984), Konstantin Popović (Životinjska farma)]\nUniformni naslov: 1984. Animal Farm. српски језик\nDrugi autori: Stojiljković, Vlada, 1938-2002 (prevodilac) <br> Стојиљковић, Влада, 1938-2002 (prevodilac) <br> Popović, Konstantin (prevodilac)\nIzdavac: Beograd : Kontrast izdavaštvo, 2016 ([Beograd] : \"Karganović\")\nGodina izdanja: 2016\nISBN: 9788689203196\nUDK: 821.111-31\nFizicki opis: 335 str. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na koricama beleška o autoru."
+    },
+    {
+      "position": 4,
+      "cobissId": "191454220",
+      "database": "gbvk-1",
+      "title": "1984 ; Životinjska farma",
+      "author": "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2012",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/191454220",
+      "cobiss": {
+        "authors": [
+          "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950"
+        ],
+        "fullTitle": "1984 ; Životinjska farma / Džordž Orvel ; preveo Konstantin Popović",
+        "uniformTitle": "1984. Animal Farm. scc",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd, 2012 (Beograd : Colorgafx)",
+        "publishYear": "2012",
+        "isbn": "9788689203004",
+        "udk": "821.111-31",
+        "physicalDescription": "272 str. ; 20 cm",
+        "notes": "Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na presavijenom delu kor.lista beleška o autoru.",
+        "otherAuthors": "Popović, Konstantin (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "191454220",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na presavijenom delu kor.lista beleška o autoru.",
+      "aiContext": "Naslov: 1984 ; Životinjska farma\nAutor: Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950\nGodina: 2012\nTip: roman\nJezik: srpski\nPuni naslov: 1984 ; Životinjska farma / Džordž Orvel ; preveo Konstantin Popović\nUniformni naslov: 1984. Animal Farm. scc\nDrugi autori: Popović, Konstantin (prevodilac)\nIzdavac: Beograd, 2012 (Beograd : Colorgafx)\nGodina izdanja: 2012\nISBN: 9788689203004\nUDK: 821.111-31\nFizicki opis: 272 str. ; 20 cm\nNapomene: Prevodi dela: 1. 1984 ; 2. Animal Farm / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 500 <br> Na presavijenom delu kor.lista beleška o autoru."
+    },
+    {
+      "position": 5,
+      "cobissId": "220749324",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/220749324",
+      "cobiss": {
+        "authors": [
+          "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950"
+        ],
+        "fullTitle": "1984 / [Džordž Orvel] ; preveo Vlada Stojiljković",
+        "uniformTitle": "1984. српски језик",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Kontrast izdavaštvo, 2015 (Beograd : Karganović)",
+        "publishYear": "2015",
+        "isbn": "9788689203202",
+        "udk": "821.111-31",
+        "physicalDescription": "228 str. ; 20 cm",
+        "notes": "Pravo ime autora: Eric Arthur Blair <br> Podatak o autoru preuzet iz kolofona <br> Tiraž 500.",
+        "otherAuthors": "Стојиљковић, Влада (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "220749324",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Pravo ime autora: Eric Arthur Blair <br> Podatak o autoru preuzet iz kolofona <br> Tiraž 500.",
+      "aiContext": "Naslov: 1984\nAutor: Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950\nGodina: 2015\nTip: roman\nJezik: srpski\nPuni naslov: 1984 / [Džordž Orvel] ; preveo Vlada Stojiljković\nUniformni naslov: 1984. српски језик\nDrugi autori: Стојиљковић, Влада (prevodilac)\nIzdavac: Beograd : Kontrast izdavaštvo, 2015 (Beograd : Karganović)\nGodina izdanja: 2015\nISBN: 9788689203202\nUDK: 821.111-31\nFizicki opis: 228 str. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Pravo ime autora: Eric Arthur Blair <br> Podatak o autoru preuzet iz kolofona <br> Tiraž 500."
+    },
+    {
+      "position": 6,
+      "cobissId": "70452233",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2022",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/70452233",
+      "cobiss": {
+        "authors": [
+          "Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950"
+        ],
+        "fullTitle": "1984 / Džordž Orvel ; preveo Goran Skrobonja",
+        "uniformTitle": "Nineteen eighty-four. српски језик",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Laguna, 2022 (Novi Sad : Artprint media)",
+        "publishYear": "2022",
+        "isbn": "9788652146048",
+        "udk": "821.111-31",
+        "physicalDescription": "318 str. ; 20 cm",
+        "notes": "Prevod dela: Nineteen eighty-four / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 2.000 <br> Od istog autora: str. 2.",
+        "otherAuthors": "Skrobonja, Goran, 1962- (prevodilac) <br> Скробоња, Горан, 1962- (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "70452233",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "delfi": {
+        "isLiveLager": true,
+        "__v": 2,
+        "actions": [
+          {
+            "action": "65708062752cc22c0cd1467c",
+            "actionTitle": "Noć knjige - Laguna do 40% popusta",
+            "actionType": "exponentialDiscount",
+            "endAt": "2025-12-14T23:10:00.000Z",
+            "exclusivelyPremium": false,
+            "infoUrl": "https://delfi.rs/vesti/vest/1118493-noc-knjige-od-12-do-14-decembra-delfi-knjizare.html",
+            "levels": [
+              {
+                "levelPercentage": 25,
+                "levelPrice": 899.25
+              },
+              {
+                "levelPercentage": 30,
+                "levelPrice": 839.3
+              },
+              {
+                "levelPercentage": 35,
+                "levelPrice": 779.35
+              },
+              {
+                "levelPercentage": 40,
+                "levelPrice": 719.4
+              }
+            ],
+            "raw": {
+              "__v": 0,
+              "_id": "65708062752cc22c0cd1467c",
+              "actionProductSelector": null,
+              "apiExcludedEnd": null,
+              "apiExcludedStart": null,
+              "description": "Količinski popust do 40% za artikle na akciji „Noć knjige - Laguna do 40% popusta“. Akcija traje od 12. do 14. decembra 2025.",
+              "desktopImg": "/actions/desktop_img/65708062752cc22c0cd1467c_no-knjige-laguna-do-40-popusta_1765293232.png",
+              "endAt": "2025-12-14T23:10:00.000Z",
+              "exclusivelyPremium": false,
+              "externalCode": "828",
+              "infoUrl": "https://delfi.rs/vesti/vest/1118493-noc-knjige-od-12-do-14-decembra-delfi-knjizare.html",
+              "isApiExcluded": false,
+              "isPttFree": false,
+              "isSale": false,
+              "levels": [
+                25,
+                30,
+                35,
+                40
+              ],
+              "mobileImg": "/actions/mobile_img/65708062752cc22c0cd1467c_no-knjige-laguna-do-40-popusta_1765293232.png",
+              "moreForLessCount": null,
+              "moreForLessPrice": null,
+              "startAt": "2025-12-11T23:01:00.000Z",
+              "status": true,
+              "title": "Noć knjige - Laguna do 40% popusta",
+              "type": "exponentialDiscount"
+            },
+            "startAt": "2025-12-11T23:01:00.000Z",
+            "status": true
+          }
+        ],
+        "actors": [],
+        "alphabets": [
+          "latin"
+        ],
+        "attributes": [
+          {
+            "k": "ISBN",
+            "v": ""
+          },
+          {
+            "k": "numberOfPages",
+            "v": "320"
+          },
+          {
+            "k": "format",
+            "v": "13x20 cm"
+          },
+          {
+            "k": "osobina6",
+            "v": ""
+          },
+          {
+            "k": "weight",
+            "v": "0.27"
+          }
+        ],
+        "authors": [
+          {
+            "_id": "652807fbf2fbb3bb27e1f7d7",
+            "authorName": "Džordž Orvel"
+          }
+        ],
+        "averageRank": 5,
+        "barcode": "9788652146048",
+        "category": "Knjiga",
+        "cover": "Mek",
+        "defaultReleaseDate": "2023-01-01T00:00:00.000Z",
+        "description": "<div style=\"text-align: justify;\"><em>Rat je mir<br /> Sloboda je ropstvo<br /> Neznanje je moć.</em><br /> <br /> <em>„Onaj ko kontroliše prošlost“, glasio je partijski slogan, „kontroliše budućnost: onaj ko kontroliše sadašnjost kontroliše prošlost.“<br /> </em><br /> Otkako je 1949. godine objavljena, Orvelova <em>1984</em> služila je kao podsetnik svakoj novoj generaciji da bude na oprezu kako stvarnost romana ne bi postala naša realnost.<br /> <br /> Čini se da su neki <em>1984</em> čitali sa više razumevanja od drugih i da su je koristili kao udžbenik. Jer Orvelova realnost je, izgleda, konačno postala realnost naših života. Kontrolisani mediji i dirigovana kontrola društvenih mreža na kojima je sloboda mišljenja zamenjena „slobodom govora“ samo su delić ostvarenog inventara Orvelovog najpoznatijeg i najmračnijeg romana.<br /> <br /> Stoga nemojte ovu knjigu čitati ni kao opomenu ni kao roman, čitajte je i vi kao udžbenik da biste bolje upoznali neprijatelja. Godina 1984. tek počinje.<br /> <br /> „Dubokoumna, zastrašujuća i potpuno fascinantna knjiga. Orvelova teorija moći je razvijena briljantno.“<br /> – <em>New Yorker</em><br /> <br /> „Roman čija radnja ledi krv prati naše vreme sasvim tiho i potpuno verno do dramatične sudbine koja nas možda očekuje.“<br /> – <em>Saturday Review</em><br /> <br /> „Jedan od najznačajnijih romana XX veka.“<br /> – <em>Guardian</em></div>",
+        "eBook": true,
+        "excerptPath": "/_img/artikli/2022/08/1984.pdf",
+        "genres": [
+          {
+            "_id": "65280745f2fbb3bb27e1f367",
+            "genreName": "Drama"
+          },
+          {
+            "_id": "6528074af2fbb3bb27e1f50b",
+            "genreName": "E-knjige"
+          },
+          {
+            "_id": "65280747f2fbb3bb27e1f3ad",
+            "genreName": "Film"
+          }
+        ],
+        "images": {
+          "fb": "/_img/artikli/2022/08/foto-fb-1200x630px-1984.jpg",
+          "l": "/_img/artikli/2022/08/1984_v.jpg",
+          "m": "/_img/artikli/2022/08/1984_m.jpg",
+          "s": "/_img/artikli/2022/08/1984_s.jpg",
+          "xl": "/_img/artikli/2022/08/1984_vv.jpg",
+          "xxl": "/_img/artikli/2022/08/1984_vv.jpg"
+        },
+        "imgGallery": [],
+        "isAvailable": true,
+        "isFree": false,
+        "isLaguna": true,
+        "isNewProduct": true,
+        "metaData": {
+          "description": "",
+          "keyWords": "",
+          "words": ""
+        },
+        "navId": "A259316",
+        "oldProductId": 190523,
+        "order": 35317,
+        "pdv": 10,
+        "pgRating": [],
+        "priceList": {
+          "collectionFullPrice": 0,
+          "eBookPrice": 549.5,
+          "fullPrice": 1199,
+          "quantityDiscountLimit": 3,
+          "quantityDiscountPercentage": 0,
+          "quantityDiscountPremiumLimit": 3,
+          "quantityDiscountPremiumPercentage": 10,
+          "quantityDiscountPremiumPrice": 917.235,
+          "quantityDiscountPrice": 1199,
+          "regularDiscountPercentage": 0,
+          "regularDiscountPremiumPercentage": 15,
+          "regularDiscountPremiumPrice": 1019.15,
+          "regularDiscountPrice": 1199
+        },
+        "productType": "regular",
+        "publisher": "Laguna",
+        "quantity": 528,
+        "rankList": {
+          "rank1": 0,
+          "rank2": 0,
+          "rank3": 0,
+          "rank4": 0,
+          "rank5": 2
+        },
+        "releaseDate": "19. avgust 2022.",
+        "shortDescription": "„Dubokoumna, zastrašujuća i potpuno fascinantna knjiga. Orvelova teorija moći je razvijena biljantno.“<br />– <em>New Yorker</em>",
+        "status": true,
+        "stockUpdatedAt": "2026-05-22T09:45:01.155Z",
+        "subgenres": [],
+        "title": "1984",
+        "topComments": [
+          {
+            "__v": 0,
+            "_id": "68ca924d8eee88e661f3fd89",
+            "comment": "Knjiga koju svako treba pročitati, sve preporuke!",
+            "createdAt": "2025-04-15T07:15:01.000Z",
+            "email": "minjavi1d@gmail.com",
+            "externalId": 35280,
+            "memberId": -1,
+            "memberName": "Minja",
+            "oldId": 15278,
+            "product": "65287fc50c49a2baa36e20b6",
+            "productRank": 5,
+            "productTitle": "1984",
+            "publishConsent": false,
+            "status": true,
+            "title": "1984"
+          },
+          {
+            "__v": 0,
+            "_id": "68ca924d8eee88e661f3fbf7",
+            "comment": "Knjiga koju svako treba procitati.  Jos jedan klasik Orvela koji ima vanvremensku dimenziju i uvek aktuelan.",
+            "createdAt": "2025-07-18T11:27:25.000Z",
+            "email": "filipficastojanovic@gmail.com",
+            "externalId": 35711,
+            "memberId": -1,
+            "memberName": "Filip Stojanovic",
+            "oldId": 14876,
+            "product": "65287fc50c49a2baa36e20b6",
+            "productRank": 5,
+            "productTitle": "1984",
+            "publishConsent": false,
+            "status": true,
+            "title": "1984"
+          },
+          {
+            "__v": 0,
+            "_id": "67f8d04f9b2ac612c84dcbf3",
+            "comment": "Roman opisuje ekstremno totalitarno društvo i pojedinca u životu nadziranom 24 časa dnevno. Orvelove pretpostavke, njegovi fantazmi, tek danas funkcionišu i pokazuju se kao više nego tačni.",
+            "createdAt": "2025-04-11T08:18:23.754Z",
+            "email": "kotunjo@gmail.com",
+            "externalId": null,
+            "ipAddress": "172.68.67.141",
+            "memberId": -1,
+            "memberName": "Nikola",
+            "oldId": 14100,
+            "product": "65287fc50c49a2baa36e20b6",
+            "productRank": 5,
+            "productTitle": "1984",
+            "publishConsent": false,
+            "status": true,
+            "title": ""
+          },
+          {
+            "__v": 0,
+            "_id": "67f7d9359b2ac612c849b113",
+            "comment": "Radnja romana odvija se u Okeaniji, zemlji sa totalitarnim uređenjem. U njoj vlada potpuna kontrola stanovništva, svaki aspekt života je ideološki obojen, a svaki vid slobode ugušen. Da li će Vinston uspeti da pronađe izlaz iz društva u kom te Veliki Brat neprestano posmatra, saznaćete čitanjem ovog vanvremenskog romana.",
+            "createdAt": "2025-04-10T14:44:05.887Z",
+            "email": "an_che_91@hotmail.com",
+            "externalId": null,
+            "ipAddress": "172.68.224.163",
+            "memberId": -1,
+            "memberName": "Ana",
+            "oldId": 14006,
+            "product": "65287fc50c49a2baa36e20b6",
+            "productRank": 5,
+            "productTitle": "1984",
+            "publishConsent": false,
+            "status": true,
+            "title": ""
+          }
+        ],
+        "totalNumberOfComments": 4,
+        "updatedAt": "2026-05-22T09:45:01.155Z",
+        "updatedAtForApi": "2026-04-16T23:00:00.771Z",
+        "_id": "65287fc50c49a2baa36e20b6"
+      },
+      "imageUrl": "https://www.delfi.rs/_img/artikli/2022/08/1984_m.jpg",
+      "description": "Rat je mir Sloboda je ropstvo Neznanje je moć. „Onaj ko kontroliše prošlost“, glasio je partijski slogan, „kontroliše budućnost: onaj ko kontroliše sadašnjost kontroliše prošlost.“ Otkako je 1949. godine objavljena, Orvelova 1984 služila je kao podsetnik svakoj novoj generaciji da bude na oprezu kako stvarnost romana ne bi postala naša realnost. Čini se da su neki 1984 čitali sa više razumevanja od drugih i da su je koristili kao udžbenik. Jer Orvelova realnost je, izgleda, konačno postala realnost naših života. Kontrolisani mediji i dirigovana kontrola društvenih mreža na kojima je sloboda mišljenja zamenjena „slobodom govora“ samo su delić ostvarenog inventara Orvelovog najpoznatijeg i najmračnijeg romana. Stoga nemojte ovu knjigu čitati ni kao opomenu ni kao roman, čitajte je i vi kao udžbenik da biste bolje upoznali neprijatelja. Godina 1984. tek počinje. „Dubokoumna, zastrašujuća i potpuno fascinantna knjiga. Orvelova teorija moći je razvijena briljantno.“ – New Yorker „Roman čija radnja ledi krv prati naše vreme sasvim tiho i potpuno verno do dramatične sudbine koja nas možda očekuje.“ – Saturday Review „Jedan od najznačajnijih romana XX veka.“ – Guardian",
+      "aiContext": "Naslov: 1984\nAutor: Orwell, George, 1903-1950 = Орвел, Џорџ, 1903-1950\nGodina: 2022\nTip: roman\nJezik: srpski\nPuni naslov: 1984 / Džordž Orvel ; preveo Goran Skrobonja\nUniformni naslov: Nineteen eighty-four. српски језик\nDrugi autori: Skrobonja, Goran, 1962- (prevodilac) <br> Скробоња, Горан, 1962- (prevodilac)\nIzdavac: Beograd : Laguna, 2022 (Novi Sad : Artprint media)\nGodina izdanja: 2022\nISBN: 9788652146048\nUDK: 821.111-31\nFizicki opis: 318 str. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Prevod dela: Nineteen eighty-four / George Orwell <br> Pravo ime autora: Eric Arthur Blair <br> Tiraž 2.000 <br> Od istog autora: str. 2.\nOpis (Delfi): Rat je mir Sloboda je ropstvo Neznanje je moć. „Onaj ko kontroliše prošlost“, glasio je partijski slogan, „kontroliše budućnost: onaj ko kontroliše sadašnjost kontroliše prošlost.“ Otkako je 1949. godine objavljena, Orvelova 1984 služila je kao podsetnik svakoj novoj generaciji da bude na oprezu kako stvarnost romana ne bi postala naša realnost. Čini se da su neki 1984 čitali sa više razumevanja od drugih i da su je koristili kao udžbenik. Jer Orvelova realnost je, izgleda, konačno postala realnost naših života. Kontrolisani mediji i dirigovana kontrola društvenih mreža na kojima je sloboda mišljenja zamenjena „slobodom govora“ samo su delić ostvarenog inventara Orvelovog najpoznatijeg i najmračnijeg romana. Stoga nemojte ovu knjigu čitati ni kao opomenu ni kao roman, čitajte je i vi kao udžbenik da biste bolje upoznali neprijatelja. Godina 1984. tek počinje. „Dubokoumna, zastrašujuća i potpuno fascinantna knjiga. Orvelova teorija moći je razvijena briljantno.“ – New Yorker „Roman čija radnja ledi krv prati naše vreme sasvim tiho i potpuno verno do dramatične sudbine koja nas možda očekuje.“ – Saturday Review „Jedan od najznačajnijih romana XX veka.“ – Guardian\nKategorije (Delfi): Drama; E-knjige; Film\nIzdavac (Delfi): Laguna\nBroj strana (Delfi): 320"
+    },
+    {
+      "position": 7,
+      "cobissId": "77537287",
+      "database": "gbvk-1",
+      "title": "1984 : regény",
+      "author": "Orwell, George",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "1986",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/77537287",
+      "cobiss": {
+        "authors": [
+          "Orwell, George"
+        ],
+        "fullTitle": "1984 : regény / George Orwell ; [fordította Szíjgyártó László]",
+        "type": "roman",
+        "language": "mađarski",
+        "publisher": "Újvidék : Forum, 1986 (Újvidék : Forum)",
+        "publishYear": "1986",
+        "isbn": "8632300539",
+        "udk": "821.111-31",
+        "physicalDescription": "245 p. ; 20 cm.",
+        "otherAuthors": "Szíjgyártó, László (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "77537287",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "imageUrl": null,
+      "aiContext": "Naslov: 1984 : regény\nAutor: Orwell, George\nGodina: 1986\nTip: roman\nJezik: mađarski\nPuni naslov: 1984 : regény / George Orwell ; [fordította Szíjgyártó László]\nDrugi autori: Szíjgyártó, László (prevodilac)\nIzdavac: Újvidék : Forum, 1986 (Újvidék : Forum)\nGodina izdanja: 1986\nISBN: 8632300539\nUDK: 821.111-31\nFizicki opis: 245 p. ; 20 cm."
+    },
+    {
+      "position": 8,
+      "cobissId": "515260502",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orwell, George",
+      "type": "(naučno)fantastična proza",
+      "language": "mađarski",
+      "year": "2011",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/515260502",
+      "cobiss": {
+        "authors": [
+          "Orwell, George"
+        ],
+        "fullTitle": "1984 / George Orwell ; [fordította Szíjgyártó László]",
+        "uniformTitle": "Nineteen eighty-four. hun",
+        "type": "(naučno)fantastična proza",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2011 (Debrecen : Alföldi)",
+        "publishYear": "2011",
+        "isbn": "9789630792257",
+        "udk": "821.111-31",
+        "physicalDescription": "358 p. ; 20 cm",
+        "notes": "Eredeti cím: Nineteen eighty-four.",
+        "otherAuthors": "Szíjgyártó, László (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "515260502",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Eredeti cím: Nineteen eighty-four.",
+      "aiContext": "Naslov: 1984\nAutor: Orwell, George\nGodina: 2011\nTip: (naučno)fantastična proza\nJezik: mađarski\nPuni naslov: 1984 / George Orwell ; [fordította Szíjgyártó László]\nUniformni naslov: Nineteen eighty-four. hun\nDrugi autori: Szíjgyártó, László (prevodilac)\nIzdavac: Budapest : Európa, 2011 (Debrecen : Alföldi)\nGodina izdanja: 2011\nISBN: 9789630792257\nUDK: 821.111-31\nFizicki opis: 358 p. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Eredeti cím: Nineteen eighty-four."
+    },
+    {
+      "position": 9,
+      "cobissId": "516879446",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orwell, George",
+      "type": "(naučno)fantastična proza",
+      "language": "mađarski",
+      "year": "2016",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/516879446",
+      "cobiss": {
+        "authors": [
+          "Orwell, George"
+        ],
+        "fullTitle": "1984 / George Orwell ; [fordította Szíjgyártó László]",
+        "uniformTitle": "Nineteen eighty-four. hun",
+        "type": "(naučno)fantastična proza",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2016 (Szekszárd : Szekszárdi Ny.)",
+        "publishYear": "2016",
+        "isbn": "9789634055044",
+        "udk": "821.111-31",
+        "series": "<a href=\"bib/150660873\">Európa zsebkönyvek, ISSN 0324-2722</a>",
+        "physicalDescription": "418 p. ; 18 cm",
+        "notes": "Eredeti cím: Nineteen eighty-four.",
+        "otherAuthors": "Szíjgyártó, László (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "516879446",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Eredeti cím: Nineteen eighty-four.",
+      "aiContext": "Naslov: 1984\nAutor: Orwell, George\nGodina: 2016\nTip: (naučno)fantastična proza\nJezik: mađarski\nPuni naslov: 1984 / George Orwell ; [fordította Szíjgyártó László]\nUniformni naslov: Nineteen eighty-four. hun\nDrugi autori: Szíjgyártó, László (prevodilac)\nIzdavac: Budapest : Európa, 2016 (Szekszárd : Szekszárdi Ny.)\nGodina izdanja: 2016\nISBN: 9789634055044\nUDK: 821.111-31\nSerija: <a href=\"bib/150660873\">Európa zsebkönyvek, ISSN 0324-2722</a>\nFizicki opis: 418 p. ; 18 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Eredeti cím: Nineteen eighty-four."
+    },
+    {
+      "position": 10,
+      "cobissId": "512918358",
+      "database": "gbvk-1",
+      "title": "1984",
+      "author": "Orwell, George",
+      "type": "(naučno)fantastična proza",
+      "language": "mađarski",
+      "year": "2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/512918358",
+      "cobiss": {
+        "authors": [
+          "Orwell, George"
+        ],
+        "fullTitle": "1984 / George Orwell ; [fordította Szíjgyártó László]",
+        "uniformTitle": "Nineteen eighty-four. hun",
+        "type": "(naučno)fantastična proza",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2008 ([Kaposvár] : Kaposvári)",
+        "publishYear": "2008",
+        "isbn": "9789630786737",
+        "udk": "821.111-31",
+        "series": "Európa diákkönyvtár, ISSN 1215-4989",
+        "physicalDescription": "341 p. ; 20 cm",
+        "notes": "Eredeti cím: Nineteen eighty-four.",
+        "otherAuthors": "Szíjgyártó, László (prevodilac)"
+      },
+      "availability": {
+        "cobissId": "512918358",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Eredeti cím: Nineteen eighty-four.",
+      "aiContext": "Naslov: 1984\nAutor: Orwell, George\nGodina: 2008\nTip: (naučno)fantastična proza\nJezik: mađarski\nPuni naslov: 1984 / George Orwell ; [fordította Szíjgyártó László]\nUniformni naslov: Nineteen eighty-four. hun\nDrugi autori: Szíjgyártó, László (prevodilac)\nIzdavac: Budapest : Európa, 2008 ([Kaposvár] : Kaposvári)\nGodina izdanja: 2008\nISBN: 9789630786737\nUDK: 821.111-31\nSerija: Európa diákkönyvtár, ISSN 1215-4989\nFizicki opis: 341 p. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Eredeti cím: Nineteen eighty-four."
+    },
+    {
+      "position": 11,
+      "cobissId": "56837385",
+      "database": "gbvk-1",
+      "title": "Ministarstvo istine : biografija Orvelove 1984.",
+      "author": "Lynskey, Dorian = Лински, Доријан",
+      "type": "književni prikaz/pregled",
+      "language": "srpski",
+      "year": "2022",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/56837385",
+      "cobiss": {
+        "authors": [
+          "Lynskey, Dorian = Лински, Доријан"
+        ],
+        "fullTitle": "Ministarstvo istine : biografija Orvelove 1984. / Dorijan Linski ; preveo Mirko Bižić",
+        "uniformTitle": "ǂThe ǂMinistry of truth. српски језик",
+        "type": "književni prikaz/pregled",
+        "audience": "odrasli, ozbiljna (nije lepa knjiž.)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2022 (Beograd : Vulkan štamparija)",
+        "publishYear": "2022",
+        "isbn": "9788610041767",
+        "udk": "821.111.09-31 Орвел Џ.",
+        "physicalDescription": "335 str. ; 21 cm",
+        "notes": "Prevod dela: The ministry of truth / Dorian Lynskey <br> Tiraž 1.000 <br> Dodatak: Sažetak 1984.: str. 300-306 <br> Beleške: str. 307-335 <br> Napomene uz tekst.",
+        "otherAuthors": "Bižić, Mirko, 1974- (prevodilac) <br> Бижић, Мирко, 1974- (prevodilac)",
+        "otherSubjects": "Орвел, Џорџ, 1903-1950 -- \"Хиљаду деветсто осамдесет четврта\""
+      },
+      "availability": {
+        "cobissId": "56837385",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Prevod dela: The ministry of truth / Dorian Lynskey <br> Tiraž 1.000 <br> Dodatak: Sažetak 1984.: str. 300-306 <br> Beleške: str. 307-335 <br> Napomene uz tekst.",
+      "aiContext": "Naslov: Ministarstvo istine : biografija Orvelove 1984.\nAutor: Lynskey, Dorian = Лински, Доријан\nGodina: 2022\nTip: književni prikaz/pregled\nJezik: srpski\nPuni naslov: Ministarstvo istine : biografija Orvelove 1984. / Dorijan Linski ; preveo Mirko Bižić\nUniformni naslov: ǂThe ǂMinistry of truth. српски језик\nDrugi autori: Bižić, Mirko, 1974- (prevodilac) <br> Бижић, Мирко, 1974- (prevodilac)\nIzdavac: Beograd : Vulkan izdavaštvo, 2022 (Beograd : Vulkan štamparija)\nGodina izdanja: 2022\nISBN: 9788610041767\nUDK: 821.111.09-31 Орвел Џ.\nFizicki opis: 335 str. ; 21 cm\nNamena: odrasli, ozbiljna (nije lepa knjiž.)\nDodatne teme: Орвел, Џорџ, 1903-1950 -- \"Хиљаду деветсто осамдесет четврта\"\nNapomene: Prevod dela: The ministry of truth / Dorian Lynskey <br> Tiraž 1.000 <br> Dodatak: Sažetak 1984.: str. 300-306 <br> Beleške: str. 307-335 <br> Napomene uz tekst."
+    }
+  ],
+  "fetchedAt": "2026-05-22T09:56:04.404Z"
+}

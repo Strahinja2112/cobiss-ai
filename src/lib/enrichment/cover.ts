@@ -4,9 +4,14 @@ import { NO_GOOGLE_IMAGE_URL, COBISS_THUMBNAIL_BASE } from "../config/index.js"
 export function resolveCoverImage(
   googleThumbnail: string | undefined | null,
   cobissId: string,
+  delfiCoverUrl?: string | null,
 ): string | null {
   if (googleThumbnail && googleThumbnail !== NO_GOOGLE_IMAGE_URL) {
     return googleThumbnail
+  }
+
+  if (delfiCoverUrl) {
+    return delfiCoverUrl
   }
 
   return `${COBISS_THUMBNAIL_BASE}/${cobissId}`

@@ -1,0 +1,152 @@
+{
+  "query": "pop cira i pop spira",
+  "totalHits": 4,
+  "page": 0,
+  "limit": 4,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "206778636",
+      "database": "gbvk-1",
+      "title": "Pop Ćira i pop Spira : приповетка",
+      "author": "Сремац, Стеван, 1855-1906 = Sremac, Stevan, 1855-1906",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/206778636",
+      "cobiss": {
+        "authors": [
+          "Сремац, Стеван, 1855-1906 = Sremac, Stevan, 1855-1906"
+        ],
+        "fullTitle": "Pop Ćira i pop Spira : приповетка / Стеван Сремац",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Београд : Вулкан издаваштво, 2014 (Београд : Вулкан)",
+        "publishYear": "2014",
+        "isbn": "9788610009361",
+        "udk": "821.163.41-31",
+        "series": "ǂБиблиотека ǂЛаставица раширених крила <br> Вулканчић",
+        "physicalDescription": "401 стр. ; 20 cm",
+        "notes": "Тираж 1.000 <br> Речник мање познатих речи, израза и појмова: стр. 353-396 <br> Белешка о писцу: стр. 397-398 <br> Стр. 401: Напомена / Уредништво Вулканчића."
+      },
+      "availability": {
+        "cobissId": "206778636",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Тираж 1.000 <br> Речник мање познатих речи, израза и појмова: стр. 353-396 <br> Белешка о писцу: стр. 397-398 <br> Стр. 401: Напомена / Уредништво Вулканчића.",
+      "aiContext": "Naslov: Pop Ćira i pop Spira : приповетка\nAutor: Сремац, Стеван, 1855-1906 = Sremac, Stevan, 1855-1906\nGodina: 2014\nTip: roman\nJezik: srpski\nPuni naslov: Pop Ćira i pop Spira : приповетка / Стеван Сремац\nIzdavac: Београд : Вулкан издаваштво, 2014 (Београд : Вулкан)\nGodina izdanja: 2014\nISBN: 9788610009361\nUDK: 821.163.41-31\nSerija: ǂБиблиотека ǂЛаставица раширених крила <br> Вулканчић\nFizicki opis: 401 стр. ; 20 cm\nNapomene: Тираж 1.000 <br> Речник мање познатих речи, израза и појмова: стр. 353-396 <br> Белешка о писцу: стр. 397-398 <br> Стр. 401: Напомена / Уредништво Вулканчића."
+    },
+    {
+      "position": 2,
+      "cobissId": "116578060",
+      "database": "gbvk-1",
+      "title": "Pop Ćira i pop Spira",
+      "author": "Sremac, Stevan",
+      "type": "kratka proza",
+      "language": "srpski",
+      "year": "2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/116578060",
+      "cobiss": {
+        "authors": [
+          "Sremac, Stevan"
+        ],
+        "fullTitle": "Pop Ćira i pop Spira / Stevan Sremac ; [izabrao i priredio Jovan Radulović]",
+        "type": "kratka proza",
+        "language": "srpski",
+        "publisher": "Zemun : Publik praktikum, 2004 (Beograd : Rubikon)",
+        "publishYear": "2004",
+        "isbn": "8684515129",
+        "udk": "821.163.41-31",
+        "series": "Izabrana dela u pet knjiga / Stevan Sremac ; ǂknj. ǂ3",
+        "physicalDescription": "378 str. ; 20 cm",
+        "notes": "Tiraž 500 <br> Rečnik manje poznatih reči i izraza: str. 368-378.",
+        "otherAuthors": "Radulović, Jovan (urednik)"
+      },
+      "availability": {
+        "cobissId": "116578060",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Tiraž 500 <br> Rečnik manje poznatih reči i izraza: str. 368-378.",
+      "aiContext": "Naslov: Pop Ćira i pop Spira\nAutor: Sremac, Stevan\nGodina: 2004\nTip: kratka proza\nJezik: srpski\nPuni naslov: Pop Ćira i pop Spira / Stevan Sremac ; [izabrao i priredio Jovan Radulović]\nDrugi autori: Radulović, Jovan (urednik)\nIzdavac: Zemun : Publik praktikum, 2004 (Beograd : Rubikon)\nGodina izdanja: 2004\nISBN: 8684515129\nUDK: 821.163.41-31\nSerija: Izabrana dela u pet knjiga / Stevan Sremac ; ǂknj. ǂ3\nFizicki opis: 378 str. ; 20 cm\nNapomene: Tiraž 500 <br> Rečnik manje poznatih reči i izraza: str. 368-378."
+    },
+    {
+      "position": 3,
+      "cobissId": "284255239",
+      "database": "gbvk-1",
+      "title": "Гајде и весела Србадија : алманах",
+      "author": "",
+      "type": "zbornik",
+      "language": "srpski",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/284255239",
+      "cobiss": {
+        "authors": [],
+        "fullTitle": "Гајде и весела Србадија : алманах / приредио Дејан Томић ; [фотографија Бранко Лучић]",
+        "type": "zbornik",
+        "language": "srpski",
+        "publisher": "Нови Сад : Тиски цвет, 2014 (Нови Сад : NS papirpress)",
+        "publishYear": "2014",
+        "isbn": "9788672640700",
+        "udk": "821.163.41-82(082.2) <br> 788.91:398(=163.41)",
+        "physicalDescription": "233 стр. : илустр. ; 31 cm",
+        "notes": "Тираж 1.000 <br> Стр. 5-6: Биле светске биле наше важно је да гајде праше / Славко Матић <br> Речник мање познатих речи: стр. 213-224 <br> Белешка о аутору [тј. приређивачу]: стр. 230 <br> Именик аутора приређених прилога: стр. 225-227 <br> Библиографија: стр. 228-229.",
+        "otherAuthors": "Tomić, Dejan (urednik) <br> Lučić, Branko (fotograf) <br> Matić, Slavko (autor dodatnog teksta) <br> Mudrinić, Maksim (izvođač) <br> Trlajić, Gligorije (ime povezano s jedinicom) <br> Karađorđe (ime povezano s jedinicom) <br> Pupin, Mihajlo (ime povezano s jedinicom) <br> Paču, Jovan (ime povezano s jedinicom) <br> Subotić, Jovan (ime povezano s jedinicom) <br> Stojkov, Sima (ime povezano s jedinicom) <br> Pejakov, Acko (ime povezano s jedinicom) <br> Fehirov, Sava (ime povezano s jedinicom) <br> Francuski, Mirko (ime povezano s jedinicom) <br> Maksimović, Rada (ime povezano s jedinicom) <br> Zarić, Branislav (ime povezano s jedinicom) <br> Mudrinić, Maksim (ime povezano s jedinicom) <br> Popović, Pavle (ime povezano s jedinicom) <br> Pavlović, Pera (ime povezano s jedinicom)",
+        "otherSubjects": "Српска књижевност -- Мотиви -- Гајде <br> Гајде -- Србија",
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/284255239/8429/0284255239_001.jpg' note='&emsp;korice&emsp;cover&emsp;Format(i): image/jpeg'></elink-details><elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/284255239/8430/0284255239_002.jpg' note='&emsp;nasl. str.&emsp;front page&emsp;Format(i): image/jpeg'></elink-details><elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/284255239/8431/0284255239_003.jpg' note='&emsp;sadržaj&emsp;content&emsp;Format(i): image/jpeg'></elink-details><elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/284255239/8432/0284255239_004.jpg' note='&emsp;sadržaj&emsp;content&emsp;Format(i): image/jpeg'></elink-details><elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/284255239/8433/0284255239_005.jpg' note='&emsp;sadržaj&emsp;content&emsp;Format(i): image/jpeg'></elink-details>"
+      },
+      "availability": {
+        "cobissId": "284255239",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/284255239",
+      "description": "Тираж 1.000 <br> Стр. 5-6: Биле светске биле наше важно је да гајде праше / Славко Матић <br> Речник мање познатих речи: стр. 213-224 <br> Белешка о аутору [тј. приређивачу]: стр. 230 <br> Именик аутора приређених прилога: стр. 225-227 <br> Библиографија: стр. 228-229.",
+      "aiContext": "Naslov: Гајде и весела Србадија : алманах\nGodina: 2014\nTip: zbornik\nJezik: srpski\nPuni naslov: Гајде и весела Србадија : алманах / приредио Дејан Томић ; [фотографија Бранко Лучић]\nDrugi autori: Tomić, Dejan (urednik) <br> Lučić, Branko (fotograf) <br> Matić, Slavko (autor dodatnog teksta) <br> Mudrinić, Maksim (izvođač) <br> Trlajić, Gligorije (ime povezano s jedinicom) <br> Karađorđe (ime povezano s jedinicom) <br> Pupin, Mihajlo (ime povezano s jedinicom) <br> Paču, Jovan (ime povezano s jedinicom) <br> Subotić, Jovan (ime povezano s jedinicom) <br> Stojkov, Sima (ime povezano s jedinicom) <br> Pejakov, Acko (ime povezano s jedinicom) <br> Fehirov, Sava (ime povezano s jedinicom) <br> Francuski, Mirko (ime povezano s jedinicom) <br> Maksimović, Rada (ime povezano s jedinicom) <br> Zarić, Branislav (ime povezano s jedinicom) <br> Mudrinić, Maksim (ime povezano s jedinicom) <br> Popović, Pavle (ime povezano s jedinicom) <br> Pavlović, Pera (ime povezano s jedinicom)\nIzdavac: Нови Сад : Тиски цвет, 2014 (Нови Сад : NS papirpress)\nGodina izdanja: 2014\nISBN: 9788672640700\nUDK: 821.163.41-82(082.2) <br> 788.91:398(=163.41)\nFizicki opis: 233 стр. : илустр. ; 31 cm\nDodatne teme: Српска књижевност -- Мотиви -- Гајде <br> Гајде -- Србија\nNapomene: Тираж 1.000 <br> Стр. 5-6: Биле светске биле наше важно је да гајде праше / Славко Матић <br> Речник мање познатих речи: стр. 213-224 <br> Белешка о аутору [тј. приређивачу]: стр. 230 <br> Именик аутора приређених прилога: стр. 225-227 <br> Библиографија: стр. 228-229."
+    },
+    {
+      "position": 4,
+      "cobissId": "10518940",
+      "database": "gbvk-1",
+      "title": "Papháború",
+      "author": "Sremac, Stevan, 1855-1906 = Сремац, Стеван, 1855-1906",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "1964",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/10518940",
+      "cobiss": {
+        "authors": [
+          "Sremac, Stevan, 1855-1906 = Сремац, Стеван, 1855-1906"
+        ],
+        "fullTitle": "Papháború / Stevan Sremac ; [fordította Csuka Zoltán ; az illusztrációkat készítette Gyulai Liviusz]",
+        "uniformTitle": "Поп Ћира и поп Спира. hun",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 1964",
+        "publishYear": "1964",
+        "isbn": "(Karton sa omotom)",
+        "udk": "821.163.4-311.2",
+        "physicalDescription": "322 str. : ilustr. ; 19 cm",
+        "notes": "Prevod dela: Pop Ćira i pop Spira <br> Tiraž 4.600",
+        "otherAuthors": "Csuka, Zoltán, 1901-1984 (prevodilac) <br> Чука, Золтан, 1901-1984 (prevodilac) <br> Gyulai, Liviusz (ilustrator)"
+      },
+      "availability": {
+        "cobissId": "10518940",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "imageUrl": null,
+      "description": "Prevod dela: Pop Ćira i pop Spira <br> Tiraž 4.600",
+      "aiContext": "Naslov: Papháború\nAutor: Sremac, Stevan, 1855-1906 = Сремац, Стеван, 1855-1906\nGodina: 1964\nTip: roman\nJezik: mađarski\nPuni naslov: Papháború / Stevan Sremac ; [fordította Csuka Zoltán ; az illusztrációkat készítette Gyulai Liviusz]\nUniformni naslov: Поп Ћира и поп Спира. hun\nDrugi autori: Csuka, Zoltán, 1901-1984 (prevodilac) <br> Чука, Золтан, 1901-1984 (prevodilac) <br> Gyulai, Liviusz (ilustrator)\nIzdavac: Budapest : Európa, 1964\nGodina izdanja: 1964\nISBN: (Karton sa omotom)\nUDK: 821.163.4-311.2\nFizicki opis: 322 str. : ilustr. ; 19 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Prevod dela: Pop Ćira i pop Spira <br> Tiraž 4.600"
+    }
+  ],
+  "fetchedAt": "2026-05-22T09:55:23.356Z"
+}
