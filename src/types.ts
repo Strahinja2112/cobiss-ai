@@ -93,9 +93,23 @@ export interface Availability {
   statusRaw: string
 }
 
+export interface GoogleBooksData {
+  description?: string
+  categories?: string[]
+  pageCount?: number
+  thumbnail?: string
+  averageRating?: number
+  ratingsCount?: number
+  publishedDate?: string
+  maturityRating?: string
+  previewLink?: string
+  infoLink?: string
+}
+
 export interface BookWithDetails extends BookEntry {
   details?: BookDetail
   availability?: Availability
+  googleBooks?: GoogleBooksData | null
 }
 
 export interface ScraperError {

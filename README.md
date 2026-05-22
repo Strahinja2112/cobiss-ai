@@ -9,7 +9,7 @@ prikuplja detalje o knjigama i proverava dostupnost u bibliotekama.
 npm run search -- ljubav
 npm run search -- ljubav --details
 npm run search -- ljubav --available
-npm run search -- ljubav --enrich
+npm run search -- ljubav --enrich --google
 npm run search -- --all programiranje
 ```
 
@@ -21,6 +21,7 @@ npm run search -- --all programiranje
 | `--details, -d` | ISBN, publisher, UDK, fizički opis, napomene... |
 | `--available, -a` | Status dostupnosti (slobodno, pozajmljeno...) |
 | `--enrich, -e` | Detalji + dostupnost zajedno |
+| `--google, -g` | Google Books enrichment (opis, žanr, ocena, slika) |
 | `--help, -h` | Prikaži pomoć |
 
 ## Struktura projekta
@@ -33,7 +34,8 @@ src/
   search.ts         — searchBooks(), searchAllPages()
   details.ts        — fetchBookDetails() — /full JSON endpoint
   availability.ts   — fetchAvailability() — cir-status endpoint
-  enricher.ts       — enrichBook() — spaja detalje + dostupnost
+  enricher.ts       — enrichBook() — spaja detalje + dostupnost + google
+  google-books.ts   — Google Books API enrichment
   saver.ts          — saveResultsToJson()
   cli.ts            — CLI entry point
 results/            — JSON rezultati pretraga
