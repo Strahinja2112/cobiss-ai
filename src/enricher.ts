@@ -1,6 +1,7 @@
 import { fetchCobissDetails } from "./details.js"
 import { fetchAvailability } from "./availability.js"
 import { fetchGoogleDetails } from "./google-books.js"
+import { fetchOpenLibrary } from "./open-library.js"
 import { resolveCoverImage, verifyCobissCover } from "./cover.js"
 import type { BookEntry, BookWithDetails } from "./types.js"
 
@@ -9,7 +10,12 @@ export interface EnrichOptions {
   google?: boolean
 }
 
-function buildAiContext(entry: BookEntry, cobiss: BookWithDetails["cobiss"], google: BookWithDetails["google"]): string {
+function buildAiContext(
+  entry: BookEntry,
+  cobiss: BookWithDetails["cobiss"],
+  google: BookWithDetails["google"],
+  openLibrary: BookWithDetails["openLibrary"],
+): string {
   const parts: string[] = []
 
   parts.push(`Naslov: ${entry.title}`)
@@ -43,6 +49,13 @@ function buildAiContext(entry: BookEntry, cobiss: BookWithDetails["cobiss"], goo
     if (google.language) parts.push(`Jezik (GB): ${google.language}`)
   }
 
+  if (openLibrary) {
+    if (openLibrary.description && !google?.description) parts.push(`Opis (OL): ${openLibrary.description}`)
+    if (openLibrary.subjects?.length) parts.push(`Predmeti: ${openLibrary.subjects.join("; ")}`)
+    if (openLibrary.subjectPlaces?.length) parts.push(`Mesta: ${openLibrary.subjectPlaces.join("; ")}`)
+    if (openLibrary.subjectPeople?.length) parts.push(`Licnosti: ${openLibrary.subjectPeople.join("; ")}`)
+  }
+
   return parts.join("\n")
 }
 
@@ -74,6 +87,8 @@ export async function enrichBook(
     if (isbn) {
       enriched.google = await fetchGoogleDetails(isbn)
       googleThumbnail = enriched.google?.imageLinks?.thumbnail
+
+      enriched.openLibrary = await fetchOpenLibrary(isbn)
     }
   }
 
@@ -83,8 +98,13 @@ export async function enrichBook(
     enriched.imageUrl = await verifyCobissCover(entry.cobissId)
   }
 
-  enriched.description = enriched.google?.description ?? enriched.cobiss.notes ?? undefined
-  enriched.aiContext = buildAiContext(entry, enriched.cobiss, enriched.google)
+  enriched.description =
+    enriched.google?.description ??
+    enriched.openLibrary?.description ??
+    enriched.cobiss.notes ??
+    undefined
+
+  enriched.aiContext = buildAiContext(entry, enriched.cobiss, enriched.google, enriched.openLibrary)
 
   return enriched
 }

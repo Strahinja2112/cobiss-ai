@@ -13,7 +13,7 @@ export const GOOGLE_BOOKS_API_KEY: string | undefined =
 
 export const DEFAULT_PARAMS = {
 	q: "*",
-	db: "gbvk-15",
+	db: "gbvk-1",
 	mat: "books",
 } as const;
 

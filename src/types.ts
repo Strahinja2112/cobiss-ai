@@ -87,6 +87,7 @@ export interface BookWithDetails extends BookEntry {
   cobiss: CobissDetail
   availability?: Availability
   google?: GoogleDetails | null
+  openLibrary?: import("./open-library.js").OpenLibraryData | null
   imageUrl?: string | null
   description?: string
   aiContext?: string
