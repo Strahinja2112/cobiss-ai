@@ -16,3 +16,6 @@ export const DEFAULT_PARAMS = {
 	db: "gbvk-1",
 	mat: "books",
 } as const;
+
+const NO_GOOGLE_IMAGE_URL =
+	"https://books.google.rs/googlebooks/images/no_cover_thumb.gif";
