@@ -3,9 +3,12 @@ import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "./config.js"
 import type { GoogleBooksData } from "./types.js"
 
 function extractIsbn(raw: string): string | null {
-  const match = raw.match(/\b(\d[\d -]*[\dX])\b/)
-  if (!match) return null
-  return match[1].replace(/[^0-9X]/gi, "")
+  const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/g)]
+    .map(m => m[1].replace(/[^0-9X]/gi, ""))
+    .filter(Boolean)
+  if (candidates.length === 0) return null
+  const preferred = candidates.find(c => c.length === 13)
+  return preferred ?? candidates[0]
 }
 
 export async function fetchGoogleBooks(isbn: string): Promise<GoogleBooksData | null> {

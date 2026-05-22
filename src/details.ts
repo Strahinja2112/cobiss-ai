@@ -4,9 +4,12 @@ import type { BookDetail, FullDetailsResponse } from "./types.js"
 
 function cleanIsbn(raw: string | undefined): string | undefined {
   if (!raw) return undefined
-  const match = raw.match(/\b(\d[\d -]*[\dX])\b/)
-  if (!match) return raw
-  return match[1].replace(/[^0-9X]/gi, "")
+  const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/g)]
+    .map(m => m[1].replace(/[^0-9X]/gi, ""))
+    .filter(Boolean)
+  if (candidates.length === 0) return raw
+  const preferred = candidates.find(c => c.length === 13)
+  return preferred ?? candidates[0]
 }
 
 export async function fetchBookDetails(
