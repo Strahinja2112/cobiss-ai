@@ -2,10 +2,17 @@ import axios from "axios"
 import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "./config.js"
 import type { GoogleBooksData } from "./types.js"
 
+function extractIsbn(raw: string): string | null {
+  const match = raw.match(/\b(\d[\d -]*[\dX])\b/)
+  if (!match) return null
+  return match[1].replace(/[^0-9X]/gi, "")
+}
+
 export async function fetchGoogleBooks(isbn: string): Promise<GoogleBooksData | null> {
   if (!isbn) return null
 
-  const cleanIsbn = isbn.replace(/[^0-9X]/gi, "")
+  const cleanIsbn = extractIsbn(isbn)
+  if (!cleanIsbn) return null
 
   try {
     const params: Record<string, string> = { q: `isbn:${cleanIsbn}` }

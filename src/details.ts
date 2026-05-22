@@ -2,6 +2,13 @@ import * as cheerio from "cheerio"
 import { http, delay } from "./http-client.js"
 import type { BookDetail, FullDetailsResponse } from "./types.js"
 
+function cleanIsbn(raw: string | undefined): string | undefined {
+  if (!raw) return undefined
+  const match = raw.match(/\b(\d[\d -]*[\dX])\b/)
+  if (!match) return raw
+  return match[1].replace(/[^0-9X]/gi, "")
+}
+
 export async function fetchBookDetails(
   cobissId: string,
   database: string,
@@ -30,7 +37,7 @@ export async function fetchBookDetails(
     if (fullData.languageCard?.value) language = fullData.languageCard.value
     if (fullData.publisherCard?.value) publisher = fullData.publisherCard.value
     if (fullData.publishDate?.value) publishYear = fullData.publishDate.value
-    if (fullData.isbnCard?.value) isbn = fullData.isbnCard.value
+    if (fullData.isbnCard?.value) isbn = cleanIsbn(fullData.isbnCard.value)
     if (fullData.udkCard?.value) udk = fullData.udkCard.value
     if (fullData.seriesCard?.value) series = fullData.seriesCard.value
     if (fullData.ph_descriptionCard?.value) physicalDescription = fullData.ph_descriptionCard.value
@@ -56,7 +63,7 @@ export async function fetchBookDetails(
       if (!type && label.includes("vrsta")) type = text
       if (!language && label.includes("jezik")) language = text
       if (!publisher && label.includes("izdavanje")) publisher = text
-      if (!isbn && label.includes("isbn")) isbn = text
+      if (!isbn && label.includes("isbn")) isbn = cleanIsbn(text)
     })
 
     $("#labelSubject").closest("div").find("a").each((_i, el) => {

@@ -159,6 +159,9 @@ async function main() {
 				if (g.description)
 					console.log(`       Opis: ${g.description.slice(0, 120)}...`);
 			}
+			if ("imageUrl" in book && book.imageUrl) {
+				console.log(`       Slika: ${book.imageUrl}`);
+			}
 		}
 
 		const filePath = await saveResultsToJson(

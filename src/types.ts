@@ -110,6 +110,7 @@ export interface BookWithDetails extends BookEntry {
   details?: BookDetail
   availability?: Availability
   googleBooks?: GoogleBooksData | null
+  imageUrl?: string | null
 }
 
 export interface ScraperError {
