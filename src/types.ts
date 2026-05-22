@@ -26,6 +26,7 @@ export type MaterialType =
 export interface BookEntry {
   position: number
   cobissId: string
+  database: string
   title: string
   author: string
   type: string

@@ -1,0 +1,249 @@
+{
+  "query": "king",
+  "totalHits": 24,
+  "page": 0,
+  "limit": 25,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "1238570",
+      "title": "Doctor sleep : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "(naučno)fantastična proza",
+      "language": "engleski",
+      "year": "2013",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/1238570"
+    },
+    {
+      "position": 2,
+      "cobissId": "1550890",
+      "title": "The stand : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2012",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/1550890"
+    },
+    {
+      "position": 3,
+      "cobissId": "3324696",
+      "title": "Duma Key",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "cop. 2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/3324696"
+    },
+    {
+      "position": 4,
+      "cobissId": "37304585",
+      "title": "It",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1981",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/37304585"
+    },
+    {
+      "position": 5,
+      "cobissId": "512141752",
+      "title": "The Talisman",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947- ; Straub, Peter",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1984",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/512141752"
+    },
+    {
+      "position": 6,
+      "cobissId": "12575801",
+      "title": "The king of torts",
+      "author": "Grisham, John, 1955- = Гришам, Џон, 1955-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2003",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/12575801"
+    },
+    {
+      "position": 7,
+      "cobissId": "515314087",
+      "title": "All the king's men",
+      "author": "Warren, Robert Penn, 1905-1989 = Ворен, Роберт Пен, 1905-1989",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2002",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/515314087"
+    },
+    {
+      "position": 8,
+      "cobissId": "60313609",
+      "title": "King of the range : Zane Grey`s Buck Duane",
+      "author": "Grey, Romer Zane, 1909-1976 = Grey, Ромер Зејн, 1909-1976",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1999",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/60313609"
+    },
+    {
+      "position": 9,
+      "cobissId": "4942617",
+      "title": "Novels : 1944-1962",
+      "author": "Dawn, Powell, 1896-1965 = Дон, Пауел, 1896-1965",
+      "type": "roman",
+      "language": "engleski",
+      "year": "cop. 2001",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/4942617"
+    },
+    {
+      "position": 10,
+      "cobissId": "107669257",
+      "title": "Billy Summers : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2021",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/107669257"
+    },
+    {
+      "position": 11,
+      "cobissId": "182364423",
+      "title": "Nightmares and dreamscapes",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "kratka proza",
+      "language": "engleski",
+      "year": "1993",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/182364423"
+    },
+    {
+      "position": 12,
+      "cobissId": "116271369",
+      "title": "Gerald's game",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "1992",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/116271369"
+    },
+    {
+      "position": 13,
+      "cobissId": "68003337",
+      "title": "The pale king : an unfinished novel",
+      "author": "Wallace, David Foster, 1962-2008 = Волас, Дејвид Фостер, 1962-2008",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2012",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/68003337"
+    },
+    {
+      "position": 14,
+      "cobissId": "67425033",
+      "title": "A Connecticut Yankee in King Arthur's court",
+      "author": "Twain, Mark, 1835-1910 = Твен, Марк, 1835-1910",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "[2012]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/67425033"
+    },
+    {
+      "position": 15,
+      "cobissId": "839193",
+      "title": "American sermons : the pilgrims to Martin Luther King, Jr.",
+      "author": "",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "cop.1999",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/839193"
+    },
+    {
+      "position": 16,
+      "cobissId": "76161289",
+      "title": "Dare To Dream : Coretta Scott King and the Civil Rights Movement",
+      "author": "Medearis, Angela Shelf, 1956- = Медерис, Анџела Шелф, 1956-",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "1994",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/76161289"
+    },
+    {
+      "position": 17,
+      "cobissId": "74118665",
+      "title": "Great speeches by African Americans : Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, Jr., and others",
+      "author": "",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/74118665"
+    },
+    {
+      "position": 18,
+      "cobissId": "70835465",
+      "title": "Fifty famous stories retold",
+      "author": "Baldwin, James, 1841-1925 = Болдвин, Џејмс, 1841-1925",
+      "type": "kratka proza",
+      "language": "engleski",
+      "year": "[2014]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/70835465"
+    },
+    {
+      "position": 19,
+      "cobissId": "71416329",
+      "title": "Villains victorious",
+      "author": "",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2001",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/71416329"
+    },
+    {
+      "position": 20,
+      "cobissId": "71422729",
+      "title": "Sirius, the dog star",
+      "author": "",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "cop. 2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/71422729"
+    },
+    {
+      "position": 21,
+      "cobissId": "70800137",
+      "title": "Crime stories and other writings",
+      "author": "Hammett, Dashiell, 1894-1961 = Хамет, Дашијел, 1894-1961",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "[2001]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/70800137"
+    },
+    {
+      "position": 22,
+      "cobissId": "33859933",
+      "title": "Under the loving care of the fatherly leader : North Korea and the Kim dynasty",
+      "author": "Martin, Bradley K. = Мартин, Бредли К.",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/33859933"
+    },
+    {
+      "position": 23,
+      "cobissId": "74008329",
+      "title": "Ash",
+      "author": "Lo, Malinda, 1974- = Ло, Малинда, 1974-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2019",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/74008329"
+    },
+    {
+      "position": 24,
+      "cobissId": "127676937",
+      "title": "Sojourner Truth",
+      "author": "Krass, Peter, 1963- = Крас, Питер, 1963-",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "cop. 1988",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/127676937"
+    }
+  ],
+  "fetchedAt": "2026-05-22T06:17:39.702Z"
+}

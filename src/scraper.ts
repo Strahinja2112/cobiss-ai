@@ -27,16 +27,12 @@ const http = axios.create({
 
 const DEFAULT_PARAMS = {
 	q: "*",
-	db: "gbvk-1",
+	db: "gbvk-15",
 	mat: "books",
 };
 
 function delay(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-function dbFromParams(params: Record<string, string>): string {
-	return params.db || "gbvk-15";
 }
 
 export async function searchBooks(
@@ -76,7 +72,6 @@ export async function searchBooks(
 	const totalHits = parseInt(totalHitsRaw, 10) || 0;
 	const page = Math.floor(start / limit);
 
-	const db = dbFromParams(params);
 	const items: BookEntry[] = [];
 
 	$("tr.biblioentry").each((_i, row) => {
@@ -84,6 +79,7 @@ export async function searchBooks(
 		const cobissId = $row.attr("data-cobiss-id") ?? "";
 		const titleAttr = $row.attr("data-title") ?? "";
 		const detailPath = $row.attr("data-href") ?? "";
+		const database = $row.attr("data-database") ?? params.db;
 
 		const positionText = $row.find("td:first-child small").text().trim();
 		const position = parseInt(positionText.replace(".", ""), 10) || 0;
@@ -98,6 +94,7 @@ export async function searchBooks(
 			items.push({
 				position,
 				cobissId,
+				database,
 				title,
 				author,
 				type,
@@ -162,7 +159,7 @@ export async function searchAllPages(
 
 export async function fetchBookDetails(
 	cobissId: string,
-	database = "gbvk-15",
+	database: string,
 	delayMs = 400,
 ): Promise<BookDetail> {
 	let fullTitle: string | undefined;
@@ -179,7 +176,6 @@ export async function fetchBookDetails(
 	let authors: string[] = [];
 	let subjects: string[] = [];
 
-	// 1. Fetch the /full JSON endpoint for rich metadata
 	try {
 		const fullResp = await http.get(`/bib/${database}/${cobissId}/full`);
 		const fullData = fullResp.data as FullDetailsResponse;
@@ -197,25 +193,18 @@ export async function fetchBookDetails(
 		if (fullData.notesCard?.value) notes = fullData.notesCard.value;
 		if (fullData.otherAuthor702?.value)
 			otherAuthors = fullData.otherAuthor702.value;
-		if (fullData.author700701?.value) {
-			authors = [fullData.author700701.value];
-		}
-		if (fullData.uniformTitle?.value) {
-			// uniformTitle is available
-		}
+		if (fullData.author700701?.value) authors = [fullData.author700701.value];
 	} catch {
-		// fallback: continue with partial data
+		// fallback with partial data
 	}
 
 	await delay(delayMs);
 
-	// 2. Fetch the detail page for subjects and any extra info
 	try {
 		const detailResp = await http.get(`/bib/${database}/${cobissId}`);
 		const html = detailResp.data as string;
 		const $ = cheerio.load(html);
 
-		// Parse record info from the initial HTML
 		$("div.recordPrompt").each((_i, el) => {
 			const $el = $(el);
 			const label = $el.find("span").first().text().trim().toLowerCase();
@@ -227,7 +216,6 @@ export async function fetchBookDetails(
 			if (!isbn && label.includes("isbn")) isbn = text;
 		});
 
-		// Subjects from the sidebar
 		$("#labelSubject")
 			.closest("div")
 			.find("a")
@@ -236,7 +224,7 @@ export async function fetchBookDetails(
 				if (subj) subjects.push(subj);
 			});
 	} catch {
-		// proceed with whatever we have
+		// proceed with what we have
 	}
 
 	await delay(delayMs);
@@ -262,7 +250,7 @@ export async function fetchBookDetails(
 
 export async function fetchAvailability(
 	cobissId: string,
-	database = "gbvk-15",
+	database: string,
 ): Promise<Availability> {
 	try {
 		const resp = await http.get(`/bib/cir-status/${database}/${cobissId}`);
@@ -277,13 +265,10 @@ export async function fetchAvailability(
 	}
 }
 
-export async function enrichBook(
-	entry: BookEntry,
-	database = "gbvk-15",
-): Promise<BookWithDetails> {
+export async function enrichBook(entry: BookEntry): Promise<BookWithDetails> {
 	const [details, availability] = await Promise.all([
-		fetchBookDetails(entry.cobissId, database),
-		fetchAvailability(entry.cobissId, database),
+		fetchBookDetails(entry.cobissId, entry.database),
+		fetchAvailability(entry.cobissId, entry.database),
 	]);
 	return { ...entry, details, availability };
 }

@@ -1,0 +1,209 @@
+{
+  "query": "steinbeck",
+  "totalHits": 20,
+  "page": 0,
+  "limit": 20,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "512434518",
+      "title": "Egerek és emberek",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/512434518"
+    },
+    {
+      "position": 2,
+      "cobissId": "514912342",
+      "title": "Rosszkedvünk tele",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/514912342"
+    },
+    {
+      "position": 3,
+      "cobissId": "512445782",
+      "title": "Édentől keletre",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2007",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/512445782"
+    },
+    {
+      "position": 4,
+      "cobissId": "6088499",
+      "title": "Érik a gyümölcs",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/6088499"
+    },
+    {
+      "position": 5,
+      "cobissId": "513905494",
+      "title": "Érik a gyümölcs ; Kék öböl : első kötet. 1. kötet",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "1976",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/513905494"
+    },
+    {
+      "position": 6,
+      "cobissId": "513392807",
+      "title": "Kék öböl ; Szerelem csütörtök ; Égi mező",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "1966",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/513392807"
+    },
+    {
+      "position": 7,
+      "cobissId": "513529430",
+      "title": "Lángolás",
+      "author": "Steinbeck, John",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "[s. a.]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/513529430"
+    },
+    {
+      "position": 8,
+      "cobissId": "212917260",
+      "title": "Istočno od raja",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/212917260"
+    },
+    {
+      "position": 9,
+      "cobissId": "212937484",
+      "title": "O miševima i ljudima",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/212937484"
+    },
+    {
+      "position": 10,
+      "cobissId": "215674124",
+      "title": "Plodovi gneva",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/215674124"
+    },
+    {
+      "position": 11,
+      "cobissId": "513393319",
+      "title": "Csatangolások Charleyval : Amerika nyomában",
+      "author": "Steinbeck, John",
+      "type": "dokumentar.lit.",
+      "language": "mađarski",
+      "year": "1973",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/513393319"
+    },
+    {
+      "position": 12,
+      "cobissId": "77131527",
+      "title": "Volt egyszer egy háború : haditudósítások",
+      "author": "Steinbeck, John",
+      "type": "dr.knjiž.oblici",
+      "language": "mađarski",
+      "year": "1964",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/77131527"
+    },
+    {
+      "position": 13,
+      "cobissId": "52870663",
+      "title": "Tortilla sprat",
+      "author": "Štajnbek, Džon",
+      "type": "roman",
+      "language": "hrvatski srpski",
+      "year": "1959",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/52870663"
+    },
+    {
+      "position": 14,
+      "cobissId": "90745863",
+      "title": "O miševima i ljudima ; Riđi poni ; Cannery Row",
+      "author": "Štajnbek, Džon",
+      "type": "roman",
+      "language": "hrvatski",
+      "year": "1962",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/90745863"
+    },
+    {
+      "position": 15,
+      "cobissId": "131919111",
+      "title": "Zima našeg nezadovoljstva : roman",
+      "author": "Štajnbek, Džon",
+      "type": "roman",
+      "language": "srpski",
+      "year": "1964",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/131919111"
+    },
+    {
+      "position": 16,
+      "cobissId": "12104967",
+      "title": "Kralj Artur. 1 : legende o kralju engleskom i vitezima okruglog stola",
+      "author": "|tajnbek, Džon",
+      "type": "roman",
+      "language": "srpski",
+      "year": "1978",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/12104967"
+    },
+    {
+      "position": 17,
+      "cobissId": "184080903",
+      "title": "Kralj Artur : legende o kralju engleskom i vitezima okruglog stola. 2",
+      "author": "Štajnbek, Džon",
+      "type": "roman",
+      "language": "srpski",
+      "year": "1978",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/184080903"
+    },
+    {
+      "position": 18,
+      "cobissId": "512470614",
+      "title": "Híres háborús történetek",
+      "author": "Balzac, Honoré de ...",
+      "type": "kratka proza",
+      "language": "mađarski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/512470614"
+    },
+    {
+      "position": 19,
+      "cobissId": "75773191",
+      "title": "Rasprave iz ruske književnosti",
+      "author": "Kosanović, Bogdan",
+      "type": "esej",
+      "language": "srpski",
+      "year": "1994",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/75773191"
+    },
+    {
+      "position": 20,
+      "cobissId": "191104775",
+      "title": "Léthuzatban : húsz év száz kritikája az Újvidéki Színház előadásairól",
+      "author": "Gerold, László",
+      "type": "dr.knjiž.oblici",
+      "language": "mađarski",
+      "year": "2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/191104775"
+    }
+  ],
+  "fetchedAt": "2026-05-22T06:26:39.223Z"
+}

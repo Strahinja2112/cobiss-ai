@@ -1,0 +1,230 @@
+{
+  "query": "stajnbek",
+  "totalHits": 13,
+  "page": 0,
+  "limit": 13,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "995370",
+      "database": "gbvk-15",
+      "title": "The Grapes of wrath",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/995370",
+      "availability": {
+        "cobissId": "995370",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 2,
+      "cobissId": "54343433",
+      "database": "gbvk-15",
+      "title": "In dubious battle",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/54343433",
+      "availability": {
+        "cobissId": "54343433",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 3,
+      "cobissId": "488490",
+      "database": "gbvk-15",
+      "title": "The Pearl",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2002",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/488490",
+      "availability": {
+        "cobissId": "488490",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 4,
+      "cobissId": "54378249",
+      "database": "gbvk-15",
+      "title": "Cannery row",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2002",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/54378249",
+      "availability": {
+        "cobissId": "54378249",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 5,
+      "cobissId": "2049811775",
+      "database": "gbvk-15",
+      "title": "Of Mice and Men",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2002",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/2049811775",
+      "availability": {
+        "cobissId": "2049811775",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 6,
+      "cobissId": "512482477",
+      "database": "gbvk-15",
+      "title": "Of mice and men",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1993",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/512482477",
+      "availability": {
+        "cobissId": "512482477",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 7,
+      "cobissId": "3178558",
+      "database": "gbvk-15",
+      "title": "Travels with Charley : in search of America",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1986",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/3178558",
+      "availability": {
+        "cobissId": "3178558",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 8,
+      "cobissId": "54303497",
+      "database": "gbvk-15",
+      "title": "The grapes of wrath",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1977",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/54303497",
+      "availability": {
+        "cobissId": "54303497",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 9,
+      "cobissId": "54386697",
+      "database": "gbvk-15",
+      "title": "The grapes of wrath",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1968, cop. 1939",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/54386697",
+      "availability": {
+        "cobissId": "54386697",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 10,
+      "cobissId": "512294567",
+      "database": "gbvk-15",
+      "title": "East of Eden",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1959",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/512294567",
+      "availability": {
+        "cobissId": "512294567",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 11,
+      "cobissId": "4947993",
+      "database": "gbvk-15",
+      "title": "Novels : 1942-1952",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "cop. 2001",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/4947993",
+      "availability": {
+        "cobissId": "4947993",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 12,
+      "cobissId": "832281",
+      "database": "gbvk-15",
+      "title": "The Grapes of wrath and other writings 1936-1941",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "cop. 1996",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/832281",
+      "availability": {
+        "cobissId": "832281",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    },
+    {
+      "position": 13,
+      "cobissId": "18859270",
+      "database": "gbvk-15",
+      "title": "Novels and stories : 1932-1937",
+      "author": "Steinbeck, John, 1902-1968 = Стајнбек, Џон, 1902-1968",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "cop. 1994",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/18859270",
+      "availability": {
+        "cobissId": "18859270",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      }
+    }
+  ],
+  "fetchedAt": "2026-05-22T06:31:48.821Z"
+}

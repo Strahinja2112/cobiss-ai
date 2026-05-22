@@ -1,0 +1,259 @@
+{
+  "query": "programiranje",
+  "totalHits": 6808,
+  "page": 0,
+  "limit": 25,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "122047751",
+      "title": "Specijalne metode u optimizaciji sistema : dinamičko programiranje, kombinatorno programiranje, mrežno programiranje",
+      "author": "Petrović, Radivoj, 1933- = Петровић, Радивој, 1933-",
+      "type": "књига",
+      "language": "српски",
+      "year": "1977",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/122047751"
+    },
+    {
+      "position": 2,
+      "cobissId": "259213836",
+      "title": "Android programiranje, bez oklevanja",
+      "author": "Griffiths, Dawn = Даун, Грифитс ; Griffiths, David, 1969- = Грифитс, Дејвид, 1969-",
+      "type": "књига",
+      "language": "српски",
+      "year": "2018",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/259213836"
+    },
+    {
+      "position": 3,
+      "cobissId": "153567500",
+      "title": "Програмирање 1",
+      "author": "Диховични, Ђорђе, 1965- = Dihovični, Đorđe, 1965- ; Меденица, Мирослав, 1956- = Medenica, Miroslav, 1956-",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/153567500"
+    },
+    {
+      "position": 4,
+      "cobissId": "271472396",
+      "title": "Naučite programiranje",
+      "author": "Freeman, Eric, 1965- = Фриман, Ерик, 1965-",
+      "type": "приручник",
+      "language": "српски",
+      "year": "2018",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/271472396"
+    },
+    {
+      "position": 5,
+      "cobissId": "217076492",
+      "title": "Naučite programiranje",
+      "author": "Fut (Foote), Stiven (Steven), veb programer = Фут (Foote), Стивен (Steven), веб програмер",
+      "type": "књига",
+      "language": "српски",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/217076492"
+    },
+    {
+      "position": 6,
+      "cobissId": "208869900",
+      "title": "Matematičko programiranje",
+      "author": "Pavlović, Ljiljana, 1954- = Павловић, Љиљана, 1954-",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/208869900"
+    },
+    {
+      "position": 7,
+      "cobissId": "179567372",
+      "title": "Inženjersko programiranje",
+      "author": "Šaler, Dragan, 1959- = Шалер, Драган, 1959-",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "2010",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/179567372"
+    },
+    {
+      "position": 8,
+      "cobissId": "143763980",
+      "title": "Matematičko programiranje",
+      "author": "Stanimirović, Predrag, 1959- = Станимировић, Предраг, 1959- ...",
+      "type": "стручна монографија",
+      "language": "српски",
+      "year": "2007",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/143763980"
+    },
+    {
+      "position": 9,
+      "cobissId": "111134476",
+      "title": "Dinamičko programiranje",
+      "author": "Stanojević, Radoslav",
+      "type": "књига",
+      "language": "српски",
+      "year": "2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/111134476"
+    },
+    {
+      "position": 10,
+      "cobissId": "30381319",
+      "title": "Uvod u programiranje računara",
+      "author": "Катанић, Тихомир",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "1986",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/30381319"
+    },
+    {
+      "position": 11,
+      "cobissId": "17934607",
+      "title": "Математичко програмирање",
+      "author": "Вукадиновић, Светозар В., 1932- = Vukadinović, Svetozar V., 1932- ; Цвејић, Стана, 1952- = Cvejić, Stana, 1952-",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "1996",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/17934607"
+    },
+    {
+      "position": 12,
+      "cobissId": "512009362",
+      "title": "Računarsko programiranje",
+      "author": "Dimitrijević, Dimitrije",
+      "type": "књига",
+      "language": "српски",
+      "year": "1989",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/512009362"
+    },
+    {
+      "position": 13,
+      "cobissId": "28796167",
+      "title": "Računarsko programiranje",
+      "author": "Димитријевић, Димитрије",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "1985",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/28796167"
+    },
+    {
+      "position": 14,
+      "cobissId": "37438471",
+      "title": "Programiranje računalnikov",
+      "author": "Bratkovič, Franc",
+      "type": "уџбеник",
+      "language": "словеначки",
+      "year": "1984",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/37438471"
+    },
+    {
+      "position": 15,
+      "cobissId": "35481351",
+      "title": "Programiranje računalnikov",
+      "author": "Bratkovič, Franc",
+      "type": "уџбеник",
+      "language": "словеначки",
+      "year": "1983",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/35481351"
+    },
+    {
+      "position": 16,
+      "cobissId": "41317639",
+      "title": "Računarsko programiranje",
+      "author": "Dimitrijević, Dimitrije, 1936-1983 = Димитријевић, Димитрије, 1936-1983",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "1982",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/41317639"
+    },
+    {
+      "position": 17,
+      "cobissId": "41501447",
+      "title": "Računalniško programiranje",
+      "author": "Virt, Niklaus",
+      "type": "уџбеник",
+      "language": "словеначки",
+      "year": "1981",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/41501447"
+    },
+    {
+      "position": 18,
+      "cobissId": "83891980",
+      "title": "Matematičko programiranje",
+      "author": "Kovačević-Vujčić, Vera, 1947- = Ковачевић-Вујчић, Вера, 1947- ...",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "1980",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/83891980"
+    },
+    {
+      "position": 19,
+      "cobissId": "14042887",
+      "title": "Računalniško programiranje",
+      "author": "Virt, Niklaus",
+      "type": "књига",
+      "language": "словеначки",
+      "year": "1979",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/14042887"
+    },
+    {
+      "position": 20,
+      "cobissId": "25574668",
+      "title": "Višekriterijalno programiranje",
+      "author": "Đurinović, Sanja",
+      "type": "књига",
+      "language": "хрватски",
+      "year": "1978",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/25574668"
+    },
+    {
+      "position": 21,
+      "cobissId": "47569671",
+      "title": "Višekriterijalno programiranje",
+      "author": "Đurinović, Sanja ...",
+      "type": "књига",
+      "language": "хрватски",
+      "year": "1978",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/47569671"
+    },
+    {
+      "position": 22,
+      "cobissId": "512031390",
+      "title": "Višekriterijalno programiranje",
+      "author": "Martić, Ljubomir",
+      "type": "уџбеник",
+      "language": "хрватски",
+      "year": "1978",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/512031390"
+    },
+    {
+      "position": 23,
+      "cobissId": "512794809",
+      "title": "Računarsko programiranje",
+      "author": "Dimitrijević, Dimitrije",
+      "type": "књига",
+      "language": "српски",
+      "year": "1976",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/512794809"
+    },
+    {
+      "position": 24,
+      "cobissId": "512660882",
+      "title": "Računarsko programiranje",
+      "author": "Димитријевић, Димитрије",
+      "type": "књига",
+      "language": "српски",
+      "year": "1975",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/512660882"
+    },
+    {
+      "position": 25,
+      "cobissId": "277463052",
+      "title": "Objektno programiranje 2",
+      "author": "Štrbac, Perica, 1968- = Штрбац, Перица, 1968-",
+      "type": "уџбеник",
+      "language": "српски",
+      "year": "2019",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr/bib/277463052"
+    }
+  ],
+  "fetchedAt": "2026-05-22T06:06:21.525Z"
+}

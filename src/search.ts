@@ -89,11 +89,11 @@ async function main() {
           detail = await enrichBook(book)
           process.stdout.write(` ${detail.availability?.status ?? "?"}\n`)
         } else if (withDetails) {
-          const d = await fetchBookDetails(book.cobissId)
+          const d = await fetchBookDetails(book.cobissId, book.database)
           detail = { ...book, details: d }
           process.stdout.write(` OK\n`)
         } else if (withAvailability) {
-          const a = await fetchAvailability(book.cobissId)
+          const a = await fetchAvailability(book.cobissId, book.database)
           detail = { ...book, availability: a }
           process.stdout.write(` ${a.status}\n`)
         }
