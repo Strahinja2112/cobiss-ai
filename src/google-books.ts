@@ -1,6 +1,6 @@
 import axios from "axios"
 import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "./config.js"
-import type { GoogleBooksData } from "./types.js"
+import type { GoogleDetails } from "./types.js"
 
 function extractIsbn(raw: string): string | null {
   const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/g)]
@@ -11,7 +11,20 @@ function extractIsbn(raw: string): string | null {
   return preferred ?? candidates[0]
 }
 
-export async function fetchGoogleBooks(isbn: string): Promise<GoogleBooksData | null> {
+function pickImageLinks(volumeInfo: Record<string, unknown>): GoogleDetails["imageLinks"] | undefined {
+  const images = volumeInfo.imageLinks as Record<string, string> | undefined
+  if (!images) return undefined
+  return {
+    smallThumbnail: images.smallThumbnail,
+    thumbnail: images.thumbnail,
+    small: images.small,
+    medium: images.medium,
+    large: images.large,
+    extraLarge: images.extraLarge,
+  }
+}
+
+export async function fetchGoogleDetails(isbn: string): Promise<GoogleDetails | null> {
   if (!isbn) return null
 
   const cleanIsbn = extractIsbn(isbn)
@@ -26,40 +39,24 @@ export async function fetchGoogleBooks(isbn: string): Promise<GoogleBooksData | 
       timeout: 10_000,
     })
 
-    const data = resp.data as {
-      totalItems: number
-      items?: Array<{
-        volumeInfo: {
-          title?: string
-          description?: string
-          categories?: string[]
-          pageCount?: number
-          imageLinks?: { thumbnail?: string }
-          averageRating?: number
-          ratingsCount?: number
-          publishedDate?: string
-          maturityRating?: string
-          previewLink?: string
-          infoLink?: string
-        }
-      }>
-    }
-
+    const data = resp.data as { totalItems: number; items?: Array<{ volumeInfo: Record<string, unknown> }> }
     if (!data.totalItems || !data.items?.length) return null
 
-    const info = data.items[0].volumeInfo
+    const v = data.items[0].volumeInfo
 
     return {
-      description: info.description?.slice(0, 2000),
-      categories: info.categories,
-      pageCount: info.pageCount,
-      thumbnail: info.imageLinks?.thumbnail,
-      averageRating: info.averageRating,
-      ratingsCount: info.ratingsCount,
-      publishedDate: info.publishedDate,
-      maturityRating: info.maturityRating,
-      previewLink: info.previewLink,
-      infoLink: info.infoLink,
+      description: (v.description as string)?.slice(0, 3000),
+      categories: v.categories as string[],
+      pageCount: v.pageCount as number,
+      averageRating: v.averageRating as number,
+      ratingsCount: v.ratingsCount as number,
+      subtitle: v.subtitle as string,
+      publisher: v.publisher as string,
+      publishedDate: v.publishedDate as string,
+      language: v.language as string,
+      imageLinks: pickImageLinks(v),
+      previewLink: v.previewLink as string,
+      infoLink: v.infoLink as string,
     }
   } catch {
     return null

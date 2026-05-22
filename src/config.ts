@@ -13,12 +13,12 @@ export const GOOGLE_BOOKS_API_KEY: string | undefined =
 
 export const DEFAULT_PARAMS = {
 	q: "*",
-	db: "gbvk-1",
+	db: "gbvk-15",
 	mat: "books",
-} as const
+} as const;
 
 export const NO_GOOGLE_IMAGE_URL =
-	"https://books.google.rs/googlebooks/images/no_cover_thumb.gif"
+	"https://books.google.rs/googlebooks/images/no_cover_thumb.gif";
 
 export const COBISS_THUMBNAIL_BASE =
-	"https://d.cobiss.net/repository/sr/thumbnails"
+	"https://d.cobiss.net/repository/sr/thumbnails";

@@ -7,9 +7,9 @@ prikuplja detalje o knjigama i proverava dostupnost u bibliotekama.
 
 ```bash
 npm run search -- ljubav
-npm run search -- ljubav --details
 npm run search -- ljubav --available
-npm run search -- ljubav --enrich --google
+npm run search -- ljubav --google
+npm run search -- ljubav --enrich
 npm run search -- --all programiranje
 ```
 
@@ -18,10 +18,9 @@ npm run search -- --all programiranje
 | Opcija | Opis |
 |--------|------|
 | `--all` | Preuzmi sve strane rezultata |
-| `--details, -d` | ISBN, publisher, UDK, fizički opis, napomene... |
 | `--available, -a` | Status dostupnosti (slobodno, pozajmljeno...) |
-| `--enrich, -e` | Detalji + dostupnost zajedno |
-| `--google, -g` | Google Books enrichment (opis, žanr, ocena, slika) |
+| `--google, -g` | Google Books: opis, žanr, ocena, slike |
+| `--enrich, -e` | Sve: dostupnost + Google Books |
 | `--help, -h` | Prikaži pomoć |
 
 ## Struktura projekta

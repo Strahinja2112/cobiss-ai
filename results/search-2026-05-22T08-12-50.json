@@ -1,0 +1,3015 @@
+{
+  "query": "king",
+  "totalHits": 184,
+  "page": 0,
+  "limit": 25,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "269094924",
+      "database": "gbvk-1",
+      "title": "Uspavane lepotice",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947- ; King, Owen, 1977- = Кинг, Овен, 1977-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2018",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/269094924",
+      "availability": {
+        "cobissId": "269094924",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "269094924",
+        "title": "Uspavane lepotice / Stiven King i Oven King ; preveo Vladan Stojanović",
+        "fullTitle": "Uspavane lepotice / Stiven King i Oven King ; preveo Vladan Stojanović",
+        "uniformTitle": "ǂSleeping ǂBeauties. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-<br/>King, Owen, 1977- = Кинг, Овен, 1977-"
+        ],
+        "otherAuthors": "Stojanović, Vladan (prevodilac) <br> Стојановић, Владан (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2018 (Beograd : Vulkan štamparija)",
+        "publishYear": "2018",
+        "isbn": "9788610023688",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "522 str. ; 22 cm",
+        "notes": "Prevod dela: Sleeping Beauties / Stephen King and Owen King <br> Tiraž 1.000 <br> O autorima: str. [523].",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-<br/>King, Owen, 1977- = Кинг, Овен, 1977-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Uspavane lepotice / Stiven King i Oven King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂSleeping ǂBeauties. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2018"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2018 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "522 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan (prevodilac) <br> Стојановић, Владан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-02368-8 (karton sа omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Sleeping Beauties / Stephen King and Owen King <br> Tiraž 1.000 <br> O autorima: str. [523]."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "269094924"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "ZzzWzQEACAAJ",
+        "etag": "R7T3xuw/itI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/ZzzWzQEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Uspavane lepotice",
+          "authors": [
+            "Stephen King",
+            "Owen King"
+          ],
+          "publishedDate": "2018",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610023680"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610023688"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 522,
+          "printType": "BOOK",
+          "categories": [
+            "Demonology"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=ZzzWzQEACAAJ&dq=isbn:9788610023688&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=ZzzWzQEACAAJ&dq=isbn:9788610023688&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Uspavane_lepotice.html?hl=&id=ZzzWzQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=ZzzWzQEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": null
+    },
+    {
+      "position": 2,
+      "cobissId": "159577609",
+      "database": "gbvk-1",
+      "title": "Csak sötéten szereted",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2024",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/159577609",
+      "availability": {
+        "cobissId": "159577609",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "159577609",
+        "title": "Csak sötéten szereted / Stephen King ; [fordította Dranka Anita et al.]",
+        "fullTitle": "Csak sötéten szereted / Stephen King ; [fordította Dranka Anita et al.]",
+        "uniformTitle": "You like it darker. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Dranka, Anita (prevodilac) <br> Дранка, Анита (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2024 (Debrecen : Alföldi Ny.)",
+        "publishYear": "2024",
+        "isbn": "9789635049431",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "520 p. ; 24 cm",
+        "notes": "Eredeti cím: You like it darker.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Csak sötéten szereted / Stephen King ; [fordította Dranka Anita et al.]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "You like it darker. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2024"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2024 (Debrecen : Alföldi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "520 p. ; 24 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Dranka, Anita (prevodilac) <br> Дранка, Анита (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-943-1 (kötött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: You like it darker."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "159577609"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 3,
+      "cobissId": "116035337",
+      "database": "gbvk-1",
+      "title": "Bili Samers",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2023",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/116035337",
+      "availability": {
+        "cobissId": "116035337",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "116035337",
+        "title": "Bili Samers / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Bili Samers / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Billy Summers. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2023 (Beograd : Vulkan štamparija)",
+        "publishYear": "2023",
+        "isbn": "9788610047127",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "446 str. ; 22 cm",
+        "notes": "Prevod dela: Billy Summers <br> Tiraž 1.000 <br> Na presavijenom delu omotnog lista autorov portret i beleška o njemu.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/116035337/72001/bili.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Bili Samers / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Billy Summers. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2023"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2023 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "446 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-04712-7 (karton s omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Billy Summers <br> Tiraž 1.000 <br> Na presavijenom delu omotnog lista autorov portret i beleška o njemu."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/116035337/72001/bili.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "116035337"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "gcRB0AEACAAJ",
+        "etag": "UuCkMyVCJFg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/gcRB0AEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Bili Samers",
+          "authors": [
+            "Stephen King"
+          ],
+          "publishedDate": "2023",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610047121"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610047127"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=gcRB0AEACAAJ&dq=isbn:9788610047127&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=gcRB0AEACAAJ&dq=isbn:9788610047127&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Bili_Samers.html?hl=&id=gcRB0AEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=gcRB0AEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/116035337"
+    },
+    {
+      "position": 4,
+      "cobissId": "125351689",
+      "database": "gbvk-1",
+      "title": "Kristina",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2023",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/125351689",
+      "availability": {
+        "cobissId": "125351689",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "125351689",
+        "title": "Kristina / Stiven King ; preveo Vladan Stojanović",
+        "fullTitle": "Kristina / Stiven King ; preveo Vladan Stojanović",
+        "uniformTitle": "Christine. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2023 (Beograd : Vulkan štamparija)",
+        "publishYear": "2023",
+        "isbn": "9788610049244",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "526 str. ; 22 cm",
+        "notes": "Prevod dela: Christine / Stephen King <br> Tiraž 1.000 <br> Na presavijenom delu omotnog lista autorova slika i beleška o njemu <br> O piscu: str. [527].",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/125351689/72002/kristina.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Kristina / Stiven King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Christine. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2023"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2023 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "526 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-04924-4 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Christine / Stephen King <br> Tiraž 1.000 <br> Na presavijenom delu omotnog lista autorova slika i beleška o njemu <br> O piscu: str. [527]."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/125351689/72002/kristina.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "125351689"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "hMNa0QEACAAJ",
+        "etag": "J9aW8Agb/5E",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/hMNa0QEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Kristina",
+          "authors": [
+            "Stephen King"
+          ],
+          "publishedDate": "2023",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610049248"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610049244"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=hMNa0QEACAAJ&dq=isbn:9788610049244&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=hMNa0QEACAAJ&dq=isbn:9788610049244&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Kristina.html?hl=&id=hMNa0QEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=hMNa0QEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/125351689"
+    },
+    {
+      "position": 5,
+      "cobissId": "159711753",
+      "database": "gbvk-1",
+      "title": "Az. [1]",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2023",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/159711753",
+      "availability": {
+        "cobissId": "159711753",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "159711753",
+        "title": "Az. [1] / Stephen King ; [fordította Hamvai Kornél... et al.]",
+        "fullTitle": "Az. [1] / Stephen King ; [fordította Hamvai Kornél... et al.]",
+        "uniformTitle": "It. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Hamvai, Kornél, 1969- (prevodilac) <br> Хамваи, Корнел, 1969- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2023 (Debrecen : Alföldi Ny.)",
+        "publishYear": "2023",
+        "isbn": "9789635041060",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "487 p. ; 23 cm",
+        "notes": "Eredeti cím: It.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Az. [1] / Stephen King ; [fordította Hamvai Kornél... et al.]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "It. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2023"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2023 (Debrecen : Alföldi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "487 p. ; 23 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Hamvai, Kornél, 1969- (prevodilac) <br> Хамваи, Корнел, 1969- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-106-0 (fűzött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: It."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "159711753"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 6,
+      "cobissId": "159712521",
+      "database": "gbvk-1",
+      "title": "Az. [2]",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2023",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/159712521",
+      "availability": {
+        "cobissId": "159712521",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "159712521",
+        "title": "Az. [2] / Stephen King ; [fordította Hamvai Kornél... et al.]",
+        "fullTitle": "Az. [2] / Stephen King ; [fordította Hamvai Kornél... et al.]",
+        "uniformTitle": "It. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Hamvai, Kornél, 1969- (prevodilac) <br> Хамваи, Корнел, 1969- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2023 (Debrecen : Alföldi Ny.)",
+        "publishYear": "2023",
+        "isbn": "9789635041060",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "690 p. ; 23 cm",
+        "notes": "Eredeti cím: It.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Az. [2] / Stephen King ; [fordította Hamvai Kornél... et al.]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "It. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2023"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2023 (Debrecen : Alföldi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "690 p. ; 23 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Hamvai, Kornél, 1969- (prevodilac) <br> Хамваи, Корнел, 1969- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-106-0 (fűzött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: It."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "159712521"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 7,
+      "cobissId": "20698121",
+      "database": "gbvk-1",
+      "title": "Zmajeve oči",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2020",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/20698121",
+      "availability": {
+        "cobissId": "20698121",
+        "database": "gbvk-1",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "20698121",
+        "title": "Zmajeve oči / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Zmajeve oči / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "ǂThe ǂЕyes of the Dragon. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2020 (Beograd : Vulkan štamparija)",
+        "publishYear": "2020",
+        "isbn": "9788610034240",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "377 str. ; 22 cm",
+        "notes": "Prevod dela: The eyes of the dragon <br> Tiraž 1.000 <br> Na omotu beleške o autoru i delu s autorovom slikom.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/20698121/12201/oci.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Zmajeve oči / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂЕyes of the Dragon. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2020"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2020 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "377 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-03424-0 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The eyes of the dragon <br> Tiraž 1.000 <br> Na omotu beleške o autoru i delu s autorovom slikom."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/20698121/12201/oci.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "20698121"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/20698121"
+    },
+    {
+      "position": 8,
+      "cobissId": "30381065",
+      "database": "gbvk-1",
+      "title": "Emelkedés",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2020",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/30381065",
+      "availability": {
+        "cobissId": "30381065",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "30381065",
+        "title": "Emelkedés / Stephen King ; [fordítota Pék Zoltán]",
+        "fullTitle": "Emelkedés / Stephen King ; [fordítota Pék Zoltán]",
+        "uniformTitle": "Elevation. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Pék, Zoltán, 1971- (prevodilac) <br> Пек, Золтан, 1971- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2020 (Debrecen : Alföldi Ny.)",
+        "publishYear": "2020",
+        "isbn": "9789635040926",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "262 p. ; 20 cm",
+        "notes": "Eredeti cím: Elevation",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Emelkedés / Stephen King ; [fordítota Pék Zoltán]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Elevation. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2020"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2020 (Debrecen : Alföldi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "262 p. ; 20 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Pék, Zoltán, 1971- (prevodilac) <br> Пек, Золтан, 1971- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-092-6 (fűzött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: Elevation"
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "30381065"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 9,
+      "cobissId": "30612489",
+      "database": "gbvk-1",
+      "title": "Tortúra",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2020",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/30612489",
+      "availability": {
+        "cobissId": "30612489",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "30612489",
+        "title": "Tortúra / King Stephen ; [fordította Szántó Judit]",
+        "fullTitle": "Tortúra / King Stephen ; [fordította Szántó Judit]",
+        "uniformTitle": "Misery. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Szántó, Judit, 1932-2016 (autor) <br> Санто, Јудит, 1932-2016 (autor)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2020",
+        "publishYear": "2020",
+        "isbn": "9789635041558",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "458, [1] p. ; 20 cm",
+        "notes": "Eredeti cím: Misery",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Tortúra / King Stephen ; [fordította Szántó Judit]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Misery. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2020"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2020"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "458, [1] p. ; 20 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Szántó, Judit, 1932-2016 (autor) <br> Санто, Јудит, 1932-2016 (autor)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-155-8 (fűzött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: Misery"
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "30612489"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 10,
+      "cobissId": "113467657",
+      "database": "gbvk-1",
+      "title": "Az intézet",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2020",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/113467657",
+      "availability": {
+        "cobissId": "113467657",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "113467657",
+        "title": "Az intézet / Stephen King ; [ford. Bihari György]",
+        "fullTitle": "Az intézet / Stephen King ; [ford. Bihari György]",
+        "uniformTitle": "ǂThe ǂInstitute. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Bihari, György, 1952-2020 (prevodilac) <br> Бихари, Ђерђ, 1952-2020 (prevodilac)",
+        "type": "roman",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2020",
+        "publishYear": "2020",
+        "isbn": "9789635041718",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "488 p. ; 24 cm",
+        "notes": "Eredeti cím: ǂThe ǂInstitute",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Az intézet / Stephen King ; [ford. Bihari György]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂInstitute. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2020"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2020"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "488 p. ; 24 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Bihari, György, 1952-2020 (prevodilac) <br> Бихари, Ђерђ, 1952-2020 (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-171-8 (kötött, borítóval.)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: ǂThe ǂInstitute"
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "113467657"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "SP8xzgEACAAJ",
+        "etag": "U8F4siRA3vg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/SP8xzgEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Az Intézet",
+          "publishedDate": "2020",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "9635041713"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9789635041718"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "hu",
+          "previewLink": "http://books.google.com/books?id=SP8xzgEACAAJ&dq=isbn:9789635041718&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=SP8xzgEACAAJ&dq=isbn:9789635041718&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Az_Int%C3%A9zet.html?hl=&id=SP8xzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=SP8xzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": null
+    },
+    {
+      "position": 11,
+      "cobissId": "283940108",
+      "database": "gbvk-1",
+      "title": "Institut",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2020",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/283940108",
+      "availability": {
+        "cobissId": "283940108",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "283940108",
+        "title": "Institut / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Institut / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "ǂThe ǂInstitute. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2020 (Beograd : Vulkan štamparija)",
+        "publishYear": "2020",
+        "isbn": "9788610031201",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "459 str. ; 22 cm",
+        "notes": "Prevod dela: The institute / Stephen King <br> Tiraž 1.000 <br> Na presavijenom delu kor. lista beleška o autoru s njegovom slikom.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/283940108/42423/Institut.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Institut / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂInstitute. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2020"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2020 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "459 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-03120-1 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The institute / Stephen King <br> Tiraž 1.000 <br> Na presavijenom delu kor. lista beleška o autoru s njegovom slikom."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/283940108/42423/Institut.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "283940108"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "TdwuzgEACAAJ",
+        "etag": "27Zax/FBXUk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/TdwuzgEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Institut",
+          "publishedDate": "2020",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610031209"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610031201"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=TdwuzgEACAAJ&dq=isbn:9788610031201&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=TdwuzgEACAAJ&dq=isbn:9788610031201&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Institut.html?hl=&id=TdwuzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=TdwuzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": null
+    },
+    {
+      "position": 12,
+      "cobissId": "30334729",
+      "database": "gbvk-1",
+      "title": "Álom doktor",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2019",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/30334729",
+      "availability": {
+        "cobissId": "30334729",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "30334729",
+        "title": "Álom doktor / Stephen King ; [fordította Szántó Judit]",
+        "fullTitle": "Álom doktor / Stephen King ; [fordította Szántó Judit]",
+        "uniformTitle": "Doctor Sleep. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Szántó, Judit, 1932-2016 (prevodilac) <br> Санто, Јудит, 1932-2016 (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, ozbiljna (nije lepa knjiž.)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2019 ([Szekszárd] : Szekszárdi Ny.)",
+        "publishYear": "2019",
+        "isbn": "9789635041329",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "564 p. ; 24 cm",
+        "notes": "Eredeti cím: Doctor Sleep.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Álom doktor / Stephen King ; [fordította Szántó Judit]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Doctor Sleep. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, ozbiljna (nije lepa knjiž.)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2019"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2019 ([Szekszárd] : Szekszárdi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "564 p. ; 24 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Szántó, Judit, 1932-2016 (prevodilac) <br> Санто, Јудит, 1932-2016 (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-504-132-9 (kötött, borítóval)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: Doctor Sleep."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "30334729"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 13,
+      "cobissId": "274302220",
+      "database": "gbvk-1",
+      "title": "Autsajder",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2019",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/274302220",
+      "availability": {
+        "cobissId": "274302220",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "274302220",
+        "title": "Autsajder / Stеphen King ; preveo Vladan Stojanović",
+        "fullTitle": "Autsajder / Stеphen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Outsider. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2019 (Beograd : Vulkan štamparija)",
+        "publishYear": "2019",
+        "isbn": "9788610025484",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "429 str. ; 22 cm",
+        "notes": "Prevod dela: Outsider / Stephen King <br> Tiraž 1.000 <br> Na koricama beleška o autoru s njegovom slikom.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/274302220/12184/tttttttttttttt.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Autsajder / Stеphen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Outsider. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2019"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2019 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "429 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan, 1964- (prevodilac) <br> Стојановић, Владан, 1964- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-02548-4 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Outsider / Stephen King <br> Tiraž 1.000 <br> Na koricama beleška o autoru s njegovom slikom."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/274302220/12184/tttttttttttttt.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "274302220"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/274302220"
+    },
+    {
+      "position": 14,
+      "cobissId": "254544396",
+      "database": "gbvk-1",
+      "title": "Kraj bdenja",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2018",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/254544396",
+      "availability": {
+        "cobissId": "254544396",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "254544396",
+        "title": "Kraj bdenja / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Kraj bdenja / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "End of Watch. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Stojanović, Vladan (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2018 (Beograd : Vulkan štamparija)",
+        "publishYear": "2018",
+        "isbn": "9788610021660",
+        "udk": "821.111(73)-31",
+        "series": "Mercedes ubica ; 3",
+        "physicalDescription": "334 str. ; 22 cm",
+        "notes": "Prevod dela: End of watch / Stephen King <br> \"Spektakularno finale bestseler trilogije koja je započela knjigom 'Gospodin Mercedes'.\" --&gt; omot <br> Tiraž 1.000 <br> Na omotu beleška o autoru i delu s autorovom slikom.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/254544396/12181/krajjjj.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Kraj bdenja / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "End of Watch. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2018"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2018 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "334 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Stojanović, Vladan (prevodilac)"
+          },
+          "seriesCard": {
+            "name": "Zbirka",
+            "value": "Mercedes ubica ; 3"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-02166-0 (karton)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: End of watch / Stephen King <br> \"Spektakularno finale bestseler trilogije koja je započela knjigom 'Gospodin Mercedes'.\" --&gt; omot <br> Tiraž 1.000 <br> Na omotu beleška o autoru i delu s autorovom slikom."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/254544396/12181/krajjjj.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "254544396"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/254544396"
+    },
+    {
+      "position": 15,
+      "cobissId": "184022793",
+      "database": "gbvk-1",
+      "title": "Rémálmok bazára : elbeszélések",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2017",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/184022793",
+      "availability": {
+        "cobissId": "184022793",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "184022793",
+        "title": "Rémálmok bazára : elbeszélések / Stephen King ; [fordította Bartók Imre et al.]",
+        "fullTitle": "Rémálmok bazára : elbeszélések / Stephen King ; [fordította Bartók Imre et al.]",
+        "uniformTitle": "ǂThe ǂBazaar of Bad Dreams. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Bartók, Imre, 1985- (prevodilac) <br> Барток, Имре, 1985- (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2017",
+        "publishYear": "2017",
+        "isbn": "9789634053491",
+        "udk": "821.111(73)-32",
+        "physicalDescription": "726 p. ; 24 cm",
+        "notes": "Eredeti cím: The Bazasr of Bad Dreams.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Rémálmok bazára : elbeszélések / Stephen King ; [fordította Bartók Imre et al.]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂBazaar of Bad Dreams. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2017"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2017"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "726 p. ; 24 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Bartók, Imre, 1985- (prevodilac) <br> Барток, Имре, 1985- (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-405-349-1 (kötött)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: The Bazasr of Bad Dreams."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-32"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "184022793"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 16,
+      "cobissId": "238160140",
+      "database": "gbvk-1",
+      "title": "To",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2017",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/238160140",
+      "availability": {
+        "cobissId": "238160140",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "238160140",
+        "title": "To / Stephen King ; preveo Goran Skrobonja",
+        "fullTitle": "To / Stephen King ; preveo Goran Skrobonja",
+        "uniformTitle": "It. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Скробоња, Горан (prevodilac)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2017 (Beograd : Vulkan štamparija)",
+        "publishYear": "2017",
+        "isbn": "9788610005486",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "798 str. ; 22 cm",
+        "notes": "Prevod dela: It <br> Tiraž 1.000.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/238160140/12157/to_vv.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "To / Stephen King ; preveo Goran Skrobonja"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "It. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2017"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "2. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2017 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "798 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Скробоња, Горан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-00548-6 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: It <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/238160140/12157/to_vv.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "238160140"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/238160140"
+    },
+    {
+      "position": 17,
+      "cobissId": "239462668",
+      "database": "gbvk-1",
+      "title": "Noćna smena",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2017",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/239462668",
+      "availability": {
+        "cobissId": "239462668",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "239462668",
+        "title": "Noćna smena / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Noćna smena / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Night shift. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Стојановић, Владан (prevodilac) <br> MacDonald, John, 1916-1986 (autor dodatnog teksta)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2017 (Beograd : Vulkan štamparija)",
+        "publishYear": "2017",
+        "isbn": "9788610020366",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "351 str. ; 22 cm",
+        "notes": "Prevod dela: Night shift <br> Tiraž 1.000 <br> Str. 7-10: Uvod / Džon D. Makdonald <br> Na omotu beleška o autoru s njegovom slikom.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/239462668/12207/nocna.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Noćna smena / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Night shift. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2017"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2017 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "351 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Стојановић, Владан (prevodilac) <br> MacDonald, John, 1916-1986 (autor dodatnog teksta)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-02036-6 (karton s omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Night shift <br> Tiraž 1.000 <br> Str. 7-10: Uvod / Džon D. Makdonald <br> Na omotu beleška o autoru s njegovom slikom."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/239462668/12207/nocna.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "239462668"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/239462668"
+    },
+    {
+      "position": 18,
+      "cobissId": "226341644",
+      "database": "gbvk-1",
+      "title": "Ko nađe - njegovo",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2016",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/226341644",
+      "availability": {
+        "cobissId": "226341644",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "226341644",
+        "title": "Ko nađe - njegovo / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Ko nađe - njegovo / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Finders Keepers. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Стојановић, Владан (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2016 (Beograd : Vulkan štamparija)",
+        "publishYear": "2016",
+        "isbn": "9788610018080",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "342 str. ; 22 cm",
+        "notes": "Prevod dela: Finders Keepers / Stephen King <br> Tiraž 1.000. <br> Beleška autora: str. [343].",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/226341644/12182/mmmmmmmmmmmmmmmmmmm.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Ko nađe - njegovo / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Finders Keepers. српски језик"
+          },
+          "otherTitles": {
+            "name": "Ostali naslovi",
+            "value": "Ko nađe-njegovo"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2016"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2016 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "342 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Стојановић, Владан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-01808-0 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Finders Keepers / Stephen King <br> Tiraž 1.000. <br> Beleška autora: str. [343]."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/226341644/12182/mmmmmmmmmmmmmmmmmmm.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "226341644"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/226341644"
+    },
+    {
+      "position": 19,
+      "cobissId": "227640844",
+      "database": "gbvk-1",
+      "title": "Mrtva zona",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2016",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/227640844",
+      "availability": {
+        "cobissId": "227640844",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "227640844",
+        "title": "Mrtva zona / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Mrtva zona / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "ǂThe ǂDead Zone. српски језик",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Стојановић, Владан (prevodilac)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2016 (Beograd : Vulkan štamparija)",
+        "publishYear": "2016",
+        "isbn": "9788610018394",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "397 str. ; 22 cm",
+        "notes": "Prevod dela: The Dead Zone / Stephen King <br> Tiraž 1.000 <br> O autoru: str. [399].",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/227640844/12198/mrtva.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Mrtva zona / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂDead Zone. српски језик"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2016"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2016 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "397 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Стојановић, Владан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-01839-4 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The Dead Zone / Stephen King <br> Tiraž 1.000 <br> O autoru: str. [399]."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/227640844/12198/mrtva.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "227640844"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "rD--wgEACAAJ",
+        "etag": "Y8v5rJULVTw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/rD--wgEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Mrtva zona",
+          "authors": [
+            "Stephen King"
+          ],
+          "publishedDate": "2016",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610018393"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610018394"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 397,
+          "printType": "BOOK",
+          "categories": [
+            "Coma"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=rD--wgEACAAJ&dq=isbn:9788610018394&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=rD--wgEACAAJ&dq=isbn:9788610018394&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Mrtva_zona.html?hl=&id=rD--wgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=rD--wgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/227640844"
+    },
+    {
+      "position": 20,
+      "cobissId": "12958620",
+      "database": "gbvk-1",
+      "title": "Újjászületés",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "mađarski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/12958620",
+      "availability": {
+        "cobissId": "12958620",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "12958620",
+        "title": "Újjászületés / Stephen King ; [fordította Dranka Anita]",
+        "fullTitle": "Újjászületés / Stephen King ; [fordította Dranka Anita]",
+        "uniformTitle": "Revival. mađarski jezik",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Dranka, Anita (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "mađarski",
+        "publisher": "Budapest : Európa, 2015 ([Szekszárd] : Szekszárdi Ny.)",
+        "publishYear": "2015",
+        "isbn": "9789634051107",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "379 p. ; 24 cm",
+        "notes": "Eredeti cím: Revival.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Újjászületés / Stephen King ; [fordította Dranka Anita]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Revival. mađarski jezik"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "mađarski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2015"
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Budapest : Európa, 2015 ([Szekszárd] : Szekszárdi Ny.)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "379 p. ; 24 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Dranka, Anita (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-963-405-110-7 (kötött, borítóval)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Eredeti cím: Revival."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "12958620"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "_6lXjwEACAAJ",
+        "etag": "/8Vw8wWrEtk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_6lXjwEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Újjászületés",
+          "authors": [
+            "Stephen King"
+          ],
+          "publishedDate": "2015",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "9634051103"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9789634051107"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 379,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "language": "hu",
+          "previewLink": "http://books.google.com/books?id=_6lXjwEACAAJ&dq=isbn:9789634051107&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=_6lXjwEACAAJ&dq=isbn:9789634051107&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/%C3%9Ajj%C3%A1sz%C3%BClet%C3%A9s.html?hl=&id=_6lXjwEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_6lXjwEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": null
+    },
+    {
+      "position": 21,
+      "cobissId": "218107148",
+      "database": "gbvk-1",
+      "title": "Mizeri",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/218107148",
+      "availability": {
+        "cobissId": "218107148",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "218107148",
+        "title": "Mizeri / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Mizeri / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Misery. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Стојановић, Владан (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2015 (Beograd : Vulkan štamparija)",
+        "publishYear": "2015",
+        "isbn": "9788610015430",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "310 str. ; 22 cm",
+        "notes": "Prevod dela: Misery / Stephen King <br> Autorova slika i beleška o njemu na presavijenom omotu <br> Tiraž 1.000.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Mizeri / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Misery. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2015"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2015 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "310 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Стојановић, Владан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-01543-0 (karton s omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Misery / Stephen King <br> Autorova slika i beleška o njemu na presavijenom omotu <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "218107148"
+          }
+        }
+      },
+      "googleBooks": {
+        "id": "X5kTvwEACAAJ",
+        "etag": "/hQFfYTCl6k",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/X5kTvwEACAAJ",
+        "kind": "books#volumes",
+        "volumeInfo": {
+          "title": "Mizeri",
+          "authors": [
+            "Stephen King"
+          ],
+          "publishedDate": "2015",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8610015432"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788610015430"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 310,
+          "printType": "BOOK",
+          "categories": [
+            "Fans (Persons)"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=X5kTvwEACAAJ&dq=isbn:9788610015430&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=X5kTvwEACAAJ&dq=isbn:9788610015430&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Mizeri.html?hl=&id=X5kTvwEACAAJ"
+        },
+        "saleInfo": {
+          "country": "RS",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "RS",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=X5kTvwEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      "imageUrl": null
+    },
+    {
+      "position": 22,
+      "cobissId": "219576332",
+      "database": "gbvk-1",
+      "title": "Buđenje",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2015",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/219576332",
+      "availability": {
+        "cobissId": "219576332",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "219576332",
+        "title": "Buđenje / Stephen King ; preveo Vladan Stojanović",
+        "fullTitle": "Buđenje / Stephen King ; preveo Vladan Stojanović",
+        "uniformTitle": "Revival. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Стојановић, Владан (prevodilac)",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2015 (Beograd : Vulkan štamparija)",
+        "publishYear": "2015",
+        "isbn": "9788610015669",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "318 str. ; 22 cm",
+        "notes": "Prevod dela: Revival / Stephen King <br> Tiraž 1.000.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/219576332/12185/budjenje.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Buđenje / Stephen King ; preveo Vladan Stojanović"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "Revival. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "materialDescr100e": {
+            "name": "Ciljna grupa",
+            "value": "odrasli, opšte (lepa književnost)"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2015"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2015 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "318 str. ; 22 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Стојановић, Владан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-01566-9 (karton sa omotom)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: Revival / Stephen King <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/219576332/12185/budjenje.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "219576332"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/219576332"
+    },
+    {
+      "position": 23,
+      "cobissId": "206224140",
+      "database": "gbvk-1",
+      "title": "Zelena milja",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/206224140",
+      "availability": {
+        "cobissId": "206224140",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "206224140",
+        "title": "Zelena milja / Stephen King ; [prevela Ana Drenjanin]",
+        "fullTitle": "Zelena milja / Stephen King ; [prevela Ana Drenjanin]",
+        "uniformTitle": "ǂThe ǂGreen Mile. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Drenjanin, Ana (prevodilac)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan)",
+        "publishYear": "2014",
+        "isbn": "9788610009316",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "327 str. ; 21 cm",
+        "notes": "Prevod dela: The Green Mile / Stephen King <br> Tiraž 1.000.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/206224140/12152/1111111111111111.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Zelena milja / Stephen King ; [prevela Ana Drenjanin]"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂGreen Mile. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2014"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "327 str. ; 21 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Drenjanin, Ana (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-00931-6 (broš.)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The Green Mile / Stephen King <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/206224140/12152/1111111111111111.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "206224140"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/206224140"
+    },
+    {
+      "position": 24,
+      "cobissId": "206297100",
+      "database": "gbvk-1",
+      "title": "Talisman",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/206297100",
+      "availability": {
+        "cobissId": "206297100",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "206297100",
+        "title": "Talisman / Stephen King ; preveli Svetlana Bezdanov-Gostimir i Ranko Nedeljković",
+        "fullTitle": "Talisman / Stephen King ; preveli Svetlana Bezdanov-Gostimir i Ranko Nedeljković",
+        "uniformTitle": "ǂThe ǂTalisman. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Bezdanov-Gostimir, Svetlana (prevodilac) <br> Nedeljković, Ranko (prevodilac)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan)",
+        "publishYear": "2014",
+        "isbn": "9788610009378",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "581 str. ; 21 cm",
+        "notes": "Prevod dela: The Talisman / Stephen King <br> Tiraž 1.000.",
+        "subjects": [],
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Talisman / Stephen King ; preveli Svetlana Bezdanov-Gostimir i Ranko Nedeljković"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂTalisman. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2014"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "581 str. ; 21 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Bezdanov-Gostimir, Svetlana (prevodilac) <br> Nedeljković, Ranko (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-00937-8 (broš.)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The Talisman / Stephen King <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "206297100"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": null
+    },
+    {
+      "position": 25,
+      "cobissId": "207778828",
+      "database": "gbvk-1",
+      "title": "Isijavanje",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "srpski",
+      "year": "2014",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/207778828",
+      "availability": {
+        "cobissId": "207778828",
+        "database": "gbvk-1",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "details": {
+        "cobissId": "207778828",
+        "title": "Isijavanje / Stephen King ; preveo Dušan Mišić",
+        "fullTitle": "Isijavanje / Stephen King ; preveo Dušan Mišić",
+        "uniformTitle": "ǂThe ǂShining. srp",
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "otherAuthors": "Мишић, Душан (prevodilac)",
+        "type": "roman",
+        "language": "srpski",
+        "publisher": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan štamparija)",
+        "publishYear": "2014",
+        "isbn": "9788610008371",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "390 str. ; 21 cm",
+        "notes": "Prevod dela: The Shining <br> Tiraž 1.000.",
+        "subjects": [],
+        "digitalContentsUrl": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/207778828/12192/isijavanje.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>",
+        "raw": {
+          "author700701": {
+            "name": "Autor - osoba",
+            "value": "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+          },
+          "titleCard": {
+            "name": "Naslov",
+            "value": "Isijavanje / Stephen King ; preveo Dušan Mišić"
+          },
+          "uniformTitle": {
+            "name": "Jedinstveni naslov",
+            "value": "ǂThe ǂShining. srp"
+          },
+          "materialDescr": {
+            "name": "Vrsta građe",
+            "value": "roman"
+          },
+          "languageCard": {
+            "name": "Jezik",
+            "value": "srpski"
+          },
+          "publishDate": {
+            "name": "Godina",
+            "value": "2014"
+          },
+          "edition": {
+            "name": "Izdanje",
+            "value": "1. izd."
+          },
+          "publisherCard": {
+            "name": "Izdavanje i proizvodnja",
+            "value": "Beograd : Vulkan izdavaštvo, 2014 (Beograd : Vulkan štamparija)"
+          },
+          "ph_descriptionCard": {
+            "name": "Fizički opis",
+            "value": "390 str. ; 21 cm"
+          },
+          "otherAuthor702": {
+            "name": "Drugi autori - osoba",
+            "value": "Мишић, Душан (prevodilac)"
+          },
+          "isbnCard": {
+            "name": "ISBN",
+            "value": "978-86-10-00837-1 (broš.)"
+          },
+          "notesCard": {
+            "name": "Napomene",
+            "value": "Prevod dela: The Shining <br> Tiraž 1.000."
+          },
+          "udkCard": {
+            "name": "UDK",
+            "value": "821.111(73)-31"
+          },
+          "urlIgnoreDuplicates": {
+            "name": "Link",
+            "value": "<elink-details provider='DCOBISS' link='https://d.cobiss.net/repository/sr/files/207778828/12192/isijavanje.jpg' note='&emsp;Format(i): image/jpeg'></elink-details>"
+          },
+          "cobissid": {
+            "name": "COBISS.SR-ID",
+            "value": "207778828"
+          }
+        }
+      },
+      "googleBooks": null,
+      "imageUrl": "https://d.cobiss.net/repository/sr/thumbnails/207778828"
+    }
+  ],
+  "fetchedAt": "2026-05-22T08:12:50.655Z"
+}

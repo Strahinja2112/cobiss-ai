@@ -7,21 +7,9 @@ export interface SearchOptions {
 }
 
 export type MaterialType =
-  | 'allmaterials'
-  | 'books'
-  | 'serials'
-  | 'articles'
-  | 'ebooks'
-  | 'audiobooks'
-  | 'sound'
-  | 'video'
-  | 'evideo'
-  | 'maps'
-  | 'music'
-  | 'pict'
-  | 'toys'
-  | 'events'
-  | 'allrecords'
+  | 'allmaterials' | 'books' | 'serials' | 'articles' | 'ebooks'
+  | 'audiobooks' | 'sound' | 'video' | 'evideo' | 'maps'
+  | 'music' | 'pict' | 'toys' | 'events' | 'allrecords'
 
 export interface BookEntry {
   position: number
@@ -44,37 +32,13 @@ export interface SearchResult {
   fetchedAt: string
 }
 
-export interface FullDetailRecord {
-  name: string
-  value: string
-}
-
-export interface FullDetailsResponse {
-  author700701?: FullDetailRecord
-  titleCard?: FullDetailRecord
-  uniformTitle?: FullDetailRecord
-  materialDescr?: FullDetailRecord
-  languageCard?: FullDetailRecord
-  publishDate?: FullDetailRecord
-  publisherCard?: FullDetailRecord
-  ph_descriptionCard?: FullDetailRecord
-  otherAuthor702?: FullDetailRecord
-  seriesCard?: FullDetailRecord
-  isbnCard?: FullDetailRecord
-  notesCard?: FullDetailRecord
-  udkCard?: FullDetailRecord
-  cobissid?: FullDetailRecord
-  [key: string]: FullDetailRecord | undefined
-}
-
-export interface BookDetail {
-  cobissId: string
-  title: string
+export interface CobissDetail {
   fullTitle?: string
   uniformTitle?: string
   authors: string[]
   otherAuthors?: string
   type?: string
+  audience?: string
   language?: string
   publisher?: string
   publishYear?: string
@@ -84,6 +48,8 @@ export interface BookDetail {
   physicalDescription?: string
   notes?: string
   subjects?: string[]
+  otherSubjects?: string
+  digitalContentsUrl?: string
 }
 
 export interface Availability {
@@ -93,24 +59,37 @@ export interface Availability {
   statusRaw: string
 }
 
-export interface GoogleBooksData {
+export interface GoogleImages {
+  smallThumbnail?: string
+  thumbnail?: string
+  small?: string
+  medium?: string
+  large?: string
+  extraLarge?: string
+}
+
+export interface GoogleDetails {
   description?: string
   categories?: string[]
   pageCount?: number
-  thumbnail?: string
   averageRating?: number
   ratingsCount?: number
+  subtitle?: string
+  publisher?: string
   publishedDate?: string
-  maturityRating?: string
+  language?: string
+  imageLinks?: GoogleImages
   previewLink?: string
   infoLink?: string
 }
 
 export interface BookWithDetails extends BookEntry {
-  details?: BookDetail
+  cobiss: CobissDetail
   availability?: Availability
-  googleBooks?: GoogleBooksData | null
+  google?: GoogleDetails | null
   imageUrl?: string | null
+  description?: string
+  aiContext?: string
 }
 
 export interface ScraperError {
@@ -120,19 +99,9 @@ export interface ScraperError {
 }
 
 export const MATERIAL_TYPE_MAP: Record<string, string> = {
-  books: "books",
-  allmaterials: "allmaterials",
-  serials: "serials",
-  articles: "articles",
-  ebooks: "ebooks",
-  audiobooks: "audiobooks",
-  sound: "sound",
-  video: "video",
-  evideo: "evideo",
-  maps: "maps",
-  music: "music",
-  pict: "pict",
-  toys: "toys",
-  events: "events",
+  books: "books", allmaterials: "allmaterials", serials: "serials",
+  articles: "articles", ebooks: "ebooks", audiobooks: "audiobooks",
+  sound: "sound", video: "video", evideo: "evideo", maps: "maps",
+  music: "music", pict: "pict", toys: "toys", events: "events",
   allrecords: "allrecords",
 }

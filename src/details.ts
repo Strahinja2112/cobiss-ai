@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio"
 import { http, delay } from "./http-client.js"
-import type { BookDetail, FullDetailsResponse } from "./types.js"
+import type { CobissDetail } from "./types.js"
 
 function cleanIsbn(raw: string | undefined): string | undefined {
   if (!raw) return undefined
@@ -12,41 +12,33 @@ function cleanIsbn(raw: string | undefined): string | undefined {
   return preferred ?? candidates[0]
 }
 
-export async function fetchBookDetails(
+export async function fetchCobissDetails(
   cobissId: string,
   database: string,
   delayMs = 400,
-): Promise<BookDetail> {
-  let fullTitle: string | undefined
-  let type: string | undefined
-  let language: string | undefined
-  let publisher: string | undefined
-  let publishYear: string | undefined
-  let isbn: string | undefined
-  let udk: string | undefined
-  let series: string | undefined
-  let physicalDescription: string | undefined
-  let notes: string | undefined
-  let otherAuthors: string | undefined
-  let authors: string[] = []
-  let subjects: string[] = []
+): Promise<CobissDetail> {
+  const result: CobissDetail = { authors: [] }
 
   try {
     const fullResp = await http.get(`/bib/${database}/${cobissId}/full`)
-    const fullData = fullResp.data as FullDetailsResponse
+    const raw = fullResp.data as Record<string, { name: string; value: string }>
 
-    if (fullData.titleCard?.value) fullTitle = fullData.titleCard.value
-    if (fullData.materialDescr?.value) type = fullData.materialDescr.value
-    if (fullData.languageCard?.value) language = fullData.languageCard.value
-    if (fullData.publisherCard?.value) publisher = fullData.publisherCard.value
-    if (fullData.publishDate?.value) publishYear = fullData.publishDate.value
-    if (fullData.isbnCard?.value) isbn = cleanIsbn(fullData.isbnCard.value)
-    if (fullData.udkCard?.value) udk = fullData.udkCard.value
-    if (fullData.seriesCard?.value) series = fullData.seriesCard.value
-    if (fullData.ph_descriptionCard?.value) physicalDescription = fullData.ph_descriptionCard.value
-    if (fullData.notesCard?.value) notes = fullData.notesCard.value
-    if (fullData.otherAuthor702?.value) otherAuthors = fullData.otherAuthor702.value
-    if (fullData.author700701?.value) authors = [fullData.author700701.value]
+    if (raw.titleCard?.value) result.fullTitle = raw.titleCard.value
+    if (raw.uniformTitle?.value) result.uniformTitle = raw.uniformTitle.value
+    if (raw.materialDescr?.value) result.type = raw.materialDescr.value
+    if (raw.materialDescr100e?.value) result.audience = raw.materialDescr100e.value
+    if (raw.languageCard?.value) result.language = raw.languageCard.value
+    if (raw.publisherCard?.value) result.publisher = raw.publisherCard.value
+    if (raw.publishDate?.value) result.publishYear = raw.publishDate.value
+    if (raw.isbnCard?.value) result.isbn = cleanIsbn(raw.isbnCard.value)
+    if (raw.udkCard?.value) result.udk = raw.udkCard.value
+    if (raw.seriesCard?.value) result.series = raw.seriesCard.value
+    if (raw.ph_descriptionCard?.value) result.physicalDescription = raw.ph_descriptionCard.value
+    if (raw.notesCard?.value) result.notes = raw.notesCard.value
+    if (raw.otherAuthor702?.value) result.otherAuthors = raw.otherAuthor702.value
+    if (raw.otherSubjects?.value) result.otherSubjects = raw.otherSubjects.value
+    if (raw.author700701?.value) result.authors = [raw.author700701.value]
+    if (raw.urlIgnoreDuplicates?.value) result.digitalContentsUrl = raw.urlIgnoreDuplicates.value
   } catch {
     // fallback with partial data
   }
@@ -63,15 +55,22 @@ export async function fetchBookDetails(
       const label = $el.find("span").first().text().trim().toLowerCase()
       const text = $el.text().replace(label, "").replace(" - ", "").trim()
 
-      if (!type && label.includes("vrsta")) type = text
-      if (!language && label.includes("jezik")) language = text
-      if (!publisher && label.includes("izdavanje")) publisher = text
-      if (!isbn && label.includes("isbn")) isbn = cleanIsbn(text)
+      if (!result.type && label.includes("vrsta")) result.type = text
+      if (!result.audience && label.includes("vrsta")) {
+        const parts = text.split(";")
+        if (parts.length > 1) result.audience = parts[1].trim()
+      }
+      if (!result.language && label.includes("jezik")) result.language = text
+      if (!result.publisher && label.includes("izdavanje")) result.publisher = text
+      if (!result.isbn && label.includes("isbn")) result.isbn = cleanIsbn(text)
     })
 
     $("#labelSubject").closest("div").find("a").each((_i, el) => {
       const subj = $(el).text().trim()
-      if (subj) subjects.push(subj)
+      if (subj) {
+        if (!result.subjects) result.subjects = []
+        result.subjects.push(subj)
+      }
     })
   } catch {
     // proceed with what we have
@@ -79,21 +78,5 @@ export async function fetchBookDetails(
 
   await delay(delayMs)
 
-  return {
-    cobissId,
-    title: fullTitle || cobissId,
-    fullTitle,
-    authors,
-    otherAuthors,
-    type,
-    language,
-    publisher,
-    publishYear,
-    isbn,
-    udk,
-    series,
-    physicalDescription,
-    notes,
-    subjects,
-  }
+  return result
 }
