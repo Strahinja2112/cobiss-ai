@@ -1,0 +1,30 @@
+{
+  "name": "cobiss",
+  "version": "1.0.0",
+  "description": "Pretraga COBISS.SR biblioteke prirodnim jezikom – AI bot razume šta tražiš i pronalazi knjige.",
+  "type": "module",
+  "scripts": {
+    "search": "tsx src/search.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strahinja2112/cobiss-ai-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strahinja2112/cobiss-ai-app/issues"
+  },
+  "homepage": "https://github.com/Strahinja2112/cobiss-ai-app#readme",
+  "dependencies": {
+    "axios": "^1.16.1",
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
