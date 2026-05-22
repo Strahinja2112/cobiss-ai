@@ -10,7 +10,9 @@ import type {
 } from "./types.js";
 
 const BASE_URL =
-	"https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/search?q=*&db=gbvk-15&mat=books";
+	"https://plus-legacy.cobiss.net/cobiss/sr/sr_latn";
+const BASE_DETAIL_URL =
+	"https://plus-legacy.cobiss.net/cobiss/sr/sr_latn";
 const USER_AGENT =
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36";
 
@@ -21,6 +23,12 @@ const http = axios.create({
 	},
 	timeout: 15_000,
 });
+
+const DEFAULT_PARAMS = {
+	q: "*",
+	db: "gbvk-15",
+	mat: "books",
+};
 
 function delay(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
@@ -38,17 +46,16 @@ export async function searchBooks(
 	} = options;
 
 	const params: Record<string, string> = {
+		...DEFAULT_PARAMS,
 		q: query,
 		mat: materialType,
 		maxResult: String(limit),
-		db: "cobib",
 	};
 	if (start > 0) {
 		params.start = String(start);
 	}
 
-	const url = `/bib/search`;
-	const response = await http.get(url, { params }).catch((err) => {
+	const response = await http.get(`/bib/search`, { params }).catch((err) => {
 		const error: ScraperError = {
 			message: err.message,
 			statusCode: err.response?.status,
@@ -90,7 +97,7 @@ export async function searchBooks(
 				type,
 				language,
 				year: yearText,
-				detailUrl: `${BASE_URL}/${detailPath}`,
+				detailUrl: `${BASE_DETAIL_URL}/${detailPath}`,
 			});
 		}
 	});
