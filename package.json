@@ -4,7 +4,7 @@
   "description": "Pretraga COBISS.SR biblioteke prirodnim jezikom – AI bot razume šta tražiš i pronalazi knjige.",
   "type": "module",
   "scripts": {
-    "search": "tsx src/search.ts"
+    "search": "tsx src/cli.ts"
   },
   "repository": {
     "type": "git",

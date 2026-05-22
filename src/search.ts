@@ -1,139 +1,118 @@
-import {
-  searchBooks,
-  searchAllPages,
-  saveResultsToJson,
-  fetchBookDetails,
-  fetchAvailability,
-  enrichBook,
-} from "./scraper.js"
-import type { BookEntry, BookWithDetails } from "./types.js"
-import * as fs from "node:fs/promises"
+import * as cheerio from "cheerio"
+import { http, delay } from "./http-client.js"
+import { BASE_URL, DEFAULT_PARAMS } from "./config.js"
+import type { BookEntry, SearchOptions, SearchResult, ScraperError } from "./types.js"
 
-function showHelp(): void {
-  console.log(`
-  Usage: npm run search -- <upit> [opcije]
+export async function searchBooks(
+  options: SearchOptions,
+  delayMs = 600,
+): Promise<SearchResult> {
+  const { query, materialType = "allmaterials", start = 0, limit = 25 } = options
 
-  Opcije:
-    --all           Preuzmi sve strane rezultata
-    --details, -d   Prikupi detalje o svakoj knjizi (publisher, ISBN, opis, itd.)
-    --available, -a Prikupi status dostupnosti za svaku knjigu
-    --enrich, -e    Detalji + dostupnost zajedno
-    --help, -h      Prikaži pomoć
-
-  Primeri:
-    npm run search -- ljubav
-    npm run search -- ljubav --details
-    npm run search -- ljubav --enrich
-    npm run search -- --all programiranje
-`)
-}
-
-async function main() {
-  const args = process.argv.slice(2)
-
-  if (args.includes("--help") || args.includes("-h")) {
-    showHelp()
-    process.exit(0)
+  const params: Record<string, string> = {
+    ...DEFAULT_PARAMS,
+    q: query,
+    mat: materialType,
+    maxResult: String(limit),
+  }
+  if (start > 0) {
+    params.start = String(start)
   }
 
-  const fetchAll = args.includes("--all")
-  const withDetails = args.includes("--details") || args.includes("-d")
-  const withAvailability = args.includes("--available") || args.includes("-a")
-  const withEnrich = args.includes("--enrich") || args.includes("-e")
-  const query = args
-    .filter((a) => a !== "--all" && a !== "--details" && a !== "-d" && a !== "--available" && a !== "-a" && a !== "--enrich" && a !== "-e")
-    .join(" ")
+  const response = await http.get(`/bib/search`, { params }).catch((err) => {
+    const error: ScraperError = {
+      message: err.message,
+      statusCode: err.response?.status,
+      url: err.config?.url,
+    }
+    throw error
+  })
 
-  if (!query) {
-    showHelp()
-    process.exit(1)
-  }
+  const html = response.data as string
+  const $ = cheerio.load(html)
 
-  console.log(`\n  Pretražujem COBISS.SR za: "${query}"\n`)
+  const totalHitsRaw = $("#search-results-container").attr("data-hits") ?? "0"
+  const totalHits = parseInt(totalHitsRaw, 10) || 0
+  const page = Math.floor(start / limit)
 
-  try {
-    let items: (BookEntry | BookWithDetails)[] = []
-    let totalHits = 0
-    const doEnrich = withDetails || withAvailability || withEnrich
+  const items: BookEntry[] = []
 
-    if (fetchAll) {
-      const data = await searchAllPages(query, {
-        materialType: "books",
-        limit: 100,
-        maxPages: 50,
+  $("tr.biblioentry").each((_i, row) => {
+    const $row = $(row)
+    const cobissId = $row.attr("data-cobiss-id") ?? ""
+    const titleAttr = $row.attr("data-title") ?? ""
+    const detailPath = $row.attr("data-href") ?? ""
+    const database = $row.attr("data-database") ?? params.db
+
+    const positionText = $row.find("td:first-child small").text().trim()
+    const position = parseInt(positionText.replace(".", ""), 10) || 0
+
+    const title = $row.find("a.title").text().trim() || titleAttr
+    const author = $row.find(".author").text().trim()
+    const type = $row.find(".contentType").text().trim()
+    const language = $row.find(".language .value").text().trim()
+    const yearText = $row.find(".publishDate-data .value").text().trim()
+
+    if (cobissId && title) {
+      items.push({
+        position,
+        cobissId,
+        database,
+        title,
+        author,
+        type,
+        language,
+        year: yearText,
+        detailUrl: `${BASE_URL}/${detailPath}`,
       })
-      items = data.combined
-      totalHits = data.totalHits
-    } else {
-      const result = await searchBooks({ query, limit: 25, materialType: "books" })
-      items = result.items
-      totalHits = result.totalHits
     }
+  })
 
-    console.log(`  Nađeno: ${totalHits} rezultata\n`)
+  await delay(delayMs)
 
-    if (items.length === 0) {
-      console.log("  Nema rezultata. Probaj drugačiji upit.\n")
-      process.exit(0)
-    }
-
-    // Enrich with details/availability if requested
-    if (doEnrich) {
-      console.log(`  Prikupljam podatke za ${items.length} knjiga...\n`)
-      const enriched: BookWithDetails[] = []
-      for (let i = 0; i < items.length; i++) {
-        const book = items[i] as BookEntry
-        process.stdout.write(`    [${i + 1}/${items.length}] ${book.title.slice(0, 40).padEnd(41)}`)
-        let detail
-        if (withEnrich || (withDetails && withAvailability)) {
-          detail = await enrichBook(book)
-          process.stdout.write(` ${detail.availability?.status ?? "?"}\n`)
-        } else if (withDetails) {
-          const d = await fetchBookDetails(book.cobissId, book.database)
-          detail = { ...book, details: d }
-          process.stdout.write(` OK\n`)
-        } else if (withAvailability) {
-          const a = await fetchAvailability(book.cobissId, book.database)
-          detail = { ...book, availability: a }
-          process.stdout.write(` ${a.status}\n`)
-        }
-        if (detail) enriched.push(detail)
-      }
-      console.log()
-      items = enriched
-    }
-
-    // Display results
-    for (const book of items) {
-      const line = [
-        `  ${String(book.position).padStart(2)}.`,
-        book.title.padEnd(50).slice(0, 50),
-        book.author.padEnd(28).slice(0, 28),
-        book.year,
-      ]
-      console.log(line.join(" "))
-      if (doEnrich && "details" in book && book.details?.isbn) {
-        console.log(`       ISBN: ${book.details.isbn}`)
-      }
-      if (doEnrich && "availability" in book && book.availability?.status) {
-        console.log(`       Status: ${book.availability.status}`)
-      }
-    }
-
-    const filePath = await saveResultsToJson(
-      fetchAll
-        ? { query, results: [], combined: items, totalHits }
-        : { query, totalHits, page: 0, limit: items.length, items, fetchedAt: new Date().toISOString() },
-    )
-    console.log(`\n  Rezultati sačuvani u: ${filePath}\n`)
-  } catch (err: unknown) {
-    const error = err as { message?: string; statusCode?: number }
-    console.error(`\n  Greška: ${error.message ?? String(err)}`)
-    if (error.statusCode) {
-      console.error(`  HTTP status: ${error.statusCode}`)
-    }
-    process.exit(1)
+  return {
+    query,
+    totalHits,
+    page,
+    limit,
+    items,
+    fetchedAt: new Date().toISOString(),
   }
 }
 
-main()
+export interface AllPagesOptions {
+  materialType?: SearchOptions["materialType"]
+  limit?: 10 | 25 | 50 | 100
+  maxPages?: number
+  delayMs?: number
+}
+
+export async function searchAllPages(
+  query: string,
+  options: AllPagesOptions = {},
+): Promise<{
+  results: SearchResult[]
+  combined: BookEntry[]
+  totalHits: number
+}> {
+  const { materialType = "books", limit = 100, maxPages = 10, delayMs = 800 } = options
+  const results: SearchResult[] = []
+  const allItems: BookEntry[] = []
+  let totalHits = 0
+
+  for (let page = 0; page < maxPages; page++) {
+    const start = page * limit
+    const result = await searchBooks({ query, materialType, start, limit })
+
+    totalHits = result.totalHits
+    results.push(result)
+    allItems.push(...result.items)
+
+    const fetchedSoFar = allItems.length
+    if (fetchedSoFar >= totalHits || result.items.length < limit) {
+      break
+    }
+  }
+
+  return { results, combined: allItems, totalHits }
+}
