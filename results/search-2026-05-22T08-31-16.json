@@ -1,0 +1,1238 @@
+{
+  "query": "king",
+  "totalHits": 24,
+  "page": 0,
+  "limit": 24,
+  "items": [
+    {
+      "position": 1,
+      "cobissId": "1238570",
+      "database": "gbvk-15",
+      "title": "Doctor sleep : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "(naučno)fantastična proza",
+      "language": "engleski",
+      "year": "2013",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/1238570",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "Doctor sleep : a novel / Stephen King",
+        "type": "(naučno)fantastična proza",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Scribner, 2013",
+        "publishYear": "2013",
+        "isbn": "9781476727653",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "531 str. ; 24 cm"
+      },
+      "availability": {
+        "cobissId": "1238570",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "After decades as an itinerant alcoholic, middle-aged Dan Torrance uses his remnant powers to assist the dying before coming to the aid of a twelve-year-old girl being tortured by a tribe of murderous paranormals.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 544,
+        "averageRating": 5,
+        "ratingsCount": 3,
+        "subtitle": "A Novel",
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2013-09-24",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DQTgAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DQTgAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=DQTgAAAAQBAJ&printsec=frontcover&dq=isbn:9781476727653&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DQTgAAAAQBAJ&dq=isbn:9781476727653&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=DQTgAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "After decades as an itinerant alcoholic, middle-aged Dan Torrance uses his remnant powers to assist the dying before coming to the aid of a twelve-year-old girl being tortured by a tribe of murderous paranormals.",
+      "aiContext": "Naslov: Doctor sleep : a novel\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 2013\nTip: (naučno)fantastična proza\nJezik: engleski\nPuni naslov: Doctor sleep : a novel / Stephen King\nIzdavac: New York : Scribner, 2013\nGodina izdanja: 2013\nISBN: 9781476727653\nUDK: 821.111(73)-31\nFizicki opis: 531 str. ; 24 cm\nNamena: odrasli, opšte (lepa književnost)\nOpis: After decades as an itinerant alcoholic, middle-aged Dan Torrance uses his remnant powers to assist the dying before coming to the aid of a twelve-year-old girl being tortured by a tribe of murderous paranormals.\nZanrovi: Fiction\nPodnaslov: A Novel\nBroj strana: 544\nOcena: 5/5 (3 glasova)\nIzdavac (GB): Simon and Schuster\nDatum izdanja (GB): 2013-09-24\nJezik (GB): en"
+    },
+    {
+      "position": 2,
+      "cobissId": "1550890",
+      "database": "gbvk-15",
+      "title": "The stand : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2012",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/1550890",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "The stand : a novel / Stephen King",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Anchor Books, 2012",
+        "publishYear": "2012",
+        "isbn": "9780307947307",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "1152 str. : ilustr. ; 20 cm"
+      },
+      "availability": {
+        "cobissId": "1550890",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "#1 BESTSELLER • Stephen King’s apocalyptic vision of a world blasted by plague and tangled in an elemental struggle between good and evil remains as riveting—and eerily plausible—as when it was first published. This edition includes all of the new and restored material first published in The Stand: The Complete And Uncut Edition. A patient escapes from a biological testing facility, unknowingly carrying a deadly weapon: a mutated strain of super-flu that will wipe out 99 percent of the world’s population within a few weeks. Those who remain are scared, bewildered, and in need of a leader. Two emerge—Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and violence. As the dark man and the peaceful woman gather power, the survivors will have to choose between them—and ultimately decide the fate of all humanity. Also a limited series on CBS All Access",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 0,
+        "publisher": "National Geographic Books",
+        "publishedDate": "2012-08-07",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=6f6MEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=6f6MEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=6f6MEAAAQBAJ&dq=isbn:9780307947307&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=6f6MEAAAQBAJ&dq=isbn:9780307947307&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=6f6MEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "#1 BESTSELLER • Stephen King’s apocalyptic vision of a world blasted by plague and tangled in an elemental struggle between good and evil remains as riveting—and eerily plausible—as when it was first published. This edition includes all of the new and restored material first published in The Stand: The Complete And Uncut Edition. A patient escapes from a biological testing facility, unknowingly carrying a deadly weapon: a mutated strain of super-flu that will wipe out 99 percent of the world’s population within a few weeks. Those who remain are scared, bewildered, and in need of a leader. Two emerge—Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and violence. As the dark man and the peaceful woman gather power, the survivors will have to choose between them—and ultimately decide the fate of all humanity. Also a limited series on CBS All Access",
+      "aiContext": "Naslov: The stand : a novel\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 2012\nTip: roman\nJezik: engleski\nPuni naslov: The stand : a novel / Stephen King\nIzdavac: New York : Anchor Books, 2012\nGodina izdanja: 2012\nISBN: 9780307947307\nUDK: 821.111(73)-31\nFizicki opis: 1152 str. : ilustr. ; 20 cm\nNamena: odrasli, opšte (lepa književnost)\nOpis: #1 BESTSELLER • Stephen King’s apocalyptic vision of a world blasted by plague and tangled in an elemental struggle between good and evil remains as riveting—and eerily plausible—as when it was first published. This edition includes all of the new and restored material first published in The Stand: The Complete And Uncut Edition. A patient escapes from a biological testing facility, unknowingly carrying a deadly weapon: a mutated strain of super-flu that will wipe out 99 percent of the world’s population within a few weeks. Those who remain are scared, bewildered, and in need of a leader. Two emerge—Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and violence. As the dark man and the peaceful woman gather power, the survivors will have to choose between them—and ultimately decide the fate of all humanity. Also a limited series on CBS All Access\nZanrovi: Fiction\nIzdavac (GB): National Geographic Books\nDatum izdanja (GB): 2012-08-07\nJezik (GB): en"
+    },
+    {
+      "position": 3,
+      "cobissId": "3324696",
+      "database": "gbvk-15",
+      "title": "Duma Key",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "cop. 2008",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/3324696",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "Duma Key / Stephen King",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Pocket Books, cop. 2008",
+        "publishYear": "cop. 2008",
+        "isbn": "9781416552963",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "769 str. ; 19 cm"
+      },
+      "availability": {
+        "cobissId": "3324696",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Don’t miss the thrilling novel from undisputed King of Horror and #1 New York Times bestselling author Stephen King about what happens when the barrier between our world and that of the supernatural is breached... No more than a dark pencil line on a blank page. A horizon line, maybe. But also a slot for blackness to pour through... A terrible construction site accident takes Edgar Freemantle’s right arm and scrambles his memory and his mind, leaving him with little but rage as he begins the ordeal of rehabilitation. A marriage that produced two lovely daughters suddenly ends, and Edgar begins to wish he hadn’t survived the injuries that could have killed him. He wants out. His psychologist, Dr. Kamen, suggests a “geographic cure,” a new life distant from the Twin Cities and the building business Edgar grew from scratch. And Kamen suggests something else. “Edgar, does anything make you happy?” “I used to sketch.” “Take it up again. You need hedges...hedges against the night.” Edgar leaves Minnesota for a rented house on Duma Key, a stunningly beautiful, eerily undeveloped splinter of the Florida coast. The sun setting into the Gulf of Mexico and the tidal rattling of shells on the beach call out to him, and Edgar draws. A visit from Ilse, the daughter he dotes on, starts his movement out of solitude. He meets a kindred spirit in Wireman, a man reluctant to reveal his own wounds, and then Elizabeth Eastlake, a sick old woman whose roots are tangled deep in Duma Key. Now Edgar paints, sometimes feverishly, his exploding talent both a wonder and a weapon. Many of his paintings have a power that cannot be controlled. When Elizabeth’s past unfolds and the ghosts of her childhood begin to appear, the damage of which they are capable is truly devastating. The tenacity of love, the perils of creativity, the mysteries of memory, and the nature of the supernatural—Stephen King gives us yet another novel as fascinating as it is gripping and terrifying.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 0,
+        "subtitle": "A Novel",
+        "publisher": "Pocket Books",
+        "publishedDate": "2008-10-21",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AcP8ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AcP8ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=AcP8ngEACAAJ&dq=isbn:9781416552963&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=AcP8ngEACAAJ&dq=isbn:9781416552963&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=AcP8ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Don’t miss the thrilling novel from undisputed King of Horror and #1 New York Times bestselling author Stephen King about what happens when the barrier between our world and that of the supernatural is breached... No more than a dark pencil line on a blank page. A horizon line, maybe. But also a slot for blackness to pour through... A terrible construction site accident takes Edgar Freemantle’s right arm and scrambles his memory and his mind, leaving him with little but rage as he begins the ordeal of rehabilitation. A marriage that produced two lovely daughters suddenly ends, and Edgar begins to wish he hadn’t survived the injuries that could have killed him. He wants out. His psychologist, Dr. Kamen, suggests a “geographic cure,” a new life distant from the Twin Cities and the building business Edgar grew from scratch. And Kamen suggests something else. “Edgar, does anything make you happy?” “I used to sketch.” “Take it up again. You need hedges...hedges against the night.” Edgar leaves Minnesota for a rented house on Duma Key, a stunningly beautiful, eerily undeveloped splinter of the Florida coast. The sun setting into the Gulf of Mexico and the tidal rattling of shells on the beach call out to him, and Edgar draws. A visit from Ilse, the daughter he dotes on, starts his movement out of solitude. He meets a kindred spirit in Wireman, a man reluctant to reveal his own wounds, and then Elizabeth Eastlake, a sick old woman whose roots are tangled deep in Duma Key. Now Edgar paints, sometimes feverishly, his exploding talent both a wonder and a weapon. Many of his paintings have a power that cannot be controlled. When Elizabeth’s past unfolds and the ghosts of her childhood begin to appear, the damage of which they are capable is truly devastating. The tenacity of love, the perils of creativity, the mysteries of memory, and the nature of the supernatural—Stephen King gives us yet another novel as fascinating as it is gripping and terrifying.",
+      "aiContext": "Naslov: Duma Key\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: cop. 2008\nTip: roman\nJezik: engleski\nPuni naslov: Duma Key / Stephen King\nIzdavac: New York : Pocket Books, cop. 2008\nGodina izdanja: cop. 2008\nISBN: 9781416552963\nUDK: 821.111(73)-31\nFizicki opis: 769 str. ; 19 cm\nNamena: odrasli, opšte (lepa književnost)\nOpis: Don’t miss the thrilling novel from undisputed King of Horror and #1 New York Times bestselling author Stephen King about what happens when the barrier between our world and that of the supernatural is breached... No more than a dark pencil line on a blank page. A horizon line, maybe. But also a slot for blackness to pour through... A terrible construction site accident takes Edgar Freemantle’s right arm and scrambles his memory and his mind, leaving him with little but rage as he begins the ordeal of rehabilitation. A marriage that produced two lovely daughters suddenly ends, and Edgar begins to wish he hadn’t survived the injuries that could have killed him. He wants out. His psychologist, Dr. Kamen, suggests a “geographic cure,” a new life distant from the Twin Cities and the building business Edgar grew from scratch. And Kamen suggests something else. “Edgar, does anything make you happy?” “I used to sketch.” “Take it up again. You need hedges...hedges against the night.” Edgar leaves Minnesota for a rented house on Duma Key, a stunningly beautiful, eerily undeveloped splinter of the Florida coast. The sun setting into the Gulf of Mexico and the tidal rattling of shells on the beach call out to him, and Edgar draws. A visit from Ilse, the daughter he dotes on, starts his movement out of solitude. He meets a kindred spirit in Wireman, a man reluctant to reveal his own wounds, and then Elizabeth Eastlake, a sick old woman whose roots are tangled deep in Duma Key. Now Edgar paints, sometimes feverishly, his exploding talent both a wonder and a weapon. Many of his paintings have a power that cannot be controlled. When Elizabeth’s past unfolds and the ghosts of her childhood begin to appear, the damage of which they are capable is truly devastating. The tenacity of love, the perils of creativity, the mysteries of memory, and the nature of the supernatural—Stephen King gives us yet another novel as fascinating as it is gripping and terrifying.\nZanrovi: Fiction\nPodnaslov: A Novel\nIzdavac (GB): Pocket Books\nDatum izdanja (GB): 2008-10-21\nJezik (GB): en"
+    },
+    {
+      "position": 4,
+      "cobissId": "37304585",
+      "database": "gbvk-15",
+      "title": "It",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1981",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/37304585",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "It / Stephen King",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Signet, 1981",
+        "publishYear": "1981",
+        "isbn": "9780451169518",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "1093 str. ; 18 cm"
+      },
+      "availability": {
+        "cobissId": "37304585",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "A group of teenagers stumbles upon an evil force that will eventually draw them all back to Derry, Maine, for a final showdown. Reissue.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 1093,
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "subtitle": "A Novel",
+        "publisher": "Signet Book",
+        "publishedDate": "1986",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=r1knO8DWFlcC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=r1knO8DWFlcC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=r1knO8DWFlcC&dq=isbn:9780451169518&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=r1knO8DWFlcC&dq=isbn:9780451169518&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=r1knO8DWFlcC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "A group of teenagers stumbles upon an evil force that will eventually draw them all back to Derry, Maine, for a final showdown. Reissue.",
+      "aiContext": "Naslov: It\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 1981\nTip: roman\nJezik: engleski\nPuni naslov: It / Stephen King\nIzdavac: New York : Signet, 1981\nGodina izdanja: 1981\nISBN: 9780451169518\nUDK: 821.111(73)-31\nFizicki opis: 1093 str. ; 18 cm\nNamena: odrasli, opšte (lepa književnost)\nOpis: A group of teenagers stumbles upon an evil force that will eventually draw them all back to Derry, Maine, for a final showdown. Reissue.\nZanrovi: Fiction\nPodnaslov: A Novel\nBroj strana: 1093\nOcena: 5/5 (1 glasova)\nIzdavac (GB): Signet Book\nDatum izdanja (GB): 1986\nJezik (GB): en"
+    },
+    {
+      "position": 5,
+      "cobissId": "512141752",
+      "database": "gbvk-15",
+      "title": "The Talisman",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947- ; Straub, Peter",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1984",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/512141752",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-<br/>Straub, Peter"
+        ],
+        "fullTitle": "The Talisman / Stephen King, Peter Straub",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Viking Penguin, 1984",
+        "publishYear": "1984",
+        "isbn": "0670691992",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "644 str. ; 25 cm"
+      },
+      "availability": {
+        "cobissId": "512141752",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "To coincide with the publication of Stephen King and Peter Straub's extraordinary new thriller, BLACK HOUSE, here is the story that started it all. On a brisk autumn day, a twelve-year-old boy stands on the shores of the gray Atlantic, near a silent amusement park and a fading ocean resort called the Alhambra. The past has driven Jack Sawyer here: his father is gone, his mother is dying, and the world no longer makes sense. But for Jack everything is about to change. For he has been chosen to make a journey back across America--and into another realm. One of the most influential and heralded works of fantasy ever written, The Talisman is an extraordinary novel of loyalty, awakening, terror, and mystery. Jack Sawyer, on a desperate quest to save his mother's life, must search for a prize across an epic landscape of innocents and monsters, of incredible dangers and even more incredible truths. The prize is essential, but the journey means even more. Let the quest begin. . . .",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 664,
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "publisher": "Viking Adult",
+        "publishedDate": "1984",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qFXhAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qFXhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=qFXhAAAAMAAJ&dq=isbn:0670691992&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=qFXhAAAAMAAJ&dq=isbn:0670691992&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=qFXhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "To coincide with the publication of Stephen King and Peter Straub's extraordinary new thriller, BLACK HOUSE, here is the story that started it all. On a brisk autumn day, a twelve-year-old boy stands on the shores of the gray Atlantic, near a silent amusement park and a fading ocean resort called the Alhambra. The past has driven Jack Sawyer here: his father is gone, his mother is dying, and the world no longer makes sense. But for Jack everything is about to change. For he has been chosen to make a journey back across America--and into another realm. One of the most influential and heralded works of fantasy ever written, The Talisman is an extraordinary novel of loyalty, awakening, terror, and mystery. Jack Sawyer, on a desperate quest to save his mother's life, must search for a prize across an epic landscape of innocents and monsters, of incredible dangers and even more incredible truths. The prize is essential, but the journey means even more. Let the quest begin. . . .",
+      "aiContext": "Naslov: The Talisman\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947- ; Straub, Peter\nGodina: 1984\nTip: roman\nJezik: engleski\nPuni naslov: The Talisman / Stephen King, Peter Straub\nIzdavac: New York : Viking Penguin, 1984\nGodina izdanja: 1984\nISBN: 0670691992\nUDK: 821.111(73)-31\nFizicki opis: 644 str. ; 25 cm\nNamena: odrasli, opšte (lepa književnost)\nOpis: To coincide with the publication of Stephen King and Peter Straub's extraordinary new thriller, BLACK HOUSE, here is the story that started it all. On a brisk autumn day, a twelve-year-old boy stands on the shores of the gray Atlantic, near a silent amusement park and a fading ocean resort called the Alhambra. The past has driven Jack Sawyer here: his father is gone, his mother is dying, and the world no longer makes sense. But for Jack everything is about to change. For he has been chosen to make a journey back across America--and into another realm. One of the most influential and heralded works of fantasy ever written, The Talisman is an extraordinary novel of loyalty, awakening, terror, and mystery. Jack Sawyer, on a desperate quest to save his mother's life, must search for a prize across an epic landscape of innocents and monsters, of incredible dangers and even more incredible truths. The prize is essential, but the journey means even more. Let the quest begin. . . .\nZanrovi: Fiction\nBroj strana: 664\nOcena: 4/5 (1 glasova)\nIzdavac (GB): Viking Adult\nDatum izdanja (GB): 1984\nJezik (GB): en"
+    },
+    {
+      "position": 6,
+      "cobissId": "12575801",
+      "database": "gbvk-15",
+      "title": "The king of torts",
+      "author": "Grisham, John, 1955- = Гришам, Џон, 1955-",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2003",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/12575801",
+      "cobiss": {
+        "authors": [
+          "Grisham, John, 1955- = Гришам, Џон, 1955-"
+        ],
+        "fullTitle": "The king of torts / John Grisham",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "London : Century, 2003",
+        "publishYear": "2003",
+        "isbn": "0712670599",
+        "udk": "821.111(73)-312.4=111",
+        "physicalDescription": "376 str. ; 24 cm",
+        "notes": "Elementi nasl. str. razporejeni čez dve str."
+      },
+      "availability": {
+        "cobissId": "12575801",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Reluctantly, Clay Carter takes on what seems to be the mundane case of a young man charged with a random street killing. But when digging into his client's background, he stumbles upon a horrendous conspiracy and finds himself in a situation that could make him the legal profession's king of torts.",
+        "categories": [
+          "Drugs"
+        ],
+        "pageCount": 376,
+        "publishedDate": "2003",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=SV-3QgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=SV-3QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=SV-3QgAACAAJ&dq=isbn:0712670599&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=SV-3QgAACAAJ&dq=isbn:0712670599&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=SV-3QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Reluctantly, Clay Carter takes on what seems to be the mundane case of a young man charged with a random street killing. But when digging into his client's background, he stumbles upon a horrendous conspiracy and finds himself in a situation that could make him the legal profession's king of torts.",
+      "aiContext": "Naslov: The king of torts\nAutor: Grisham, John, 1955- = Гришам, Џон, 1955-\nGodina: 2003\nTip: roman\nJezik: engleski\nPuni naslov: The king of torts / John Grisham\nIzdavac: London : Century, 2003\nGodina izdanja: 2003\nISBN: 0712670599\nUDK: 821.111(73)-312.4=111\nFizicki opis: 376 str. ; 24 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Elementi nasl. str. razporejeni čez dve str.\nOpis: Reluctantly, Clay Carter takes on what seems to be the mundane case of a young man charged with a random street killing. But when digging into his client's background, he stumbles upon a horrendous conspiracy and finds himself in a situation that could make him the legal profession's king of torts.\nZanrovi: Drugs\nBroj strana: 376\nDatum izdanja (GB): 2003\nJezik (GB): en"
+    },
+    {
+      "position": 7,
+      "cobissId": "515314087",
+      "database": "gbvk-15",
+      "title": "All the king's men",
+      "author": "Warren, Robert Penn, 1905-1989 = Ворен, Роберт Пен, 1905-1989",
+      "type": "roman",
+      "language": "engleski",
+      "year": "2002",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/515314087",
+      "cobiss": {
+        "authors": [
+          "Warren, Robert Penn, 1905-1989 = Ворен, Роберт Пен, 1905-1989"
+        ],
+        "fullTitle": "All the king's men / Robert Penn Warren",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "San Diego [etc.] : Harcourt, 2002",
+        "publishYear": "2002",
+        "isbn": "9780156012959",
+        "udk": "821.111(73)-31  <br>  DDC: [Fic]",
+        "series": "Harvest book",
+        "physicalDescription": "642 стр.",
+        "notes": "\"Restored from the original typescript by Noel Polk.\" --&gt; poleđina nasl. str."
+      },
+      "availability": {
+        "cobissId": "515314087",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Willie Stark's obsession with political power leads to the ultimate corruption of his gubernatorial administration.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 660,
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2002",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=prTKs7YY11EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=prTKs7YY11EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=prTKs7YY11EC&printsec=frontcover&dq=isbn:9780156012959&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=prTKs7YY11EC&dq=isbn:9780156012959&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=prTKs7YY11EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "Willie Stark's obsession with political power leads to the ultimate corruption of his gubernatorial administration.",
+      "aiContext": "Naslov: All the king's men\nAutor: Warren, Robert Penn, 1905-1989 = Ворен, Роберт Пен, 1905-1989\nGodina: 2002\nTip: roman\nJezik: engleski\nPuni naslov: All the king's men / Robert Penn Warren\nIzdavac: San Diego [etc.] : Harcourt, 2002\nGodina izdanja: 2002\nISBN: 9780156012959\nUDK: 821.111(73)-31  <br>  DDC: [Fic]\nSerija: Harvest book\nFizicki opis: 642 стр.\nNamena: odrasli, opšte (lepa književnost)\nNapomene: \"Restored from the original typescript by Noel Polk.\" --&gt; poleđina nasl. str.\nOpis: Willie Stark's obsession with political power leads to the ultimate corruption of his gubernatorial administration.\nZanrovi: Fiction\nBroj strana: 660\nOcena: 5/5 (1 glasova)\nIzdavac (GB): Houghton Mifflin Harcourt\nDatum izdanja (GB): 2002\nJezik (GB): en"
+    },
+    {
+      "position": 8,
+      "cobissId": "60313609",
+      "database": "gbvk-15",
+      "title": "King of the range : Zane Grey`s Buck Duane",
+      "author": "Grey, Romer Zane, 1909-1976 = Grey, Ромер Зејн, 1909-1976",
+      "type": "roman",
+      "language": "engleski",
+      "year": "1999",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/60313609",
+      "cobiss": {
+        "authors": [
+          "Grey, Romer Zane, 1909-1976 = Grey, Ромер Зејн, 1909-1976"
+        ],
+        "fullTitle": "King of the range : Zane Grey`s Buck Duane / Romer Zane Grey",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Dorchester Publishing Co., Inc., 1999",
+        "publishYear": "1999",
+        "isbn": "0843945974",
+        "udk": "821.111(73)-31",
+        "series": "Leisure western",
+        "physicalDescription": "288 str. ; 18 cm"
+      },
+      "availability": {
+        "cobissId": "60313609",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 287,
+        "publishedDate": "1999-06-01",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=iij2PAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=iij2PAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=iij2PAAACAAJ&dq=isbn:0843945974&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=iij2PAAACAAJ&dq=isbn:0843945974&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=iij2PAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "aiContext": "Naslov: King of the range : Zane Grey`s Buck Duane\nAutor: Grey, Romer Zane, 1909-1976 = Grey, Ромер Зејн, 1909-1976\nGodina: 1999\nTip: roman\nJezik: engleski\nPuni naslov: King of the range : Zane Grey`s Buck Duane / Romer Zane Grey\nIzdavac: New York : Dorchester Publishing Co., Inc., 1999\nGodina izdanja: 1999\nISBN: 0843945974\nUDK: 821.111(73)-31\nSerija: Leisure western\nFizicki opis: 288 str. ; 18 cm\nNamena: odrasli, opšte (lepa književnost)\nZanrovi: Fiction\nBroj strana: 287\nDatum izdanja (GB): 1999-06-01\nJezik (GB): en"
+    },
+    {
+      "position": 9,
+      "cobissId": "4942617",
+      "database": "gbvk-15",
+      "title": "Novels : 1944-1962",
+      "author": "Dawn, Powell, 1896-1965 = Дон, Пауел, 1896-1965",
+      "type": "roman",
+      "language": "engleski",
+      "year": "cop. 2001",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/4942617",
+      "cobiss": {
+        "authors": [
+          "Dawn, Powell, 1896-1965 = Дон, Пауел, 1896-1965"
+        ],
+        "fullTitle": "Novels : 1944-1962 / Dawn Powell",
+        "type": "roman",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Literary classics of the United States, cop. 2001",
+        "publishYear": "cop. 2001",
+        "isbn": "1931082022",
+        "udk": "821.111(73)-31",
+        "series": "ǂThe ǂlibrary of the United States ; 127",
+        "physicalDescription": "967 str. ; 21 cm",
+        "notes": "Bibliografske i druge bilješke"
+      },
+      "availability": {
+        "cobissId": "4942617",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Collects four novels written by the twentieth-century American novelist, including \"My Home is Far Away,\" \"The Locusts Have No King,\" \"The Wicked Pavilion,\" and \"The Golden Hour.\"",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 1000,
+        "subtitle": "My Home Is Far Away / The Locusts Have No King / The Wicked Pavilion / The Golden Spur",
+        "publisher": "Library of America Dawn Powell",
+        "publishedDate": "2001",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=MDBbAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=MDBbAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=MDBbAAAAMAAJ&dq=isbn:1931082022&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=MDBbAAAAMAAJ&dq=isbn:1931082022&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=MDBbAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Collects four novels written by the twentieth-century American novelist, including \"My Home is Far Away,\" \"The Locusts Have No King,\" \"The Wicked Pavilion,\" and \"The Golden Hour.\"",
+      "aiContext": "Naslov: Novels : 1944-1962\nAutor: Dawn, Powell, 1896-1965 = Дон, Пауел, 1896-1965\nGodina: cop. 2001\nTip: roman\nJezik: engleski\nPuni naslov: Novels : 1944-1962 / Dawn Powell\nIzdavac: New York : Literary classics of the United States, cop. 2001\nGodina izdanja: cop. 2001\nISBN: 1931082022\nUDK: 821.111(73)-31\nSerija: ǂThe ǂlibrary of the United States ; 127\nFizicki opis: 967 str. ; 21 cm\nNamena: odrasli, opšte (lepa književnost)\nNapomene: Bibliografske i druge bilješke\nOpis: Collects four novels written by the twentieth-century American novelist, including \"My Home is Far Away,\" \"The Locusts Have No King,\" \"The Wicked Pavilion,\" and \"The Golden Hour.\"\nZanrovi: Fiction\nPodnaslov: My Home Is Far Away / The Locusts Have No King / The Wicked Pavilion / The Golden Spur\nBroj strana: 1000\nIzdavac (GB): Library of America Dawn Powell\nDatum izdanja (GB): 2001\nJezik (GB): en"
+    },
+    {
+      "position": 10,
+      "cobissId": "107669257",
+      "database": "gbvk-15",
+      "title": "Billy Summers : a novel",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2021",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/107669257",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "Billy Summers : a novel / Stephen King",
+        "type": "dr.knjiž.oblici",
+        "audience": "odrasli, opšte (lepa književnost)",
+        "language": "engleski",
+        "publisher": "New York : Scribner, 2021",
+        "publishYear": "2021",
+        "isbn": "9781982173616",
+        "udk": "821.111(73)-31  <br>  DDC: 813/.54",
+        "physicalDescription": "517 str. ; 25 cm",
+        "otherSubjects": "Suspense fiction"
+      },
+      "availability": {
+        "cobissId": "107669257",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "From legendary storyteller and #1 bestseller Stephen King, whose “restless imagination is a power that cannot be contained,” (The New York Times Book Review) comes a thrilling new novel about a good guy in a bad job. Billy Summers is a man in a room with a gun. He’s a killer for hire and the best in the business. But he’ll do the job only if the target is a truly bad guy. And now Billy wants out. But first there is one last hit. Billy is among the best snipers in the world, a decorated Iraq war vet, a Houdini when it comes to vanishing after the job is done. So what could possibly go wrong? How about everything. This spectacular can’t-put-it-down novel is part war story, part love letter to small town America and the people who live there, and it features one of the most compelling and surprising duos in King fiction, who set out to avenge the crimes of an extraordinarily evil man. It’s about love, luck, fate, and a complex hero with one last shot at redemption. You won’t put this story down, and you won’t forget Billy.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 528,
+        "publisher": "Scribner",
+        "publishedDate": "2021-08-03",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7wwtzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7wwtzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=7wwtzgEACAAJ&dq=isbn:9781982173616&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7wwtzgEACAAJ&dq=isbn:9781982173616&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=7wwtzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "From legendary storyteller and #1 bestseller Stephen King, whose “restless imagination is a power that cannot be contained,” (The New York Times Book Review) comes a thrilling new novel about a good guy in a bad job. Billy Summers is a man in a room with a gun. He’s a killer for hire and the best in the business. But he’ll do the job only if the target is a truly bad guy. And now Billy wants out. But first there is one last hit. Billy is among the best snipers in the world, a decorated Iraq war vet, a Houdini when it comes to vanishing after the job is done. So what could possibly go wrong? How about everything. This spectacular can’t-put-it-down novel is part war story, part love letter to small town America and the people who live there, and it features one of the most compelling and surprising duos in King fiction, who set out to avenge the crimes of an extraordinarily evil man. It’s about love, luck, fate, and a complex hero with one last shot at redemption. You won’t put this story down, and you won’t forget Billy.",
+      "aiContext": "Naslov: Billy Summers : a novel\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 2021\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Billy Summers : a novel / Stephen King\nIzdavac: New York : Scribner, 2021\nGodina izdanja: 2021\nISBN: 9781982173616\nUDK: 821.111(73)-31  <br>  DDC: 813/.54\nFizicki opis: 517 str. ; 25 cm\nNamena: odrasli, opšte (lepa književnost)\nDodatne teme: Suspense fiction\nOpis: From legendary storyteller and #1 bestseller Stephen King, whose “restless imagination is a power that cannot be contained,” (The New York Times Book Review) comes a thrilling new novel about a good guy in a bad job. Billy Summers is a man in a room with a gun. He’s a killer for hire and the best in the business. But he’ll do the job only if the target is a truly bad guy. And now Billy wants out. But first there is one last hit. Billy is among the best snipers in the world, a decorated Iraq war vet, a Houdini when it comes to vanishing after the job is done. So what could possibly go wrong? How about everything. This spectacular can’t-put-it-down novel is part war story, part love letter to small town America and the people who live there, and it features one of the most compelling and surprising duos in King fiction, who set out to avenge the crimes of an extraordinarily evil man. It’s about love, luck, fate, and a complex hero with one last shot at redemption. You won’t put this story down, and you won’t forget Billy.\nZanrovi: Fiction\nBroj strana: 528\nIzdavac (GB): Scribner\nDatum izdanja (GB): 2021-08-03\nJezik (GB): en"
+    },
+    {
+      "position": 11,
+      "cobissId": "182364423",
+      "database": "gbvk-15",
+      "title": "Nightmares and dreamscapes",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "kratka proza",
+      "language": "engleski",
+      "year": "1993",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/182364423",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "Nightmares and dreamscapes / Stephen King",
+        "type": "kratka proza",
+        "language": "engleski",
+        "publisher": "New York : Viking, 1993",
+        "publishYear": "1993",
+        "isbn": "0670851086",
+        "udk": "821.111(73)-322.4",
+        "physicalDescription": "816 str., [1] list s fotogr. ; 25 cm",
+        "notes": "Notes: str. 797-812."
+      },
+      "availability": {
+        "cobissId": "182364423",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "A terrifying collection of twenty short stories and other writings devilishly designed by the bestselling master of horror, Stephen King, to take you where you never dreamed of going before...",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 842,
+        "publisher": "Viking Adult",
+        "publishedDate": "1993",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DqIOAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DqIOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=DqIOAQAAMAAJ&dq=isbn:0670851086&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DqIOAQAAMAAJ&dq=isbn:0670851086&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=DqIOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "A terrifying collection of twenty short stories and other writings devilishly designed by the bestselling master of horror, Stephen King, to take you where you never dreamed of going before...",
+      "aiContext": "Naslov: Nightmares and dreamscapes\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 1993\nTip: kratka proza\nJezik: engleski\nPuni naslov: Nightmares and dreamscapes / Stephen King\nIzdavac: New York : Viking, 1993\nGodina izdanja: 1993\nISBN: 0670851086\nUDK: 821.111(73)-322.4\nFizicki opis: 816 str., [1] list s fotogr. ; 25 cm\nNapomene: Notes: str. 797-812.\nOpis: A terrifying collection of twenty short stories and other writings devilishly designed by the bestselling master of horror, Stephen King, to take you where you never dreamed of going before...\nZanrovi: Fiction\nBroj strana: 842\nIzdavac (GB): Viking Adult\nDatum izdanja (GB): 1993\nJezik (GB): en"
+    },
+    {
+      "position": 12,
+      "cobissId": "116271369",
+      "database": "gbvk-15",
+      "title": "Gerald's game",
+      "author": "King, Stephen, 1947- = Кинг, Стивен, 1947-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "1992",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/116271369",
+      "cobiss": {
+        "authors": [
+          "King, Stephen, 1947- = Кинг, Стивен, 1947-"
+        ],
+        "fullTitle": "Gerald's game / by Stephen King",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "New York, NY : Viking, 1992",
+        "publishYear": "1992",
+        "isbn": "9780670846504",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "332 str. : map ; 24 cm",
+        "otherSubjects": "Married people -- Sexual behavior -- Fiction <br> Women -- Fiction <br> Fear -- Fiction <br> Sexualité dans le mariage -- Romans, nouvelles, etc <br> Femmes -- Romans, nouvelles, etc <br> Peur -- Romans, nouvelles, etc <br> Fear <br> Married people -- Sexual behavior <br> Women <br> Fiction <br> Horror fiction <br> Horror fiction"
+      },
+      "availability": {
+        "cobissId": "116271369",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "A different kind of bedtime story from Stephen King, as a game of seduction between a husband and wife ends in death. But the nightmare has only just begun...",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 366,
+        "averageRating": 3,
+        "ratingsCount": 3,
+        "publishedDate": "1992",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wvzpgJJFp0MC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wvzpgJJFp0MC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=wvzpgJJFp0MC&dq=isbn:9780670846504&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=wvzpgJJFp0MC&dq=isbn:9780670846504&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=wvzpgJJFp0MC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "A different kind of bedtime story from Stephen King, as a game of seduction between a husband and wife ends in death. But the nightmare has only just begun...",
+      "aiContext": "Naslov: Gerald's game\nAutor: King, Stephen, 1947- = Кинг, Стивен, 1947-\nGodina: 1992\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Gerald's game / by Stephen King\nIzdavac: New York, NY : Viking, 1992\nGodina izdanja: 1992\nISBN: 9780670846504\nUDK: 821.111(73)-31\nFizicki opis: 332 str. : map ; 24 cm\nDodatne teme: Married people -- Sexual behavior -- Fiction <br> Women -- Fiction <br> Fear -- Fiction <br> Sexualité dans le mariage -- Romans, nouvelles, etc <br> Femmes -- Romans, nouvelles, etc <br> Peur -- Romans, nouvelles, etc <br> Fear <br> Married people -- Sexual behavior <br> Women <br> Fiction <br> Horror fiction <br> Horror fiction\nOpis: A different kind of bedtime story from Stephen King, as a game of seduction between a husband and wife ends in death. But the nightmare has only just begun...\nZanrovi: Fiction\nBroj strana: 366\nOcena: 3/5 (3 glasova)\nDatum izdanja (GB): 1992\nJezik (GB): en"
+    },
+    {
+      "position": 13,
+      "cobissId": "68003337",
+      "database": "gbvk-15",
+      "title": "The pale king : an unfinished novel",
+      "author": "Wallace, David Foster, 1962-2008 = Волас, Дејвид Фостер, 1962-2008",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2012",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/68003337",
+      "cobiss": {
+        "authors": [
+          "Wallace, David Foster, 1962-2008 = Волас, Дејвид Фостер, 1962-2008"
+        ],
+        "fullTitle": "The pale king : an unfinished novel / David Foster Wallace",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "New York : Back Bay Books, 2012",
+        "publishYear": "2012",
+        "isbn": "9780316074223",
+        "udk": "821.111(73)-31",
+        "physicalDescription": "xiv, 550, 28 str.",
+        "notes": "Includes Reading group guide",
+        "otherSubjects": "Wallace, David Foster -- Fiction <br> Wallace, David Foster <br> Civil service -- Fiction <br> Office politics -- Fiction <br> Civil service <br> Office politics <br> Fiction"
+      },
+      "availability": {
+        "cobissId": "68003337",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "The agents at the IRS Regional Examination Center in Peoria, Illinois, appear ordinary enough to newly arrived trainee David Foster Wallace. But as he immerses himself in a routine so tedious and repetitive that new employees receive boredom-survival training, he learns of the extraordinary variety of personalities drawn to this strange calling. And he has arrived at a moment when forces within the IRS are plotting to eliminate even what little humanity and dignity the work still has. The Pale King remained unfinished at the time of David Foster Wallace's death, but it is a deeply compelling and satisfying novel, hilarious and fearless and as original as anything Wallace ever undertook. It grapples directly with ultimate questions--questions of life's meaning and of the value of work and society--through characters imagined with the interior force and generosity that were Wallace's unique gifts. Along the way it suggests a new idea of heroism and commands infinite respect for one of the most daring writers of our time.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 0,
+        "publisher": "Back Bay Books",
+        "publishedDate": "2012-04-10",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bFmguAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bFmguAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=bFmguAAACAAJ&dq=isbn:9780316074223&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=bFmguAAACAAJ&dq=isbn:9780316074223&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=bFmguAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "The agents at the IRS Regional Examination Center in Peoria, Illinois, appear ordinary enough to newly arrived trainee David Foster Wallace. But as he immerses himself in a routine so tedious and repetitive that new employees receive boredom-survival training, he learns of the extraordinary variety of personalities drawn to this strange calling. And he has arrived at a moment when forces within the IRS are plotting to eliminate even what little humanity and dignity the work still has. The Pale King remained unfinished at the time of David Foster Wallace's death, but it is a deeply compelling and satisfying novel, hilarious and fearless and as original as anything Wallace ever undertook. It grapples directly with ultimate questions--questions of life's meaning and of the value of work and society--through characters imagined with the interior force and generosity that were Wallace's unique gifts. Along the way it suggests a new idea of heroism and commands infinite respect for one of the most daring writers of our time.",
+      "aiContext": "Naslov: The pale king : an unfinished novel\nAutor: Wallace, David Foster, 1962-2008 = Волас, Дејвид Фостер, 1962-2008\nGodina: 2012\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: The pale king : an unfinished novel / David Foster Wallace\nIzdavac: New York : Back Bay Books, 2012\nGodina izdanja: 2012\nISBN: 9780316074223\nUDK: 821.111(73)-31\nFizicki opis: xiv, 550, 28 str.\nDodatne teme: Wallace, David Foster -- Fiction <br> Wallace, David Foster <br> Civil service -- Fiction <br> Office politics -- Fiction <br> Civil service <br> Office politics <br> Fiction\nNapomene: Includes Reading group guide\nOpis: The agents at the IRS Regional Examination Center in Peoria, Illinois, appear ordinary enough to newly arrived trainee David Foster Wallace. But as he immerses himself in a routine so tedious and repetitive that new employees receive boredom-survival training, he learns of the extraordinary variety of personalities drawn to this strange calling. And he has arrived at a moment when forces within the IRS are plotting to eliminate even what little humanity and dignity the work still has. The Pale King remained unfinished at the time of David Foster Wallace's death, but it is a deeply compelling and satisfying novel, hilarious and fearless and as original as anything Wallace ever undertook. It grapples directly with ultimate questions--questions of life's meaning and of the value of work and society--through characters imagined with the interior force and generosity that were Wallace's unique gifts. Along the way it suggests a new idea of heroism and commands infinite respect for one of the most daring writers of our time.\nZanrovi: Fiction\nIzdavac (GB): Back Bay Books\nDatum izdanja (GB): 2012-04-10\nJezik (GB): en"
+    },
+    {
+      "position": 14,
+      "cobissId": "67425033",
+      "database": "gbvk-15",
+      "title": "A Connecticut Yankee in King Arthur's court",
+      "author": "Twain, Mark, 1835-1910 = Твен, Марк, 1835-1910",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "[2012]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/67425033",
+      "cobiss": {
+        "authors": [
+          "Twain, Mark, 1835-1910 = Твен, Марк, 1835-1910"
+        ],
+        "fullTitle": "A Connecticut Yankee in King Arthur's court / by Mark Twain (Samuel L. Clemens)",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "[Lexington, KY?] : Simon and Brown, [2012]",
+        "publishYear": "[2012]",
+        "isbn": "9781613823774",
+        "udk": "821.111(73)-31  <br>  DDC: [Fic]",
+        "physicalDescription": "362 str. ; 23 cm",
+        "otherSubjects": "Knights and knighthood -- Fiction <br> Americans -- Great Britain -- Fiction <br> Arthurian romances -- Adaptations <br> Time travel -- Fiction <br> Voyages dans le temps -- Romans, nouvelles, etc <br> Americans <br> Arthurian romances <br> Knights and knighthood <br> Time travel <br> Great Britain <br> Adaptations <br> Fiction <br> Fantasy fiction"
+      },
+      "availability": {
+        "cobissId": "67425033",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "A Connecticut Yankee in King Arthur's Court By Mark Twain",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 364,
+        "publisher": "Simon & Brown",
+        "publishedDate": "2012-06",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=5HpClAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=5HpClAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=5HpClAEACAAJ&dq=isbn:9781613823774&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=5HpClAEACAAJ&dq=isbn:9781613823774&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=5HpClAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "A Connecticut Yankee in King Arthur's Court By Mark Twain",
+      "aiContext": "Naslov: A Connecticut Yankee in King Arthur's court\nAutor: Twain, Mark, 1835-1910 = Твен, Марк, 1835-1910\nGodina: [2012]\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: A Connecticut Yankee in King Arthur's court / by Mark Twain (Samuel L. Clemens)\nIzdavac: [Lexington, KY?] : Simon and Brown, [2012]\nGodina izdanja: [2012]\nISBN: 9781613823774\nUDK: 821.111(73)-31  <br>  DDC: [Fic]\nFizicki opis: 362 str. ; 23 cm\nDodatne teme: Knights and knighthood -- Fiction <br> Americans -- Great Britain -- Fiction <br> Arthurian romances -- Adaptations <br> Time travel -- Fiction <br> Voyages dans le temps -- Romans, nouvelles, etc <br> Americans <br> Arthurian romances <br> Knights and knighthood <br> Time travel <br> Great Britain <br> Adaptations <br> Fiction <br> Fantasy fiction\nOpis: A Connecticut Yankee in King Arthur's Court By Mark Twain\nZanrovi: Fiction\nBroj strana: 364\nIzdavac (GB): Simon & Brown\nDatum izdanja (GB): 2012-06\nJezik (GB): en"
+    },
+    {
+      "position": 15,
+      "cobissId": "839193",
+      "database": "gbvk-15",
+      "title": "American sermons : the pilgrims to Martin Luther King, Jr.",
+      "author": "",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "cop.1999",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/839193",
+      "cobiss": {
+        "authors": [],
+        "fullTitle": "American sermons : the pilgrims to Martin Luther King, Jr. / [Michael Warner selected the contents and wrote the notes for this volume]",
+        "type": "knjiga",
+        "audience": "odrasli, ozbiljna (nije lepa knjiž.)",
+        "language": "engleski",
+        "publisher": "New York : Literary classics of the United States, cop.1999",
+        "publishYear": "cop.1999",
+        "isbn": "1883011655",
+        "udk": "821.111(73)-4 <br> 2-475(73)",
+        "series": "ǂThe ǂlibrary of America ; 108",
+        "physicalDescription": "939 str. ; 21 cm",
+        "notes": "Registri",
+        "otherAuthors": "Warner, Michael, 1958- (urednik) <br> Ворнер, Мајкл, 1958- (urednik)"
+      },
+      "availability": {
+        "cobissId": "839193",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "58 sermons displaying the eloquence, prophetic force, and spiritual fervor of American preaching, from the first New England settlements to modern evangelism and ecuemenism.",
+        "categories": [
+          "Literary Collections"
+        ],
+        "pageCount": 966,
+        "subtitle": "The Pilgrims to Martin Luther King Jr.",
+        "publishedDate": "1999-03",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GlLaAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GlLaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=GlLaAAAAMAAJ&dq=isbn:1883011655&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GlLaAAAAMAAJ&dq=isbn:1883011655&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=GlLaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "58 sermons displaying the eloquence, prophetic force, and spiritual fervor of American preaching, from the first New England settlements to modern evangelism and ecuemenism.",
+      "aiContext": "Naslov: American sermons : the pilgrims to Martin Luther King, Jr.\nGodina: cop.1999\nTip: knjiga\nJezik: engleski\nPuni naslov: American sermons : the pilgrims to Martin Luther King, Jr. / [Michael Warner selected the contents and wrote the notes for this volume]\nDrugi autori: Warner, Michael, 1958- (urednik) <br> Ворнер, Мајкл, 1958- (urednik)\nIzdavac: New York : Literary classics of the United States, cop.1999\nGodina izdanja: cop.1999\nISBN: 1883011655\nUDK: 821.111(73)-4 <br> 2-475(73)\nSerija: ǂThe ǂlibrary of America ; 108\nFizicki opis: 939 str. ; 21 cm\nNamena: odrasli, ozbiljna (nije lepa knjiž.)\nNapomene: Registri\nOpis: 58 sermons displaying the eloquence, prophetic force, and spiritual fervor of American preaching, from the first New England settlements to modern evangelism and ecuemenism.\nZanrovi: Literary Collections\nPodnaslov: The Pilgrims to Martin Luther King Jr.\nBroj strana: 966\nDatum izdanja (GB): 1999-03\nJezik (GB): en"
+    },
+    {
+      "position": 16,
+      "cobissId": "76161289",
+      "database": "gbvk-15",
+      "title": "Dare To Dream : Coretta Scott King and the Civil Rights Movement",
+      "author": "Medearis, Angela Shelf, 1956- = Медерис, Анџела Шелф, 1956-",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "1994",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/76161289",
+      "cobiss": {
+        "authors": [
+          "Medearis, Angela Shelf, 1956- = Медерис, Анџела Шелф, 1956-"
+        ],
+        "fullTitle": "Dare To Dream : Coretta Scott King and the Civil Rights Movement / Angela Shelf Medearis ; Illustrated by Anna Rich",
+        "type": "knjiga",
+        "language": "engleski",
+        "publisher": "New York : Scholastic, 1994",
+        "publishYear": "1994",
+        "isbn": "9780439168410",
+        "udk": "929",
+        "physicalDescription": "60 str. : ilustr. ; 20 cm",
+        "otherSubjects": "King, Coretta Scott -- Biography <br> Biographies"
+      },
+      "availability": {
+        "cobissId": "76161289",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Dare to Dream chronicles the vision and life of Coretta Scott King, wife of Dr. Martin Luther King, Jr. and provides young readers with a clear, concise chronology of the civil rights movement. Through years of turmoil and violent hatred that deprived a movement of its greatest leader, Coretta Scott King has remained a lasting figure of peace and harmony.",
+        "categories": [
+          "African Americans"
+        ],
+        "pageCount": 60,
+        "publishedDate": "1994",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=lkNDYAAACAAJ&dq=isbn:9780439168410&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=lkNDYAAACAAJ&dq=isbn:9780439168410&hl=&source=gbs_api"
+      },
+      "imageUrl": null,
+      "description": "Dare to Dream chronicles the vision and life of Coretta Scott King, wife of Dr. Martin Luther King, Jr. and provides young readers with a clear, concise chronology of the civil rights movement. Through years of turmoil and violent hatred that deprived a movement of its greatest leader, Coretta Scott King has remained a lasting figure of peace and harmony.",
+      "aiContext": "Naslov: Dare To Dream : Coretta Scott King and the Civil Rights Movement\nAutor: Medearis, Angela Shelf, 1956- = Медерис, Анџела Шелф, 1956-\nGodina: 1994\nTip: knjiga\nJezik: engleski\nPuni naslov: Dare To Dream : Coretta Scott King and the Civil Rights Movement / Angela Shelf Medearis ; Illustrated by Anna Rich\nIzdavac: New York : Scholastic, 1994\nGodina izdanja: 1994\nISBN: 9780439168410\nUDK: 929\nFizicki opis: 60 str. : ilustr. ; 20 cm\nDodatne teme: King, Coretta Scott -- Biography <br> Biographies\nOpis: Dare to Dream chronicles the vision and life of Coretta Scott King, wife of Dr. Martin Luther King, Jr. and provides young readers with a clear, concise chronology of the civil rights movement. Through years of turmoil and violent hatred that deprived a movement of its greatest leader, Coretta Scott King has remained a lasting figure of peace and harmony.\nZanrovi: African Americans\nBroj strana: 60\nDatum izdanja (GB): 1994\nJezik (GB): en"
+    },
+    {
+      "position": 17,
+      "cobissId": "74118665",
+      "database": "gbvk-15",
+      "title": "Great speeches by African Americans : Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, Jr., and others",
+      "author": "",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "2006",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/74118665",
+      "cobiss": {
+        "authors": [],
+        "fullTitle": "Great speeches by African Americans : Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, Jr., and others / edited by James Daley",
+        "type": "knjiga",
+        "language": "engleski",
+        "publisher": "Mineola, N.Y. : Dover Publications, 2006",
+        "publishYear": "2006",
+        "isbn": "0486447618",
+        "udk": "821.111(73)-5  <br>  DDC: 815.008/0896073",
+        "series": "Dover thrift editions",
+        "physicalDescription": "viii, 150 str. ; 21 cm",
+        "otherAuthors": "Daley, James, 1979- (urednik) <br> Дејли, Џејмс, 1979- (urednik)",
+        "otherSubjects": "Speeches, addresses, etc., American -- African American authors <br> Speeches, addresses, etc., American <br> African Americans -- History -- Sources <br> African American orators",
+        "digitalContentsUrl": "<elink-details provider='' link='http://www.loc.gov/catdir/toc/fy0702/2005046627.html' note=''></elink-details><elink-details provider='' link='http://www.loc.gov/catdir/enhancements/fy0624/2005046627-d.html' note=''></elink-details><elink-details provider='' link='http://www.loc.gov/catdir/enhancements/fy1501/2005046627-b.html' note=''></elink-details>"
+      },
+      "availability": {
+        "cobissId": "74118665",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Følger kampen for frihed og menneskerettigheder i 150 år. Denne antologi indeholder taler af indflydelsesrige historiske personer indenfor Afro-amerikansk kultur og politik",
+        "categories": [
+          "Social Science"
+        ],
+        "pageCount": 161,
+        "subtitle": "Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, and Others",
+        "publisher": "Courier Corporation",
+        "publishedDate": "2006-04-28",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XMUsAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XMUsAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=XMUsAwAAQBAJ&printsec=frontcover&dq=isbn:0486447618&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=XMUsAwAAQBAJ&dq=isbn:0486447618&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=XMUsAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "description": "Følger kampen for frihed og menneskerettigheder i 150 år. Denne antologi indeholder taler af indflydelsesrige historiske personer indenfor Afro-amerikansk kultur og politik",
+      "aiContext": "Naslov: Great speeches by African Americans : Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, Jr., and others\nGodina: 2006\nTip: knjiga\nJezik: engleski\nPuni naslov: Great speeches by African Americans : Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, Jr., and others / edited by James Daley\nDrugi autori: Daley, James, 1979- (urednik) <br> Дејли, Џејмс, 1979- (urednik)\nIzdavac: Mineola, N.Y. : Dover Publications, 2006\nGodina izdanja: 2006\nISBN: 0486447618\nUDK: 821.111(73)-5  <br>  DDC: 815.008/0896073\nSerija: Dover thrift editions\nFizicki opis: viii, 150 str. ; 21 cm\nDodatne teme: Speeches, addresses, etc., American -- African American authors <br> Speeches, addresses, etc., American <br> African Americans -- History -- Sources <br> African American orators\nOpis: Følger kampen for frihed og menneskerettigheder i 150 år. Denne antologi indeholder taler af indflydelsesrige historiske personer indenfor Afro-amerikansk kultur og politik\nZanrovi: Social Science\nPodnaslov: Frederick Douglass, Sojourner Truth, Dr. Martin Luther King, Jr., Barack Obama, and Others\nBroj strana: 161\nIzdavac (GB): Courier Corporation\nDatum izdanja (GB): 2006-04-28\nJezik (GB): en"
+    },
+    {
+      "position": 18,
+      "cobissId": "70835465",
+      "database": "gbvk-15",
+      "title": "Fifty famous stories retold",
+      "author": "Baldwin, James, 1841-1925 = Болдвин, Џејмс, 1841-1925",
+      "type": "kratka proza",
+      "language": "engleski",
+      "year": "[2014]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/70835465",
+      "cobiss": {
+        "authors": [
+          "Baldwin, James, 1841-1925 = Болдвин, Џејмс, 1841-1925"
+        ],
+        "fullTitle": "Fifty famous stories retold / James Baldwin",
+        "type": "kratka proza",
+        "language": "engleski",
+        "publisher": "[United States] : [unknown], [2014]",
+        "publishYear": "[2014]",
+        "isbn": "9781463740139",
+        "udk": "821.111(73)-32  <br>  DDC: 398.2 BAL",
+        "physicalDescription": "150 str. ; 26 cm",
+        "otherSubjects": "Short stories -- Juvenile literature <br> Folklore -- Juvenile literature"
+      },
+      "availability": {
+        "cobissId": "70835465",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "This anthology is a thorough introduction to classic literature for those who have not yet experienced these literary masterworks. For those who have known and loved these works in the past, this is an invitation to reunite with old friends in a fresh new format. From Shakespeare's finesse to Oscar Wilde's wit, this unique collection brings together works as diverse and influential as The Pilgrim's Progress and Othello. As an anthology that invites readers to immerse themselves in the masterpieces of the literary giants, it is must-have addition to any library.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 158,
+        "publisher": "CreateSpace",
+        "publishedDate": "2011-08-01",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=X7weYAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=X7weYAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=X7weYAAACAAJ&dq=isbn:9781463740139&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=X7weYAAACAAJ&dq=isbn:9781463740139&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=X7weYAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "This anthology is a thorough introduction to classic literature for those who have not yet experienced these literary masterworks. For those who have known and loved these works in the past, this is an invitation to reunite with old friends in a fresh new format. From Shakespeare's finesse to Oscar Wilde's wit, this unique collection brings together works as diverse and influential as The Pilgrim's Progress and Othello. As an anthology that invites readers to immerse themselves in the masterpieces of the literary giants, it is must-have addition to any library.",
+      "aiContext": "Naslov: Fifty famous stories retold\nAutor: Baldwin, James, 1841-1925 = Болдвин, Џејмс, 1841-1925\nGodina: [2014]\nTip: kratka proza\nJezik: engleski\nPuni naslov: Fifty famous stories retold / James Baldwin\nIzdavac: [United States] : [unknown], [2014]\nGodina izdanja: [2014]\nISBN: 9781463740139\nUDK: 821.111(73)-32  <br>  DDC: 398.2 BAL\nFizicki opis: 150 str. ; 26 cm\nDodatne teme: Short stories -- Juvenile literature <br> Folklore -- Juvenile literature\nOpis: This anthology is a thorough introduction to classic literature for those who have not yet experienced these literary masterworks. For those who have known and loved these works in the past, this is an invitation to reunite with old friends in a fresh new format. From Shakespeare's finesse to Oscar Wilde's wit, this unique collection brings together works as diverse and influential as The Pilgrim's Progress and Othello. As an anthology that invites readers to immerse themselves in the masterpieces of the literary giants, it is must-have addition to any library.\nZanrovi: Fiction\nBroj strana: 158\nIzdavac (GB): CreateSpace\nDatum izdanja (GB): 2011-08-01\nJezik (GB): en"
+    },
+    {
+      "position": 19,
+      "cobissId": "71416329",
+      "database": "gbvk-15",
+      "title": "Villains victorious",
+      "author": "",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2001",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/71416329",
+      "cobiss": {
+        "authors": [],
+        "fullTitle": "Villains victorious / edited by Martin H. Greenberg amd [sic] John Helfers",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "New York : DAW, 2001",
+        "publishYear": "2001",
+        "isbn": "9780886779801",
+        "udk": "821.111(73)-32  <br>  DDC: 813/.54",
+        "series": "DAW book collectors ; no. 1182",
+        "physicalDescription": "314 str. ; 18 cm",
+        "otherAuthors": "Greenberg, Martin Harry, 1941-2011 (urednik) <br> Гринберг, Мартин Хари, 1941-2011 (urednik) <br> Helfers, John (urednik) <br> Хелферс, Џон (urednik)",
+        "otherSubjects": "Good and evil -- Fiction <br> Good and evil <br> Fiction"
+      },
+      "availability": {
+        "cobissId": "71416329",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "This wicked anthology includes 14 original stories featuring villains who actually win in the end. Includes stories by Ed Gorman, Rosemary Edgehill, Tim Waggoner, Fiona Patton, and others.",
+        "categories": [
+          "Good and evil"
+        ],
+        "pageCount": 0,
+        "publisher": "D A W Books, Incorporated",
+        "publishedDate": "2001",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=HJegpwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=HJegpwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=HJegpwAACAAJ&dq=isbn:9780886779801&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=HJegpwAACAAJ&dq=isbn:9780886779801&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=HJegpwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "This wicked anthology includes 14 original stories featuring villains who actually win in the end. Includes stories by Ed Gorman, Rosemary Edgehill, Tim Waggoner, Fiona Patton, and others.",
+      "aiContext": "Naslov: Villains victorious\nGodina: 2001\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Villains victorious / edited by Martin H. Greenberg amd [sic] John Helfers\nDrugi autori: Greenberg, Martin Harry, 1941-2011 (urednik) <br> Гринберг, Мартин Хари, 1941-2011 (urednik) <br> Helfers, John (urednik) <br> Хелферс, Џон (urednik)\nIzdavac: New York : DAW, 2001\nGodina izdanja: 2001\nISBN: 9780886779801\nUDK: 821.111(73)-32  <br>  DDC: 813/.54\nSerija: DAW book collectors ; no. 1182\nFizicki opis: 314 str. ; 18 cm\nDodatne teme: Good and evil -- Fiction <br> Good and evil <br> Fiction\nOpis: This wicked anthology includes 14 original stories featuring villains who actually win in the end. Includes stories by Ed Gorman, Rosemary Edgehill, Tim Waggoner, Fiona Patton, and others.\nZanrovi: Good and evil\nIzdavac (GB): D A W Books, Incorporated\nDatum izdanja (GB): 2001\nJezik (GB): en"
+    },
+    {
+      "position": 20,
+      "cobissId": "71422729",
+      "database": "gbvk-15",
+      "title": "Sirius, the dog star",
+      "author": "",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "cop. 2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/71422729",
+      "cobiss": {
+        "authors": [],
+        "fullTitle": "Sirius, the dog star / edited by Martin H. Greenberg and Alexander Potter",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "New York : DAW Books, cop. 2004",
+        "publishYear": "cop. 2004",
+        "isbn": "0756401860",
+        "udk": "821.111(73)-32",
+        "series": "DAW book collectors ; no. 1295",
+        "physicalDescription": "x, 310 str. ; 18 cm",
+        "otherAuthors": "Greenberg, Martin Harry, 1941-2011 (urednik) <br> Гринберг, Мартин Хари, 1941-2011 (urednik) <br> Potter, Alexander (urednik) <br> Потр, Александар (urednik)",
+        "otherSubjects": "Dogs -- Fiction <br> Science fiction, American <br> Fantasy fiction, American <br> Science fiction, Canadian <br> Fantasy fiction, Canadian",
+        "digitalContentsUrl": "<elink-details provider='' link='http://www.loc.gov/catdir/enhancements/fy0720/2005276201-b.html' note=''></elink-details><elink-details provider='' link='http://www.loc.gov/catdir/enhancements/fy0720/2005276201-d.html' note=''></elink-details>"
+      },
+      "availability": {
+        "cobissId": "71422729",
+        "database": "gbvk-15",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "google": {
+        "description": "These 16 original fantasy and science fiction tales, set in the future realms of time and space, showcase the heroics of man's best friend, who ultimately saves the day. Includes works by such noted sci fi authors as Tanya Huff, Fiona Patton. and Mickey Zucker Reichert. Original.",
+        "categories": [
+          "Dogs"
+        ],
+        "pageCount": 0,
+        "publisher": "D A W Books, Incorporated",
+        "publishedDate": "2004",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-WsuPQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-WsuPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=-WsuPQAACAAJ&dq=isbn:0756401860&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=-WsuPQAACAAJ&dq=isbn:0756401860&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=-WsuPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "These 16 original fantasy and science fiction tales, set in the future realms of time and space, showcase the heroics of man's best friend, who ultimately saves the day. Includes works by such noted sci fi authors as Tanya Huff, Fiona Patton. and Mickey Zucker Reichert. Original.",
+      "aiContext": "Naslov: Sirius, the dog star\nGodina: cop. 2004\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Sirius, the dog star / edited by Martin H. Greenberg and Alexander Potter\nDrugi autori: Greenberg, Martin Harry, 1941-2011 (urednik) <br> Гринберг, Мартин Хари, 1941-2011 (urednik) <br> Potter, Alexander (urednik) <br> Потр, Александар (urednik)\nIzdavac: New York : DAW Books, cop. 2004\nGodina izdanja: cop. 2004\nISBN: 0756401860\nUDK: 821.111(73)-32\nSerija: DAW book collectors ; no. 1295\nFizicki opis: x, 310 str. ; 18 cm\nDodatne teme: Dogs -- Fiction <br> Science fiction, American <br> Fantasy fiction, American <br> Science fiction, Canadian <br> Fantasy fiction, Canadian\nOpis: These 16 original fantasy and science fiction tales, set in the future realms of time and space, showcase the heroics of man's best friend, who ultimately saves the day. Includes works by such noted sci fi authors as Tanya Huff, Fiona Patton. and Mickey Zucker Reichert. Original.\nZanrovi: Dogs\nIzdavac (GB): D A W Books, Incorporated\nDatum izdanja (GB): 2004\nJezik (GB): en"
+    },
+    {
+      "position": 21,
+      "cobissId": "70800137",
+      "database": "gbvk-15",
+      "title": "Crime stories and other writings",
+      "author": "Hammett, Dashiell, 1894-1961 = Хамет, Дашијел, 1894-1961",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "[2001]",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/70800137",
+      "cobiss": {
+        "authors": [
+          "Hammett, Dashiell, 1894-1961 = Хамет, Дашијел, 1894-1961"
+        ],
+        "fullTitle": "Crime stories and other writings / Dashiell Hammett",
+        "uniformTitle": "Works [Selections]. 2001",
+        "type": "dr.knjiž.oblici",
+        "language": "engleski",
+        "publisher": "New York, N.Y. : The Library of America, [2001]",
+        "publishYear": "[2001]",
+        "isbn": "9781931082006",
+        "udk": "821.111(73)-82  <br>  DDC: 813/.52",
+        "series": "The Library of America ; 125",
+        "physicalDescription": "938 str. ; 21 cm",
+        "notes": "Hrptni nasl.: Crime stories &amp; other writings  <br> Also issued online <br> Includes bibliographical references (pages 932-934)",
+        "otherSubjects": "Detective and mystery stories, American <br> Literature <br> Littérature <br> Detective and mystery stories, American <br> Detective and mystery stories, American <br> Detective and mystery stories, American <br> Detective and mystery stories <br> short stories <br> Detective and mystery stories, American <br> Short stories <br> Detective and mystery fiction <br> Mystery fiction <br> Detective and mystery stories <br> Short stories <br> Mystery and detective fiction -- California -- San Francisco Bay Area <br> Nouvelles",
+        "digitalContentsUrl": "<elink-details provider='' link='http://catdir.loc.gov/catdir/toc/fy02/00054594.html' note=''></elink-details>"
+      },
+      "availability": {
+        "cobissId": "70800137",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "er editors. Also included are revealing essays & an early version of the novel The Thin Man.",
+        "categories": [
+          "Fiction"
+        ],
+        "pageCount": 968,
+        "publisher": "Library of America Dashiell Ha",
+        "publishedDate": "2001-09-10",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QcJaAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QcJaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=QcJaAAAAMAAJ&dq=isbn:9781931082006&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=QcJaAAAAMAAJ&dq=isbn:9781931082006&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=QcJaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "er editors. Also included are revealing essays & an early version of the novel The Thin Man.",
+      "aiContext": "Naslov: Crime stories and other writings\nAutor: Hammett, Dashiell, 1894-1961 = Хамет, Дашијел, 1894-1961\nGodina: [2001]\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Crime stories and other writings / Dashiell Hammett\nUniformni naslov: Works [Selections]. 2001\nIzdavac: New York, N.Y. : The Library of America, [2001]\nGodina izdanja: [2001]\nISBN: 9781931082006\nUDK: 821.111(73)-82  <br>  DDC: 813/.52\nSerija: The Library of America ; 125\nFizicki opis: 938 str. ; 21 cm\nDodatne teme: Detective and mystery stories, American <br> Literature <br> Littérature <br> Detective and mystery stories, American <br> Detective and mystery stories, American <br> Detective and mystery stories, American <br> Detective and mystery stories <br> short stories <br> Detective and mystery stories, American <br> Short stories <br> Detective and mystery fiction <br> Mystery fiction <br> Detective and mystery stories <br> Short stories <br> Mystery and detective fiction -- California -- San Francisco Bay Area <br> Nouvelles\nNapomene: Hrptni nasl.: Crime stories &amp; other writings  <br> Also issued online <br> Includes bibliographical references (pages 932-934)\nOpis: er editors. Also included are revealing essays & an early version of the novel The Thin Man.\nZanrovi: Fiction\nBroj strana: 968\nIzdavac (GB): Library of America Dashiell Ha\nDatum izdanja (GB): 2001-09-10\nJezik (GB): en"
+    },
+    {
+      "position": 22,
+      "cobissId": "33859933",
+      "database": "gbvk-15",
+      "title": "Under the loving care of the fatherly leader : North Korea and the Kim dynasty",
+      "author": "Martin, Bradley K. = Мартин, Бредли К.",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "2004",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/33859933",
+      "cobiss": {
+        "authors": [
+          "Martin, Bradley K. = Мартин, Бредли К."
+        ],
+        "fullTitle": "Under the loving care of the fatherly leader : North Korea and the Kim dynasty / Bradley K. Martin",
+        "type": "knjiga",
+        "language": "engleski",
+        "publisher": "New York : Thomas Dunne Books, 2004",
+        "publishYear": "2004",
+        "isbn": "9780312322212",
+        "udk": "929Kim",
+        "physicalDescription": "X, 868 str. : ilustr. ; 24 cm",
+        "notes": "Bibliografija: 715-846 <br> Registar.",
+        "otherSubjects": "Kim, Chong-il, 1942-2011 <br> Kim, Il-song, 1912-1994 <br> Državnici -- Severna Koreja",
+        "digitalContentsUrl": "<elink-details provider='' link='http://catdir.loc.gov/catdir/enhancements/fy1115/2004056158-s.html' note=''></elink-details><elink-details provider='' link='http://catdir.loc.gov/catdir/bios/hol057/2004056158.html' note=''></elink-details><elink-details provider='' link='http://catdir.loc.gov/catdir/description/hol054/2004056158.html' note=''></elink-details>"
+      },
+      "availability": {
+        "cobissId": "33859933",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Citing new material from archives in Moscow and Beijing, the first definitiveaccount of North Korea and the Kim Dynasty is offered by a top journalist andKorean expert. 16-page photo insert.",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "pageCount": 881,
+        "subtitle": "North Korea and the Kim Dynasty",
+        "publisher": "Macmillan",
+        "publishedDate": "2004-10-15",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=KhP7hfaT4QcC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=KhP7hfaT4QcC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=KhP7hfaT4QcC&dq=isbn:9780312322212&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=KhP7hfaT4QcC&dq=isbn:9780312322212&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=KhP7hfaT4QcC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Citing new material from archives in Moscow and Beijing, the first definitiveaccount of North Korea and the Kim Dynasty is offered by a top journalist andKorean expert. 16-page photo insert.",
+      "aiContext": "Naslov: Under the loving care of the fatherly leader : North Korea and the Kim dynasty\nAutor: Martin, Bradley K. = Мартин, Бредли К.\nGodina: 2004\nTip: knjiga\nJezik: engleski\nPuni naslov: Under the loving care of the fatherly leader : North Korea and the Kim dynasty / Bradley K. Martin\nIzdavac: New York : Thomas Dunne Books, 2004\nGodina izdanja: 2004\nISBN: 9780312322212\nUDK: 929Kim\nFizicki opis: X, 868 str. : ilustr. ; 24 cm\nDodatne teme: Kim, Chong-il, 1942-2011 <br> Kim, Il-song, 1912-1994 <br> Državnici -- Severna Koreja\nNapomene: Bibliografija: 715-846 <br> Registar.\nOpis: Citing new material from archives in Moscow and Beijing, the first definitiveaccount of North Korea and the Kim Dynasty is offered by a top journalist andKorean expert. 16-page photo insert.\nZanrovi: Biography & Autobiography\nPodnaslov: North Korea and the Kim Dynasty\nBroj strana: 881\nIzdavac (GB): Macmillan\nDatum izdanja (GB): 2004-10-15\nJezik (GB): en"
+    },
+    {
+      "position": 23,
+      "cobissId": "74008329",
+      "database": "gbvk-15",
+      "title": "Ash",
+      "author": "Lo, Malinda, 1974- = Ло, Малинда, 1974-",
+      "type": "dr.knjiž.oblici",
+      "language": "engleski",
+      "year": "2019",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/74008329",
+      "cobiss": {
+        "authors": [
+          "Lo, Malinda, 1974- = Ло, Малинда, 1974-"
+        ],
+        "fullTitle": "Ash / Malinda Lo",
+        "type": "dr.knjiž.oblici",
+        "audience": "omladinski, iznad 14 godina (M)",
+        "language": "engleski",
+        "publisher": "New York, : Little Brown and Company, Hatchette Book Group, 2019",
+        "publishYear": "2019",
+        "isbn": "9780316531313",
+        "udk": "821.111(73)-31  <br>  DDC: [Fic]",
+        "physicalDescription": "277 str. ; 21 cm",
+        "notes": "\"10th anniversary edition with an introduction by Holly Black.\"--Cover <br> Includes \"Ash 10th anniversary edition: a letter from the author,\" \"Making the book: a conversation between the author and editor of Ash,\" and an excerpt of another book by the author",
+        "otherAuthors": "Black, Holly, 1971 (autor dodatnog teksta) <br> Блек, Холи, 1971 (autor dodatnog teksta)",
+        "otherSubjects": "Cinderella (Tale) <br> Fairies -- Fiction <br> Hunting stories <br> Lesbians -- Fiction <br> Orphans -- Fiction <br> Romance fiction <br> Self-realization -- Fiction <br> Stepfamilies -- Fiction <br> Stepmothers -- Fiction <br> Cinderella (Tale) <br> Fairies <br> Hunting stories <br> Lesbians <br> Orphans <br> Romance fiction <br> Self-realization <br> Stepfamilies <br> Stepmothers <br> Teen fiction <br> Fiction"
+      },
+      "availability": {
+        "cobissId": "74008329",
+        "database": "gbvk-15",
+        "status": "pozajmljeno - van biblioteke",
+        "statusRaw": "pozajmljeno - van biblioteke"
+      },
+      "google": {
+        "description": "The haunting, romantic lesbian retelling of Cinderella and modern queer classic by award-winning author Malinda Lo -- now with an introduction by Holly Black, a letter from the author, a Q&A, and more! In the wake of her father's death, Ash is left at the mercy of her cruel stepmother. Consumed with grief, her only joy comes by the light of the dying hearth fire, rereading the fairy tales her mother once told her. In her dreams, someday the fairies will steal her away. When she meets the dark and dangerous fairy Sidhean, she believes that her wish may be granted. The day that Ash meets Kaisa, the King's Huntress, her heart begins to change. Instead of chasing fairies, Ash learns to hunt with Kaisa. Their friendship, as delicate as a new bloom, reawakens Ash's capacity for love--and her desire to live. But Sidhean has already claimed Ash for his own, and she must make a choice between fairy tale dreams and true love. Entrancing and empowering, Ash beautifully unfolds the connections between life and love, and solitude and death, where transformation can come from even the deepest grief.",
+        "categories": [
+          "Young Adult Fiction"
+        ],
+        "pageCount": 0,
+        "publisher": "Little, Brown Books for Young Readers",
+        "publishedDate": "2019-05-14",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XRZTuwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XRZTuwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=XRZTuwEACAAJ&dq=isbn:9780316531313&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=XRZTuwEACAAJ&dq=isbn:9780316531313&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=XRZTuwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "The haunting, romantic lesbian retelling of Cinderella and modern queer classic by award-winning author Malinda Lo -- now with an introduction by Holly Black, a letter from the author, a Q&A, and more! In the wake of her father's death, Ash is left at the mercy of her cruel stepmother. Consumed with grief, her only joy comes by the light of the dying hearth fire, rereading the fairy tales her mother once told her. In her dreams, someday the fairies will steal her away. When she meets the dark and dangerous fairy Sidhean, she believes that her wish may be granted. The day that Ash meets Kaisa, the King's Huntress, her heart begins to change. Instead of chasing fairies, Ash learns to hunt with Kaisa. Their friendship, as delicate as a new bloom, reawakens Ash's capacity for love--and her desire to live. But Sidhean has already claimed Ash for his own, and she must make a choice between fairy tale dreams and true love. Entrancing and empowering, Ash beautifully unfolds the connections between life and love, and solitude and death, where transformation can come from even the deepest grief.",
+      "aiContext": "Naslov: Ash\nAutor: Lo, Malinda, 1974- = Ло, Малинда, 1974-\nGodina: 2019\nTip: dr.knjiž.oblici\nJezik: engleski\nPuni naslov: Ash / Malinda Lo\nDrugi autori: Black, Holly, 1971 (autor dodatnog teksta) <br> Блек, Холи, 1971 (autor dodatnog teksta)\nIzdavac: New York, : Little Brown and Company, Hatchette Book Group, 2019\nGodina izdanja: 2019\nISBN: 9780316531313\nUDK: 821.111(73)-31  <br>  DDC: [Fic]\nFizicki opis: 277 str. ; 21 cm\nNamena: omladinski, iznad 14 godina (M)\nDodatne teme: Cinderella (Tale) <br> Fairies -- Fiction <br> Hunting stories <br> Lesbians -- Fiction <br> Orphans -- Fiction <br> Romance fiction <br> Self-realization -- Fiction <br> Stepfamilies -- Fiction <br> Stepmothers -- Fiction <br> Cinderella (Tale) <br> Fairies <br> Hunting stories <br> Lesbians <br> Orphans <br> Romance fiction <br> Self-realization <br> Stepfamilies <br> Stepmothers <br> Teen fiction <br> Fiction\nNapomene: \"10th anniversary edition with an introduction by Holly Black.\"--Cover <br> Includes \"Ash 10th anniversary edition: a letter from the author,\" \"Making the book: a conversation between the author and editor of Ash,\" and an excerpt of another book by the author\nOpis: The haunting, romantic lesbian retelling of Cinderella and modern queer classic by award-winning author Malinda Lo -- now with an introduction by Holly Black, a letter from the author, a Q&A, and more! In the wake of her father's death, Ash is left at the mercy of her cruel stepmother. Consumed with grief, her only joy comes by the light of the dying hearth fire, rereading the fairy tales her mother once told her. In her dreams, someday the fairies will steal her away. When she meets the dark and dangerous fairy Sidhean, she believes that her wish may be granted. The day that Ash meets Kaisa, the King's Huntress, her heart begins to change. Instead of chasing fairies, Ash learns to hunt with Kaisa. Their friendship, as delicate as a new bloom, reawakens Ash's capacity for love--and her desire to live. But Sidhean has already claimed Ash for his own, and she must make a choice between fairy tale dreams and true love. Entrancing and empowering, Ash beautifully unfolds the connections between life and love, and solitude and death, where transformation can come from even the deepest grief.\nZanrovi: Young Adult Fiction\nIzdavac (GB): Little, Brown Books for Young Readers\nDatum izdanja (GB): 2019-05-14\nJezik (GB): en"
+    },
+    {
+      "position": 24,
+      "cobissId": "127676937",
+      "database": "gbvk-15",
+      "title": "Sojourner Truth",
+      "author": "Krass, Peter, 1963- = Крас, Питер, 1963-",
+      "type": "knjiga",
+      "language": "engleski",
+      "year": "cop. 1988",
+      "detailUrl": "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-15/127676937",
+      "cobiss": {
+        "authors": [
+          "Krass, Peter, 1963- = Крас, Питер, 1963-"
+        ],
+        "fullTitle": "Sojourner Truth / Peter Krass ; [introductory essay by Coretta Scott King]",
+        "type": "knjiga",
+        "audience": "dečje, opšte",
+        "language": "engleski",
+        "publisher": "New York : Chelsea House, cop. 1988",
+        "publishYear": "cop. 1988",
+        "isbn": "1555466117",
+        "udk": "929  <br>  DDC: 306.3/62/092  <br>  DDC: B  <br>  DDC: 92",
+        "series": "Black Americans of achievement",
+        "physicalDescription": "110 str. : ill., ports. ; 25 cm",
+        "notes": "Includes index <br> Bibliography: p. 108 <br> Sadržaj",
+        "otherSubjects": "Truth, Sojourner, 1799-1883 -- Juvenile literature <br> Truth, Sojourner, 1799-1883 <br> African American abolitionists -- Biography -- Juvenile literature <br> Abolitionists -- United States -- Biography -- Juvenile literature <br> Social reformers -- United States -- Biography -- Juvenile literature <br> African Americans -- Biography <br> Abolitionists <br> Reformers <br> Women -- Biography"
+      },
+      "availability": {
+        "cobissId": "127676937",
+        "database": "gbvk-15",
+        "status": "slobodno - van biblioteke",
+        "statusRaw": "slobodno - van biblioteke"
+      },
+      "google": {
+        "description": "Traces the life of the former slave who could neither read nor write, yet earned a reputation as one of the most articulate and outspoken antislavery and women's rights activists in the United States.",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "pageCount": 110,
+        "publisher": "Chelsea House Pub",
+        "publishedDate": "1988",
+        "language": "en",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=116QngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=116QngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=116QngEACAAJ&dq=isbn:1555466117&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=116QngEACAAJ&dq=isbn:1555466117&hl=&source=gbs_api"
+      },
+      "imageUrl": "http://books.google.com/books/content?id=116QngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "description": "Traces the life of the former slave who could neither read nor write, yet earned a reputation as one of the most articulate and outspoken antislavery and women's rights activists in the United States.",
+      "aiContext": "Naslov: Sojourner Truth\nAutor: Krass, Peter, 1963- = Крас, Питер, 1963-\nGodina: cop. 1988\nTip: knjiga\nJezik: engleski\nPuni naslov: Sojourner Truth / Peter Krass ; [introductory essay by Coretta Scott King]\nIzdavac: New York : Chelsea House, cop. 1988\nGodina izdanja: cop. 1988\nISBN: 1555466117\nUDK: 929  <br>  DDC: 306.3/62/092  <br>  DDC: B  <br>  DDC: 92\nSerija: Black Americans of achievement\nFizicki opis: 110 str. : ill., ports. ; 25 cm\nNamena: dečje, opšte\nDodatne teme: Truth, Sojourner, 1799-1883 -- Juvenile literature <br> Truth, Sojourner, 1799-1883 <br> African American abolitionists -- Biography -- Juvenile literature <br> Abolitionists -- United States -- Biography -- Juvenile literature <br> Social reformers -- United States -- Biography -- Juvenile literature <br> African Americans -- Biography <br> Abolitionists <br> Reformers <br> Women -- Biography\nNapomene: Includes index <br> Bibliography: p. 108 <br> Sadržaj\nOpis: Traces the life of the former slave who could neither read nor write, yet earned a reputation as one of the most articulate and outspoken antislavery and women's rights activists in the United States.\nZanrovi: Juvenile Nonfiction\nBroj strana: 110\nIzdavac (GB): Chelsea House Pub\nDatum izdanja (GB): 1988\nJezik (GB): en"
+    }
+  ],
+  "fetchedAt": "2026-05-22T08:31:16.523Z"
+}
