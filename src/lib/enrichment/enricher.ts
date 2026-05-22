@@ -1,9 +1,9 @@
-import { fetchCobissDetails } from "./details.js"
-import { fetchAvailability } from "./availability.js"
+import { fetchCobissDetails } from "../cobiss/details.js"
+import { fetchAvailability } from "../cobiss/availability.js"
 import { fetchGoogleDetails } from "./google-books.js"
 import { fetchOpenLibrary } from "./open-library.js"
 import { resolveCoverImage, verifyCobissCover } from "./cover.js"
-import type { BookEntry, BookWithDetails } from "./types.js"
+import type { BookEntry, BookWithDetails } from "../../types/index.js"
 
 export interface EnrichOptions {
   availability?: boolean

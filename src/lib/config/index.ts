@@ -22,3 +22,7 @@ export const NO_GOOGLE_IMAGE_URL =
 
 export const COBISS_THUMBNAIL_BASE =
 	"https://d.cobiss.net/repository/sr/thumbnails";
+
+export const DELFI_API_BASE = "https://www.delfi.rs/api";
+
+export const DELFI_WEB_BASE = "https://www.delfi.rs";

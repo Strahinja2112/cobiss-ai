@@ -83,11 +83,19 @@ export interface GoogleDetails {
   infoLink?: string
 }
 
+export interface OpenLibraryData {
+  description?: string
+  subjects?: string[]
+  subjectPlaces?: string[]
+  subjectPeople?: string[]
+  subjectTimes?: string[]
+}
+
 export interface BookWithDetails extends BookEntry {
   cobiss: CobissDetail
   availability?: Availability
   google?: GoogleDetails | null
-  openLibrary?: import("./open-library.js").OpenLibraryData | null
+  openLibrary?: OpenLibraryData | null
   imageUrl?: string | null
   description?: string
   aiContext?: string
@@ -97,6 +105,66 @@ export interface ScraperError {
   message: string
   statusCode?: number
   url?: string
+}
+
+export interface DelfiAuthor {
+  _id: string
+  authorName: string
+}
+
+export interface DelfiImages {
+  fb?: string
+  s?: string
+  m?: string
+  l?: string
+  xl?: string
+  xxl?: string
+  org?: string
+}
+
+export interface DelfiAttribute {
+  k: string
+  v: string
+}
+
+export interface DelfiProduct {
+  _id: string
+  navId: string
+  title: string
+  barcode: string
+  description: string
+  shortDescription?: string
+  cover: string
+  authors: DelfiAuthor[]
+  publisher: string
+  genres?: Array<{ _id: string; genreName: string }>
+  subgenres?: Array<{ _id: string; genreName: string }>
+  category?: string
+  attributes: DelfiAttribute[]
+  images: DelfiImages
+  priceList?: {
+    fullPrice?: number
+    regularDiscountPrice?: number
+    eBookPrice?: number
+    currency?: string
+  }
+  quantity?: number
+  isAvailable?: boolean
+  inStock?: boolean
+  rating?: number
+  rankList?: { rank1?: number; rank2?: number; rank3?: number; rank4?: number; rank5?: number }
+  metaData?: { description?: string; keyWords?: string }
+  releaseDate?: string
+  productType?: string
+  url?: string
+  slug?: string
+  imgGallery?: string[]
+}
+
+export interface DelfiSearchResult {
+  products: DelfiProduct[]
+  total: number
+  query: string
 }
 
 export const MATERIAL_TYPE_MAP: Record<string, string> = {

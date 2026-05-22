@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio"
-import { http } from "./http-client.js"
-import type { Availability } from "./types.js"
+import { http } from "../http/client.js"
+import type { Availability } from "../../types/index.js"
 
 export async function fetchAvailability(
   cobissId: string,

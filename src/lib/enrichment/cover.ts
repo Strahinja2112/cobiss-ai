@@ -1,5 +1,5 @@
 import axios from "axios"
-import { NO_GOOGLE_IMAGE_URL, COBISS_THUMBNAIL_BASE } from "./config.js"
+import { NO_GOOGLE_IMAGE_URL, COBISS_THUMBNAIL_BASE } from "../config/index.js"
 
 export function resolveCoverImage(
   googleThumbnail: string | undefined | null,

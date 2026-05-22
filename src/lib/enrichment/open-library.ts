@@ -1,4 +1,5 @@
 import axios from "axios"
+import type { OpenLibraryData } from "../../types/index.js"
 
 interface OpenLibraryWork {
   description?: string | { value?: string }
@@ -16,14 +17,6 @@ interface OpenLibraryEdition {
   publish_date?: string
   isbn_13?: string[]
   isbn_10?: string[]
-}
-
-export interface OpenLibraryData {
-  description?: string
-  subjects?: string[]
-  subjectPlaces?: string[]
-  subjectPeople?: string[]
-  subjectTimes?: string[]
 }
 
 function extractText(val: unknown): string | undefined {

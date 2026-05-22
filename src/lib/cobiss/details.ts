@@ -1,16 +1,7 @@
 import * as cheerio from "cheerio"
-import { http, delay } from "./http-client.js"
-import type { CobissDetail } from "./types.js"
-
-function cleanIsbn(raw: string | undefined): string | undefined {
-  if (!raw) return undefined
-  const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/g)]
-    .map(m => m[1].replace(/[^0-9X]/gi, ""))
-    .filter(Boolean)
-  if (candidates.length === 0) return raw
-  const preferred = candidates.find(c => c.length === 13)
-  return preferred ?? candidates[0]
-}
+import { http, delay } from "../http/client.js"
+import { cleanIsbn } from "../utils/isbn.js"
+import type { CobissDetail } from "../../types/index.js"
 
 export async function fetchCobissDetails(
   cobissId: string,

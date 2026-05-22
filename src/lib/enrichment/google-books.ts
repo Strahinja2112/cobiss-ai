@@ -1,15 +1,7 @@
 import axios from "axios"
-import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "./config.js"
-import type { GoogleDetails } from "./types.js"
-
-function extractIsbn(raw: string): string | null {
-  const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/g)]
-    .map(m => m[1].replace(/[^0-9X]/gi, ""))
-    .filter(Boolean)
-  if (candidates.length === 0) return null
-  const preferred = candidates.find(c => c.length === 13)
-  return preferred ?? candidates[0]
-}
+import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "../config/index.js"
+import { extractIsbn } from "../utils/isbn.js"
+import type { GoogleDetails } from "../../types/index.js"
 
 function pickImageLinks(volumeInfo: Record<string, unknown>): GoogleDetails["imageLinks"] | undefined {
   const images = volumeInfo.imageLinks as Record<string, string> | undefined

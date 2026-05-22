@@ -1,8 +1,8 @@
 import "dotenv/config"
-import { enrichBook } from "./enricher.js"
-import { saveResultsToJson } from "./saver.js"
-import { searchAllPages, searchBooks } from "./search.js"
-import type { BookEntry, BookWithDetails } from "./types.js"
+import { enrichBook } from "../lib/enrichment/enricher.js"
+import { saveResultsToJson } from "../lib/utils/saver.js"
+import { searchAllPages, searchBooks } from "../lib/cobiss/search.js"
+import type { BookEntry, BookWithDetails } from "../types/index.js"
 
 function showHelp(): void {
   console.log(`

@@ -1,6 +1,6 @@
 import * as fs from "node:fs/promises"
 import * as path from "node:path"
-import type { BookEntry, BookWithDetails, SearchResult } from "./types.js"
+import type { BookEntry, BookWithDetails, SearchResult } from "../../types/index.js"
 
 type SavableData =
   | SearchResult

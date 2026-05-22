@@ -1,7 +1,7 @@
 import * as cheerio from "cheerio"
-import { http, delay } from "./http-client.js"
-import { BASE_URL, DEFAULT_PARAMS } from "./config.js"
-import type { BookEntry, SearchOptions, SearchResult, ScraperError } from "./types.js"
+import { http, delay } from "../http/client.js"
+import { BASE_URL, DEFAULT_PARAMS } from "../config/index.js"
+import type { BookEntry, SearchOptions, SearchResult, ScraperError } from "../../types/index.js"
 
 export async function searchBooks(
   options: SearchOptions,
