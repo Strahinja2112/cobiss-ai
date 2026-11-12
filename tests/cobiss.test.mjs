@@ -6,7 +6,7 @@ import { crawlBooks, parseSearchPage } from "../src/app/api/_lib/cobiss.ts";
 afterEach(() => mock.restoreAll());
 
 const row = (id, title) =>
-  `<tr class="biblioentry" data-cobiss-id="${id}" data-database="gbvk-1"><td><a class="title">${title}</a><span class="author">Author ${id}</span></td></tr>`;
+  `<tr class="biblioentry" data-cobiss-id="${id}" data-database="gbvk-16"><td><a class="title">${title}</a><span class="author">Author ${id}</span></td></tr>`;
 const page = (hits, ...rows) =>
   `<div id="search-results-container" data-hits="${hits}"></div><table>${rows.join("")}</table>`;
 
@@ -18,7 +18,7 @@ test("parses book rows and rejects a missing result count", () => {
     title: "Book title",
     author: "Author 123",
     isbn: null,
-    url: "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-1/123",
+    url: "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-16/123",
   });
   assert.throws(() => parseSearchPage("<html></html>"), /result count/);
 });
@@ -30,14 +30,14 @@ test("crawls later pages and returns ISBN values", async () => {
     if (url.pathname.endsWith("/bib/search")) {
       const start = Number(url.searchParams.get("start"));
       starts.push(start);
-      return new Response(start === 0 ? page(101, row("1", "First")) : page(101, row("2", "Second")));
+      return new Response(start === 0 ? page(11, row("1", "First")) : page(11, row("2", "Second")));
     }
     return Response.json({ isbnCard: { value: url.pathname.includes("/1/") ? "978-0-123456-47-2" : "" } });
   });
 
   const events = [];
   for await (const event of crawlBooks(new AbortController().signal)) events.push(event);
-  assert.deepEqual(starts, [0, 100]);
+  assert.deepEqual(starts, [0, 10]);
   assert.deepEqual(events.filter((event) => event.type === "page").map((event) => event.loaded), [1, 2]);
   assert.equal(events.at(-1).type, "done");
   assert.equal(events.at(-1).checked, 2);

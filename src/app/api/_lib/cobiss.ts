@@ -1,8 +1,8 @@
 import { load } from "cheerio";
 
 const BASE = "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn";
-const DATABASE = "gbvk-1";
-const PAGE_SIZE = 100;
+const DATABASE = "gbvk-16";
+const PAGE_SIZE = 10;
 
 export interface Book {
   cobissId: string;
@@ -29,7 +29,8 @@ export function parseSearchPage(html: string): SearchPage {
   $("tr.biblioentry").each((_, row) => {
     const entry = $(row);
     const cobissId = entry.attr("data-cobiss-id");
-    const title = entry.find("a.title").text().trim() || entry.attr("data-title")?.trim();
+    const title =
+      entry.find("a.title").text().trim() || entry.attr("data-title")?.trim();
     if (!cobissId || !title) return;
 
     const database = entry.attr("data-database") ?? DATABASE;
@@ -47,8 +48,12 @@ export function parseSearchPage(html: string): SearchPage {
 function cleanIsbn(raw: string): string | null {
   const candidates = [...raw.matchAll(/\b(\d[\d -]*[\dX])\b/gi)]
     .map((match) => match[1]?.replace(/[^0-9X]/gi, ""))
-    .filter((value): value is string => Boolean(value && [10, 13].includes(value.length)));
-  return candidates.find((value) => value.length === 13) ?? candidates[0] ?? null;
+    .filter((value): value is string =>
+      Boolean(value && [10, 13].includes(value.length)),
+    );
+  return (
+    candidates.find((value) => value.length === 13) ?? candidates[0] ?? null
+  );
 }
 
 async function get(url: URL, signal: AbortSignal): Promise<Response> {
@@ -61,7 +66,10 @@ async function get(url: URL, signal: AbortSignal): Promise<Response> {
   return response;
 }
 
-export async function fetchSearchPage(start: number, signal: AbortSignal): Promise<SearchPage> {
+export async function fetchSearchPage(
+  start: number,
+  signal: AbortSignal,
+): Promise<SearchPage> {
   const url = new URL(`${BASE}/bib/search`);
   url.search = new URLSearchParams({
     q: "*",
@@ -73,7 +81,10 @@ export async function fetchSearchPage(start: number, signal: AbortSignal): Promi
   return parseSearchPage(await (await get(url, signal)).text());
 }
 
-export async function fetchIsbn(book: Book, signal: AbortSignal): Promise<string | null> {
+export async function fetchIsbn(
+  book: Book,
+  signal: AbortSignal,
+): Promise<string | null> {
   const fullUrl = new URL(`${book.url}/full`);
   try {
     const record = (await (await get(fullUrl, signal)).json()) as {
@@ -96,11 +107,24 @@ export async function fetchIsbn(book: Book, signal: AbortSignal): Promise<string
 }
 
 export type CrawlEvent =
-  | { type: "page"; books: Book[]; totalHits: number; pagesFetched: number; loaded: number }
-  | { type: "isbn"; items: { cobissId: string; isbn: string | null }[]; checked: number; failures: number }
+  | {
+      type: "page";
+      books: Book[];
+      totalHits: number;
+      pagesFetched: number;
+      loaded: number;
+    }
+  | {
+      type: "isbn";
+      items: { cobissId: string; isbn: string | null }[];
+      checked: number;
+      failures: number;
+    }
   | { type: "done"; loaded: number; checked: number; failures: number };
 
-export async function* crawlBooks(signal: AbortSignal): AsyncGenerator<CrawlEvent> {
+export async function* crawlBooks(
+  signal: AbortSignal,
+): AsyncGenerator<CrawlEvent> {
   const seen = new Set<string>();
   let checked = 0;
   let failures = 0;
@@ -121,13 +145,22 @@ export async function* crawlBooks(signal: AbortSignal): AsyncGenerator<CrawlEven
     if (page.books.length && books.length === 0) {
       throw new Error("COBISS repeated a result page");
     }
-    yield { type: "page", books, totalHits, pagesFetched: start / PAGE_SIZE + 1, loaded: seen.size };
+    yield {
+      type: "page",
+      books,
+      totalHits,
+      pagesFetched: start / PAGE_SIZE + 1,
+      loaded: seen.size,
+    };
 
     let updates: { cobissId: string; isbn: string | null }[] = [];
     for (const book of books) {
       signal.throwIfAborted();
       try {
-        updates.push({ cobissId: book.cobissId, isbn: await fetchIsbn(book, signal) });
+        updates.push({
+          cobissId: book.cobissId,
+          isbn: await fetchIsbn(book, signal),
+        });
       } catch (error) {
         if (signal.aborted) throw error;
         failures++;
@@ -140,7 +173,8 @@ export async function* crawlBooks(signal: AbortSignal): AsyncGenerator<CrawlEven
       }
       await new Promise((resolve) => setTimeout(resolve, 300));
     }
-    if (updates.length) yield { type: "isbn", items: updates, checked, failures };
+    if (updates.length)
+      yield { type: "isbn", items: updates, checked, failures };
     if (start + page.books.length >= totalHits) break;
     await new Promise((resolve) => setTimeout(resolve, 600));
   }
