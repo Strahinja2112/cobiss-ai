@@ -1,6 +1,6 @@
 # COBISS Book Finder
 
-Local Next.js app built with Create T3 App. It fetches books from the `gbvk-1` COBISS catalog and shows title, author, ISBN, and a link to each record. Results stay in the browser tab; no database or cron job is used.
+Local Next.js app built with Create T3 App. It fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and shows title, author, ISBN, and a link to each record. Results stay in the browser tab; no database or cron job is used.
 
 ## Setup
 
@@ -10,7 +10,7 @@ Local Next.js app built with Create T3 App. It fetches books from the `gbvk-1` C
 4. Run `pnpm dev`, open `http://localhost:3000`, and sign in with the allowed Google account.
 5. Click **Fetch all books**. Use **Stop** to end the crawl; books already received stay visible until refresh.
 
-The all-books COBISS search currently reports about 77,000 records. Fetching every ISBN can take hours. The page shows incoming results and fetch progress, 50 books at a time. Keep the tab and local server open until the crawl ends.
+The English-language COBISS search currently reports about 2,100 records in this department. Fetching every ISBN may take a while. The page shows incoming results and fetch progress, 50 books at a time. Keep the tab and local server open until the crawl ends.
 
 ## Checks
 
