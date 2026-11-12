@@ -72,7 +72,7 @@ export async function fetchSearchPage(
 ): Promise<SearchPage> {
   const url = new URL(`${BASE}/bib/search`);
   url.search = new URLSearchParams({
-    q: "*",
+    c: "la=eng",
     db: DATABASE,
     mat: "books",
     maxResult: String(PAGE_SIZE),

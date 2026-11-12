@@ -28,6 +28,8 @@ test("crawls later pages and returns ISBN values", async () => {
   mock.method(globalThis, "fetch", async (input) => {
     const url = new URL(input);
     if (url.pathname.endsWith("/bib/search")) {
+      assert.equal(url.searchParams.get("c"), "la=eng");
+      assert.equal(url.searchParams.get("db"), "gbvk-16");
       const start = Number(url.searchParams.get("start"));
       starts.push(start);
       return new Response(start === 0 ? page(11, row("1", "First")) : page(11, row("2", "Second")));
