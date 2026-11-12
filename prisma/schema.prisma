@@ -73,3 +73,33 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Book {
+    id                    String   @id @default(cuid())
+    catalog               String   @default("gbvk-16")
+    cobissId              String
+    title                 String
+    author                String
+    isbn                  String?
+    language              String   @default("eng")
+    sourceUrl             String
+    lastFetchedAt         DateTime @default(now())
+    availabilityStatus    String?  @db.Text
+    availabilityCheckedAt DateTime?
+
+    enrichment BookEnrichment?
+
+    @@unique([catalog, cobissId])
+    @@index([isbn])
+}
+
+model BookEnrichment {
+    bookId     String   @id
+    book       Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+    summary    String   @db.Text
+    genres     String[]
+    themes     String[]
+    mood       String[]
+    model      String
+    enrichedAt DateTime @default(now())
+}
