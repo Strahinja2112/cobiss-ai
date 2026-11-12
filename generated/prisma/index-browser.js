@@ -166,6 +166,30 @@ exports.Prisma.VerificationTokenScalarFieldEnum = {
   expires: 'expires'
 };
 
+exports.Prisma.BookScalarFieldEnum = {
+  id: 'id',
+  catalog: 'catalog',
+  cobissId: 'cobissId',
+  title: 'title',
+  author: 'author',
+  isbn: 'isbn',
+  language: 'language',
+  sourceUrl: 'sourceUrl',
+  lastFetchedAt: 'lastFetchedAt',
+  availabilityStatus: 'availabilityStatus',
+  availabilityCheckedAt: 'availabilityCheckedAt'
+};
+
+exports.Prisma.BookEnrichmentScalarFieldEnum = {
+  bookId: 'bookId',
+  summary: 'summary',
+  genres: 'genres',
+  themes: 'themes',
+  mood: 'mood',
+  model: 'model',
+  enrichedAt: 'enrichedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -187,7 +211,9 @@ exports.Prisma.ModelName = {
   Account: 'Account',
   Session: 'Session',
   User: 'User',
-  VerificationToken: 'VerificationToken'
+  VerificationToken: 'VerificationToken',
+  Book: 'Book',
+  BookEnrichment: 'BookEnrichment'
 };
 
 /**
