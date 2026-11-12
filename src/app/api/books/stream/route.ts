@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 export async function GET(request: Request): Promise<Response> {
   const session = await auth();
-  if (session?.user.email?.toLowerCase() !== env.ALLOWED_GOOGLE_EMAIL.toLowerCase()) {
+  if (session?.user?.email?.toLowerCase() !== env.ALLOWED_GOOGLE_EMAIL.toLowerCase()) {
     return new Response("Unauthorized", { status: 401 });
   }
 

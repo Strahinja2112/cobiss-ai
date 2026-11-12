@@ -32,7 +32,7 @@ export function parseSearchPage(html: string): SearchPage {
     const title = entry.find("a.title").text().trim() || entry.attr("data-title")?.trim();
     if (!cobissId || !title) return;
 
-    const database = entry.attr("data-database") || DATABASE;
+    const database = entry.attr("data-database") ?? DATABASE;
     books.push({
       cobissId,
       title,
