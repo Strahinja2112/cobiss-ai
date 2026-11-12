@@ -4,6 +4,7 @@ import Google from "next-auth/providers/google";
 import { env } from "~/env";
 
 export const authConfig = {
+  trustHost: true,
   providers: [
     Google({
       clientId: env.AUTH_GOOGLE_ID,
