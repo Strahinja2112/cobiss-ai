@@ -28,19 +28,63 @@ test("crawls later pages and returns ISBN values", async () => {
   mock.method(globalThis, "fetch", async (input) => {
     const url = new URL(input);
     if (url.pathname.endsWith("/bib/search")) {
-      assert.equal(url.searchParams.get("c"), "la=eng");
+      assert.equal(url.searchParams.get("c"), "stephen king AND la=eng");
       assert.equal(url.searchParams.get("db"), "gbvk-16");
       const start = Number(url.searchParams.get("start"));
       starts.push(start);
-      return new Response(start === 0 ? page(11, row("1", "First")) : page(11, row("2", "Second")));
+      return new Response(
+        start === 0
+          ? page(11, row("1", "First"))
+          : page(11, row("2", "Second")),
+      );
     }
-    return Response.json({ isbnCard: { value: url.pathname.includes("/1/") ? "978-0-123456-47-2" : "" } });
+    return Response.json({
+      isbnCard: {
+        value: url.pathname.includes("/1/") ? "978-0-123456-47-2" : "",
+      },
+    });
   });
 
   const events = [];
-  for await (const event of crawlBooks(new AbortController().signal)) events.push(event);
+  for await (const event of crawlBooks(new AbortController().signal))
+    events.push(event);
   assert.deepEqual(starts, [0, 10]);
-  assert.deepEqual(events.filter((event) => event.type === "page").map((event) => event.loaded), [1, 2]);
+  assert.deepEqual(
+    events
+      .filter((event) => event.type === "page")
+      .map((event) => event.loaded),
+    [1, 2],
+  );
   assert.equal(events.at(-1).type, "done");
   assert.equal(events.at(-1).checked, 2);
+});
+
+test("stops after five books and five ISBN lookups", async () => {
+  let searches = 0;
+  let details = 0;
+  mock.method(globalThis, "fetch", async (input) => {
+    const url = new URL(input);
+    if (url.pathname.endsWith("/bib/search")) {
+      searches++;
+      return new Response(
+        page(
+          100,
+          ...Array.from({ length: 10 }, (_, index) =>
+            row(String(index + 1), `Book ${index + 1}`),
+          ),
+        ),
+      );
+    }
+    details++;
+    return Response.json({ isbnCard: { value: "978-0-123456-47-2" } });
+  });
+
+  const events = [];
+  for await (const event of crawlBooks(new AbortController().signal))
+    events.push(event);
+  assert.equal(events.find((event) => event.type === "page").books.length, 5);
+  assert.equal(events.at(-1).loaded, 5);
+  assert.equal(events.at(-1).checked, 5);
+  assert.equal(searches, 1);
+  assert.equal(details, 5);
 });
