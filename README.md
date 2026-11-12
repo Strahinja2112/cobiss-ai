@@ -1,29 +1,17 @@
-# Create T3 App
+# COBISS Book Finder
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Local Next.js app built with Create T3 App. It fetches books from the `gbvk-1` COBISS catalog and shows title, author, ISBN, and a link to each record. Results stay in the browser tab; no database or cron job is used.
 
-## What's next? How do I make an app with this?
+## Setup
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+1. Run `pnpm install`.
+2. Copy `.env.example` to `.env`. Set `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, and `ALLOWED_GOOGLE_EMAIL`.
+3. Create a Google OAuth **Web application** client. Add `http://localhost:3000/api/auth/callback/google` as an authorized redirect URI. If the OAuth app is in testing mode, add your email as a test user.
+4. Run `pnpm dev`, open `http://localhost:3000`, and sign in with the allowed Google account.
+5. Click **Fetch all books**. Use **Stop** to end the crawl; books already received stay visible until refresh.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+The all-books COBISS search currently reports about 77,000 records. Fetching every ISBN can take hours. The page shows incoming results and fetch progress, 50 books at a time. Keep the tab and local server open until the crawl ends.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Checks
 
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Run `pnpm typecheck`, `node --test tests/cobiss.test.mjs`, and `pnpm build`. The `old/` directory contains the earlier CLI and sample output for reference. Prisma and tRPC files remain from the T3 scaffold, but no database route or database call is used by this feature.
