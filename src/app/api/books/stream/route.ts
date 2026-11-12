@@ -1,13 +1,18 @@
 import { auth } from "~/server/auth";
 import { crawlBooks } from "~/app/api/_lib/cobiss";
+import { saveBooks } from "~/app/api/_lib/save-books";
 import { env } from "~/env";
+import { db } from "~/server/db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-export async function GET(request: Request): Promise<Response> {
+export async function POST(request: Request): Promise<Response> {
   const session = await auth();
-  if (session?.user?.email?.toLowerCase() !== env.ALLOWED_GOOGLE_EMAIL.toLowerCase()) {
+  if (
+    session?.user?.email?.toLowerCase() !==
+    env.ALLOWED_GOOGLE_EMAIL.toLowerCase()
+  ) {
     return new Response("Unauthorized", { status: 401 });
   }
 
@@ -20,12 +25,18 @@ export async function GET(request: Request): Promise<Response> {
     async start(streamController) {
       try {
         for await (const event of crawlBooks(controller.signal)) {
-          streamController.enqueue(encoder.encode(`${JSON.stringify(event)}\n`));
+          await saveBooks(event, db);
+          streamController.enqueue(
+            encoder.encode(`${JSON.stringify(event)}\n`),
+          );
         }
       } catch (error) {
         if (!controller.signal.aborted) {
-          const message = error instanceof Error ? error.message : "COBISS fetch failed";
-          streamController.enqueue(encoder.encode(`${JSON.stringify({ type: "error", message })}\n`));
+          const message =
+            error instanceof Error ? error.message : "COBISS fetch failed";
+          streamController.enqueue(
+            encoder.encode(`${JSON.stringify({ type: "error", message })}\n`),
+          );
         }
       } finally {
         request.signal.removeEventListener("abort", abort);

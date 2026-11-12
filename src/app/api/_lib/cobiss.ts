@@ -1,10 +1,8 @@
 import { load } from "cheerio";
 
 const BASE = "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn";
-const DATABASE = "gbvk-16";
+export const COBISS_CATALOG = "gbvk-16";
 const PAGE_SIZE = 10;
-// shortcut: preview only five books, raise limit when persistent import is ready.
-const MAX_BOOKS = 5;
 
 export interface Book {
   cobissId: string;
@@ -35,7 +33,7 @@ export function parseSearchPage(html: string): SearchPage {
       entry.find("a.title").text().trim() || entry.attr("data-title")?.trim();
     if (!cobissId || !title) return;
 
-    const database = entry.attr("data-database") ?? DATABASE;
+    const database = entry.attr("data-database") ?? COBISS_CATALOG;
     books.push({
       cobissId,
       title,
@@ -74,8 +72,8 @@ export async function fetchSearchPage(
 ): Promise<SearchPage> {
   const url = new URL(`${BASE}/bib/search`);
   url.search = new URLSearchParams({
-    c: "stephen king AND la=eng",
-    db: DATABASE,
+    c: "la=eng",
+    db: COBISS_CATALOG,
     mat: "books",
     maxResult: String(PAGE_SIZE),
     start: String(start),
@@ -140,7 +138,7 @@ export async function* crawlBooks(
       throw new Error(`COBISS stopped before result ${totalHits}`);
     }
     const books = page.books.filter((book) => {
-      if (seen.size >= MAX_BOOKS || seen.has(book.cobissId)) return false;
+      if (seen.has(book.cobissId)) return false;
       seen.add(book.cobissId);
       return true;
     });
@@ -177,7 +175,7 @@ export async function* crawlBooks(
     }
     if (updates.length)
       yield { type: "isbn", items: updates, checked, failures };
-    if (seen.size >= MAX_BOOKS || start + page.books.length >= totalHits) break;
+    if (start + page.books.length >= totalHits) break;
     await new Promise((resolve) => setTimeout(resolve, 600));
   }
   yield { type: "done", loaded: seen.size, checked, failures };

@@ -28,7 +28,7 @@ test("crawls later pages and returns ISBN values", async () => {
   mock.method(globalThis, "fetch", async (input) => {
     const url = new URL(input);
     if (url.pathname.endsWith("/bib/search")) {
-      assert.equal(url.searchParams.get("c"), "stephen king AND la=eng");
+      assert.equal(url.searchParams.get("c"), "la=eng");
       assert.equal(url.searchParams.get("db"), "gbvk-16");
       const start = Number(url.searchParams.get("start"));
       starts.push(start);
@@ -59,7 +59,7 @@ test("crawls later pages and returns ISBN values", async () => {
   assert.equal(events.at(-1).checked, 2);
 });
 
-test("stops after five books and five ISBN lookups", async () => {
+test("fetches more than five books and checks every ISBN", async () => {
   let searches = 0;
   let details = 0;
   mock.method(globalThis, "fetch", async (input) => {
@@ -68,8 +68,8 @@ test("stops after five books and five ISBN lookups", async () => {
       searches++;
       return new Response(
         page(
-          100,
-          ...Array.from({ length: 10 }, (_, index) =>
+          6,
+          ...Array.from({ length: 6 }, (_, index) =>
             row(String(index + 1), `Book ${index + 1}`),
           ),
         ),
@@ -82,9 +82,9 @@ test("stops after five books and five ISBN lookups", async () => {
   const events = [];
   for await (const event of crawlBooks(new AbortController().signal))
     events.push(event);
-  assert.equal(events.find((event) => event.type === "page").books.length, 5);
-  assert.equal(events.at(-1).loaded, 5);
-  assert.equal(events.at(-1).checked, 5);
+  assert.equal(events.find((event) => event.type === "page").books.length, 6);
+  assert.equal(events.at(-1).loaded, 6);
+  assert.equal(events.at(-1).checked, 6);
   assert.equal(searches, 1);
-  assert.equal(details, 5);
+  assert.equal(details, 6);
 });
