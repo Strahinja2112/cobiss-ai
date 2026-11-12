@@ -18,8 +18,8 @@ export default async function Home() {
               Library catalog
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-6 text-[#5e675f]">
-              English books from GBVK-16, Odeljenje stranih jezika. Fetch runs
-              on this machine; results stay in this browser tab.
+              Preview five English Stephen King matches from GBVK-16. Fetch
+              runs on this machine; results stay in this browser tab.
             </p>
           </div>
           {session?.user && (

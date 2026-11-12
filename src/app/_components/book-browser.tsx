@@ -118,7 +118,7 @@ export function BookBrowser() {
           disabled={running}
           className="rounded-full bg-[#315c42] px-6 py-3 text-sm font-semibold text-white hover:bg-[#244a33] disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {running ? "Fetching…" : "Fetch all books"}
+          {running ? "Fetching…" : "Fetch 5 books"}
         </button>
         {running && (
           <button
@@ -139,7 +139,7 @@ export function BookBrowser() {
 
       {(loaded > 0 || running) && (
         <div className="mt-8 grid gap-3 rounded-2xl border border-[#ded9cd] bg-white p-5 text-sm sm:grid-cols-3">
-          <p><strong>{number.format(loaded)}</strong> / {number.format(total)} books loaded</p>
+          <p><strong>{number.format(loaded)}</strong> books loaded · {number.format(total)} matches</p>
           <p><strong>{number.format(checked)}</strong> ISBN checks</p>
           <p><strong>{number.format(pagesFetched)}</strong> pages fetched{failures ? ` · ${failures} lookup failures` : ""}</p>
         </div>
