@@ -13,7 +13,7 @@ export function BookBrowser() {
   const books = useRef<Book[]>([]);
   const positions = useRef(new Map<string, number>());
   const active = useRef<AbortController | null>(null);
-  const [version, setVersion] = useState(0);
+  const [, setVersion] = useState(0);
   const [page, setPage] = useState(0);
   const [running, setRunning] = useState(false);
   const [loaded, setLoaded] = useState(0);
@@ -108,7 +108,6 @@ export function BookBrowser() {
 
   const pageCount = Math.ceil(loaded / VISIBLE_COUNT);
   const visible = books.current.slice(page * VISIBLE_COUNT, (page + 1) * VISIBLE_COUNT);
-  void version;
 
   return (
     <section>
