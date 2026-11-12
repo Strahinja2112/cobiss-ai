@@ -18,17 +18,25 @@ export default async function Home() {
               Library catalog
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-6 text-[#5e675f]">
-              Preview five English Stephen King matches from GBVK-16. Fetch
-              runs on this machine; results stay in this browser tab.
+              Fetch English books from GBVK-16 and save them to the database.
+              Fetch runs on this machine.
             </p>
           </div>
           {session?.user && (
-            <Link
-              href="/api/auth/signout"
-              className="rounded-full border border-[#c4cabc] px-4 py-2 text-sm font-medium hover:bg-white"
-            >
-              Sign out
-            </Link>
+            <nav className="flex flex-wrap gap-2">
+              <Link
+                href="/books"
+                className="rounded-full border border-[#c4cabc] px-4 py-2 text-sm font-medium hover:bg-white"
+              >
+                Saved books
+              </Link>
+              <Link
+                href="/api/auth/signout"
+                className="rounded-full border border-[#c4cabc] px-4 py-2 text-sm font-medium hover:bg-white"
+              >
+                Sign out
+              </Link>
+            </nav>
           )}
         </header>
 
@@ -36,7 +44,9 @@ export default async function Home() {
           <BookBrowser />
         ) : (
           <section className="max-w-lg rounded-2xl border border-[#ded9cd] bg-white p-8 shadow-sm">
-            <h2 className="font-heading text-2xl font-semibold">Sign in to browse</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Sign in to browse
+            </h2>
             <p className="mt-3 text-sm leading-6 text-[#5e675f]">
               This catalog is available only to the approved Google account.
             </p>
