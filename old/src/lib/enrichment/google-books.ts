@@ -1,11 +1,16 @@
-import axios from "axios"
-import { GOOGLE_BOOKS_BASE_URL, GOOGLE_BOOKS_API_KEY } from "../config/index.js"
-import { extractIsbn } from "../utils/isbn.js"
-import type { GoogleDetails } from "../../types/index.js"
+import axios from "axios";
+import {
+  GOOGLE_BOOKS_BASE_URL,
+  GOOGLE_BOOKS_API_KEY,
+} from "../config/index.js";
+import { extractIsbn } from "../utils/isbn.js";
+import type { GoogleDetails } from "../../types/index.js";
 
-function pickImageLinks(volumeInfo: Record<string, unknown>): GoogleDetails["imageLinks"] | undefined {
-  const images = volumeInfo.imageLinks as Record<string, string> | undefined
-  if (!images) return undefined
+function pickImageLinks(
+  volumeInfo: Record<string, unknown>,
+): GoogleDetails["imageLinks"] | undefined {
+  const images = volumeInfo.imageLinks as Record<string, string> | undefined;
+  if (!images) return undefined;
   return {
     smallThumbnail: images.smallThumbnail,
     thumbnail: images.thumbnail,
@@ -13,28 +18,33 @@ function pickImageLinks(volumeInfo: Record<string, unknown>): GoogleDetails["ima
     medium: images.medium,
     large: images.large,
     extraLarge: images.extraLarge,
-  }
+  };
 }
 
-export async function fetchGoogleDetails(isbn: string): Promise<GoogleDetails | null> {
-  if (!isbn) return null
+export async function fetchGoogleDetails(
+  isbn: string,
+): Promise<GoogleDetails | null> {
+  if (!isbn) return null;
 
-  const cleanIsbn = extractIsbn(isbn)
-  if (!cleanIsbn) return null
+  const cleanIsbn = extractIsbn(isbn);
+  if (!cleanIsbn) return null;
 
   try {
-    const params: Record<string, string> = { q: `isbn:${cleanIsbn}` }
-    if (GOOGLE_BOOKS_API_KEY) params.key = GOOGLE_BOOKS_API_KEY
+    const params: Record<string, string> = { q: `isbn:${cleanIsbn}` };
+    if (GOOGLE_BOOKS_API_KEY) params.key = GOOGLE_BOOKS_API_KEY;
 
     const resp = await axios.get(`${GOOGLE_BOOKS_BASE_URL}/volumes`, {
       params,
       timeout: 10_000,
-    })
+    });
 
-    const data = resp.data as { totalItems: number; items?: Array<{ volumeInfo: Record<string, unknown> }> }
-    if (!data.totalItems || !data.items?.length) return null
+    const data = resp.data as {
+      totalItems: number;
+      items?: Array<{ volumeInfo: Record<string, unknown> }>;
+    };
+    if (!data.totalItems || !data.items?.length) return null;
 
-    const v = data.items[0].volumeInfo
+    const v = data.items[0].volumeInfo;
 
     return {
       description: (v.description as string)?.slice(0, 3000),
@@ -49,8 +59,8 @@ export async function fetchGoogleDetails(isbn: string): Promise<GoogleDetails | 
       imageLinks: pickImageLinks(v),
       previewLink: v.previewLink as string,
       infoLink: v.infoLink as string,
-    }
+    };
   } catch {
-    return null
+    return null;
   }
 }

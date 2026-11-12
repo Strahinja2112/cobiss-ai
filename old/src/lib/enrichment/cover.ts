@@ -1,5 +1,5 @@
-import axios from "axios"
-import { NO_GOOGLE_IMAGE_URL, COBISS_THUMBNAIL_BASE } from "../config/index.js"
+import axios from "axios";
+import { NO_GOOGLE_IMAGE_URL, COBISS_THUMBNAIL_BASE } from "../config/index.js";
 
 export function resolveCoverImage(
   googleThumbnail: string | undefined | null,
@@ -7,32 +7,34 @@ export function resolveCoverImage(
   delfiCoverUrl?: string | null,
 ): string | null {
   if (googleThumbnail && googleThumbnail !== NO_GOOGLE_IMAGE_URL) {
-    return googleThumbnail
+    return googleThumbnail;
   }
 
   if (delfiCoverUrl) {
-    return delfiCoverUrl
+    return delfiCoverUrl;
   }
 
-  return `${COBISS_THUMBNAIL_BASE}/${cobissId}`
+  return `${COBISS_THUMBNAIL_BASE}/${cobissId}`;
 }
 
-let cobissCoverCache = new Set<string>()
+let cobissCoverCache = new Set<string>();
 
-export async function verifyCobissCover(cobissId: string): Promise<string | null> {
+export async function verifyCobissCover(
+  cobissId: string,
+): Promise<string | null> {
   if (cobissCoverCache.has(cobissId)) {
-    return `${COBISS_THUMBNAIL_BASE}/${cobissId}`
+    return `${COBISS_THUMBNAIL_BASE}/${cobissId}`;
   }
 
-  const url = `${COBISS_THUMBNAIL_BASE}/${cobissId}`
+  const url = `${COBISS_THUMBNAIL_BASE}/${cobissId}`;
   try {
-    const resp = await axios.head(url, { timeout: 3000 })
+    const resp = await axios.head(url, { timeout: 3000 });
     if (resp.status === 200) {
-      cobissCoverCache.add(cobissId)
-      return url
+      cobissCoverCache.add(cobissId);
+      return url;
     }
-    return null
+    return null;
   } catch {
-    return null
+    return null;
   }
 }
