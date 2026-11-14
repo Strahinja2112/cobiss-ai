@@ -7,11 +7,13 @@ Local Next.js app built with Create T3 App. It fetches English-language books fr
 1. Run `pnpm install`.
 2. Copy `.env.example` to `.env`. Set `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, `ALLOWED_GOOGLE_EMAIL`, and `DATABASE_URL`.
 3. Create a Google OAuth **Web application** client. Add `http://localhost:3000/api/auth/callback/google` as an authorized redirect URI. If the OAuth app is in testing mode, add your email as a test user.
-4. Start PostgreSQL and run `pnpm exec prisma db push` to create the tables.
+4. Start PostgreSQL and run `pnpm db:migrate` to create the tables.
 5. Run `pnpm dev`, open `http://localhost:3000`, and sign in with the allowed Google account.
 6. Click **Fetch and save all books**. Use **Stop** to end the fetch; saved books remain available at `/books`.
 
 The app fetches every English-language book in this department and checks each ISBN. Repeating a fetch updates records instead of creating duplicates. The main page shows incoming results and fetch progress; `/books` lists saved records.
+
+For an existing database created with `prisma db push`, first run `pnpm exec prisma migrate resolve --applied 20261114170000_baseline`, then `pnpm db:migrate`. The baseline records the tables already present; the next migration links existing books to authors.
 
 ## Checks
 
