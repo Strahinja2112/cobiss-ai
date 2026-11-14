@@ -79,7 +79,6 @@ model Book {
   catalog               String    @default("gbvk-16")
   cobissId              String
   title                 String
-  author                String
   isbn                  String?
   language              String    @default("eng")
   sourceUrl             String

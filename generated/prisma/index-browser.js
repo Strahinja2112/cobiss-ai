@@ -171,7 +171,6 @@ exports.Prisma.BookScalarFieldEnum = {
   catalog: 'catalog',
   cobissId: 'cobissId',
   title: 'title',
-  author: 'author',
   isbn: 'isbn',
   language: 'language',
   sourceUrl: 'sourceUrl',

@@ -29,6 +29,7 @@ export default async function SavedBooks({
       : 1;
   const books = await db.book.findMany({
     orderBy: [{ lastFetchedAt: "desc" }, { id: "desc" }],
+    include: { authors: { orderBy: { name: "asc" } } },
     skip: (page - 1) * PAGE_SIZE,
     take: PAGE_SIZE,
   });
@@ -74,7 +75,8 @@ export default async function SavedBooks({
                     {book.title}
                   </a>
                   <p className="mt-1 text-sm text-[#5e675f]">
-                    {book.author || "Author unknown"}
+                    {book.authors.map((author) => author.name).join(" ; ") ||
+                      "Author unknown"}
                   </p>
                   <p className="mt-1 text-xs text-[#7b8179]">
                     ISBN: {book.isbn ?? "Unavailable"}

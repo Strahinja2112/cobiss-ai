@@ -3,7 +3,7 @@ import test from "node:test";
 
 import { authorNames } from "./author-names.ts";
 
-test("splits multiple authors without splitting aliases or duplicate names", () => {
+void test("splits multiple authors without splitting aliases or duplicate names", () => {
   assert.deepEqual(
     authorNames(
       "Griffiths, Dawn = Даун, Грифитс ; Griffiths, David ; Griffiths, Dawn = Даун, Грифитс",

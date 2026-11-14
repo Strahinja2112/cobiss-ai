@@ -7055,7 +7055,6 @@ export namespace Prisma {
     catalog: string | null
     cobissId: string | null
     title: string | null
-    author: string | null
     isbn: string | null
     language: string | null
     sourceUrl: string | null
@@ -7069,7 +7068,6 @@ export namespace Prisma {
     catalog: string | null
     cobissId: string | null
     title: string | null
-    author: string | null
     isbn: string | null
     language: string | null
     sourceUrl: string | null
@@ -7083,7 +7081,6 @@ export namespace Prisma {
     catalog: number
     cobissId: number
     title: number
-    author: number
     isbn: number
     language: number
     sourceUrl: number
@@ -7099,7 +7096,6 @@ export namespace Prisma {
     catalog?: true
     cobissId?: true
     title?: true
-    author?: true
     isbn?: true
     language?: true
     sourceUrl?: true
@@ -7113,7 +7109,6 @@ export namespace Prisma {
     catalog?: true
     cobissId?: true
     title?: true
-    author?: true
     isbn?: true
     language?: true
     sourceUrl?: true
@@ -7127,7 +7122,6 @@ export namespace Prisma {
     catalog?: true
     cobissId?: true
     title?: true
-    author?: true
     isbn?: true
     language?: true
     sourceUrl?: true
@@ -7214,7 +7208,6 @@ export namespace Prisma {
     catalog: string
     cobissId: string
     title: string
-    author: string
     isbn: string | null
     language: string
     sourceUrl: string
@@ -7245,7 +7238,6 @@ export namespace Prisma {
     catalog?: boolean
     cobissId?: boolean
     title?: boolean
-    author?: boolean
     isbn?: boolean
     language?: boolean
     sourceUrl?: boolean
@@ -7262,7 +7254,6 @@ export namespace Prisma {
     catalog?: boolean
     cobissId?: boolean
     title?: boolean
-    author?: boolean
     isbn?: boolean
     language?: boolean
     sourceUrl?: boolean
@@ -7276,7 +7267,6 @@ export namespace Prisma {
     catalog?: boolean
     cobissId?: boolean
     title?: boolean
-    author?: boolean
     isbn?: boolean
     language?: boolean
     sourceUrl?: boolean
@@ -7290,7 +7280,6 @@ export namespace Prisma {
     catalog?: boolean
     cobissId?: boolean
     title?: boolean
-    author?: boolean
     isbn?: boolean
     language?: boolean
     sourceUrl?: boolean
@@ -7299,7 +7288,7 @@ export namespace Prisma {
     availabilityCheckedAt?: boolean
   }
 
-  export type BookOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "catalog" | "cobissId" | "title" | "author" | "isbn" | "language" | "sourceUrl" | "lastFetchedAt" | "availabilityStatus" | "availabilityCheckedAt", ExtArgs["result"]["book"]>
+  export type BookOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "catalog" | "cobissId" | "title" | "isbn" | "language" | "sourceUrl" | "lastFetchedAt" | "availabilityStatus" | "availabilityCheckedAt", ExtArgs["result"]["book"]>
   export type BookInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     enrichment?: boolean | Book$enrichmentArgs<ExtArgs>
     authors?: boolean | Book$authorsArgs<ExtArgs>
@@ -7319,7 +7308,6 @@ export namespace Prisma {
       catalog: string
       cobissId: string
       title: string
-      author: string
       isbn: string | null
       language: string
       sourceUrl: string
@@ -7755,7 +7743,6 @@ export namespace Prisma {
     readonly catalog: FieldRef<"Book", 'String'>
     readonly cobissId: FieldRef<"Book", 'String'>
     readonly title: FieldRef<"Book", 'String'>
-    readonly author: FieldRef<"Book", 'String'>
     readonly isbn: FieldRef<"Book", 'String'>
     readonly language: FieldRef<"Book", 'String'>
     readonly sourceUrl: FieldRef<"Book", 'String'>
@@ -10380,7 +10367,6 @@ export namespace Prisma {
     catalog: 'catalog',
     cobissId: 'cobissId',
     title: 'title',
-    author: 'author',
     isbn: 'isbn',
     language: 'language',
     sourceUrl: 'sourceUrl',
@@ -10817,7 +10803,6 @@ export namespace Prisma {
     catalog?: StringFilter<"Book"> | string
     cobissId?: StringFilter<"Book"> | string
     title?: StringFilter<"Book"> | string
-    author?: StringFilter<"Book"> | string
     isbn?: StringNullableFilter<"Book"> | string | null
     language?: StringFilter<"Book"> | string
     sourceUrl?: StringFilter<"Book"> | string
@@ -10833,7 +10818,6 @@ export namespace Prisma {
     catalog?: SortOrder
     cobissId?: SortOrder
     title?: SortOrder
-    author?: SortOrder
     isbn?: SortOrderInput | SortOrder
     language?: SortOrder
     sourceUrl?: SortOrder
@@ -10853,7 +10837,6 @@ export namespace Prisma {
     catalog?: StringFilter<"Book"> | string
     cobissId?: StringFilter<"Book"> | string
     title?: StringFilter<"Book"> | string
-    author?: StringFilter<"Book"> | string
     isbn?: StringNullableFilter<"Book"> | string | null
     language?: StringFilter<"Book"> | string
     sourceUrl?: StringFilter<"Book"> | string
@@ -10869,7 +10852,6 @@ export namespace Prisma {
     catalog?: SortOrder
     cobissId?: SortOrder
     title?: SortOrder
-    author?: SortOrder
     isbn?: SortOrderInput | SortOrder
     language?: SortOrder
     sourceUrl?: SortOrder
@@ -10889,7 +10871,6 @@ export namespace Prisma {
     catalog?: StringWithAggregatesFilter<"Book"> | string
     cobissId?: StringWithAggregatesFilter<"Book"> | string
     title?: StringWithAggregatesFilter<"Book"> | string
-    author?: StringWithAggregatesFilter<"Book"> | string
     isbn?: StringNullableWithAggregatesFilter<"Book"> | string | null
     language?: StringWithAggregatesFilter<"Book"> | string
     sourceUrl?: StringWithAggregatesFilter<"Book"> | string
@@ -11324,7 +11305,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -11340,7 +11320,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -11356,7 +11335,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -11372,7 +11350,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -11388,7 +11365,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -11402,7 +11378,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -11416,7 +11391,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -11924,7 +11898,6 @@ export namespace Prisma {
     catalog?: SortOrder
     cobissId?: SortOrder
     title?: SortOrder
-    author?: SortOrder
     isbn?: SortOrder
     language?: SortOrder
     sourceUrl?: SortOrder
@@ -11938,7 +11911,6 @@ export namespace Prisma {
     catalog?: SortOrder
     cobissId?: SortOrder
     title?: SortOrder
-    author?: SortOrder
     isbn?: SortOrder
     language?: SortOrder
     sourceUrl?: SortOrder
@@ -11952,7 +11924,6 @@ export namespace Prisma {
     catalog?: SortOrder
     cobissId?: SortOrder
     title?: SortOrder
-    author?: SortOrder
     isbn?: SortOrder
     language?: SortOrder
     sourceUrl?: SortOrder
@@ -12991,7 +12962,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -13006,7 +12976,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -13045,7 +13014,6 @@ export namespace Prisma {
     catalog?: StringFilter<"Book"> | string
     cobissId?: StringFilter<"Book"> | string
     title?: StringFilter<"Book"> | string
-    author?: StringFilter<"Book"> | string
     isbn?: StringNullableFilter<"Book"> | string | null
     language?: StringFilter<"Book"> | string
     sourceUrl?: StringFilter<"Book"> | string
@@ -13059,7 +13027,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -13074,7 +13041,6 @@ export namespace Prisma {
     catalog?: string
     cobissId: string
     title: string
-    author: string
     isbn?: string | null
     language?: string
     sourceUrl: string
@@ -13105,7 +13071,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -13120,7 +13085,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -13258,7 +13222,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -13273,7 +13236,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
@@ -13288,7 +13250,6 @@ export namespace Prisma {
     catalog?: StringFieldUpdateOperationsInput | string
     cobissId?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
-    author?: StringFieldUpdateOperationsInput | string
     isbn?: NullableStringFieldUpdateOperationsInput | string | null
     language?: StringFieldUpdateOperationsInput | string
     sourceUrl?: StringFieldUpdateOperationsInput | string
