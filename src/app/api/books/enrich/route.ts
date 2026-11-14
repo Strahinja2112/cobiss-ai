@@ -1,4 +1,5 @@
 import { enrichBook, GeminiHttpError } from "~/app/api/_lib/enrich-book";
+import { displayedBooks } from "~/app/api/_lib/book-selection";
 import { env } from "~/env";
 import { auth } from "~/server/auth";
 import { db } from "~/server/db";
@@ -21,7 +22,7 @@ export async function POST(request: Request): Promise<Response> {
   }
 
   const books = await db.book.findMany({
-    where: { enrichment: { is: null } },
+    where: { ...displayedBooks, enrichment: { is: null } },
     include: { authors: { select: { name: true } } },
     orderBy: [{ lastFetchedAt: "desc" }, { id: "desc" }],
     take: 25,
