@@ -88,9 +88,15 @@ model Book {
     availabilityCheckedAt DateTime?
 
     enrichment BookEnrichment?
+    authors    Author[]
 
     @@unique([catalog, cobissId])
     @@index([isbn])
+}
+
+model Author {
+    name  String @id
+    books Book[]
 }
 
 model BookEnrichment {

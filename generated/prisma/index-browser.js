@@ -180,6 +180,10 @@ exports.Prisma.BookScalarFieldEnum = {
   availabilityCheckedAt: 'availabilityCheckedAt'
 };
 
+exports.Prisma.AuthorScalarFieldEnum = {
+  name: 'name'
+};
+
 exports.Prisma.BookEnrichmentScalarFieldEnum = {
   bookId: 'bookId',
   summary: 'summary',
@@ -213,6 +217,7 @@ exports.Prisma.ModelName = {
   User: 'User',
   VerificationToken: 'VerificationToken',
   Book: 'Book',
+  Author: 'Author',
   BookEnrichment: 'BookEnrichment'
 };
 

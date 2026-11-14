@@ -1,5 +1,6 @@
 import type { PrismaClient } from "../../../../generated/prisma";
 
+import { authorNames } from "./author-names.ts";
 import { COBISS_CATALOG, type CrawlEvent } from "./cobiss.ts";
 
 export async function saveBooks(
@@ -8,6 +9,10 @@ export async function saveBooks(
 ): Promise<void> {
   if (event.type === "page") {
     for (const book of event.books) {
+      const authors = authorNames(book.author).map((name) => ({
+        where: { name },
+        create: { name },
+      }));
       await db.book.upsert({
         where: {
           catalog_cobissId: {
@@ -20,12 +25,14 @@ export async function saveBooks(
           cobissId: book.cobissId,
           title: book.title,
           author: book.author,
+          authors: { connectOrCreate: authors },
           isbn: book.isbn,
           sourceUrl: book.url,
         },
         update: {
           title: book.title,
           author: book.author,
+          authors: { set: [], connectOrCreate: authors },
           sourceUrl: book.url,
           lastFetchedAt: new Date(),
         },
