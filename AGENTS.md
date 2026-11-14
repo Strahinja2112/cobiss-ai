@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository is a Create T3 App project using Next.js App Router and TypeScript. Pages and route handlers live in `src/app/`; shared UI lives in `src/components/`; styles live in `src/styles/`. Authentication is configured in `src/server/auth/`, and environment variable validation lives in `src/env.js`. Static files belong in `public/`. `old/` contains the earlier COBISS CLI and sample results; treat it as reference material while migrating scraper code. Prisma and tRPC scaffold files are present, but the current book-fetching feature does not use a database.
+This repository is a Create T3 App project using Next.js App Router and TypeScript. Pages and route handlers live in `src/app/`; the existing import workflow is under the `/import` URL in `src/app/import/`; shared UI lives in `src/components/`; styles live in `src/styles/`. Authentication is configured in `src/server/auth/`, and environment variable validation lives in `src/env.js`. Static files belong in `public/`. `old/` contains the earlier COBISS CLI and sample results; treat it as reference material while migrating scraper code. Book fetching and enrichment use PostgreSQL through Prisma; tRPC scaffold files remain.
 
 ## Build, Test, and Development Commands
 

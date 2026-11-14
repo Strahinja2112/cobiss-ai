@@ -125,7 +125,7 @@ export function BookBrowser() {
           type="button"
           onClick={() => void start()}
           disabled={running}
-          className="rounded-full bg-[#315c42] px-6 py-3 text-sm font-semibold text-white hover:bg-[#244a33] disabled:cursor-not-allowed disabled:opacity-60"
+          className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60"
         >
           {running ? "Fetching…" : "Fetch and save all books"}
         </button>
@@ -136,13 +136,13 @@ export function BookBrowser() {
               active.current?.abort();
               setMessage("Fetch stopped. Saved books remain in the database.");
             }}
-            className="rounded-full border border-[#c4cabc] px-5 py-3 text-sm font-semibold hover:bg-white"
+            className="border-border hover:bg-card rounded-full border px-5 py-3 text-sm font-semibold"
           >
             Stop
           </button>
         )}
         <span
-          className="text-sm text-[#5e675f]"
+          className="text-muted-foreground text-sm"
           role="status"
           aria-live="polite"
         >
@@ -152,7 +152,7 @@ export function BookBrowser() {
       </div>
 
       {(loaded > 0 || running) && (
-        <div className="mt-8 grid gap-3 rounded-2xl border border-[#ded9cd] bg-white p-5 text-sm sm:grid-cols-3">
+        <div className="border-border bg-card mt-8 grid gap-3 rounded-2xl border p-5 text-sm sm:grid-cols-3">
           <p>
             <strong>{number.format(loaded)}</strong> books saved ·{" "}
             {number.format(total)} matches
@@ -171,25 +171,25 @@ export function BookBrowser() {
         <>
           <div className="mt-8 flex items-center justify-between gap-4">
             <h2 className="font-heading text-2xl font-semibold">Books</h2>
-            <span className="text-sm text-[#5e675f]">
+            <span className="text-muted-foreground text-sm">
               Page {page + 1} of {pageCount}
             </span>
           </div>
-          <ol className="mt-4 divide-y divide-[#e4dfd5] rounded-2xl border border-[#ded9cd] bg-white px-5">
+          <ol className="divide-border border-border bg-card mt-4 divide-y rounded-2xl border px-5">
             {visible.map((book) => (
               <li key={book.cobissId} className="py-4">
                 <a
                   href={book.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[#244a33] underline-offset-2 hover:underline"
+                  className="text-primary font-medium underline-offset-2 hover:underline"
                 >
                   {book.title}
                 </a>
-                <p className="mt-1 text-sm text-[#5e675f]">
+                <p className="text-muted-foreground mt-1 text-sm">
                   {book.author || "Author unknown"}
                 </p>
-                <p className="mt-1 text-xs text-[#7b8179]">
+                <p className="text-muted-foreground mt-1 text-xs">
                   ISBN: {book.isbn ?? "Unavailable"}
                 </p>
               </li>
@@ -203,7 +203,7 @@ export function BookBrowser() {
               type="button"
               disabled={page === 0}
               onClick={() => setPage(page - 1)}
-              className="rounded-full border border-[#c4cabc] px-5 py-2 text-sm disabled:opacity-40"
+              className="border-border rounded-full border px-5 py-2 text-sm disabled:opacity-40"
             >
               Previous
             </button>
@@ -211,7 +211,7 @@ export function BookBrowser() {
               type="button"
               disabled={page + 1 >= pageCount}
               onClick={() => setPage(page + 1)}
-              className="rounded-full border border-[#c4cabc] px-5 py-2 text-sm disabled:opacity-40"
+              className="border-border rounded-full border px-5 py-2 text-sm disabled:opacity-40"
             >
               Next
             </button>
