@@ -1,0 +1,1 @@
+ALTER TABLE "BookEnrichment" ADD COLUMN "profile" JSONB NOT NULL DEFAULT '{}';

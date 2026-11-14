@@ -105,6 +105,7 @@ model BookEnrichment {
   genres     String[]
   themes     String[]
   mood       String[]
+  profile    Json     @default("{}")
   model      String
   enrichedAt DateTime @default(now())
 }

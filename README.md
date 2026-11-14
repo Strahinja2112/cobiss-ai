@@ -13,8 +13,10 @@ Local Next.js app built with Create T3 App. It fetches English-language books fr
 
 The app fetches every English-language book in this department and checks each ISBN. Repeating a fetch updates records instead of creating duplicates. The main page shows incoming results and fetch progress; `/books` lists saved records.
 
+To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then click **Enrich next 25** on `/books`. Each run processes at most 25 books without profiles; progress and failures appear beside the button. Completed profiles can be reviewed under each saved book. Gemini calls may incur charges.
+
 For an existing database created with `prisma db push`, first run `pnpm exec prisma migrate resolve --applied 20261114170000_baseline`, then `pnpm db:migrate`. The baseline records the tables already present; the next migration links existing books to authors.
 
 ## Checks
 
-Run `pnpm typecheck`, `node --test tests/*.test.mjs`, and `pnpm build`. The `old/` directory contains the earlier CLI and sample output for reference. The app uses Prisma for saved books; tRPC files remain from the T3 scaffold.
+Run `pnpm typecheck`, `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts`, and `pnpm build`. The `old/` directory contains the earlier CLI and sample output for reference. The app uses Prisma for saved books; tRPC files remain from the T3 scaffold.

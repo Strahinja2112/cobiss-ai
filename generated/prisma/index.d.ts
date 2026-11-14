@@ -9246,6 +9246,7 @@ export namespace Prisma {
     genres: number
     themes: number
     mood: number
+    profile: number
     model: number
     enrichedAt: number
     _all: number
@@ -9272,6 +9273,7 @@ export namespace Prisma {
     genres?: true
     themes?: true
     mood?: true
+    profile?: true
     model?: true
     enrichedAt?: true
     _all?: true
@@ -9355,6 +9357,7 @@ export namespace Prisma {
     genres: string[]
     themes: string[]
     mood: string[]
+    profile: JsonValue
     model: string
     enrichedAt: Date
     _count: BookEnrichmentCountAggregateOutputType | null
@@ -9382,6 +9385,7 @@ export namespace Prisma {
     genres?: boolean
     themes?: boolean
     mood?: boolean
+    profile?: boolean
     model?: boolean
     enrichedAt?: boolean
     book?: boolean | BookDefaultArgs<ExtArgs>
@@ -9393,6 +9397,7 @@ export namespace Prisma {
     genres?: boolean
     themes?: boolean
     mood?: boolean
+    profile?: boolean
     model?: boolean
     enrichedAt?: boolean
     book?: boolean | BookDefaultArgs<ExtArgs>
@@ -9404,6 +9409,7 @@ export namespace Prisma {
     genres?: boolean
     themes?: boolean
     mood?: boolean
+    profile?: boolean
     model?: boolean
     enrichedAt?: boolean
     book?: boolean | BookDefaultArgs<ExtArgs>
@@ -9415,11 +9421,12 @@ export namespace Prisma {
     genres?: boolean
     themes?: boolean
     mood?: boolean
+    profile?: boolean
     model?: boolean
     enrichedAt?: boolean
   }
 
-  export type BookEnrichmentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"bookId" | "summary" | "genres" | "themes" | "mood" | "model" | "enrichedAt", ExtArgs["result"]["bookEnrichment"]>
+  export type BookEnrichmentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"bookId" | "summary" | "genres" | "themes" | "mood" | "profile" | "model" | "enrichedAt", ExtArgs["result"]["bookEnrichment"]>
   export type BookEnrichmentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     book?: boolean | BookDefaultArgs<ExtArgs>
   }
@@ -9441,6 +9448,7 @@ export namespace Prisma {
       genres: string[]
       themes: string[]
       mood: string[]
+      profile: Prisma.JsonValue
       model: string
       enrichedAt: Date
     }, ExtArgs["result"]["bookEnrichment"]>
@@ -9872,6 +9880,7 @@ export namespace Prisma {
     readonly genres: FieldRef<"BookEnrichment", 'String[]'>
     readonly themes: FieldRef<"BookEnrichment", 'String[]'>
     readonly mood: FieldRef<"BookEnrichment", 'String[]'>
+    readonly profile: FieldRef<"BookEnrichment", 'Json'>
     readonly model: FieldRef<"BookEnrichment", 'String'>
     readonly enrichedAt: FieldRef<"BookEnrichment", 'DateTime'>
   }
@@ -10391,6 +10400,7 @@ export namespace Prisma {
     genres: 'genres',
     themes: 'themes',
     mood: 'mood',
+    profile: 'profile',
     model: 'model',
     enrichedAt: 'enrichedAt'
   };
@@ -10404,6 +10414,13 @@ export namespace Prisma {
   };
 
   export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
+
+
+  export const JsonNullValueInput: {
+    JsonNull: typeof JsonNull
+  };
+
+  export type JsonNullValueInput = (typeof JsonNullValueInput)[keyof typeof JsonNullValueInput]
 
 
   export const QueryMode: {
@@ -10420,6 +10437,15 @@ export namespace Prisma {
   };
 
   export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
+
+
+  export const JsonNullValueFilter: {
+    DbNull: typeof DbNull,
+    JsonNull: typeof JsonNull,
+    AnyNull: typeof AnyNull
+  };
+
+  export type JsonNullValueFilter = (typeof JsonNullValueFilter)[keyof typeof JsonNullValueFilter]
 
 
   /**
@@ -10467,6 +10493,20 @@ export namespace Prisma {
    */
   export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
     
+
+
+  /**
+   * Reference to a field of type 'Json'
+   */
+  export type JsonFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Json'>
+
+
+
+  /**
+   * Reference to a field of type 'QueryMode'
+   */
+  export type EnumQueryModeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'QueryMode'>
+
 
 
   /**
@@ -10923,6 +10963,7 @@ export namespace Prisma {
     genres?: StringNullableListFilter<"BookEnrichment">
     themes?: StringNullableListFilter<"BookEnrichment">
     mood?: StringNullableListFilter<"BookEnrichment">
+    profile?: JsonFilter<"BookEnrichment">
     model?: StringFilter<"BookEnrichment"> | string
     enrichedAt?: DateTimeFilter<"BookEnrichment"> | Date | string
     book?: XOR<BookScalarRelationFilter, BookWhereInput>
@@ -10934,6 +10975,7 @@ export namespace Prisma {
     genres?: SortOrder
     themes?: SortOrder
     mood?: SortOrder
+    profile?: SortOrder
     model?: SortOrder
     enrichedAt?: SortOrder
     book?: BookOrderByWithRelationInput
@@ -10948,6 +10990,7 @@ export namespace Prisma {
     genres?: StringNullableListFilter<"BookEnrichment">
     themes?: StringNullableListFilter<"BookEnrichment">
     mood?: StringNullableListFilter<"BookEnrichment">
+    profile?: JsonFilter<"BookEnrichment">
     model?: StringFilter<"BookEnrichment"> | string
     enrichedAt?: DateTimeFilter<"BookEnrichment"> | Date | string
     book?: XOR<BookScalarRelationFilter, BookWhereInput>
@@ -10959,6 +11002,7 @@ export namespace Prisma {
     genres?: SortOrder
     themes?: SortOrder
     mood?: SortOrder
+    profile?: SortOrder
     model?: SortOrder
     enrichedAt?: SortOrder
     _count?: BookEnrichmentCountOrderByAggregateInput
@@ -10975,6 +11019,7 @@ export namespace Prisma {
     genres?: StringNullableListFilter<"BookEnrichment">
     themes?: StringNullableListFilter<"BookEnrichment">
     mood?: StringNullableListFilter<"BookEnrichment">
+    profile?: JsonWithAggregatesFilter<"BookEnrichment">
     model?: StringWithAggregatesFilter<"BookEnrichment"> | string
     enrichedAt?: DateTimeWithAggregatesFilter<"BookEnrichment"> | Date | string
   }
@@ -11436,6 +11481,7 @@ export namespace Prisma {
     genres?: BookEnrichmentCreategenresInput | string[]
     themes?: BookEnrichmentCreatethemesInput | string[]
     mood?: BookEnrichmentCreatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model: string
     enrichedAt?: Date | string
     book: BookCreateNestedOneWithoutEnrichmentInput
@@ -11447,6 +11493,7 @@ export namespace Prisma {
     genres?: BookEnrichmentCreategenresInput | string[]
     themes?: BookEnrichmentCreatethemesInput | string[]
     mood?: BookEnrichmentCreatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model: string
     enrichedAt?: Date | string
   }
@@ -11456,6 +11503,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     book?: BookUpdateOneRequiredWithoutEnrichmentNestedInput
@@ -11467,6 +11515,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -11477,6 +11526,7 @@ export namespace Prisma {
     genres?: BookEnrichmentCreategenresInput | string[]
     themes?: BookEnrichmentCreatethemesInput | string[]
     mood?: BookEnrichmentCreatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model: string
     enrichedAt?: Date | string
   }
@@ -11486,6 +11536,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -11496,6 +11547,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -11961,6 +12013,29 @@ export namespace Prisma {
     hasSome?: string[] | ListStringFieldRefInput<$PrismaModel>
     isEmpty?: boolean
   }
+  export type JsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
 
   export type BookScalarRelationFilter = {
     is?: BookWhereInput
@@ -11973,6 +12048,7 @@ export namespace Prisma {
     genres?: SortOrder
     themes?: SortOrder
     mood?: SortOrder
+    profile?: SortOrder
     model?: SortOrder
     enrichedAt?: SortOrder
   }
@@ -11989,6 +12065,32 @@ export namespace Prisma {
     summary?: SortOrder
     model?: SortOrder
     enrichedAt?: SortOrder
+  }
+  export type JsonWithAggregatesFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonWithAggregatesFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonWithAggregatesFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedJsonFilter<$PrismaModel>
+    _max?: NestedJsonFilter<$PrismaModel>
   }
 
   export type UserCreateNestedOneWithoutPostsInput = {
@@ -12527,6 +12629,29 @@ export namespace Prisma {
     _min?: NestedDateTimeNullableFilter<$PrismaModel>
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
+  export type NestedJsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<NestedJsonFilterBase<$PrismaModel>>, Exclude<keyof Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<NestedJsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type NestedJsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
 
   export type UserCreateWithoutPostsInput = {
     id?: string
@@ -12874,6 +12999,7 @@ export namespace Prisma {
     genres?: BookEnrichmentCreategenresInput | string[]
     themes?: BookEnrichmentCreatethemesInput | string[]
     mood?: BookEnrichmentCreatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model: string
     enrichedAt?: Date | string
   }
@@ -12883,6 +13009,7 @@ export namespace Prisma {
     genres?: BookEnrichmentCreategenresInput | string[]
     themes?: BookEnrichmentCreatethemesInput | string[]
     mood?: BookEnrichmentCreatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model: string
     enrichedAt?: Date | string
   }
@@ -12921,6 +13048,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -12930,6 +13058,7 @@ export namespace Prisma {
     genres?: BookEnrichmentUpdategenresInput | string[]
     themes?: BookEnrichmentUpdatethemesInput | string[]
     mood?: BookEnrichmentUpdatemoodInput | string[]
+    profile?: JsonNullValueInput | InputJsonValue
     model?: StringFieldUpdateOperationsInput | string
     enrichedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
