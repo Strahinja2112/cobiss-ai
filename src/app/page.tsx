@@ -47,5 +47,6 @@ export default async function Home() {
       },
     },
   });
+
   return <ChatHome readyCount={readyCount} />;
 }

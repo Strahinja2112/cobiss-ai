@@ -2,13 +2,7 @@ import "~/styles/globals.css";
 
 import { type Metadata, type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
-import {
-  Figtree,
-  Geist,
-  Noto_Sans,
-  Playfair_Display,
-  Space_Grotesk,
-} from "next/font/google";
+import { Figtree } from "next/font/google";
 
 import { cn } from "~/lib/utils";
 
