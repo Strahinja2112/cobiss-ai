@@ -12,6 +12,10 @@ import { Label } from "~/components/ui/label";
 import { Spinner } from "~/components/ui/spinner";
 import { Textarea } from "~/components/ui/textarea";
 import { useChatHome } from "~/hooks/use-chat-home";
+import {
+  displayAuthorNames,
+  displayBookTitle,
+} from "~/lib/display-author-names";
 
 const starters = [
   "I want a tense, character-driven story",
@@ -71,7 +75,7 @@ export function ChatHome({
                   duration: reduceMotion ? 0.16 : 0.25,
                   ease: [0.23, 1, 0.32, 1],
                 }}
-                className="flex min-h-[50dvh] flex-col justify-center"
+                className="flex min-h-[50dvh] flex-col justify-center border border-white"
               >
                 <h2 className="max-w-xl text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-5xl">
                   What are you in the mood for?
@@ -193,18 +197,18 @@ export function ChatHome({
                                 >
                                   <span className="flex items-start gap-3">
                                     <BookOpen
-                                      className="text-muted-foreground mt-1 size-4 shrink-0"
+                                      className="text-primary mt-1 size-4 shrink-0"
                                       aria-hidden="true"
                                     />
                                     <span className="min-w-0 break-words">
-                                      <strong className="block font-semibold">
-                                        {book.title}
+                                      <strong className="block text-base font-semibold">
+                                        {displayBookTitle(book.title)}
                                       </strong>
-                                      <span className="text-muted-foreground mt-0.5 block text-xs">
-                                        {book.authors.join(" · ") ||
+                                      <span className="text-muted-foreground mt-1 block text-xs">
+                                        {displayAuthorNames(book.authors) ||
                                           "Author unknown"}
                                       </span>
-                                      <span className="mt-2 block text-sm leading-6">
+                                      <span className="text-muted-foreground mt-2 block text-sm leading-6">
                                         {book.reason}
                                       </span>
                                     </span>
