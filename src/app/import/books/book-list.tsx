@@ -74,7 +74,7 @@ export function BookList({ books }: { books: SavedBook[] }) {
 
   return (
     <div className={selected ? "grid gap-5 lg:grid-cols-2" : "max-w-5xl"}>
-      <ol className="divide-border border-border bg-card divide-y rounded-md border px-5">
+      <ol className="divide-border border-border bg-card divide-y rounded-xl border px-5">
         {books.map((book) => (
           <li key={book.id}>
             <button
@@ -106,7 +106,7 @@ export function BookList({ books }: { books: SavedBook[] }) {
         <aside
           ref={panel}
           aria-label={`Details for ${selected.title}`}
-          className="bg-card text-foreground lg:border-border fixed inset-0 z-50 overflow-y-auto p-5 lg:sticky lg:top-6 lg:z-auto lg:max-h-[calc(100vh-3rem)] lg:rounded-md lg:border"
+          className="bg-card text-foreground lg:border-border fixed inset-0 z-50 overflow-y-auto p-5 lg:sticky lg:top-6 lg:z-auto lg:max-h-[calc(100vh-3rem)] lg:rounded-2xl lg:border"
         >
           <div className="flex items-start justify-between gap-4">
             <div>
@@ -124,7 +124,7 @@ export function BookList({ books }: { books: SavedBook[] }) {
                 setSelectedId(null);
                 trigger.current?.focus();
               }}
-              className="border-border hover:bg-background rounded-md border px-3 py-1 text-sm"
+              className="border-border hover:bg-background rounded-full border px-3 py-1 text-sm"
               aria-label="Close book details"
             >
               Close

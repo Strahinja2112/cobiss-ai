@@ -100,7 +100,7 @@ export function EnrichButton({ pending }: { pending: number }) {
         type="button"
         onClick={() => void start()}
         disabled={running || pending === 0}
-        className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-5 py-2 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50"
+        className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 py-2 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50"
       >
         {running ? "Enriching…" : "Enrich next 25"}
       </button>
@@ -111,7 +111,7 @@ export function EnrichButton({ pending }: { pending: number }) {
             active.current?.abort();
             setMessage("Stopped. Saved enrichments remain available.");
           }}
-          className="border-border hover:bg-card rounded-md border px-5 py-2 text-sm font-medium"
+          className="border-border hover:bg-card rounded-full border px-5 py-2 text-sm font-medium"
         >
           Stop
         </button>

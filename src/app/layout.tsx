@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import {
+  Figtree,
   Geist,
   Noto_Sans,
   Playfair_Display,
@@ -11,7 +12,7 @@ import {
 
 import { cn } from "~/lib/utils";
 
-const sansFont = Space_Grotesk({
+const font = Figtree({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -31,7 +32,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn(sansFont.variable)}>
+    <html lang="en" suppressHydrationWarning className={cn(font.variable)}>
       <body>
         <ThemeProvider
           attribute="class"

@@ -172,7 +172,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
               <button
                 type="button"
                 onClick={newChat}
-                className="hover:bg-accent focus-visible:outline-ring inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="hover:bg-accent focus-visible:outline-ring inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 <Plus className="size-4" aria-hidden="true" />
                 New chat
@@ -214,7 +214,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                         type="button"
                         onClick={() => void send(starter)}
                         whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-                        className="border-border bg-card hover:bg-accent focus-visible:outline-ring rounded-md border px-4 py-2.5 text-left text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+                        className="border-border bg-card hover:bg-accent focus-visible:outline-ring rounded-xl border px-4 py-2.5 text-left text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
                       >
                         {starter}
                       </motion.button>
@@ -240,7 +240,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                       }
                     >
                       {message.role === "user" ? (
-                        <p className="bg-secondary text-secondary-foreground max-w-[85%] rounded-md px-4 py-3 text-sm leading-6 whitespace-pre-wrap">
+                        <p className="bg-secondary text-secondary-foreground max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 whitespace-pre-wrap">
                           {message.content}
                         </p>
                       ) : (
@@ -261,7 +261,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                                   whileTap={
                                     reduceMotion ? undefined : { scale: 0.99 }
                                   }
-                                  className="border-border bg-card hover:bg-accent focus-visible:outline-ring w-full rounded-md border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2"
+                                  className="border-border bg-card hover:bg-accent focus-visible:outline-ring w-full rounded-xl border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2"
                                 >
                                   <span className="flex items-start gap-3">
                                     <BookOpen
@@ -303,7 +303,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
           <div className="bg-background/95 sticky bottom-0 pt-3 pb-4 backdrop-blur-md sm:pb-6">
             <form
               onSubmit={submit}
-              className="border-border bg-card mx-auto flex max-w-3xl items-end gap-3 rounded-md border p-3"
+              className="border-border bg-card mx-auto flex max-w-3xl items-end gap-3 rounded-2xl border p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
               <label htmlFor="chat-message" className="sr-only">
                 Message your library
@@ -336,7 +336,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                 <button
                   type="button"
                   onClick={() => active.current?.abort()}
-                  className="bg-secondary text-secondary-foreground hover:bg-accent focus-visible:outline-ring flex size-11 shrink-0 items-center justify-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-2"
+                  className="bg-secondary text-secondary-foreground hover:bg-accent focus-visible:outline-ring flex size-11 shrink-0 items-center justify-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2"
                   aria-label="Stop response"
                 >
                   <X className="size-5" aria-hidden="true" />
@@ -346,7 +346,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   type="submit"
                   disabled={!draft.trim() || readyCount === 0}
                   whileTap={reduceMotion ? undefined : { scale: 0.95 }}
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 flex size-11 shrink-0 items-center justify-center rounded-md disabled:cursor-not-allowed disabled:opacity-40"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 flex size-11 shrink-0 items-center justify-center rounded-xl disabled:cursor-not-allowed disabled:opacity-40"
                   aria-label="Send message"
                 >
                   <ArrowUp className="size-5" aria-hidden="true" />
@@ -380,7 +380,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   : { type: "spring", bounce: 0, duration: 0.38 }
               }
               aria-label={`Details for ${selected.title}`}
-              className="bg-card text-card-foreground lg:border-border fixed inset-0 z-30 overflow-y-auto p-6 lg:sticky lg:top-6 lg:mt-6 lg:h-[calc(100dvh-3rem)] lg:rounded-md lg:border"
+              className="bg-card text-card-foreground lg:border-border fixed inset-0 z-30 overflow-y-auto p-6 lg:sticky lg:top-6 lg:mt-6 lg:h-[calc(100dvh-3rem)] lg:rounded-2xl lg:border"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -398,7 +398,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                     setSelected(null);
                     bookTrigger.current?.focus();
                   }}
-                  className="hover:bg-accent focus-visible:outline-ring rounded-md p-2 focus-visible:outline-2 focus-visible:outline-offset-2"
+                  className="hover:bg-accent focus-visible:outline-ring rounded-xl p-2 focus-visible:outline-2 focus-visible:outline-offset-2"
                   aria-label="Close book details"
                 >
                   <X className="size-5" aria-hidden="true" />
