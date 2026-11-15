@@ -3,8 +3,8 @@
 ## Snapshot
 
 - 2026-11-16 [USER] Goal: replace web import with CLI and diagnose missing Agatha Christie.
-- 2026-11-16 [TOOL] Now: CLI migration committed as `9bc6b8d`; Christie record is present in DB but has no enrichment.
-- 2026-11-16 [CODE] Next: run enrichment if the user wants Christie included in chat recommendations.
+- 2026-11-16 [TOOL] Now: Christie is present in local `cobiss-ai-app` PostgreSQL database and appears on saved-book list page 32; profile absent.
+- 2026-11-16 [CODE] Next: enrich Christie if the user wants her included in chat recommendations.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
@@ -39,6 +39,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Worktree `.env` resolves to main checkout `.env`; read-only query on `localhost:5432/cobiss-ai-app` found Christie `10213687`, row ID `cmwdxd93p00etg0vi2d3w864d`, with 1,553 books ahead (50/page, page 32).
 - 2026-11-16 [TOOL] Live GBVK-16 author search returned six Christie books, one matching `la=eng`: `The mysterious affair at Styles` (COBISS `10213687`).
 - 2026-11-16 [TOOL] Read-only DB query found that exact record among 2,087 saved books with `enrichment: null`; chat query requires `enrichment isNot null`.
 - 2026-11-16 [TOOL] CLI tests, existing Node tests, TypeScript, targeted ESLint, and diff whitespace passed; live `list` could not connect to PostgreSQL at localhost:5432.
