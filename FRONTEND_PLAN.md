@@ -2,13 +2,13 @@
 
 ## Current state
 
-The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fetch) and `/import/books` (saved Stephen King books, details, and manual Gemini enrichment). The app admits one approved Google account. Chat recommendations use the enriched Stephen King profiles; conversations are currently kept only in the open page.
+The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fetch) and `/import/books` (saved books, details, and manual Gemini enrichment). The app admits one approved Google account. Chat recommendations use every saved book with an enrichment profile; conversations are currently kept only in the open page.
 
 ## First reader journey
 
 1. Sign in at `/` and ask for a recommendation in natural language.
 2. Continue the conversation with follow-ups, such as asking for a shorter or less graphic book.
-3. See recommendations from enriched King books, each with a reason tied to its profile.
+3. See recommendations from all enriched saved books, each with a reason tied to its profile.
 4. Open a recommendation to inspect its profile or COBISS record; keep the import tools under `/import`.
 
 ## Implementation order
@@ -16,7 +16,7 @@ The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fet
 1. **Built:** Chat at `/`, approved-account gate, saved-book grounding, follow-up questions, explanation cards, and book details.
 2. **Catalog:** Add a reader-facing book list with search and useful profile filters. Reuse the current book details panel; show whether a book has an enrichment profile.
 3. **Feedback:** Add simple “interested” and “not for me” actions so the owner can refine a session without editing data. Decide whether feedback needs persistence after the first flow is usable.
-5. **Expansion:** Once the King flow works, extend the candidate pool to the full catalog and revisit ranking quality and persistent preferences.
+4. **Expansion:** Extend the candidate pool to the full imported catalog and revisit ranking quality and persistent preferences.
 
 ## Design and verification
 

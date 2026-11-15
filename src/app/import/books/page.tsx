@@ -54,7 +54,7 @@ export default async function SavedBooks({
               Saved books
             </h1>
             <p className="text-primary-foreground/85 mt-3 text-sm">
-              {total} Stephen King books
+              {total} saved books
             </p>
           </div>
           <nav className="flex flex-wrap gap-2">

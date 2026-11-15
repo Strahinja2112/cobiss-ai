@@ -2,13 +2,14 @@
 
 ## Snapshot
 
-- 2026-11-15 [USER] Goal: animate mobile chat entry and make light/dark color changes smooth.
-- 2026-11-15 [CODE] Now: theme selection slides; floating actions press; theme colors ease; empty chat enters in two beats.
-- 2026-11-15 [CODE] Next: feel-check on a real phone; choose quota data source before remaining-capacity display.
+- 2026-11-16 [USER] Goal: recommend from all saved books with enrichment, not only Stephen King books.
+- 2026-11-16 [CODE] Now: shared book selection filter is unrestricted; chat query still requires enrichment.
+- 2026-11-16 [CODE] Next: continue app readiness work after verifying broader recommendation pool.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 
+- 2026-11-16 [CODE] Removed Stephen King restrictions from chat, saved-book list, and enrichment query; updated product docs.
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
 - 2026-11-15 [CODE] Added spring-driven theme selection and 150ms press feedback; existing drawer and message motion retained.
 - 2026-11-15 [CODE] Added 240ms theme color transitions and empty-chat entrance, with reduced-motion handling.

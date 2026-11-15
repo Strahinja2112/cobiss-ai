@@ -1,6 +1,6 @@
 # COBISS Book Finder
 
-Local Next.js app built with Create T3 App. The main page is a Gemini chat that recommends from saved, enriched Stephen King books. The import workflow fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and saves them in PostgreSQL. No cron job is used.
+Local Next.js app built with Create T3 App. The main page is a Gemini chat that recommends from all saved books with enrichment profiles. The import workflow fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and saves them in PostgreSQL. No cron job is used.
 
 The fetch and saved-books pages live at `/import` and `/import/books` in `src/app/import/`. The reader chat lives at `/`.
 
@@ -17,7 +17,7 @@ The app fetches every English-language book in this department and checks each I
 
 To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then click **Enrich next 25** on `/import/books`. Each run processes at most 25 displayed books without profiles; progress and failures appear beside the button. Select a book to review its metadata and completed profile in the details panel. Gemini calls may incur charges.
 
-On `/`, ask for a book recommendation in plain English and follow up in the same conversation. Gemini receives the enriched Stephen King profiles from the server and can recommend only books in that saved set. Open a suggested book for its full profile. Chat history lasts until the page is refreshed; each message makes a Gemini call and may incur charges.
+On `/`, ask for a book recommendation in plain English and follow up in the same conversation. Gemini receives every saved book profile and can recommend only books with saved enrichment. Open a suggested book for its full profile. Chat history lasts until the page is refreshed; each message makes a Gemini call and may incur charges.
 
 For an existing database created with `prisma db push`, first run `pnpm exec prisma migrate resolve --applied 20261114170000_baseline`, then `pnpm db:migrate`. The baseline records the tables already present; the next migration links existing books to authors.
 
