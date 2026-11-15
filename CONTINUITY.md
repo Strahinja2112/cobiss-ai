@@ -2,8 +2,8 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: show library statistics on the main chat page.
-- 2026-11-16 [CODE] Now: main page shows saved, enriched, and un-enriched book counts.
+- 2026-11-16 [USER] Goal: animate submitted user messages from composer into conversation.
+- 2026-11-16 [CODE] Now: shared layout identity moves submitted bubble to its chat position; reduced motion disables travel.
 - 2026-11-16 [CODE] Next: continue app readiness work.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
