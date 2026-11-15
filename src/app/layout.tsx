@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 
-import { type Metadata } from "next";
+import { type Metadata, type Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import {
   Figtree,
@@ -26,6 +26,12 @@ export const metadata: Metadata = {
       url: "/favicon.ico",
     },
   ],
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
