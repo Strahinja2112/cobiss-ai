@@ -40,12 +40,12 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
   const reduceMotion = useReducedMotion();
 
   return (
-    <div className="bg-background text-foreground flex min-h-0 w-full flex-1 flex-col">
+    <div className="bg-background text-foreground flex min-h-dvh w-full flex-1 flex-col">
       <h1 className="sr-only">COBISS Book Finder</h1>
       <div
         className={`mx-auto grid w-full max-w-7xl flex-1 gap-6 px-4 sm:px-8 ${selected ? "lg:grid-cols-[minmax(0,1fr)_24rem]" : ""}`}
       >
-        <section className="relative flex min-h-dvh min-w-0 flex-col pt-20">
+        <section className="relative flex min-h-[calc(100dvh-5rem)] min-w-0 flex-col">
           <ChatActions newChat={newChat} hasMessages={messages.length > 0} />
 
           <div
@@ -212,10 +212,10 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
             <div ref={end} />
           </div>
 
-          <div className="bg-background sticky bottom-0 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] sm:pb-6">
+          <div className="sticky bottom-0 z-10 bg-transparent pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] sm:pb-6">
             <form
               onSubmit={submit}
-              className="border-border bg-card focus-within:ring-ring/40 mx-auto flex max-w-3xl items-end gap-2 rounded-xl border p-2 focus-within:ring-2"
+              className="border-border bg-card/50 focus-within:ring-ring/40 mx-auto flex max-w-3xl items-end justify-center gap-2 rounded-xl border p-2 backdrop-blur-sm focus-within:ring-2"
             >
               <Label htmlFor="chat-message" className="sr-only">
                 Message your library
@@ -250,7 +250,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   size="icon-lg"
                   type="button"
                   onClick={stop}
-                  className="rounded-xl"
+                  className="rounded-lg"
                   aria-label="Stop response"
                 >
                   <X className="size-5" aria-hidden="true" />
@@ -265,7 +265,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   size="icon-lg"
                   type="submit"
                   disabled={!draft.trim() || readyCount === 0}
-                  className="rounded-xl"
+                  className="rounded-lg"
                   aria-label="Send message"
                 >
                   <ArrowUp className="size-5" aria-hidden="true" />

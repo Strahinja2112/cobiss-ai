@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ExternalLink, Plus, Settings } from "lucide-react";
 import { useTheme } from "next-themes";
 
+import { Button } from "~/components/ui/button";
 import {
   Drawer,
   DrawerContent,
@@ -12,7 +13,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "~/components/ui/drawer";
-import { Button } from "~/components/ui/button";
 
 function ThemeSetting() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -59,7 +59,7 @@ export function ChatActions({
   hasMessages: boolean;
 }) {
   return (
-    <div className="absolute inset-x-0 top-[max(1rem,env(safe-area-inset-top))] z-20 mx-auto flex max-w-3xl items-center justify-between">
+    <div className="sticky top-[max(1rem,env(safe-area-inset-top))] z-20 mx-auto -mb-11 flex h-11 w-full max-w-3xl items-center justify-between">
       <Button
         variant="secondary"
         size="icon-lg"
@@ -67,7 +67,7 @@ export function ChatActions({
         onClick={newChat}
         disabled={!hasMessages}
         aria-label="New chat"
-        className="rounded-xl shadow-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
+        className="bg-card/50 rounded-xl shadow-sm backdrop-blur-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
       >
         <Plus className="size-5" aria-hidden="true" />
       </Button>
@@ -77,7 +77,7 @@ export function ChatActions({
             <Button
               variant="secondary"
               size="icon-lg"
-              className="rounded-xl shadow-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
+              className="bg-card/50 rounded-xl shadow-sm backdrop-blur-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
             />
           }
           aria-label="Open settings"

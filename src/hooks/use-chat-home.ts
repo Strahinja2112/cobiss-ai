@@ -22,7 +22,11 @@ export function useChatHome(readyCount: number) {
 
   useEffect(() => () => active.current?.abort(), []);
   useEffect(() => {
-    if (messages.length) end.current?.scrollIntoView({ block: "end" });
+    if (messages.length)
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
   }, [messages, pending]);
   useEffect(() => {
     if (!selected) return;
