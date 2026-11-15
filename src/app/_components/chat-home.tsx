@@ -177,8 +177,20 @@ export function ChatHome({
                     {messages.map((message) => (
                       <motion.article
                         key={message.id}
-                        initial={{ opacity: 0, y: reduceMotion ? 0 : 10 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{
+                          opacity: message.role === "user" ? 1 : 0,
+                          transform:
+                            message.role === "user" || reduceMotion
+                              ? "none"
+                              : "translateY(10px)",
+                        }}
+                        animate={{
+                          opacity: 1,
+                          transform:
+                            message.role === "user" || reduceMotion
+                              ? "none"
+                              : "translateY(0px)",
+                        }}
                         transition={
                           reduceMotion
                             ? { duration: 0.16 }
@@ -309,7 +321,7 @@ export function ChatHome({
                           ? { duration: 0 }
                           : { duration: 0.28, ease: [0.23, 1, 0.32, 1] },
                       }}
-                      className="bg-secondary text-secondary-foreground pointer-events-none absolute inset-y-2 right-14 left-2 flex items-center rounded-xl px-2 py-2 text-base leading-6 whitespace-pre-wrap"
+                      className="bg-secondary text-secondary-foreground pointer-events-none absolute bottom-2 left-2 max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 whitespace-pre-wrap"
                     >
                       {transfer.content}
                     </motion.p>

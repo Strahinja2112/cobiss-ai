@@ -2,8 +2,8 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: use playful rotating copy while chat response loads.
-- 2026-11-16 [CODE] Now: loading status rotates original bookish quips with reduced-motion-aware transitions.
+- 2026-11-16 [USER] Goal: improve composer-to-chat bubble animation.
+- 2026-11-16 [CODE] Now: source and destination share bubble dimensions; user-message parent no longer moves during transfer.
 - 2026-11-16 [CODE] Next: continue app readiness work.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
