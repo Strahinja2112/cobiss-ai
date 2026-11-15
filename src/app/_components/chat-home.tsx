@@ -4,6 +4,13 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, Plus, X } from "lucide-react";
 import Link from "next/link";
 
+import { ChatBookDetails } from "~/app/_components/chat-book-details";
+import { ChatHeader } from "~/app/_components/chat-header";
+import { Alert, AlertDescription } from "~/components/ui/alert";
+import { Button } from "~/components/ui/button";
+import { Label } from "~/components/ui/label";
+import { Spinner } from "~/components/ui/spinner";
+import { Textarea } from "~/components/ui/textarea";
 import { useChatHome } from "~/hooks/use-chat-home";
 
 const starters = [
@@ -34,20 +41,22 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
 
   return (
     <div className="bg-background text-foreground flex min-h-0 w-full flex-1 flex-col">
+      <ChatHeader />
       <div
         className={`mx-auto grid w-full max-w-7xl flex-1 gap-6 px-4 sm:px-8 ${selected ? "lg:grid-cols-[minmax(0,1fr)_24rem]" : ""}`}
       >
         <section className="flex min-h-[calc(100dvh-5rem)] min-w-0 flex-col">
           {messages.length > 0 && (
             <div className="flex justify-end pt-5">
-              <button
+              <Button
+                variant="ghost"
                 type="button"
                 onClick={newChat}
-                className="hover:bg-accent focus-visible:outline-ring inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="min-h-11 gap-2 rounded-xl px-3 text-sm font-normal tracking-normal normal-case"
               >
                 <Plus className="size-4" aria-hidden="true" />
                 New chat
-              </button>
+              </Button>
             </div>
           )}
 
@@ -58,8 +67,8 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
             aria-label="Conversation"
           >
             {messages.length === 0 ? (
-              <div className="flex min-h-[52dvh] flex-col justify-center">
-                <h2 className="max-w-xl text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
+              <div className="flex min-h-[50dvh] flex-col justify-center">
+                <h2 className="max-w-xl text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-5xl">
                   What are you in the mood for?
                 </h2>
                 <p className="text-muted-foreground mt-5 max-w-xl text-base leading-7">
@@ -80,15 +89,22 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                 ) : (
                   <div className="mt-9 flex flex-wrap gap-2">
                     {starters.map((starter) => (
-                      <motion.button
+                      <Button
                         key={starter}
+                        render={
+                          <motion.button
+                            whileTap={
+                              reduceMotion ? undefined : { scale: 0.98 }
+                            }
+                          />
+                        }
+                        variant="outline"
                         type="button"
                         onClick={() => void send(starter)}
-                        whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-                        className="border-border bg-card hover:bg-accent focus-visible:outline-ring rounded-xl border px-4 py-2.5 text-left text-sm focus-visible:outline-2 focus-visible:outline-offset-2"
+                        className="bg-card h-auto min-h-11 rounded-xl py-2.5 text-left text-sm font-normal tracking-normal whitespace-normal normal-case"
                       >
                         {starter}
-                      </motion.button>
+                      </Button>
                     ))}
                   </div>
                 )}
@@ -122,23 +138,30 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                           {!!message.recommendations?.length && (
                             <div className="mt-5 space-y-2">
                               {message.recommendations.map((book) => (
-                                <motion.button
+                                <Button
                                   key={book.id}
+                                  render={
+                                    <motion.button
+                                      whileTap={
+                                        reduceMotion
+                                          ? undefined
+                                          : { scale: 0.99 }
+                                      }
+                                    />
+                                  }
+                                  variant="outline"
                                   type="button"
                                   onClick={(event) =>
                                     openDetails(book, event.currentTarget)
                                   }
-                                  whileTap={
-                                    reduceMotion ? undefined : { scale: 0.99 }
-                                  }
-                                  className="border-border bg-card hover:bg-accent focus-visible:outline-ring w-full rounded-xl border p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2"
+                                  className="bg-card h-auto w-full justify-start rounded-xl p-4 text-left font-normal tracking-normal whitespace-normal normal-case"
                                 >
                                   <span className="flex items-start gap-3">
                                     <BookOpen
                                       className="text-muted-foreground mt-1 size-4 shrink-0"
                                       aria-hidden="true"
                                     />
-                                    <span className="min-w-0">
+                                    <span className="min-w-0 break-words">
                                       <strong className="block font-semibold">
                                         {book.title}
                                       </strong>
@@ -151,7 +174,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                                       </span>
                                     </span>
                                   </span>
-                                </motion.button>
+                                </Button>
                               ))}
                             </div>
                           )}
@@ -161,7 +184,11 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   ))}
                 </AnimatePresence>
                 {pending && (
-                  <p role="status" className="text-muted-foreground text-sm">
+                  <p
+                    role="status"
+                    className="text-muted-foreground flex items-center gap-2 text-sm"
+                  >
+                    <Spinner aria-hidden="true" />
                     Reading your library…
                   </p>
                 )}
@@ -170,15 +197,15 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
             <div ref={end} />
           </div>
 
-          <div className="bg-background/95 sticky bottom-0 pt-3 pb-4 backdrop-blur-md sm:pb-6">
+          <div className="bg-background sticky bottom-0 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] sm:pb-6">
             <form
               onSubmit={submit}
-              className="border-border bg-card mx-auto flex max-w-3xl items-end gap-3 rounded-2xl border p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+              className="border-border bg-card focus-within:ring-ring/40 mx-auto flex max-w-3xl items-end gap-2 rounded-xl border p-2 focus-within:ring-2"
             >
-              <label htmlFor="chat-message" className="sr-only">
+              <Label htmlFor="chat-message" className="sr-only">
                 Message your library
-              </label>
-              <textarea
+              </Label>
+              <Textarea
                 id="chat-message"
                 value={draft}
                 onChange={(event) => setDraft(event.target.value)}
@@ -192,7 +219,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                     void send(draft);
                   }
                 }}
-                rows={2}
+                rows={1}
                 maxLength={2000}
                 disabled={readyCount === 0}
                 placeholder={
@@ -200,36 +227,40 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                     ? "Ask about your next book…"
                     : "Enrich books to start chatting"
                 }
-                className="placeholder:text-muted-foreground max-h-40 min-h-12 flex-1 resize-y bg-transparent px-2 py-2 text-base outline-none disabled:cursor-not-allowed"
+                className="max-h-40 min-h-11 flex-1 resize-none overflow-y-auto border-0 px-2 py-2.5 text-base focus-visible:border-0 disabled:cursor-not-allowed"
               />
               {pending ? (
-                <button
+                <Button
+                  variant="secondary"
+                  size="icon-lg"
                   type="button"
                   onClick={stop}
-                  className="bg-secondary text-secondary-foreground hover:bg-accent focus-visible:outline-ring flex size-11 shrink-0 items-center justify-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2"
+                  className="rounded-xl"
                   aria-label="Stop response"
                 >
                   <X className="size-5" aria-hidden="true" />
-                </button>
+                </Button>
               ) : (
-                <motion.button
+                <Button
+                  render={
+                    <motion.button
+                      whileTap={reduceMotion ? undefined : { scale: 0.95 }}
+                    />
+                  }
+                  size="icon-lg"
                   type="submit"
                   disabled={!draft.trim() || readyCount === 0}
-                  whileTap={reduceMotion ? undefined : { scale: 0.95 }}
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 flex size-11 shrink-0 items-center justify-center rounded-xl disabled:cursor-not-allowed disabled:opacity-40"
+                  className="rounded-xl"
                   aria-label="Send message"
                 >
                   <ArrowUp className="size-5" aria-hidden="true" />
-                </motion.button>
+                </Button>
               )}
             </form>
             {error && (
-              <p
-                role="alert"
-                className="text-destructive mx-auto mt-2 max-w-3xl text-sm"
-              >
-                {error}
-              </p>
+              <Alert variant="destructive" className="mx-auto mt-2 max-w-3xl">
+                <AlertDescription>{error}</AlertDescription>
+              </Alert>
             )}
             <p className="text-muted-foreground mx-auto mt-2 max-w-3xl text-center text-xs">
               Recommendations use your enriched Stephen King books.
@@ -237,64 +268,12 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
           </div>
         </section>
 
-        <AnimatePresence>
-          {selected && (
-            <motion.aside
-              key={selected.id}
-              initial={{ opacity: 0, x: reduceMotion ? 0 : 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: reduceMotion ? 0 : 24 }}
-              transition={
-                reduceMotion
-                  ? { duration: 0.16 }
-                  : { type: "spring", bounce: 0, duration: 0.38 }
-              }
-              aria-label={`Details for ${selected.title}`}
-              className="bg-card text-card-foreground lg:border-border fixed inset-0 z-30 overflow-y-auto p-6 lg:sticky lg:top-6 lg:mt-6 lg:h-[calc(100dvh-3rem)] lg:rounded-2xl lg:border"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <h2 className="text-2xl font-semibold tracking-tight">
-                    {selected.title}
-                  </h2>
-                  <p className="text-muted-foreground mt-1 text-sm">
-                    {selected.authors.join(" · ") || "Author unknown"}
-                  </p>
-                </div>
-                <button
-                  ref={closeButton}
-                  type="button"
-                  onClick={closeDetails}
-                  className="hover:bg-accent focus-visible:outline-ring rounded-xl p-2 focus-visible:outline-2 focus-visible:outline-offset-2"
-                  aria-label="Close book details"
-                >
-                  <X className="size-5" aria-hidden="true" />
-                </button>
-              </div>
-              <p className="mt-6 text-sm leading-7">{selected.summary}</p>
-              <div className="border-border mt-6 space-y-4 border-t pt-5 text-sm">
-                {details.map(([label, values]) =>
-                  values.length ? (
-                    <div key={label}>
-                      <h3 className="text-muted-foreground text-xs font-semibold tracking-wide uppercase">
-                        {label}
-                      </h3>
-                      <p className="mt-1 leading-6">{values.join(", ")}</p>
-                    </div>
-                  ) : null,
-                )}
-              </div>
-              <a
-                href={selected.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-7 inline-block text-sm underline underline-offset-4"
-              >
-                View COBISS record
-              </a>
-            </motion.aside>
-          )}
-        </AnimatePresence>
+        <ChatBookDetails
+          selected={selected}
+          details={details}
+          closeButton={closeButton}
+          closeDetails={closeDetails}
+        />
       </div>
     </div>
   );
