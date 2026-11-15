@@ -3,17 +3,8 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, Plus, X } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useRef, useState, type FormEvent } from "react";
 
-import type { ChatRecommendation } from "~/app/api/_lib/chat";
-import { ThemeToggle } from "~/components/theme-toggle";
-
-type Message = {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-  recommendations?: ChatRecommendation[];
-};
+import { useChatHome } from "~/hooks/use-chat-home";
 
 const starters = [
   "I want a tense, character-driven story",
@@ -22,144 +13,24 @@ const starters = [
 ];
 
 export function ChatHome({ readyCount }: { readyCount: number }) {
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [draft, setDraft] = useState("");
-  const [pending, setPending] = useState(false);
-  const [error, setError] = useState("");
-  const [selected, setSelected] = useState<ChatRecommendation | null>(null);
-  const active = useRef<AbortController | null>(null);
-  const end = useRef<HTMLDivElement>(null);
-  const closeButton = useRef<HTMLButtonElement>(null);
-  const bookTrigger = useRef<HTMLButtonElement>(null);
+  const {
+    messages,
+    draft,
+    setDraft,
+    pending,
+    error,
+    selected,
+    end,
+    closeButton,
+    newChat,
+    send,
+    stop,
+    submit,
+    openDetails,
+    closeDetails,
+    details,
+  } = useChatHome(readyCount);
   const reduceMotion = useReducedMotion();
-
-  useEffect(() => () => active.current?.abort(), []);
-  useEffect(() => {
-    if (messages.length) end.current?.scrollIntoView({ block: "end" });
-  }, [messages, pending]);
-  useEffect(() => {
-    if (!selected) return;
-    closeButton.current?.focus();
-    const onEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setSelected(null);
-        bookTrigger.current?.focus();
-      }
-    };
-    window.addEventListener("keydown", onEscape);
-    return () => window.removeEventListener("keydown", onEscape);
-  }, [selected]);
-
-  function newChat() {
-    active.current?.abort();
-    active.current = null;
-    setMessages([]);
-    setDraft("");
-    setSelected(null);
-    setError("");
-    setPending(false);
-  }
-
-  async function send(value: string) {
-    const content = value.trim();
-    if (!content || active.current || readyCount === 0) return;
-    const next: Message[] = [
-      ...messages,
-      { id: crypto.randomUUID(), role: "user", content },
-    ];
-    setMessages(next);
-    setDraft("");
-    setError("");
-    setPending(true);
-    const controller = new AbortController();
-    active.current = controller;
-
-    try {
-      const response = await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          messages: next
-            .slice(-12)
-            .map(({ role, content, recommendations }) => ({
-              role,
-              content:
-                role === "assistant" && recommendations?.length
-                  ? `${content}\nRecommended: ${recommendations.map((book) => book.title).join(", ")}`.slice(
-                      0,
-                      2000,
-                    )
-                  : content,
-            })),
-        }),
-        signal: controller.signal,
-      });
-      const data = (await response.json()) as {
-        answer?: string;
-        recommendations?: ChatRecommendation[];
-        error?: string;
-      };
-      const answer = data.answer;
-      if (!response.ok || !answer)
-        throw new Error(data.error ?? "Could not answer. Please try again.");
-      if (!controller.signal.aborted) {
-        setMessages((current) => [
-          ...current,
-          {
-            id: crypto.randomUUID(),
-            role: "assistant",
-            content: answer,
-            recommendations: data.recommendations ?? [],
-          },
-        ]);
-      }
-    } catch (cause) {
-      if (!controller.signal.aborted)
-        setError(
-          cause instanceof Error
-            ? cause.message
-            : "Could not answer. Try again.",
-        );
-    } finally {
-      if (active.current === controller) {
-        active.current = null;
-        setPending(false);
-      }
-    }
-  }
-
-  function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    void send(draft);
-  }
-
-  const profile =
-    selected?.profile &&
-    typeof selected.profile === "object" &&
-    !Array.isArray(selected.profile)
-      ? (selected.profile as Record<string, unknown>)
-      : {};
-  const profileFields = Object.entries(profile).flatMap(([key, value]) => {
-    const values = Array.isArray(value)
-      ? value.filter((item): item is string => typeof item === "string")
-      : typeof value === "string" && value
-        ? [value]
-        : [];
-    return values.length
-      ? [{ label: key.replace(/([A-Z])/g, " $1"), values }]
-      : [];
-  });
-  const details: [string, string[]][] = selected
-    ? [
-        ["Genres", selected.genres],
-        ["Themes", selected.themes],
-        ["Mood", selected.mood],
-        ...profileFields.map(({ label, values }): [string, string[]] => [
-          label,
-          values,
-        ]),
-      ]
-    : [];
 
   return (
     <div className="bg-background text-foreground flex min-h-0 w-full flex-1 flex-col">
@@ -254,10 +125,9 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                                 <motion.button
                                   key={book.id}
                                   type="button"
-                                  onClick={(event) => {
-                                    bookTrigger.current = event.currentTarget;
-                                    setSelected(book);
-                                  }}
+                                  onClick={(event) =>
+                                    openDetails(book, event.currentTarget)
+                                  }
                                   whileTap={
                                     reduceMotion ? undefined : { scale: 0.99 }
                                   }
@@ -335,7 +205,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
               {pending ? (
                 <button
                   type="button"
-                  onClick={() => active.current?.abort()}
+                  onClick={stop}
                   className="bg-secondary text-secondary-foreground hover:bg-accent focus-visible:outline-ring flex size-11 shrink-0 items-center justify-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2"
                   aria-label="Stop response"
                 >
@@ -394,10 +264,7 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                 <button
                   ref={closeButton}
                   type="button"
-                  onClick={() => {
-                    setSelected(null);
-                    bookTrigger.current?.focus();
-                  }}
+                  onClick={closeDetails}
                   className="hover:bg-accent focus-visible:outline-ring rounded-xl p-2 focus-visible:outline-2 focus-visible:outline-offset-2"
                   aria-label="Close book details"
                 >
