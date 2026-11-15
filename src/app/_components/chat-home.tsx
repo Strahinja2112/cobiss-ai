@@ -203,6 +203,7 @@ export function ChatHome({
                         {message.role === "user" ? (
                           <motion.p
                             layoutId={`user-message-${message.id}`}
+                            layoutCrossfade={false}
                             transition={{
                               layout: reduceMotion
                                 ? { duration: 0 }
@@ -316,6 +317,7 @@ export function ChatHome({
                   {transfer && (
                     <motion.p
                       layoutId={`user-message-${transfer.id}`}
+                      layoutCrossfade={false}
                       transition={{
                         layout: reduceMotion
                           ? { duration: 0 }
