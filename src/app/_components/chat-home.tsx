@@ -12,10 +12,10 @@ import { useState } from "react";
 
 import { ChatActions } from "~/app/_components/chat-actions";
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
+import { ChatLoadingStatus } from "~/app/_components/chat-loading-status";
 import { Alert, AlertDescription } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Label } from "~/components/ui/label";
-import { Spinner } from "~/components/ui/spinner";
 import { Textarea } from "~/components/ui/textarea";
 import { useChatHome } from "~/hooks/use-chat-home";
 import {
@@ -257,13 +257,7 @@ export function ChatHome({
                     ))}
                   </AnimatePresence>
                   {pending && (
-                    <p
-                      role="status"
-                      className="text-muted-foreground flex items-center gap-2 text-sm"
-                    >
-                      <Spinner aria-hidden="true" />
-                      Reading your library…
-                    </p>
+                    <ChatLoadingStatus reduceMotion={Boolean(reduceMotion)} />
                   )}
                 </div>
               )}
