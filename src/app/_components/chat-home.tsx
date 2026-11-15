@@ -1,11 +1,11 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowUp, BookOpen, Plus, X } from "lucide-react";
+import { ArrowUp, BookOpen, X } from "lucide-react";
 import Link from "next/link";
 
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
-import { ChatHeader } from "~/app/_components/chat-header";
+import { ChatActions } from "~/app/_components/chat-actions";
 import { Alert, AlertDescription } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Label } from "~/components/ui/label";
@@ -41,24 +41,12 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
 
   return (
     <div className="bg-background text-foreground flex min-h-0 w-full flex-1 flex-col">
-      <ChatHeader />
+      <h1 className="sr-only">COBISS Book Finder</h1>
       <div
         className={`mx-auto grid w-full max-w-7xl flex-1 gap-6 px-4 sm:px-8 ${selected ? "lg:grid-cols-[minmax(0,1fr)_24rem]" : ""}`}
       >
-        <section className="flex min-h-[calc(100dvh-5rem)] min-w-0 flex-col">
-          {messages.length > 0 && (
-            <div className="flex justify-end pt-5">
-              <Button
-                variant="ghost"
-                type="button"
-                onClick={newChat}
-                className="min-h-11 gap-2 rounded-xl px-3 text-sm font-normal tracking-normal normal-case"
-              >
-                <Plus className="size-4" aria-hidden="true" />
-                New chat
-              </Button>
-            </div>
-          )}
+        <section className="relative flex min-h-dvh min-w-0 flex-col pt-20">
+          <ChatActions newChat={newChat} hasMessages={messages.length > 0} />
 
           <div
             className="mx-auto w-full max-w-3xl flex-1 py-8 sm:py-12"

@@ -2,13 +2,14 @@
 
 ## Snapshot
 
-- 2026-11-15 [USER] Goal: mobile-style bottom settings drawer with theme choice; plan Gemini enrichment capacity display.
-- 2026-11-15 [CODE] Now: mobile settings drawer and usage plan ready; task files prepared for commit.
+- 2026-11-15 [USER] Goal: replace chat header with floating New chat and Settings buttons using Lucide cog icon.
+- 2026-11-15 [CODE] Now: chat actions sit above the chat column; settings drawer remains.
 - 2026-11-15 [CODE] Next: verify on a real phone and choose quota data source before implementing remaining-capacity display.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 
+- 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
 - 2026-11-15 [TOOL] `acfbc17` committed chat UI and initial settings drawer; `e63b19e` committed chat hook extraction.
 - 2026-11-15 [TOOL] Reviewed README, product plan, frontend plan, package scripts, Prisma schema, routes, tests, and working-tree changes.
 
@@ -28,11 +29,12 @@
 
 ## Working set
 
-- 2026-11-15 [CODE] `src/app/_components/chat-header.tsx`, `src/components/ui/drawer.tsx`, `src/app/layout.tsx`, `src/styles/globals.css`
+- 2026-11-15 [CODE] `src/app/_components/chat-actions.tsx`, `src/app/_components/chat-home.tsx`, `src/components/ui/drawer.tsx`
 - 2026-11-15 [CODE] `GEMINI_USAGE_PLAN.md`, `src/app/api/books/enrich/route.ts`, `src/app/api/chat/route.ts`
 
 ## Receipts
 
+- 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
 - 2026-11-15 [TOOL] `git status`: unrelated local edits remain in `src/app/layout.tsx`, `src/app/page.tsx`, `src/components/ui/textarea.tsx`, and `GEMINI_USAGE_PLAN.md`.
 - 2026-11-15 [TOOL] `pnpm typecheck`, targeted ESLint, Prettier on edited TSX, and Impeccable detector passed; browser host unavailable.
 - 2026-11-15 [TOOL] `pnpm build` compiled UI but failed on existing lint errors in chat tests and unused UI components; page also has unused imports.
