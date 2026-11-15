@@ -2,18 +2,18 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: show library statistics on the main chat page.
-- 2026-11-16 [CODE] Now: main page shows saved, enriched, and un-enriched book counts.
-- 2026-11-16 [CODE] Next: continue app readiness work.
-- 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
+- 2026-11-16 [USER] Goal: replace `/import` pages with terminal CLI, then remove import API routes.
+- 2026-11-16 [CODE] Now: CLI fetch/list/show/enrich implemented; `/import` pages and book import API routes removed in isolated `feat/import-cli` worktree.
+- 2026-11-16 [CODE] Next: commit migration; verify against a running local PostgreSQL instance when available.
+- 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
 
+- 2026-11-16 [CODE] Added Node CLI, usage docs, and focused behavior tests; removed import UI/API and stale links.
 - 2026-11-16 [CODE] Added saved/enriched/pending counts to the main page using parallel database counts.
 - 2026-11-16 [CODE] Removed Stephen King restrictions from chat, saved-book list, and enrichment query; updated product docs.
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
-- 2026-11-15 [CODE] Added spring-driven theme selection and 150ms press feedback; existing drawer and message motion retained.
-- 2026-11-15 [CODE] Added 240ms theme color transitions and empty-chat entrance, with reduced-motion handling.
+- 2026-11-15 [CODE] Added spring theme selection, press feedback, theme transitions, and empty-chat entrance with reduced-motion handling.
 - 2026-11-15 [TOOL] `acfbc17` committed chat UI and initial settings drawer; `e63b19e` committed chat hook extraction.
 - 2026-11-15 [TOOL] Reviewed README, product plan, frontend plan, package scripts, Prisma schema, routes, tests, and working-tree changes.
 
@@ -24,6 +24,7 @@
 - 2026-11-15 [USER] D003 ACTIVE: Keep current `AGENTS.md` rules and add commit guidance.
 - 2026-11-15 [USER] D004 ACTIVE: Commit completed work automatically; require verification by change type, migration and data preservation planning, and server-side approved-account access control.
 - 2026-11-15 [USER] D005 ACTIVE: Settings remain a bottom drawer, designed for future mobile use; use larger title, smaller subtitle, no X, and avoid nested cards.
+- 2026-11-16 [USER] D006 ACTIVE: CLI supports Node 22.18+ without a new runtime dependency; remove `/api/books/stream` and `/api/books/enrich` after CLI parity.
 
 ## Open questions
 
@@ -33,12 +34,15 @@
 
 ## Working set
 
-- 2026-11-15 [CODE] `src/app/_components/chat-actions.tsx`, `src/app/_components/chat-home.tsx`, `src/components/ui/drawer.tsx`
-- 2026-11-15 [CODE] `GEMINI_USAGE_PLAN.md`, `src/app/api/books/enrich/route.ts`, `src/app/api/chat/route.ts`
+- 2026-11-16 [CODE] `scripts/books.mjs`, `scripts/books/*.mjs`, `tests/books-cli*.mjs`, `src/app/_components/chat-home.tsx`
+- 2026-11-16 [CODE] `README.md`, `PRODUCT.md`, `FRONTEND_PLAN.md`, `GEMINI_USAGE_PLAN.md`, `AGENTS.md`
 
 ## Receipts
 
+- 2026-11-16 [TOOL] CLI tests, existing Node tests, TypeScript, targeted ESLint, and diff whitespace passed; live `list` could not connect to PostgreSQL at localhost:5432.
+- 2026-11-16 [TOOL] Escalated production build compiled; lint failed on existing errors in chat tests and unrelated UI components. Isolated sandbox build first failed to fetch Google Fonts.
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
+- 2026-11-16 [TOOL] Created `feat/import-cli`; `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts` passed 5 files and `pnpm typecheck` passed before edits.
 - 2026-11-15 [TOOL] Animation change passed `pnpm typecheck`, targeted ESLint, and `git diff --check`; browser host unavailable for visual feel-check.
 - 2026-11-15 [TOOL] New animation changes passed typecheck, targeted ESLint, Prettier, and CSS compile; `pnpm build` still fails on unrelated existing lint errors.
 - 2026-11-15 [TOOL] `git status`: unrelated local edits remain in `src/app/layout.tsx`, `src/app/page.tsx`, `src/components/ui/textarea.tsx`, and `GEMINI_USAGE_PLAN.md`.

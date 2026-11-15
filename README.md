@@ -1,8 +1,8 @@
 # COBISS Book Finder
 
-Local Next.js app built with Create T3 App. The main page is a Gemini chat that recommends from all saved books with enrichment profiles. The import workflow fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and saves them in PostgreSQL. No cron job is used.
+Local Next.js app built with Create T3 App. The main page is a Gemini chat that recommends from all saved books with enrichment profiles. The terminal CLI fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and saves them in PostgreSQL. No cron job is used.
 
-The fetch and saved-books pages live at `/import` and `/import/books` in `src/app/import/`. The reader chat lives at `/`.
+The reader chat lives at `/`. Run catalog maintenance commands locally with Node 22.18+.
 
 ## Setup
 
@@ -11,11 +11,11 @@ The fetch and saved-books pages live at `/import` and `/import/books` in `src/ap
 3. Create a Google OAuth **Web application** client. Add `http://localhost:3000/api/auth/callback/google` as an authorized redirect URI. If the OAuth app is in testing mode, add your email as a test user.
 4. Start PostgreSQL and run `pnpm db:migrate` to create the tables.
 5. Run `pnpm dev`, open `http://localhost:3000`, and sign in with the allowed Google account.
-6. Click **Fetch and save all books**. Use **Stop** to end the fetch; saved books remain available at `/import/books`.
+6. Run `pnpm books fetch` to fetch and save books. Press Ctrl-C to stop; books already saved remain in PostgreSQL.
 
-The app fetches every English-language book in this department and checks each ISBN. Repeating a fetch updates records instead of creating duplicates. The import page shows incoming results and fetch progress; `/import/books` lists saved records.
+The CLI fetches every English-language book in this department and checks each ISBN. Repeating a fetch updates records instead of creating duplicates. Progress appears in the terminal. Run `pnpm books list` to see saved records (50 per page), `pnpm books list 2` for the next page, or `pnpm books show <book-id>` for metadata and a saved profile. The book ID appears in the list.
 
-To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then click **Enrich next 25** on `/import/books`. Each run processes at most 25 displayed books without profiles; progress and failures appear beside the button. Select a book to review its metadata and completed profile in the details panel. Gemini calls may incur charges.
+To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then run `pnpm books enrich`. Each run processes at most 25 saved books without profiles; progress and failures appear in the terminal. Rerun to process another batch. Gemini calls may incur charges.
 
 On `/`, ask for a book recommendation in plain English and follow up in the same conversation. Gemini receives every saved book profile and can recommend only books with saved enrichment. Open a suggested book for its full profile. Chat history lasts until the page is refreshed; each message makes a Gemini call and may incur charges.
 

@@ -2,7 +2,6 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, X } from "lucide-react";
-import Link from "next/link";
 
 import { ChatActions } from "~/app/_components/chat-actions";
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
@@ -104,14 +103,9 @@ export function ChatHome({
                     }}
                     className="text-muted-foreground mt-7 text-sm"
                   >
-                    Your library has no enriched books yet.{" "}
-                    <Link
-                      className="text-foreground underline underline-offset-4"
-                      href="/import/books"
-                    >
-                      Enrich a batch
-                    </Link>{" "}
-                    to start chatting.
+                    Your library has no enriched books yet. Run{" "}
+                    <code className="text-foreground">pnpm books enrich</code>{" "}
+                    in the terminal to start chatting.
                   </motion.p>
                 ) : (
                   <motion.div

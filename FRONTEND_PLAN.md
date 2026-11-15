@@ -2,14 +2,14 @@
 
 ## Current state
 
-The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fetch) and `/import/books` (saved books, details, and manual Gemini enrichment). The app admits one approved Google account. Chat recommendations use every saved book with an enrichment profile; conversations are currently kept only in the open page.
+The reader chat lives at `/`. The owner uses `pnpm books fetch`, `list`, `show`, and `enrich` for catalog maintenance. The app admits one approved Google account. Chat recommendations use every saved book with an enrichment profile; conversations are currently kept only in the open page.
 
 ## First reader journey
 
 1. Sign in at `/` and ask for a recommendation in natural language.
 2. Continue the conversation with follow-ups, such as asking for a shorter or less graphic book.
 3. See recommendations from all enriched saved books, each with a reason tied to its profile.
-4. Open a recommendation to inspect its profile or COBISS record; keep the import tools under `/import`.
+4. Open a recommendation to inspect its profile or COBISS record; use the CLI for catalog maintenance.
 
 ## Implementation order
 
@@ -20,4 +20,4 @@ The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fet
 
 ## Design and verification
 
-Use the published [Olive shadcn theme](https://shadcnpreset.com/themes/olive-large-corners) for light and dark color tokens, with dark as the default and a persistent mode switch. Keep readable book titles, keyboard access, and a compact mobile layout. Verify the approved-account gate, paging, the book details panel, manual enrichment controls, recommendation explanations, and empty states. Gemini calls remain manual and capped at 25 books per batch.
+Use the published [Olive shadcn theme](https://shadcnpreset.com/themes/olive-large-corners) for light and dark color tokens, with dark as the default and a persistent mode switch. Keep readable book titles, keyboard access, and a compact mobile layout. Verify the approved-account gate, book details panel, recommendation explanations, and empty states. Verify CLI paging and manual enrichment separately. Gemini enrichment remains capped at 25 books per batch.
