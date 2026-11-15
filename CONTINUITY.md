@@ -2,13 +2,14 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: recommend from all saved books with enrichment, not only Stephen King books.
-- 2026-11-16 [CODE] Now: shared book selection filter is unrestricted; chat query still requires enrichment.
-- 2026-11-16 [CODE] Next: continue app readiness work after verifying broader recommendation pool.
+- 2026-11-16 [USER] Goal: show library statistics on the main chat page.
+- 2026-11-16 [CODE] Now: main page shows saved, enriched, and un-enriched book counts.
+- 2026-11-16 [CODE] Next: continue app readiness work.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 
+- 2026-11-16 [CODE] Added saved/enriched/pending counts to the main page using parallel database counts.
 - 2026-11-16 [CODE] Removed Stephen King restrictions from chat, saved-book list, and enrichment query; updated product docs.
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
 - 2026-11-15 [CODE] Added spring-driven theme selection and 150ms press feedback; existing drawer and message motion retained.

@@ -39,14 +39,12 @@ export default async function Home() {
   //   );
   // }
 
-  const readyCount = await db.book.count({
-    where: {
-      ...displayedBooks,
-      enrichment: {
-        isNot: null,
-      },
-    },
-  });
+  const [totalCount, readyCount] = await Promise.all([
+    db.book.count({ where: displayedBooks }),
+    db.book.count({
+      where: { ...displayedBooks, enrichment: { isNot: null } },
+    }),
+  ]);
 
-  return <ChatHome readyCount={readyCount} />;
+  return <ChatHome readyCount={readyCount} totalCount={totalCount} />;
 }

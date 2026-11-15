@@ -19,7 +19,13 @@ const starters = [
   "Something shorter and less graphic",
 ];
 
-export function ChatHome({ readyCount }: { readyCount: number }) {
+export function ChatHome({
+  readyCount,
+  totalCount,
+}: {
+  readyCount: number;
+  totalCount: number;
+}) {
   const {
     messages,
     draft,
@@ -74,6 +80,20 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   Ask about your saved books, or tell me what kind of story you
                   want. I’ll use their AI profiles to suggest a good fit.
                 </p>
+                <dl className="border-border mt-8 grid max-w-xl grid-cols-3 divide-x border-y py-4">
+                  {[
+                    ["Saved", totalCount],
+                    ["Enriched", readyCount],
+                    ["Need profile", Math.max(0, totalCount - readyCount)],
+                  ].map(([label, value]) => (
+                    <div key={label} className="px-3 first:pl-0 last:pr-0">
+                      <dt className="text-muted-foreground text-xs">{label}</dt>
+                      <dd className="mt-1 text-xl font-semibold tabular-nums">
+                        {value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
                 {readyCount === 0 ? (
                   <motion.p
                     initial={{ opacity: 0 }}
