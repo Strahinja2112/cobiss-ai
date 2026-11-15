@@ -2,20 +2,20 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: replace web import with CLI and diagnose missing Agatha Christie.
-- 2026-11-16 [TOOL] Now: Christie is present in local `cobiss-ai-app` PostgreSQL database and appears on saved-book list page 32; profile absent.
-- 2026-11-16 [CODE] Next: enrich Christie if the user wants her included in chat recommendations.
+- 2026-11-16 [USER] Goal: move import to CLI and reconcile local GBVK-16 books with live COBISS.
+- 2026-11-16 [TOOL] Now: all 2,090 live English-book COBISS IDs are saved locally; Christie is present but unenriched.
+- 2026-11-16 [CODE] Next: rerun `pnpm books fetch` when the COBISS catalog changes; enrich books for chat separately.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
 
+- 2026-11-16 [TOOL] Backfilled three missing COBISS records and verified a complete 2,090-ID match with the local DB.
 - 2026-11-16 [CODE] Added Node CLI, usage docs, and focused behavior tests; removed import UI/API and stale links.
 - 2026-11-16 [CODE] Added saved/enriched/pending counts to the main page using parallel database counts.
 - 2026-11-16 [CODE] Removed Stephen King restrictions from chat, saved-book list, and enrichment query; updated product docs.
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
 - 2026-11-15 [CODE] Added spring theme selection, press feedback, theme transitions, and empty-chat entrance with reduced-motion handling.
 - 2026-11-15 [TOOL] `acfbc17` committed chat UI and initial settings drawer; `e63b19e` committed chat hook extraction.
-- 2026-11-15 [TOOL] Reviewed README, product plan, frontend plan, package scripts, Prisma schema, routes, tests, and working-tree changes.
 
 ## Decisions
 
@@ -39,6 +39,8 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Before backfill: live catalog had 2,090 unique English-book IDs, local DB 2,087; missing IDs were 54611977, 13520695, and 334684672. Most recent pre-backfill fetch was 2026-11-12T19:27:52Z; exact reason for omissions UNCONFIRMED.
+- 2026-11-16 [TOOL] Backfilled those three via existing `fetchSearchPage`, `fetchIsbn`, and `saveBooks`; full 21-page reconciliation afterward found 2,090 local IDs, zero missing and zero stale.
 - 2026-11-16 [TOOL] Worktree `.env` resolves to main checkout `.env`; read-only query on `localhost:5432/cobiss-ai-app` found Christie `10213687`, row ID `cmwdxd93p00etg0vi2d3w864d`, with 1,553 books ahead (50/page, page 32).
 - 2026-11-16 [TOOL] Live GBVK-16 author search returned six Christie books, one matching `la=eng`: `The mysterious affair at Styles` (COBISS `10213687`).
 - 2026-11-16 [TOOL] Read-only DB query found that exact record among 2,087 saved books with `enrichment: null`; chat query requires `enrichment isNot null`.
