@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import { ExternalLink, Plus, Settings } from "lucide-react";
 import { useTheme } from "next-themes";
 
@@ -15,6 +16,7 @@ import { Button } from "~/components/ui/button";
 
 function ThemeSetting() {
   const { resolvedTheme, setTheme } = useTheme();
+  const reduceMotion = useReducedMotion();
 
   return (
     <div
@@ -28,9 +30,21 @@ function ThemeSetting() {
           type="button"
           aria-pressed={resolvedTheme === theme}
           onClick={() => setTheme(theme)}
-          className={`focus-visible:outline-ring min-h-11 flex-1 touch-manipulation rounded-lg px-3 text-sm font-medium capitalize select-none focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.97] ${resolvedTheme === theme ? "bg-popover text-foreground shadow-sm" : "text-muted-foreground"}`}
+          className={`focus-visible:outline-ring relative min-h-11 flex-1 touch-manipulation rounded-lg px-3 text-sm font-medium capitalize select-none focus-visible:outline-2 focus-visible:outline-offset-2 ${resolvedTheme === theme ? "text-foreground" : "text-muted-foreground"}`}
         >
-          {theme}
+          {resolvedTheme === theme && (
+            <motion.span
+              layoutId="selected-theme"
+              transition={
+                reduceMotion
+                  ? { duration: 0 }
+                  : { type: "spring", bounce: 0, duration: 0.25 }
+              }
+              className="bg-popover absolute inset-0 rounded-lg shadow-sm"
+              aria-hidden="true"
+            />
+          )}
+          <span className="relative">{theme}</span>
         </button>
       ))}
     </div>
@@ -53,7 +67,7 @@ export function ChatActions({
         onClick={newChat}
         disabled={!hasMessages}
         aria-label="New chat"
-        className="rounded-xl shadow-sm"
+        className="rounded-xl shadow-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
       >
         <Plus className="size-5" aria-hidden="true" />
       </Button>
@@ -63,7 +77,7 @@ export function ChatActions({
             <Button
               variant="secondary"
               size="icon-lg"
-              className="rounded-xl shadow-sm"
+              className="rounded-xl shadow-sm transition-[transform,background-color,color,border-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:translate-y-0 motion-reduce:active:scale-100"
             />
           }
           aria-label="Open settings"

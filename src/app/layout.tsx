@@ -44,7 +44,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
-          disableTransitionOnChange
         >
           <main className="flex min-h-dvh w-full flex-col">{children}</main>
         </ThemeProvider>

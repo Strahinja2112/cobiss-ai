@@ -2,14 +2,16 @@
 
 ## Snapshot
 
-- 2026-11-15 [USER] Goal: replace chat header with floating New chat and Settings buttons using Lucide cog icon.
-- 2026-11-15 [CODE] Now: chat actions sit above the chat column; settings drawer remains.
-- 2026-11-15 [CODE] Next: verify on a real phone and choose quota data source before implementing remaining-capacity display.
+- 2026-11-15 [USER] Goal: animate mobile chat entry and make light/dark color changes smooth.
+- 2026-11-15 [CODE] Now: theme selection slides; floating actions press; theme colors ease; empty chat enters in two beats.
+- 2026-11-15 [CODE] Next: feel-check on a real phone; choose quota data source before remaining-capacity display.
 - 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
+- 2026-11-15 [CODE] Added spring-driven theme selection and 150ms press feedback; existing drawer and message motion retained.
+- 2026-11-15 [CODE] Added 240ms theme color transitions and empty-chat entrance, with reduced-motion handling.
 - 2026-11-15 [TOOL] `acfbc17` committed chat UI and initial settings drawer; `e63b19e` committed chat hook extraction.
 - 2026-11-15 [TOOL] Reviewed README, product plan, frontend plan, package scripts, Prisma schema, routes, tests, and working-tree changes.
 
@@ -35,6 +37,8 @@
 ## Receipts
 
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
+- 2026-11-15 [TOOL] Animation change passed `pnpm typecheck`, targeted ESLint, and `git diff --check`; browser host unavailable for visual feel-check.
+- 2026-11-15 [TOOL] New animation changes passed typecheck, targeted ESLint, Prettier, and CSS compile; `pnpm build` still fails on unrelated existing lint errors.
 - 2026-11-15 [TOOL] `git status`: unrelated local edits remain in `src/app/layout.tsx`, `src/app/page.tsx`, `src/components/ui/textarea.tsx`, and `GEMINI_USAGE_PLAN.md`.
 - 2026-11-15 [TOOL] `pnpm typecheck`, targeted ESLint, Prettier on edited TSX, and Impeccable detector passed; browser host unavailable.
 - 2026-11-15 [TOOL] `pnpm build` compiled UI but failed on existing lint errors in chat tests and unused UI components; page also has unused imports.

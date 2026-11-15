@@ -4,8 +4,8 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, X } from "lucide-react";
 import Link from "next/link";
 
-import { ChatBookDetails } from "~/app/_components/chat-book-details";
 import { ChatActions } from "~/app/_components/chat-actions";
+import { ChatBookDetails } from "~/app/_components/chat-book-details";
 import { Alert, AlertDescription } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Label } from "~/components/ui/label";
@@ -55,7 +55,18 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
             aria-label="Conversation"
           >
             {messages.length === 0 ? (
-              <div className="flex min-h-[50dvh] flex-col justify-center">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  transform: reduceMotion ? "none" : "translateY(10px)",
+                }}
+                animate={{ opacity: 1, transform: "translateY(0px)" }}
+                transition={{
+                  duration: reduceMotion ? 0.16 : 0.25,
+                  ease: [0.23, 1, 0.32, 1],
+                }}
+                className="flex min-h-[50dvh] flex-col justify-center"
+              >
                 <h2 className="max-w-xl text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-5xl">
                   What are you in the mood for?
                 </h2>
@@ -64,7 +75,15 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                   want. I’ll use their AI profiles to suggest a good fit.
                 </p>
                 {readyCount === 0 ? (
-                  <p className="text-muted-foreground mt-7 text-sm">
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: reduceMotion ? 0 : 0.06,
+                    }}
+                    className="text-muted-foreground mt-7 text-sm"
+                  >
                     Your library has no enriched books yet.{" "}
                     <Link
                       className="text-foreground underline underline-offset-4"
@@ -73,9 +92,17 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                       Enrich a batch
                     </Link>{" "}
                     to start chatting.
-                  </p>
+                  </motion.p>
                 ) : (
-                  <div className="mt-9 flex flex-wrap gap-2">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: reduceMotion ? 0 : 0.06,
+                    }}
+                    className="mt-9 flex flex-wrap gap-2"
+                  >
                     {starters.map((starter) => (
                       <Button
                         key={starter}
@@ -94,9 +121,9 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                         {starter}
                       </Button>
                     ))}
-                  </div>
+                  </motion.div>
                 )}
-              </div>
+              </motion.div>
             ) : (
               <div className="space-y-8">
                 <AnimatePresence initial={false}>
@@ -250,9 +277,6 @@ export function ChatHome({ readyCount }: { readyCount: number }) {
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
             )}
-            <p className="text-muted-foreground mx-auto mt-2 max-w-3xl text-center text-xs">
-              Recommendations use your enriched Stephen King books.
-            </p>
           </div>
         </section>
 
