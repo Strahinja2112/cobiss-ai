@@ -12,11 +12,11 @@ One reader using the approved Google account. Additional reader accounts are out
 
 ## Product Purpose
 
-Browse saved COBISS books, inspect catalog and AI-generated details, and receive recommendations based on personal taste or a selected book. Begin with Stephen King books; expand to the full catalog later.
+Talk to a chatbot about saved COBISS books and receive recommendations based on personal taste or a selected book. Inspect the catalog and AI-generated details. Begin with Stephen King books; expand to the full catalog later.
 
 ## Operating Context
 
-The owner manually fetches books from COBISS and enriches displayed books in batches of up to 25 with Gemini. The current app has a fetch page and a saved-books page with a book details panel. Gemini profiles include a summary, genres, themes, mood, reading-experience labels, and uncertainty notes.
+The owner manually fetches books from COBISS and enriches displayed books in batches of up to 25 with Gemini. The main page is a chat grounded in those profiles. The import pages provide fetching, saved books, and book details. Gemini profiles include a summary, genres, themes, mood, reading-experience labels, and uncertainty notes.
 
 ## Constraints
 

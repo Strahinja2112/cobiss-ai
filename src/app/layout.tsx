@@ -39,7 +39,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          {children}
+          <main className="flex min-h-dvh w-full flex-col">{children}</main>
         </ThemeProvider>
       </body>
     </html>

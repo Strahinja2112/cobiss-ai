@@ -2,21 +2,20 @@
 
 ## Current state
 
-The existing import workflow lives at `/import` (COBISS fetch) and `/import/books` (saved Stephen King books, details, and manual Gemini enrichment). The app admits one approved Google account. Recommendation profiles exist for enriched books, but there is no recommendation or preference interface yet.
+The reader chat lives at `/`. The import workflow lives at `/import` (COBISS fetch) and `/import/books` (saved Stephen King books, details, and manual Gemini enrichment). The app admits one approved Google account. Chat recommendations use the enriched Stephen King profiles; conversations are currently kept only in the open page.
 
 ## First reader journey
 
-1. Sign in at `/` and see a reader home with a clear route to recommendations and the catalog.
-2. Pick a Stephen King book as a reference, or describe a reading preference in a short form.
-3. See ranked recommendations from the enriched King books, each with a concise reason tied to its profile.
-4. Open a recommendation to inspect the book's catalog record and AI profile; keep the existing import tools under `/import`.
+1. Sign in at `/` and ask for a recommendation in natural language.
+2. Continue the conversation with follow-ups, such as asking for a shorter or less graphic book.
+3. See recommendations from enriched King books, each with a reason tied to its profile.
+4. Open a recommendation to inspect its profile or COBISS record; keep the import tools under `/import`.
 
 ## Implementation order
 
-1. **Reader shell:** Make `/` a reader home, retain the approved-account gate, and link to the existing import workflow. Add a consistent navigation between reader and import pages.
+1. **Built:** Chat at `/`, approved-account gate, saved-book grounding, follow-up questions, explanation cards, and book details.
 2. **Catalog:** Add a reader-facing book list with search and useful profile filters. Reuse the current book details panel; show whether a book has an enrichment profile.
-3. **Recommendations:** Add a form for a reference book or short taste description. Rank only enriched books selected by the current Stephen King filter. Exclude the reference book, show why each match fits, and provide a useful empty state when profiles are missing.
-4. **Feedback:** Add simple “interested” and “not for me” actions so the owner can refine a session without editing data. Decide whether feedback needs persistence after the first flow is usable.
+3. **Feedback:** Add simple “interested” and “not for me” actions so the owner can refine a session without editing data. Decide whether feedback needs persistence after the first flow is usable.
 5. **Expansion:** Once the King flow works, extend the candidate pool to the full catalog and revisit ranking quality and persistent preferences.
 
 ## Design and verification

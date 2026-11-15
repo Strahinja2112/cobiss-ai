@@ -46,9 +46,9 @@ export default async function SavedBooks({
   });
 
   return (
-    <main className="bg-background text-foreground min-h-screen px-4 py-8 sm:px-8 sm:py-12">
+    <div className="bg-background text-foreground min-h-screen px-4 py-8 sm:px-8 sm:py-12">
       <div className="mx-auto max-w-7xl">
-        <header className="bg-primary text-primary-foreground mb-8 flex flex-wrap items-start justify-between gap-5 rounded-xl px-6 py-7 sm:px-8">
+        <header className="bg-primary text-primary-foreground mb-8 flex flex-wrap items-start justify-between gap-5 rounded-md px-6 py-7 sm:px-8">
           <div>
             <h1 className="font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
               Saved books
@@ -60,7 +60,7 @@ export default async function SavedBooks({
           <nav className="flex flex-wrap gap-2">
             <Link
               href="/import"
-              className="border-primary-foreground/75 hover:bg-primary-foreground/10 rounded-full border px-4 py-2 text-sm font-medium"
+              className="border-primary-foreground/75 hover:bg-primary-foreground/10 rounded-md border px-4 py-2 text-sm font-medium"
             >
               Back to fetch
             </Link>
@@ -71,7 +71,7 @@ export default async function SavedBooks({
         <EnrichButton pending={pending} />
 
         {books.length === 0 ? (
-          <p className="border-border bg-card text-muted-foreground rounded-2xl border p-6 text-sm">
+          <p className="border-border bg-card text-muted-foreground rounded-md border p-6 text-sm">
             No books saved yet. Fetch books on the main page.
           </p>
         ) : (
@@ -85,7 +85,7 @@ export default async function SavedBooks({
                 {page > 1 ? (
                   <Link
                     href={`/import/books?page=${page - 1}`}
-                    className="border-border hover:bg-card rounded-full border px-5 py-2 text-sm"
+                    className="border-border hover:bg-card rounded-md border px-5 py-2 text-sm"
                   >
                     Previous
                   </Link>
@@ -98,7 +98,7 @@ export default async function SavedBooks({
                 {page < pageCount ? (
                   <Link
                     href={`/import/books?page=${page + 1}`}
-                    className="border-border hover:bg-card rounded-full border px-5 py-2 text-sm"
+                    className="border-border hover:bg-card rounded-md border px-5 py-2 text-sm"
                   >
                     Next
                   </Link>
@@ -110,6 +110,6 @@ export default async function SavedBooks({
           </>
         )}
       </div>
-    </main>
+    </div>
   );
 }

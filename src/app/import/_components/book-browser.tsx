@@ -125,7 +125,7 @@ export function BookBrowser() {
           type="button"
           onClick={() => void start()}
           disabled={running}
-          className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60"
+          className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-6 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60"
         >
           {running ? "Fetching…" : "Fetch and save all books"}
         </button>
@@ -136,7 +136,7 @@ export function BookBrowser() {
               active.current?.abort();
               setMessage("Fetch stopped. Saved books remain in the database.");
             }}
-            className="border-border hover:bg-card rounded-full border px-5 py-3 text-sm font-semibold"
+            className="border-border hover:bg-card rounded-md border px-5 py-3 text-sm font-semibold"
           >
             Stop
           </button>
@@ -152,7 +152,7 @@ export function BookBrowser() {
       </div>
 
       {(loaded > 0 || running) && (
-        <div className="border-border bg-card mt-8 grid gap-3 rounded-2xl border p-5 text-sm sm:grid-cols-3">
+        <div className="border-border bg-card mt-8 grid gap-3 rounded-md border p-5 text-sm sm:grid-cols-3">
           <p>
             <strong>{number.format(loaded)}</strong> books saved ·{" "}
             {number.format(total)} matches
@@ -175,7 +175,7 @@ export function BookBrowser() {
               Page {page + 1} of {pageCount}
             </span>
           </div>
-          <ol className="divide-border border-border bg-card mt-4 divide-y rounded-2xl border px-5">
+          <ol className="divide-border border-border bg-card mt-4 divide-y rounded-md border px-5">
             {visible.map((book) => (
               <li key={book.cobissId} className="py-4">
                 <a
@@ -203,7 +203,7 @@ export function BookBrowser() {
               type="button"
               disabled={page === 0}
               onClick={() => setPage(page - 1)}
-              className="border-border rounded-full border px-5 py-2 text-sm disabled:opacity-40"
+              className="border-border rounded-md border px-5 py-2 text-sm disabled:opacity-40"
             >
               Previous
             </button>
@@ -211,7 +211,7 @@ export function BookBrowser() {
               type="button"
               disabled={page + 1 >= pageCount}
               onClick={() => setPage(page + 1)}
-              className="border-border rounded-full border px-5 py-2 text-sm disabled:opacity-40"
+              className="border-border rounded-md border px-5 py-2 text-sm disabled:opacity-40"
             >
               Next
             </button>

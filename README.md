@@ -1,8 +1,8 @@
 # COBISS Book Finder
 
-Local Next.js app built with Create T3 App. It fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika), saves title, author, ISBN, and source URL in PostgreSQL, and lists saved books at `/import/books`. No cron job is used.
+Local Next.js app built with Create T3 App. The main page is a Gemini chat that recommends from saved, enriched Stephen King books. The import workflow fetches English-language books from the `gbvk-16` COBISS catalog (Odeljenje stranih jezika) and saves them in PostgreSQL. No cron job is used.
 
-The existing fetch and saved-books pages live at `/import` and `/import/books` in `src/app/import/`. The old URLs redirect to these pages.
+The fetch and saved-books pages live at `/import` and `/import/books` in `src/app/import/`. The reader chat lives at `/`.
 
 ## Setup
 
@@ -10,12 +10,14 @@ The existing fetch and saved-books pages live at `/import` and `/import/books` i
 2. Copy `.env.example` to `.env`. Set `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`, `ALLOWED_GOOGLE_EMAIL`, and `DATABASE_URL`.
 3. Create a Google OAuth **Web application** client. Add `http://localhost:3000/api/auth/callback/google` as an authorized redirect URI. If the OAuth app is in testing mode, add your email as a test user.
 4. Start PostgreSQL and run `pnpm db:migrate` to create the tables.
-5. Run `pnpm dev`, open `http://localhost:3000/import`, and sign in with the allowed Google account.
+5. Run `pnpm dev`, open `http://localhost:3000`, and sign in with the allowed Google account.
 6. Click **Fetch and save all books**. Use **Stop** to end the fetch; saved books remain available at `/import/books`.
 
 The app fetches every English-language book in this department and checks each ISBN. Repeating a fetch updates records instead of creating duplicates. The import page shows incoming results and fetch progress; `/import/books` lists saved records.
 
 To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then click **Enrich next 25** on `/import/books`. Each run processes at most 25 displayed books without profiles; progress and failures appear beside the button. Select a book to review its metadata and completed profile in the details panel. Gemini calls may incur charges.
+
+On `/`, ask for a book recommendation in plain English and follow up in the same conversation. Gemini receives the enriched Stephen King profiles from the server and can recommend only books in that saved set. Open a suggested book for its full profile. Chat history lasts until the page is refreshed; each message makes a Gemini call and may incur charges.
 
 For an existing database created with `prisma db push`, first run `pnpm exec prisma migrate resolve --applied 20261114170000_baseline`, then `pnpm db:migrate`. The baseline records the tables already present; the next migration links existing books to authors.
 
