@@ -2,9 +2,9 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: move import to CLI and reconcile local GBVK-16 books with live COBISS.
-- 2026-11-16 [TOOL] Now: all 2,090 live English-book COBISS IDs are saved locally; Christie is present but unenriched.
-- 2026-11-16 [CODE] Next: rerun `pnpm books fetch` when the COBISS catalog changes; enrich books for chat separately.
+- 2026-11-16 [USER] Goal: reconcile local GBVK-16 books with COBISS and explain search differences.
+- 2026-11-16 [TOOL] Now: all 2,090 live IDs and all seven pictured “train” results are saved locally; Prisma Studio title filter differs from COBISS search.
+- 2026-11-16 [CODE] Next: rerun `pnpm books fetch` when COBISS changes; enrich books for chat separately.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
@@ -39,6 +39,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Read-only DB lookup found all seven pictured COBISS “train” results. Prisma title `contains: "train"` returned the four Studio rows; case-insensitive contains returned five, adding `Train dreams`. COBISS also returns three titles without “train”; Studio includes `The death strain` via substring match.
 - 2026-11-16 [TOOL] Before backfill: live catalog had 2,090 unique English-book IDs, local DB 2,087; missing IDs were 54611977, 13520695, and 334684672. Most recent pre-backfill fetch was 2026-11-12T19:27:52Z; exact reason for omissions UNCONFIRMED.
 - 2026-11-16 [TOOL] Backfilled those three via existing `fetchSearchPage`, `fetchIsbn`, and `saveBooks`; full 21-page reconciliation afterward found 2,090 local IDs, zero missing and zero stale.
 - 2026-11-16 [TOOL] Worktree `.env` resolves to main checkout `.env`; read-only query on `localhost:5432/cobiss-ai-app` found Christie `10213687`, row ID `cmwdxd93p00etg0vi2d3w864d`, with 1,553 books ahead (50/page, page 32).
@@ -50,12 +51,9 @@
 - 2026-11-16 [TOOL] Created `feat/import-cli`; `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts` passed 5 files and `pnpm typecheck` passed before edits.
 - 2026-11-15 [TOOL] Animation change passed `pnpm typecheck`, targeted ESLint, and `git diff --check`; browser host unavailable for visual feel-check.
 - 2026-11-15 [TOOL] New animation changes passed typecheck, targeted ESLint, Prettier, and CSS compile; `pnpm build` still fails on unrelated existing lint errors.
-- 2026-11-15 [TOOL] `git status`: unrelated local edits remain in `src/app/layout.tsx`, `src/app/page.tsx`, `src/components/ui/textarea.tsx`, and `GEMINI_USAGE_PLAN.md`.
 - 2026-11-15 [TOOL] `pnpm typecheck`, targeted ESLint, Prettier on edited TSX, and Impeccable detector passed; browser host unavailable.
 - 2026-11-15 [TOOL] `pnpm build` compiled UI but failed on existing lint errors in chat tests and unused UI components; page also has unused imports.
 - 2026-11-15 [CODE] Earlier receipt called `GEMINI_USAGE_PLAN.md` unrelated; superseded: it is a deliverable for current settings task.
-- 2026-11-15 [TOOL] `git status --short`: modified `AGENTS.md`, chat UI, layout, page, textarea; untracked chat hook.
-- 2026-11-15 [TOOL] `AGENTS.md` changed from empty to user-supplied rules between tool reads; earlier empty-file state is superseded.
 - 2026-11-15 [TOOL] Staged `AGENTS.md` and `CONTINUITY.md` only; `git diff --cached --check` passed.
 - 2026-11-15 [CODE] `/` has Gemini chat over saved enriched Stephen King books; `/import` fetches COBISS; `/import/books` lists and enriches in batches of 25.
 - 2026-11-15 [CODE] README lists `pnpm typecheck`, Node tests, and `pnpm build` as checks.
