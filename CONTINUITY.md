@@ -2,9 +2,9 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: replace `/import` pages with terminal CLI, then remove import API routes.
-- 2026-11-16 [CODE] Now: CLI fetch/list/show/enrich implemented; `/import` pages and book import API routes removed in isolated `feat/import-cli` worktree.
-- 2026-11-16 [CODE] Next: commit migration; verify against a running local PostgreSQL instance when available.
+- 2026-11-16 [USER] Goal: replace web import with CLI and diagnose missing Agatha Christie.
+- 2026-11-16 [TOOL] Now: CLI migration committed as `9bc6b8d`; Christie record is present in DB but has no enrichment.
+- 2026-11-16 [CODE] Next: run enrichment if the user wants Christie included in chat recommendations.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
@@ -39,6 +39,8 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Live GBVK-16 author search returned six Christie books, one matching `la=eng`: `The mysterious affair at Styles` (COBISS `10213687`).
+- 2026-11-16 [TOOL] Read-only DB query found that exact record among 2,087 saved books with `enrichment: null`; chat query requires `enrichment isNot null`.
 - 2026-11-16 [TOOL] CLI tests, existing Node tests, TypeScript, targeted ESLint, and diff whitespace passed; live `list` could not connect to PostgreSQL at localhost:5432.
 - 2026-11-16 [TOOL] Escalated production build compiled; lint failed on existing errors in chat tests and unrelated UI components. Isolated sandbox build first failed to fetch Google Fonts.
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
