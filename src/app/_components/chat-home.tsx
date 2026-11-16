@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, X } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 import { ChatActions } from "~/app/_components/chat-actions";
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
@@ -43,18 +44,48 @@ export function ChatHome({
     details,
   } = useChatHome(readyCount);
   const reduceMotion = useReducedMotion();
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const composerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const viewport = window.visualViewport;
+    const composer = composerRef.current;
+    if (!viewport || !composer) return;
+
+    const updatePosition = () => {
+      const keyboardOpen =
+        document.activeElement === textareaRef.current &&
+        window.innerHeight - viewport.height > 100;
+      composer.style.bottom = keyboardOpen
+        ? `${Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop)}px`
+        : "0px";
+    };
+
+    viewport.addEventListener("resize", updatePosition);
+    viewport.addEventListener("scroll", updatePosition);
+    window.addEventListener("resize", updatePosition);
+    textareaRef.current?.addEventListener("focus", updatePosition);
+    textareaRef.current?.addEventListener("blur", updatePosition);
+    return () => {
+      viewport.removeEventListener("resize", updatePosition);
+      viewport.removeEventListener("scroll", updatePosition);
+      window.removeEventListener("resize", updatePosition);
+      textareaRef.current?.removeEventListener("focus", updatePosition);
+      textareaRef.current?.removeEventListener("blur", updatePosition);
+    };
+  }, []);
 
   return (
-    <div className="bg-background text-foreground flex min-h-dvh w-full flex-1 flex-col">
+    <div className="bg-background text-foreground flex min-h-svh w-full flex-1 flex-col">
       <h1 className="sr-only">COBISS Book Finder</h1>
       <div
         className={`mx-auto grid w-full max-w-7xl flex-1 gap-6 px-4 sm:px-8 ${selected ? "lg:grid-cols-[minmax(0,1fr)_24rem]" : ""}`}
       >
-        <section className="relative flex min-h-[calc(100dvh-5rem)] min-w-0 flex-col">
+        <section className="relative flex min-h-[calc(100svh-5rem)] min-w-0 flex-col">
           <ChatActions newChat={newChat} hasMessages={messages.length > 0} />
 
           <div
-            className="mx-auto w-full max-w-3xl flex-1 pt-16 pb-12"
+            className="mx-auto w-full max-w-3xl flex-1 pt-16 pb-36 md:pb-12"
             role="log"
             aria-live="polite"
             aria-label="Conversation"
@@ -70,7 +101,7 @@ export function ChatHome({
                   duration: reduceMotion ? 0.16 : 0.25,
                   ease: [0.23, 1, 0.32, 1],
                 }}
-                className="flex min-h-[50dvh] flex-col justify-center"
+                className="flex min-h-[50svh] flex-col justify-center"
               >
                 <h2 className="max-w-xl text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-5xl">
                   What are you in the mood for?
@@ -226,7 +257,10 @@ export function ChatHome({
             <div ref={end} />
           </div>
 
-          <div className="sticky bottom-0 z-10 bg-transparent pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] sm:pb-6">
+          <div
+            ref={composerRef}
+            className="bg-background/90 fixed inset-x-0 bottom-0 z-30 px-4 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur-sm md:sticky md:inset-auto md:z-10 md:bg-transparent md:px-0 md:pb-6 md:backdrop-blur-none"
+          >
             <form
               onSubmit={submit}
               className="border-border bg-card/50 focus-within:ring-ring/40 mx-auto flex max-w-3xl items-end justify-center gap-2 rounded-xl border p-2 backdrop-blur-sm focus-within:ring-2"
@@ -236,6 +270,7 @@ export function ChatHome({
               </Label>
               <Textarea
                 id="chat-message"
+                ref={textareaRef}
                 value={draft}
                 onChange={(event) => setDraft(event.target.value)}
                 onKeyDown={(event) => {
