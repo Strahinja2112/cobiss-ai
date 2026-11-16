@@ -2,7 +2,7 @@ import {
   enrichBook,
   GeminiHttpError,
 } from "../../src/app/api/_lib/enrich-book.ts";
-import { plain } from "./catalog.mjs";
+import { createEnrichLog } from "./enrich-log.mjs";
 import { enrichmentModels } from "./models.mjs";
 
 export async function runEnrich(db, signal, apiKey, catalog) {
@@ -13,59 +13,80 @@ export async function runEnrich(db, signal, apiKey, catalog) {
   });
   let saved = 0;
   let failed = 0;
+  let processed = 0;
+  let reason = "Complete";
+  const log = createEnrichLog(catalog, books.length, enrichmentModels);
 
-  console.log(
-    `Enriching ${books.length} books with ${enrichmentModels.join(", then ")}`,
-  );
-  for (const book of books) {
-    signal.throwIfAborted();
-    try {
-      let enrichment;
+  try {
+    for (const [position, book] of books.entries()) {
+      signal.throwIfAborted();
+      const index = position + 1;
+      const bookStart = log.startBook();
       let model;
-      for (const candidate of enrichmentModels) {
-        try {
-          enrichment = await enrichBook(book, apiKey, candidate, signal);
+      try {
+        let enrichment;
+        for (const [modelIndex, candidate] of enrichmentModels.entries()) {
           model = candidate;
+          log.attempt(index, book.title, candidate);
+          try {
+            enrichment = await enrichBook(book, apiKey, candidate, signal);
+            break;
+          } catch (error) {
+            if (
+              !(error instanceof GeminiHttpError) ||
+              modelIndex === enrichmentModels.length - 1
+            )
+              throw error;
+            log.fallback(
+              index,
+              book.title,
+              candidate,
+              error,
+              enrichmentModels[modelIndex + 1],
+              bookStart,
+            );
+          }
+        }
+        if (!enrichment || !model)
+          throw new Error("Gemini returned no enrichment");
+        const { summary, genres, themes, mood, ...profile } = enrichment;
+        signal.throwIfAborted();
+        await db.bookEnrichment.upsert({
+          where: { bookId: book.id },
+          create: {
+            bookId: book.id,
+            summary,
+            genres,
+            themes,
+            mood,
+            profile,
+            model,
+          },
+          update: {},
+        });
+        saved++;
+        processed++;
+        log.saved(index, book.title, model, bookStart, saved, failed);
+      } catch (error) {
+        if (signal.aborted) throw error;
+        failed++;
+        processed++;
+        log.failed(index, book.title, model, error, bookStart);
+        if (error instanceof GeminiHttpError) {
+          reason = "Stopped: Gemini models exhausted";
           break;
-        } catch (error) {
-          if (
-            !(error instanceof GeminiHttpError) ||
-            candidate === enrichmentModels.at(-1)
-          )
-            throw error;
-          console.error(
-            `${plain(book.title)}: ${candidate}: ${error.message}; trying next model`,
-          );
         }
       }
-      if (!enrichment || !model)
-        throw new Error("Gemini returned no enrichment");
-      const { summary, genres, themes, mood, ...profile } = enrichment;
-      signal.throwIfAborted();
-      await db.bookEnrichment.upsert({
-        where: { bookId: book.id },
-        create: {
-          bookId: book.id,
-          summary,
-          genres,
-          themes,
-          mood,
-          profile,
-          model,
-        },
-        update: {},
-      });
-      saved++;
-      console.log(`Saved ${saved}/${books.length}: ${plain(book.title)}`);
-    } catch (error) {
-      if (signal.aborted) throw error;
-      failed++;
-      console.error(
-        `${plain(book.title)}: ${plain(error instanceof Error ? error.message : error)}`,
-      );
-      if (error instanceof GeminiHttpError) break;
     }
+  } finally {
+    const outcome =
+      reason === "Complete" && failed > 0 ? "Finished with failures" : reason;
+    log.finish(
+      signal.aborted ? "Interrupted" : outcome,
+      processed,
+      saved,
+      failed,
+    );
   }
-  console.log(`Batch complete: ${saved} saved, ${failed} failed`);
   return { saved, failed };
 }

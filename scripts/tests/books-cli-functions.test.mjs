@@ -39,6 +39,8 @@ test("fetch command saves pages and ISBN updates", async () => {
 
 test("enrich command saves a profile for a pending book", async () => {
   const saved = [];
+  const logs = [];
+  const errors = [];
   let geminiCalls = 0;
   const models = [];
   const book = {
@@ -49,8 +51,8 @@ test("enrich command saves a profile for a pending book", async () => {
     isbn: null,
     authors: [{ name: "A. Writer" }],
   };
-  mock.method(console, "log", () => {});
-  mock.method(console, "error", () => {});
+  mock.method(console, "log", (line) => logs.push(line));
+  mock.method(console, "error", (line) => errors.push(line));
   mock.method(globalThis, "fetch", async (input, init) => {
     if (String(input).includes("plus-legacy.cobiss.net")) {
       return Response.json({ notesCard: { value: "A quiet mystery." } });
@@ -121,6 +123,72 @@ test("enrich command saves a profile for a pending book", async () => {
   assert.equal(saved[0].create.model, "gemma-4-26b-a4b-it");
   assert.deepEqual(saved[0].update, {});
   assert.deepEqual(saved[0].create.profile.subjects, ["Secrets"]);
+  assert.match(logs[0], /gbvk-17: 1 pending/);
+  assert(
+    logs.some((line) =>
+      line.includes("[1/1] A Quiet Mystery | saved with gemma-4-26b-a4b-it"),
+    ),
+  );
+  assert.equal(errors.filter((line) => line.includes("| next:")).length, 3);
+  assert(
+    logs.some((line) =>
+      line.includes("Complete: 1/1 processed, 1 saved, 0 failed, 0 pending"),
+    ),
+  );
+});
+
+test("enrich command reports exhausted models and leaves books pending", async () => {
+  const logs = [];
+  const errors = [];
+  mock.method(console, "log", (line) => logs.push(line));
+  mock.method(console, "error", (line) => errors.push(line));
+  mock.method(globalThis, "fetch", async (input) =>
+    String(input).includes("plus-legacy.cobiss.net")
+      ? Response.json({})
+      : Response.json(
+          { error: { status: "UNAVAILABLE", message: "Model overloaded" } },
+          { status: 503 },
+        ),
+  );
+  const books = ["First", "Second"].map((title, index) => ({
+    id: `book-${index}`,
+    catalog: "gbvk-17",
+    cobissId: String(index),
+    title,
+    isbn: null,
+    authors: [],
+  }));
+  const db = {
+    book: { findMany: async () => books },
+    bookEnrichment: {
+      upsert: async () => assert.fail("No profile should be saved"),
+    },
+  };
+
+  assert.deepEqual(
+    await runEnrich(db, new AbortController().signal, "key", "gbvk-17"),
+    { saved: 0, failed: 1 },
+  );
+  assert.equal(errors.filter((line) => line.includes("| next:")).length, 3);
+  assert(
+    logs.some((line) =>
+      line.includes("Stopped: Gemini models exhausted: 1/2 processed"),
+    ),
+  );
+  assert(!logs.some((line) => line.includes("[2/2]")));
+});
+
+test("enrich command reports interruption", async () => {
+  const logs = [];
+  const controller = new AbortController();
+  controller.abort();
+  mock.method(console, "log", (line) => logs.push(line));
+  const db = {
+    book: { findMany: async () => [{ title: "Book" }] },
+  };
+
+  await assert.rejects(runEnrich(db, controller.signal, "key", "gbvk-17"));
+  assert(logs.some((line) => line.includes("Interrupted: 0/1 processed")));
 });
 
 test("list and show expose saved book metadata and profile", async () => {

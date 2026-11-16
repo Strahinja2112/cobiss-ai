@@ -43,9 +43,10 @@ async function main() {
       if (result.failed) process.exitCode = 1;
     }
   } catch (error) {
-    console.error(
-      controller.signal.aborted ? "Stopped; saved work remains" : error,
-    );
+    if (!controller.signal.aborted || args.command !== "enrich")
+      console.error(
+        controller.signal.aborted ? "Stopped; saved work remains" : error,
+      );
     process.exitCode = controller.signal.aborted ? 130 : 1;
   } finally {
     process.removeListener("SIGINT", stop);

@@ -2,9 +2,12 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: implement CLI enrichment logging plan; fiction filtering was explicitly canceled.
+- 2026-11-16 [CODE] Now: CLI logs model attempts, fallback, saved/failed counts, elapsed time, stop reason, and resume command.
+- 2026-11-16 [CODE] Next: run `pnpm books enrich` to see per-book progress and final resume status.
 - 2026-11-16 [USER] Goal: plan clearer `pnpm books enrich` logs before implementation.
 - 2026-11-16 [CODE] Now: logging plan covers run totals, per-book progress/model, fallback reasons, elapsed time, and final stop/resume state.
-- 2026-11-16 [CODE] Next: implement logging plan when requested; no code change in planning turn.
+- 2026-11-16 [CODE] Superseded: logging implementation requested in current turn.
 - 2026-11-16 [USER] Goal: remove 25-book enrichment cap and let CLI run through pending books.
 - 2026-11-16 [CODE] Now: pending-book query has no fixed `take`; run ends after all pending books or exhausted Gemini model errors.
 - 2026-11-16 [CODE] Next: run `pnpm books enrich` to process pending books without a fixed cap.
@@ -21,10 +24,6 @@
 - 2026-11-16 [TOOL] Now: `feat/import-cli` including `--catalog gbvk-N` is committed and pushed to origin; fetch was left untouched.
 - 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
-- 2026-11-16 [USER] Goal: improve composer-to-chat bubble animation.
-- 2026-11-16 [CODE] Now: source and destination share bubble dimensions; user-message parent no longer moves during transfer.
-- 2026-11-16 [CODE] Next: continue app readiness work.
-- 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 
@@ -59,6 +58,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Logging tests, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but existing unrelated lint errors blocked completion.
 - 2026-11-16 [TOOL] Cap-removal test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but existing unrelated lint errors blocked completion.
 - 2026-11-16 [TOOL] Expanded fallback test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but remains blocked by existing unrelated lint errors.
 - 2026-11-16 [TOOL] Live tiny Interactions requests: both Gemini 2.5 candidates returned 404 for this project; Gemma 4 31B returned 200 with structured JSON; Gemma 4 26B returned high-demand 503. Gemini 3.5 Flash timed out.
@@ -77,5 +77,4 @@
 - 2026-11-16 [TOOL] CLI tests, existing Node tests, TypeScript, targeted ESLint, and diff whitespace passed; live `list` could not connect to PostgreSQL at localhost:5432.
 - 2026-11-16 [TOOL] Escalated production build compiled; lint failed on existing errors in chat tests and unrelated UI components. Isolated sandbox build first failed to fetch Google Fonts.
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
-- 2026-11-16 [TOOL] Created `feat/import-cli`; `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts` passed 5 files and `pnpm typecheck` passed before edits.
 - 2026-11-15 [CODE] Earlier UI, settings, and validation receipts compressed; see `docs/GEMINI_USAGE_PLAN.md` and repository history.
