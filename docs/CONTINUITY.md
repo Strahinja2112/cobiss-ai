@@ -2,6 +2,9 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: add more fallback models after both 3.5 and 3.1 Flash-Lite returned high-demand HTTP 503.
+- 2026-11-16 [CODE] Now: CLI model order extends to Gemma 4 31B and 26B; 2.5 models were rejected for this API key.
+- 2026-11-16 [CODE] Next: rerun `pnpm books enrich` with Gemma fallbacks.
 - 2026-11-16 [USER] Goal: CLI enrichment uses a static ordered model list and tries a weaker model after Gemini HTTP errors.
 - 2026-11-16 [CODE] Now: CLI uses 3.5 Flash-Lite then 3.1 Flash-Lite; chat still uses `GEMINI_MODEL`.
 - 2026-11-16 [CODE] Next: rerun `pnpm books enrich` to use ordered model fallback.
@@ -50,6 +53,8 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Expanded fallback test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but remains blocked by existing unrelated lint errors.
+- 2026-11-16 [TOOL] Live tiny Interactions requests: both Gemini 2.5 candidates returned 404 for this project; Gemma 4 31B returned 200 with structured JSON; Gemma 4 26B returned high-demand 503. Gemini 3.5 Flash timed out.
 - 2026-11-16 [TOOL] Model fallback tests, typecheck, and targeted ESLint passed. Production build compiled but failed on existing lint errors in chat tests and unrelated UI components.
 - 2026-11-16 [TOOL] Single unsaved enrichment request for `Star Wars : I am a Jedi` using `gemini-3.5-flash-lite` succeeded after earlier 503; no request-format failure reproduced.
 - 2026-11-16 [TOOL] Focused enrichment tests, typecheck, targeted ESLint, and diff whitespace passed after retry/error-detail change; Prettier formatting applied.
@@ -67,9 +72,4 @@
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
 - 2026-11-16 [TOOL] Created `feat/import-cli`; `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts` passed 5 files and `pnpm typecheck` passed before edits.
 - 2026-11-15 [TOOL] Animation change passed `pnpm typecheck`, targeted ESLint, and `git diff --check`; browser host unavailable for visual feel-check.
-- 2026-11-15 [TOOL] New animation changes passed typecheck, targeted ESLint, Prettier, and CSS compile; `pnpm build` still fails on unrelated existing lint errors.
-- 2026-11-15 [TOOL] `pnpm typecheck`, targeted ESLint, Prettier on edited TSX, and Impeccable detector passed; browser host unavailable.
-- 2026-11-15 [TOOL] `pnpm build` compiled UI but failed on existing lint errors in chat tests and unused UI components; page also has unused imports.
-- 2026-11-15 [CODE] Earlier receipt called `GEMINI_USAGE_PLAN.md` unrelated; superseded: it is a deliverable for current settings task.
-- 2026-11-15 [TOOL] Staged `AGENTS.md` and `CONTINUITY.md` only; `git diff --cached --check` passed.
-- 2026-11-15 [CODE] `/` has Gemini chat over saved enriched Stephen King books; `/import` fetches COBISS; `/import/books` lists and enriches in batches of 25.
+- 2026-11-15 [CODE] Earlier UI, settings, and validation receipts compressed; see `docs/GEMINI_USAGE_PLAN.md` and repository history.

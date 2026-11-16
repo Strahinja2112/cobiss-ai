@@ -9,7 +9,6 @@ import { createPortal } from "react-dom";
 import { ChatActions } from "~/app/_components/chat-actions";
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
 import { ChatLoadingStatus } from "~/app/_components/chat-loading-status";
-import { Alert, AlertDescription } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Label } from "~/components/ui/label";
 import { Textarea } from "~/components/ui/textarea";
@@ -45,7 +44,6 @@ export function ChatHome({
     draft,
     setDraft,
     pending,
-    error,
     selected,
     end,
     closeButton,
@@ -427,11 +425,6 @@ export function ChatHome({
                 </Button>
               )}
             </form>
-            {error && (
-              <Alert variant="destructive" className="mx-auto mt-2 max-w-3xl">
-                <AlertDescription>{error}</AlertDescription>
-              </Alert>
-            )}
           </div>
         </section>
 

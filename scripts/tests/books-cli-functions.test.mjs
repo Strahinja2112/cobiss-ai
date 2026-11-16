@@ -56,7 +56,7 @@ test("enrich command saves a profile for a pending book", async () => {
       return Response.json({ notesCard: { value: "A quiet mystery." } });
     }
     models.push(JSON.parse(init.body).model);
-    if (++geminiCalls === 1) {
+    if (++geminiCalls < 4) {
       return Response.json(
         { error: { status: "UNAVAILABLE", message: "Model overloaded" } },
         { status: 503 },
@@ -111,9 +111,14 @@ test("enrich command saves a profile for a pending book", async () => {
     { saved: 1, failed: 0 },
   );
   assert.equal(saved[0].create.bookId, book.id);
-  assert.equal(geminiCalls, 2);
-  assert.deepEqual(models, ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]);
-  assert.equal(saved[0].create.model, "gemini-3.1-flash-lite");
+  assert.equal(geminiCalls, 4);
+  assert.deepEqual(models, [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemma-4-31b-it",
+    "gemma-4-26b-a4b-it",
+  ]);
+  assert.equal(saved[0].create.model, "gemma-4-26b-a4b-it");
   assert.deepEqual(saved[0].update, {});
   assert.deepEqual(saved[0].create.profile.subjects, ["Secrets"]);
 });

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 
 import type { ChatRecommendation } from "~/app/api/_lib/chat";
+import { toast } from "~/components/ui/toast";
 
 type Message = {
   id: string;
@@ -13,7 +14,6 @@ export function useChatHome(readyCount: number) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
-  const [error, setError] = useState("");
   const [selected, setSelected] = useState<ChatRecommendation | null>(null);
   const active = useRef<AbortController | null>(null);
   const end = useRef<HTMLDivElement>(null);
@@ -54,7 +54,6 @@ export function useChatHome(readyCount: number) {
     setMessages([]);
     setDraft("");
     setSelected(null);
-    setError("");
     setPending(false);
   }
 
@@ -64,7 +63,6 @@ export function useChatHome(readyCount: number) {
     const next: Message[] = [...messages, { id, role: "user", content }];
     setMessages(next);
     setDraft("");
-    setError("");
     setPending(true);
     const controller = new AbortController();
     active.current = controller;
@@ -110,11 +108,14 @@ export function useChatHome(readyCount: number) {
       }
     } catch (cause) {
       if (!controller.signal.aborted)
-        setError(
-          cause instanceof Error
-            ? cause.message
-            : "Could not answer. Try again.",
-        );
+        toast.add({
+          title:
+            cause instanceof Error
+              ? cause.message
+              : "Could not answer. Try again.",
+          type: "error",
+          priority: "high",
+        });
     } finally {
       if (active.current === controller) {
         active.current = null;
@@ -165,7 +166,6 @@ export function useChatHome(readyCount: number) {
     draft,
     setDraft,
     pending,
-    error,
     selected,
     end,
     closeButton,
