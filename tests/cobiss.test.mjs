@@ -21,6 +21,10 @@ test("parses book rows and rejects a missing result count", () => {
     url: "https://plus-legacy.cobiss.net/cobiss/sr/sr_latn/bib/gbvk-16/123",
   });
   assert.throws(() => parseSearchPage("<html></html>"), /result count/);
+  assert.throws(
+    () => parseSearchPage(page(1, row("123", "Book title")), "gbvk-17"),
+    /returned gbvk-16 for gbvk-17/,
+  );
 });
 
 test("crawls later pages and returns ISBN values", async () => {

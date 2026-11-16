@@ -1,9 +1,9 @@
 import { crawlBooks } from "../../src/app/api/_lib/cobiss.ts";
 import { saveBooks } from "../../src/app/api/_lib/save-books.ts";
 
-export async function runFetch(db, signal) {
-  for await (const event of crawlBooks(signal)) {
-    await saveBooks(event, db);
+export async function runFetch(db, signal, catalog) {
+  for await (const event of crawlBooks(signal, catalog)) {
+    await saveBooks(event, db, catalog);
     if (event.type === "page") {
       console.log(
         `Saved ${event.loaded}/${event.totalHits} books; fetched ${event.pagesFetched} pages`,

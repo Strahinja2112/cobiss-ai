@@ -17,7 +17,10 @@ export interface SearchPage {
   books: Book[];
 }
 
-export function parseSearchPage(html: string): SearchPage {
+export function parseSearchPage(
+  html: string,
+  catalog = COBISS_CATALOG,
+): SearchPage {
   const $ = load(html);
   const hits = $("#search-results-container").attr("data-hits");
   const totalHits = Number(hits);
@@ -33,7 +36,10 @@ export function parseSearchPage(html: string): SearchPage {
       entry.find("a.title").text().trim() || entry.attr("data-title")?.trim();
     if (!cobissId || !title) return;
 
-    const database = entry.attr("data-database") ?? COBISS_CATALOG;
+    const database = entry.attr("data-database") ?? catalog;
+    if (database !== catalog) {
+      throw new Error(`COBISS returned ${database} for ${catalog}`);
+    }
     books.push({
       cobissId,
       title,
@@ -69,16 +75,17 @@ async function get(url: URL, signal: AbortSignal): Promise<Response> {
 export async function fetchSearchPage(
   start: number,
   signal: AbortSignal,
+  catalog = COBISS_CATALOG,
 ): Promise<SearchPage> {
   const url = new URL(`${BASE}/bib/search`);
   url.search = new URLSearchParams({
     c: "la=eng",
-    db: COBISS_CATALOG,
+    db: catalog,
     mat: "books",
     maxResult: String(PAGE_SIZE),
     start: String(start),
   }).toString();
-  return parseSearchPage(await (await get(url, signal)).text());
+  return parseSearchPage(await (await get(url, signal)).text(), catalog);
 }
 
 export async function fetchIsbn(
@@ -124,6 +131,7 @@ export type CrawlEvent =
 
 export async function* crawlBooks(
   signal: AbortSignal,
+  catalog = COBISS_CATALOG,
 ): AsyncGenerator<CrawlEvent> {
   const seen = new Set<string>();
   let checked = 0;
@@ -132,7 +140,7 @@ export async function* crawlBooks(
 
   for (let start = 0; ; start += PAGE_SIZE) {
     signal.throwIfAborted();
-    const page = await fetchSearchPage(start, signal);
+    const page = await fetchSearchPage(start, signal, catalog);
     totalHits = page.totalHits;
     if (page.books.length === 0 && start < totalHits) {
       throw new Error(`COBISS stopped before result ${totalHits}`);

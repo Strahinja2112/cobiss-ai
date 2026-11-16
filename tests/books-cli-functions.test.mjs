@@ -13,8 +13,9 @@ test("fetch command saves pages and ISBN updates", async () => {
   mock.method(globalThis, "fetch", async (input) => {
     const url = new URL(input);
     if (url.pathname.endsWith("/bib/search")) {
+      assert.equal(url.searchParams.get("db"), "gbvk-17");
       return new Response(
-        '<div id="search-results-container" data-hits="1"></div><table><tr class="biblioentry" data-cobiss-id="123" data-database="gbvk-16"><td><a class="title">Book</a><span class="author">Writer</span></td></tr></table>',
+        '<div id="search-results-container" data-hits="1"></div><table><tr class="biblioentry" data-cobiss-id="123" data-database="gbvk-17"><td><a class="title">Book</a><span class="author">Writer</span></td></tr></table>',
       );
     }
     return Response.json({ isbnCard: { value: "978-0-123456-47-2" } });
@@ -26,19 +27,21 @@ test("fetch command saves pages and ISBN updates", async () => {
     },
   };
 
-  await runFetch(db, new AbortController().signal);
+  await runFetch(db, new AbortController().signal, "gbvk-17");
   assert.deepEqual(
     writes.map(([kind]) => kind),
     ["book", "isbn"],
   );
   assert.equal(writes[1][1].data.isbn, "9780123456472");
+  assert.equal(writes[0][1].where.catalog_cobissId.catalog, "gbvk-17");
+  assert.equal(writes[1][1].where.catalog_cobissId.catalog, "gbvk-17");
 });
 
 test("enrich command saves a profile for a pending book", async () => {
   const saved = [];
   const book = {
     id: "book-1",
-    catalog: "gbvk-16",
+    catalog: "gbvk-17",
     cobissId: "123",
     title: "A Quiet Mystery",
     isbn: null,
@@ -83,7 +86,10 @@ test("enrich command saves a profile for a pending book", async () => {
     book: {
       findMany: async (query) => {
         assert.equal(query.take, 25);
-        assert.deepEqual(query.where, { enrichment: { is: null } });
+        assert.deepEqual(query.where, {
+          catalog: "gbvk-17",
+          enrichment: { is: null },
+        });
         return [book];
       },
     },
@@ -91,7 +97,13 @@ test("enrich command saves a profile for a pending book", async () => {
   };
 
   assert.deepEqual(
-    await runEnrich(db, new AbortController().signal, "key", "test-model"),
+    await runEnrich(
+      db,
+      new AbortController().signal,
+      "key",
+      "test-model",
+      "gbvk-17",
+    ),
     { saved: 1, failed: 0 },
   );
   assert.equal(saved[0].create.bookId, book.id);
@@ -107,7 +119,7 @@ test("list and show expose saved book metadata and profile", async () => {
     title: "Book",
     isbn: "9780123456472",
     authors: [{ name: "Writer" }],
-    catalog: "gbvk-16",
+    catalog: "gbvk-17",
     cobissId: "123",
     language: "eng",
     sourceUrl: "https://example.com/123",
@@ -127,21 +139,25 @@ test("list and show expose saved book metadata and profile", async () => {
   };
   const db = {
     book: {
-      count: async (query) => (query ? 0 : 1),
+      count: async (query) => {
+        assert.equal(query.where.catalog, "gbvk-17");
+        return query.where.enrichment ? 0 : 1;
+      },
       findMany: async (query) => {
         assert.equal(query.skip, 0);
         assert.equal(query.take, 50);
+        assert.deepEqual(query.where, { catalog: "gbvk-17" });
         return [book];
       },
-      findUnique: async (query) => {
-        assert.equal(query.where.id, "book-1");
+      findFirst: async (query) => {
+        assert.deepEqual(query.where, { id: "book-1", catalog: "gbvk-17" });
         return book;
       },
     },
   };
 
-  await listBooks(db, 1);
-  await showBook(db, "book-1");
+  await listBooks(db, 1, "gbvk-17");
+  await showBook(db, "book-1", "gbvk-17");
   assert(
     lines.some((line) => line.includes("1 saved books; 0 need enrichment")),
   );

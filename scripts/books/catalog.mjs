@@ -7,14 +7,15 @@ export function plain(value) {
     .trim();
 }
 
-export async function listBooks(db, page) {
+export async function listBooks(db, page, catalog) {
   const [total, pending] = await Promise.all([
-    db.book.count(),
-    db.book.count({ where: { enrichment: { is: null } } }),
+    db.book.count({ where: { catalog } }),
+    db.book.count({ where: { catalog, enrichment: { is: null } } }),
   ]);
   const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
   if (page > pages) throw new Error(`Page ${page} exceeds ${pages}`);
   const books = await db.book.findMany({
+    where: { catalog },
     orderBy: [{ lastFetchedAt: "desc" }, { id: "desc" }],
     select: {
       id: true,
@@ -37,9 +38,9 @@ export async function listBooks(db, page) {
   }
 }
 
-export async function showBook(db, id) {
-  const book = await db.book.findUnique({
-    where: { id },
+export async function showBook(db, id, catalog) {
+  const book = await db.book.findFirst({
+    where: { id, catalog },
     include: { authors: { orderBy: { name: "asc" } }, enrichment: true },
   });
   if (!book) throw new Error(`Book not found: ${id}`);

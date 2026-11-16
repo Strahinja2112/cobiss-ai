@@ -34,17 +34,18 @@ async function main() {
   process.once("SIGTERM", stop);
   try {
     if (args.command === "fetch") {
-      await runFetch(db, controller.signal);
+      await runFetch(db, controller.signal, args.catalog);
     } else if (args.command === "list") {
-      await listBooks(db, args.page);
+      await listBooks(db, args.page, args.catalog);
     } else if (args.command === "show") {
-      await showBook(db, args.id);
+      await showBook(db, args.id, args.catalog);
     } else {
       const result = await runEnrich(
         db,
         controller.signal,
         process.env.GEMINI_API_KEY,
         process.env.GEMINI_MODEL,
+        args.catalog,
       );
       if (result.failed) process.exitCode = 1;
     }

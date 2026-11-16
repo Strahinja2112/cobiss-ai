@@ -2,20 +2,20 @@
 
 ## Snapshot
 
-- 2026-11-16 [USER] Goal: reconcile local GBVK-16 books with COBISS and explain search differences.
-- 2026-11-16 [TOOL] Now: `feat/import-cli` is checked out in the main project directory; all 2,090 live catalog IDs are saved locally.
-- 2026-11-16 [CODE] Next: use `pnpm books` from the main project directory; rerun fetch when COBISS changes.
+- 2026-11-16 [USER] Goal: let each CLI action target a selected `gbvk-{number}` catalog.
+- 2026-11-16 [CODE] Now: `--catalog gbvk-N` scopes fetch, save, list, show, and enrich; `gbvk-16` remains the default.
+- 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
 
+- 2026-11-16 [CODE] Added catalog selection to CLI and shared COBISS/save code without a schema change.
 - 2026-11-16 [TOOL] Backfilled three missing COBISS records and verified a complete 2,090-ID match with the local DB.
 - 2026-11-16 [CODE] Added Node CLI, usage docs, and focused behavior tests; removed import UI/API and stale links.
 - 2026-11-16 [CODE] Added saved/enriched/pending counts to the main page using parallel database counts.
 - 2026-11-16 [CODE] Removed Stephen King restrictions from chat, saved-book list, and enrichment query; updated product docs.
 - 2026-11-15 [CODE] Replaced full-width header and in-conversation New chat control with two floating actions.
 - 2026-11-15 [CODE] Added spring theme selection, press feedback, theme transitions, and empty-chat entrance with reduced-motion handling.
-- 2026-11-15 [TOOL] `acfbc17` committed chat UI and initial settings drawer; `e63b19e` committed chat hook extraction.
 
 ## Decisions
 
@@ -34,11 +34,12 @@
 
 ## Working set
 
-- 2026-11-16 [CODE] `scripts/books.mjs`, `scripts/books/*.mjs`, `tests/books-cli*.mjs`, `src/app/_components/chat-home.tsx`
-- 2026-11-16 [CODE] `README.md`, `PRODUCT.md`, `FRONTEND_PLAN.md`, `GEMINI_USAGE_PLAN.md`, `AGENTS.md`
+- 2026-11-16 [CODE] `scripts/books.mjs`, `scripts/books/*.mjs`, `src/app/api/_lib/cobiss.ts`, `src/app/api/_lib/save-books.ts`
+- 2026-11-16 [CODE] `tests/books-cli*.mjs`, `tests/cobiss.test.mjs`, `README.md`
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Catalog-option tests, targeted ESLint, and typecheck passed; live read-only `gbvk-17` search returned six COBISS records and CLI list showed zero saved. Production webpack compiled; pre-existing lint errors still block `pnpm build`.
 - 2026-11-16 [TOOL] Removed clean temporary worktree `/tmp/cobiss-import-cli`, switched main checkout to `feat/import-cli`, and verified `pnpm books help`.
 - 2026-11-16 [TOOL] Read-only DB lookup found all seven pictured COBISS “train” results. Prisma title `contains: "train"` returned the four Studio rows; case-insensitive contains returned five, adding `Train dreams`. COBISS also returns three titles without “train”; Studio includes `The death strain` via substring match.
 - 2026-11-16 [TOOL] Before backfill: live catalog had 2,090 unique English-book IDs, local DB 2,087; missing IDs were 54611977, 13520695, and 334684672. Most recent pre-backfill fetch was 2026-11-12T19:27:52Z; exact reason for omissions UNCONFIRMED.

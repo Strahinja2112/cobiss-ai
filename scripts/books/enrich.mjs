@@ -4,9 +4,9 @@ import {
 } from "../../src/app/api/_lib/enrich-book.ts";
 import { plain } from "./catalog.mjs";
 
-export async function runEnrich(db, signal, apiKey, model) {
+export async function runEnrich(db, signal, apiKey, model, catalog) {
   const books = await db.book.findMany({
-    where: { enrichment: { is: null } },
+    where: { catalog, enrichment: { is: null } },
     include: { authors: { select: { name: true } } },
     orderBy: [{ lastFetchedAt: "desc" }, { id: "desc" }],
     take: 25,
