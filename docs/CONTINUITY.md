@@ -2,12 +2,12 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: replace verbose enrichment logs with a progress bar and ETA.
+- 2026-11-16 [CODE] Now: TTY bar shows ETA, current book, and saved/failed counts; redirected output uses sparse checkpoints.
+- 2026-11-16 [CODE] Next: run `pnpm books enrich` to view compact progress.
 - 2026-11-16 [USER] Goal: implement CLI enrichment logging plan; fiction filtering was explicitly canceled.
 - 2026-11-16 [CODE] Now: CLI logs model attempts, fallback, saved/failed counts, elapsed time, stop reason, and resume command.
 - 2026-11-16 [CODE] Next: run `pnpm books enrich` to see per-book progress and final resume status.
-- 2026-11-16 [USER] Goal: plan clearer `pnpm books enrich` logs before implementation.
-- 2026-11-16 [CODE] Now: logging plan covers run totals, per-book progress/model, fallback reasons, elapsed time, and final stop/resume state.
-- 2026-11-16 [CODE] Superseded: logging implementation requested in current turn.
 - 2026-11-16 [USER] Goal: remove 25-book enrichment cap and let CLI run through pending books.
 - 2026-11-16 [CODE] Now: pending-book query has no fixed `take`; run ends after all pending books or exhausted Gemini model errors.
 - 2026-11-16 [CODE] Next: run `pnpm books enrich` to process pending books without a fixed cap.
@@ -58,6 +58,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Progress/ETA tests, targeted ESLint, Prettier, and typecheck passed. Production build compiled, then failed on existing unrelated lint errors. Initial typecheck overlapped build and failed on transient `.next/types` deletion; sequential rerun passed.
 - 2026-11-16 [TOOL] Logging tests, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but existing unrelated lint errors blocked completion.
 - 2026-11-16 [TOOL] Cap-removal test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but existing unrelated lint errors blocked completion.
 - 2026-11-16 [TOOL] Expanded fallback test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but remains blocked by existing unrelated lint errors.
@@ -76,5 +77,4 @@
 - 2026-11-16 [TOOL] Read-only DB query found that exact record among 2,087 saved books with `enrichment: null`; chat query requires `enrichment isNot null`.
 - 2026-11-16 [TOOL] CLI tests, existing Node tests, TypeScript, targeted ESLint, and diff whitespace passed; live `list` could not connect to PostgreSQL at localhost:5432.
 - 2026-11-16 [TOOL] Escalated production build compiled; lint failed on existing errors in chat tests and unrelated UI components. Isolated sandbox build first failed to fetch Google Fonts.
-- 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
 - 2026-11-15 [CODE] Earlier UI, settings, and validation receipts compressed; see `docs/GEMINI_USAGE_PLAN.md` and repository history.

@@ -15,19 +15,18 @@ export async function runEnrich(db, signal, apiKey, catalog) {
   let failed = 0;
   let processed = 0;
   let reason = "Complete";
-  const log = createEnrichLog(catalog, books.length, enrichmentModels);
+  const log = createEnrichLog(catalog, books.length);
 
   try {
     for (const [position, book] of books.entries()) {
       signal.throwIfAborted();
       const index = position + 1;
-      const bookStart = log.startBook();
       let model;
       try {
         let enrichment;
         for (const [modelIndex, candidate] of enrichmentModels.entries()) {
           model = candidate;
-          log.attempt(index, book.title, candidate);
+          log.attempt(index, book.title);
           try {
             enrichment = await enrichBook(book, apiKey, candidate, signal);
             break;
@@ -37,14 +36,6 @@ export async function runEnrich(db, signal, apiKey, catalog) {
               modelIndex === enrichmentModels.length - 1
             )
               throw error;
-            log.fallback(
-              index,
-              book.title,
-              candidate,
-              error,
-              enrichmentModels[modelIndex + 1],
-              bookStart,
-            );
           }
         }
         if (!enrichment || !model)
@@ -66,12 +57,12 @@ export async function runEnrich(db, signal, apiKey, catalog) {
         });
         saved++;
         processed++;
-        log.saved(index, book.title, model, bookStart, saved, failed);
+        log.saved(index, saved, failed);
       } catch (error) {
         if (signal.aborted) throw error;
         failed++;
         processed++;
-        log.failed(index, book.title, model, error, bookStart);
+        log.failed(index, book.title, model, error, failed);
         if (error instanceof GeminiHttpError) {
           reason = "Stopped: Gemini models exhausted";
           break;

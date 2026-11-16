@@ -124,12 +124,7 @@ test("enrich command saves a profile for a pending book", async () => {
   assert.deepEqual(saved[0].update, {});
   assert.deepEqual(saved[0].create.profile.subjects, ["Secrets"]);
   assert.match(logs[0], /gbvk-17: 1 pending/);
-  assert(
-    logs.some((line) =>
-      line.includes("[1/1] A Quiet Mystery | saved with gemma-4-26b-a4b-it"),
-    ),
-  );
-  assert.equal(errors.filter((line) => line.includes("| next:")).length, 3);
+  assert.equal(errors.length, 0);
   assert(
     logs.some((line) =>
       line.includes("Complete: 1/1 processed, 1 saved, 0 failed, 0 pending"),
@@ -169,7 +164,11 @@ test("enrich command reports exhausted models and leaves books pending", async (
     await runEnrich(db, new AbortController().signal, "key", "gbvk-17"),
     { saved: 0, failed: 1 },
   );
-  assert.equal(errors.filter((line) => line.includes("| next:")).length, 3);
+  assert.equal(errors.length, 1);
+  assert.match(
+    errors[0],
+    /\[1\/2\] First: gemma-4-26b-a4b-it: Gemini returned HTTP 503/,
+  );
   assert(
     logs.some((line) =>
       line.includes("Stopped: Gemini models exhausted: 1/2 processed"),
