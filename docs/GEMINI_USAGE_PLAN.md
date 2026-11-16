@@ -2,11 +2,11 @@
 
 ## Goal
 
-Show how many more books can be enriched with the configured Gemini model, without implying that a local estimate is Google's live quota.
+Show how many more books can be enriched with the CLI's ordered Gemini models, without implying that a local estimate is Google's live quota.
 
 ## What limits the number
 
-Gemini rate limits are per **project and model**, not per API key. Requests per minute, input tokens per minute, and requests per day can each block a request. Daily request limits reset at midnight Pacific time. Paid projects can also have spend limits. Chat and enrichment use the same `GEMINI_MODEL` and project, so both consume shared capacity. Other clients using that project also count. See [Gemini rate limits](https://aistudio.google.com/docs/rate-limits) and [billing](https://aistudio.google.com/docs/billing).
+Gemini rate limits are per **project and model**, not per API key. Requests per minute, input tokens per minute, and requests per day can each block a request. Daily request limits reset at midnight Pacific time. Paid projects can also have spend limits. Chat uses `GEMINI_MODEL`; enrichment uses the ordered models in `scripts/books/models.mjs`. Traffic shares capacity when the same project and model are used. Other clients using that project also count. See [Gemini rate limits](https://aistudio.google.com/docs/rate-limits) and [billing](https://aistudio.google.com/docs/billing).
 
 ## Implementation plan
 

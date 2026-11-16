@@ -17,7 +17,7 @@ The CLI fetches every English-language book in this department and checks each I
 
 Commands use `gbvk-16` by default. Add `--catalog gbvk-17` after a command's arguments to target another GBVK department, for example `pnpm books fetch --catalog gbvk-17`, `pnpm books list 2 --catalog gbvk-17`, or `pnpm books enrich --catalog gbvk-17`. The list, details, and enrichment commands only use books from the selected catalog.
 
-To build AI recommendation profiles, set `GEMINI_API_KEY` and `GEMINI_MODEL` in `.env`, then run `pnpm books enrich`. Each run processes at most 25 saved books without profiles; progress and failures appear in the terminal. Rerun to process another batch. Gemini calls may incur charges.
+To build AI recommendation profiles, set `GEMINI_API_KEY` in `.env`, then run `pnpm books enrich`. The CLI tries `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite` if Gemini returns an HTTP error. Each run processes at most 25 saved books without profiles; progress and failures appear in the terminal. Rerun to process another batch. Gemini calls may incur charges. Chat still uses `GEMINI_MODEL` from `.env`.
 
 On `/`, ask for a book recommendation in plain English and follow up in the same conversation. Gemini receives every saved book profile and can recommend only books with saved enrichment. Open a suggested book for its full profile. Chat history lasts until the page is refreshed; each message makes a Gemini call and may incur charges.
 

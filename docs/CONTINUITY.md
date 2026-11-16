@@ -2,9 +2,12 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: CLI enrichment uses a static ordered model list and tries a weaker model after Gemini HTTP errors.
+- 2026-11-16 [CODE] Now: CLI uses 3.5 Flash-Lite then 3.1 Flash-Lite; chat still uses `GEMINI_MODEL`.
+- 2026-11-16 [CODE] Next: rerun `pnpm books enrich` to use ordered model fallback.
 - 2026-11-16 [USER] Goal: diagnose Gemini HTTP 503 during CLI enrichment and expose useful error detail.
 - 2026-11-16 [TOOL] Now: same book and model returned valid enrichment on a single unsaved diagnostic request; earlier 503 was transient.
-- 2026-11-16 [CODE] Next: rerun `pnpm books enrich`; CLI retries 503 twice and reports Gemini error status/message.
+- 2026-11-16 [CODE] Superseded by D007: CLI switches models after Gemini HTTP errors instead of retrying the same model.
 - 2026-11-16 [USER] Goal: let each CLI action target a selected `gbvk-{number}` catalog.
 - 2026-11-16 [TOOL] Now: `feat/import-cli` including `--catalog gbvk-N` is committed and pushed to origin; fetch was left untouched.
 - 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
@@ -26,6 +29,7 @@
 
 ## Decisions
 
+- 2026-11-16 [USER] D007 ACTIVE: Keep enrichment model choice in an importable static array, independent of `.env`; fall back to an older model on Gemini HTTP errors.
 - 2026-11-15 [USER] D001 ACTIVE: Keep code modules at or below 300 lines; build modularly, avoid development fallbacks and empty catches, and design UI for readers.
 - 2026-11-15 [USER] D002 ACTIVE: Maintain this bounded ledger with dated, tagged facts; update only for meaningful changes.
 - 2026-11-15 [USER] D003 ACTIVE: Keep current `AGENTS.md` rules and add commit guidance.
@@ -46,6 +50,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Model fallback tests, typecheck, and targeted ESLint passed. Production build compiled but failed on existing lint errors in chat tests and unrelated UI components.
 - 2026-11-16 [TOOL] Single unsaved enrichment request for `Star Wars : I am a Jedi` using `gemini-3.5-flash-lite` succeeded after earlier 503; no request-format failure reproduced.
 - 2026-11-16 [TOOL] Focused enrichment tests, typecheck, targeted ESLint, and diff whitespace passed after retry/error-detail change; Prettier formatting applied.
 - 2026-11-16 [TOOL] `19e874f` committed catalog option; `git push origin feat/import-cli` advanced remote from `968779e` to `19e874f`; worktree clean after push.

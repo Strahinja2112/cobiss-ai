@@ -40,6 +40,7 @@ test("fetch command saves pages and ISBN updates", async () => {
 test("enrich command saves a profile for a pending book", async () => {
   const saved = [];
   let geminiCalls = 0;
+  const models = [];
   const book = {
     id: "book-1",
     catalog: "gbvk-17",
@@ -50,10 +51,11 @@ test("enrich command saves a profile for a pending book", async () => {
   };
   mock.method(console, "log", () => {});
   mock.method(console, "error", () => {});
-  mock.method(globalThis, "fetch", async (input) => {
+  mock.method(globalThis, "fetch", async (input, init) => {
     if (String(input).includes("plus-legacy.cobiss.net")) {
       return Response.json({ notesCard: { value: "A quiet mystery." } });
     }
+    models.push(JSON.parse(init.body).model);
     if (++geminiCalls === 1) {
       return Response.json(
         { error: { status: "UNAVAILABLE", message: "Model overloaded" } },
@@ -105,17 +107,13 @@ test("enrich command saves a profile for a pending book", async () => {
   };
 
   assert.deepEqual(
-    await runEnrich(
-      db,
-      new AbortController().signal,
-      "key",
-      "test-model",
-      "gbvk-17",
-    ),
+    await runEnrich(db, new AbortController().signal, "key", "gbvk-17"),
     { saved: 1, failed: 0 },
   );
   assert.equal(saved[0].create.bookId, book.id);
   assert.equal(geminiCalls, 2);
+  assert.deepEqual(models, ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]);
+  assert.equal(saved[0].create.model, "gemini-3.1-flash-lite");
   assert.deepEqual(saved[0].update, {});
   assert.deepEqual(saved[0].create.profile.subjects, ["Secrets"]);
 });

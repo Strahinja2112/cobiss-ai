@@ -1,12 +1,11 @@
-import { setTimeout as delay } from "node:timers/promises";
-
 import {
   enrichBook,
   GeminiHttpError,
 } from "../../src/app/api/_lib/enrich-book.ts";
 import { plain } from "./catalog.mjs";
+import { enrichmentModels } from "./models.mjs";
 
-export async function runEnrich(db, signal, apiKey, model, catalog) {
+export async function runEnrich(db, signal, apiKey, catalog) {
   const books = await db.book.findMany({
     where: { catalog, enrichment: { is: null } },
     include: { authors: { select: { name: true } } },
@@ -16,27 +15,32 @@ export async function runEnrich(db, signal, apiKey, model, catalog) {
   let saved = 0;
   let failed = 0;
 
-  console.log(`Enriching ${books.length} books with ${model}`);
+  console.log(
+    `Enriching ${books.length} books with ${enrichmentModels.join(", then ")}`,
+  );
   for (const book of books) {
     signal.throwIfAborted();
     try {
       let enrichment;
-      for (let attempt = 0; attempt < 3; attempt++) {
+      let model;
+      for (const candidate of enrichmentModels) {
         try {
-          enrichment = await enrichBook(book, apiKey, model, signal);
+          enrichment = await enrichBook(book, apiKey, candidate, signal);
+          model = candidate;
           break;
         } catch (error) {
           if (
             !(error instanceof GeminiHttpError) ||
-            error.status !== 503 ||
-            attempt === 2
+            candidate === enrichmentModels.at(-1)
           )
             throw error;
-          console.error(`${plain(book.title)}: ${error.message}; retrying`);
-          await delay(1000 * 2 ** attempt, undefined, { signal });
+          console.error(
+            `${plain(book.title)}: ${candidate}: ${error.message}; trying next model`,
+          );
         }
       }
-      if (!enrichment) throw new Error("Gemini returned no enrichment");
+      if (!enrichment || !model)
+        throw new Error("Gemini returned no enrichment");
       const { summary, genres, themes, mood, ...profile } = enrichment;
       signal.throwIfAborted();
       await db.bookEnrichment.upsert({

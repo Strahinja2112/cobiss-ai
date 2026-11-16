@@ -18,14 +18,8 @@ async function main() {
   const envFile = resolve(import.meta.dirname, "../.env");
   if (existsSync(envFile)) process.loadEnvFile(envFile);
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is required");
-  if (
-    args.command === "enrich" &&
-    (!process.env.GEMINI_API_KEY || !process.env.GEMINI_MODEL)
-  ) {
-    throw new Error(
-      "GEMINI_API_KEY and GEMINI_MODEL are required for enrichment",
-    );
-  }
+  if (args.command === "enrich" && !process.env.GEMINI_API_KEY)
+    throw new Error("GEMINI_API_KEY is required for enrichment");
 
   const db = new PrismaClient();
   const controller = new AbortController();
@@ -44,7 +38,6 @@ async function main() {
         db,
         controller.signal,
         process.env.GEMINI_API_KEY,
-        process.env.GEMINI_MODEL,
         args.catalog,
       );
       if (result.failed) process.exitCode = 1;
