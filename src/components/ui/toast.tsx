@@ -140,35 +140,35 @@ function ToastIcon({ type }: { type: string | undefined }) {
     icon = (
       <CircleCheckIcon aria-hidden="true" />
     )
-    color = "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+    color = "text-emerald-600 dark:text-emerald-400"
   }
 
   if (type === "info") {
     icon = (
       <InfoIcon aria-hidden="true" />
     )
-    color = "bg-sky-500/10 text-sky-600 dark:text-sky-400"
+    color = "text-sky-600 dark:text-sky-400"
   }
 
   if (type === "warning") {
     icon = (
       <TriangleAlertIcon aria-hidden="true" />
     )
-    color = "bg-amber-500/10 text-amber-600 dark:text-amber-400"
+    color = "text-amber-600 dark:text-amber-400"
   }
 
   if (type === "error") {
     icon = (
       <CircleXIcon aria-hidden="true" />
     )
-    color = "bg-destructive/10 text-destructive"
+    color = "text-destructive"
   }
 
   if (type === "loading") {
     icon = (
       <Loader2Icon className="animate-spin" aria-hidden="true" />
     )
-    color = "bg-muted text-muted-foreground"
+    color = "text-muted-foreground"
   }
 
   if (!icon) {
@@ -178,7 +178,10 @@ function ToastIcon({ type }: { type: string | undefined }) {
   return (
     <span
       data-slot="toast-icon"
-      className={cn("flex size-8 shrink-0 items-center justify-center rounded-md [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4", color)}
+      className={cn(
+        "animate-in fade-in zoom-in-75 duration-200 shrink-0 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-6",
+        color,
+      )}
     >
       {icon}
     </span>
