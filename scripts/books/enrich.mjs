@@ -1,3 +1,5 @@
+import { setTimeout as delay } from "node:timers/promises";
+
 import {
   enrichBook,
   GeminiHttpError,
@@ -18,12 +20,24 @@ export async function runEnrich(db, signal, apiKey, model, catalog) {
   for (const book of books) {
     signal.throwIfAborted();
     try {
-      const { summary, genres, themes, mood, ...profile } = await enrichBook(
-        book,
-        apiKey,
-        model,
-        signal,
-      );
+      let enrichment;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try {
+          enrichment = await enrichBook(book, apiKey, model, signal);
+          break;
+        } catch (error) {
+          if (
+            !(error instanceof GeminiHttpError) ||
+            error.status !== 503 ||
+            attempt === 2
+          )
+            throw error;
+          console.error(`${plain(book.title)}: ${error.message}; retrying`);
+          await delay(1000 * 2 ** attempt, undefined, { signal });
+        }
+      }
+      if (!enrichment) throw new Error("Gemini returned no enrichment");
+      const { summary, genres, themes, mood, ...profile } = enrichment;
       signal.throwIfAborted();
       await db.bookEnrichment.upsert({
         where: { bookId: book.id },

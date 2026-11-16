@@ -69,8 +69,8 @@ type BookInput = {
 export class GeminiHttpError extends Error {
   readonly status: number;
 
-  constructor(status: number) {
-    super(`Gemini returned HTTP ${status}`);
+  constructor(status: number, detail?: string) {
+    super(`Gemini returned HTTP ${status}${detail ? `: ${detail}` : ""}`);
     this.status = status;
   }
 }
@@ -121,7 +121,15 @@ export async function enrichBook(
       signal: AbortSignal.any([signal, AbortSignal.timeout(90_000)]),
     },
   );
-  if (!response.ok) throw new GeminiHttpError(response.status);
+  if (!response.ok) {
+    const body = (await response.json()) as {
+      error?: { status?: string; message?: string };
+    };
+    const detail = [body.error?.status, body.error?.message]
+      .filter(Boolean)
+      .join(": ");
+    throw new GeminiHttpError(response.status, detail);
+  }
   const interaction = (await response.json()) as {
     steps?: { type?: string; content?: { type?: string; text?: string }[] }[];
   };

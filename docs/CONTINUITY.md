@@ -2,6 +2,9 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: diagnose Gemini HTTP 503 during CLI enrichment and expose useful error detail.
+- 2026-11-16 [TOOL] Now: same book and model returned valid enrichment on a single unsaved diagnostic request; earlier 503 was transient.
+- 2026-11-16 [CODE] Next: rerun `pnpm books enrich`; CLI retries 503 twice and reports Gemini error status/message.
 - 2026-11-16 [USER] Goal: let each CLI action target a selected `gbvk-{number}` catalog.
 - 2026-11-16 [TOOL] Now: `feat/import-cli` including `--catalog gbvk-N` is committed and pushed to origin; fetch was left untouched.
 - 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
@@ -43,6 +46,8 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Single unsaved enrichment request for `Star Wars : I am a Jedi` using `gemini-3.5-flash-lite` succeeded after earlier 503; no request-format failure reproduced.
+- 2026-11-16 [TOOL] Focused enrichment tests, typecheck, targeted ESLint, and diff whitespace passed after retry/error-detail change; Prettier formatting applied.
 - 2026-11-16 [TOOL] `19e874f` committed catalog option; `git push origin feat/import-cli` advanced remote from `968779e` to `19e874f`; worktree clean after push.
 - 2026-11-16 [TOOL] Catalog-option tests, targeted ESLint, and typecheck passed; live read-only `gbvk-17` search returned six COBISS records and CLI list showed zero saved. Production webpack compiled; pre-existing lint errors still block `pnpm build`.
 - 2026-11-16 [TOOL] Removed clean temporary worktree `/tmp/cobiss-import-cli`, switched main checkout to `feat/import-cli`, and verified `pnpm books help`.

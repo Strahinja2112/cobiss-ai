@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { afterEach, mock, test } from "node:test";
 
-import { listBooks, showBook } from "../scripts/books/catalog.mjs";
-import { runEnrich } from "../scripts/books/enrich.mjs";
-import { runFetch } from "../scripts/books/fetch.mjs";
+import { listBooks, showBook } from "../books/catalog.mjs";
+import { runEnrich } from "../books/enrich.mjs";
+import { runFetch } from "../books/fetch.mjs";
 
 afterEach(() => mock.restoreAll());
 
@@ -39,6 +39,7 @@ test("fetch command saves pages and ISBN updates", async () => {
 
 test("enrich command saves a profile for a pending book", async () => {
   const saved = [];
+  let geminiCalls = 0;
   const book = {
     id: "book-1",
     catalog: "gbvk-17",
@@ -48,9 +49,16 @@ test("enrich command saves a profile for a pending book", async () => {
     authors: [{ name: "A. Writer" }],
   };
   mock.method(console, "log", () => {});
+  mock.method(console, "error", () => {});
   mock.method(globalThis, "fetch", async (input) => {
     if (String(input).includes("plus-legacy.cobiss.net")) {
       return Response.json({ notesCard: { value: "A quiet mystery." } });
+    }
+    if (++geminiCalls === 1) {
+      return Response.json(
+        { error: { status: "UNAVAILABLE", message: "Model overloaded" } },
+        { status: 503 },
+      );
     }
     return Response.json({
       steps: [
@@ -107,6 +115,7 @@ test("enrich command saves a profile for a pending book", async () => {
     { saved: 1, failed: 0 },
   );
   assert.equal(saved[0].create.bookId, book.id);
+  assert.equal(geminiCalls, 2);
   assert.deepEqual(saved[0].update, {});
   assert.deepEqual(saved[0].create.profile.subjects, ["Secrets"]);
 });

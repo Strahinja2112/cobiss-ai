@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { enrichBook } from "./enrich-book.ts";
+import { enrichBook, GeminiHttpError } from "./enrich-book.ts";
 
 void test("sends COBISS context to Gemini and validates its profile", async () => {
   const originalFetch = globalThis.fetch;
@@ -63,6 +63,42 @@ void test("sends COBISS context to Gemini and validates its profile", async () =
     assert.equal(geminiRequest?.model, "test-model");
     assert.equal(geminiRequest?.store, false);
     assert.match(String(geminiRequest?.input), /A quiet mystery\./);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+void test("includes Gemini error details with HTTP status", async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    if (typeof input !== "string") throw new Error("Unexpected fetch URL");
+    return input.includes("plus-legacy.cobiss.net")
+      ? Response.json({})
+      : Response.json(
+          { error: { status: "UNAVAILABLE", message: "Model overloaded" } },
+          { status: 503 },
+        );
+  };
+  try {
+    await assert.rejects(
+      enrichBook(
+        {
+          catalog: "gbvk-16",
+          cobissId: "123",
+          title: "Book",
+          isbn: null,
+          authors: [],
+        },
+        "test-key",
+        "test-model",
+        new AbortController().signal,
+      ),
+      (error: unknown) =>
+        error instanceof GeminiHttpError &&
+        error.status === 503 &&
+        error.message ===
+          "Gemini returned HTTP 503: UNAVAILABLE: Model overloaded",
+    );
   } finally {
     globalThis.fetch = originalFetch;
   }
