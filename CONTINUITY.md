@@ -3,7 +3,7 @@
 ## Snapshot
 
 - 2026-11-16 [USER] Goal: let each CLI action target a selected `gbvk-{number}` catalog.
-- 2026-11-16 [CODE] Now: `--catalog gbvk-N` scopes fetch, save, list, show, and enrich; `gbvk-16` remains the default.
+- 2026-11-16 [TOOL] Now: `feat/import-cli` including `--catalog gbvk-N` is committed and pushed to origin; fetch was left untouched.
 - 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
@@ -39,6 +39,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] `19e874f` committed catalog option; `git push origin feat/import-cli` advanced remote from `968779e` to `19e874f`; worktree clean after push.
 - 2026-11-16 [TOOL] Catalog-option tests, targeted ESLint, and typecheck passed; live read-only `gbvk-17` search returned six COBISS records and CLI list showed zero saved. Production webpack compiled; pre-existing lint errors still block `pnpm build`.
 - 2026-11-16 [TOOL] Removed clean temporary worktree `/tmp/cobiss-import-cli`, switched main checkout to `feat/import-cli`, and verified `pnpm books help`.
 - 2026-11-16 [TOOL] Read-only DB lookup found all seven pictured COBISS “train” results. Prisma title `contains: "train"` returned the four Studio rows; case-insensitive contains returned five, adding `Train dreams`. COBISS also returns three titles without “train”; Studio includes `The death strain` via substring match.
@@ -58,4 +59,3 @@
 - 2026-11-15 [CODE] Earlier receipt called `GEMINI_USAGE_PLAN.md` unrelated; superseded: it is a deliverable for current settings task.
 - 2026-11-15 [TOOL] Staged `AGENTS.md` and `CONTINUITY.md` only; `git diff --cached --check` passed.
 - 2026-11-15 [CODE] `/` has Gemini chat over saved enriched Stephen King books; `/import` fetches COBISS; `/import/books` lists and enriches in batches of 25.
-- 2026-11-15 [CODE] README lists `pnpm typecheck`, Node tests, and `pnpm build` as checks.
