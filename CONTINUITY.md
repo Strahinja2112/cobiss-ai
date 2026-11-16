@@ -3,8 +3,8 @@
 ## Snapshot
 
 - 2026-11-16 [USER] Goal: reconcile local GBVK-16 books with COBISS and explain search differences.
-- 2026-11-16 [TOOL] Now: all 2,090 live IDs and all seven pictured “train” results are saved locally; Prisma Studio title filter differs from COBISS search.
-- 2026-11-16 [CODE] Next: rerun `pnpm books fetch` when COBISS changes; enrich books for chat separately.
+- 2026-11-16 [TOOL] Now: `feat/import-cli` is checked out in the main project directory; all 2,090 live catalog IDs are saved locally.
+- 2026-11-16 [CODE] Next: use `pnpm books` from the main project directory; rerun fetch when COBISS changes.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
 
 ## Done (recent)
@@ -39,6 +39,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Removed clean temporary worktree `/tmp/cobiss-import-cli`, switched main checkout to `feat/import-cli`, and verified `pnpm books help`.
 - 2026-11-16 [TOOL] Read-only DB lookup found all seven pictured COBISS “train” results. Prisma title `contains: "train"` returned the four Studio rows; case-insensitive contains returned five, adding `Train dreams`. COBISS also returns three titles without “train”; Studio includes `The death strain` via substring match.
 - 2026-11-16 [TOOL] Before backfill: live catalog had 2,090 unique English-book IDs, local DB 2,087; missing IDs were 54611977, 13520695, and 334684672. Most recent pre-backfill fetch was 2026-11-12T19:27:52Z; exact reason for omissions UNCONFIRMED.
 - 2026-11-16 [TOOL] Backfilled those three via existing `fetchSearchPage`, `fetchIsbn`, and `saveBooks`; full 21-page reconciliation afterward found 2,090 local IDs, zero missing and zero stale.
