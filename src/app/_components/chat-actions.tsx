@@ -5,6 +5,7 @@ import { ExternalLink, Plus, Settings } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "~/components/ui/button";
+import { themeFlavors, useThemeFlavor } from "~/components/theme-flavor";
 import {
   Drawer,
   DrawerContent,
@@ -51,6 +52,34 @@ function ThemeSetting() {
   );
 }
 
+function FlavorSetting() {
+  const { flavor, setFlavor } = useThemeFlavor();
+
+  return (
+    <div
+      role="group"
+      aria-label="Colour flavour"
+      className="grid grid-cols-4 gap-2"
+    >
+      {themeFlavors.map((item) => (
+        <button
+          key={item}
+          type="button"
+          aria-pressed={flavor === item}
+          onClick={() => setFlavor(item)}
+          className={`border-border focus-visible:outline-ring flex min-h-16 flex-col items-center justify-center gap-2 rounded-xl border text-xs font-medium capitalize focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "bg-accent text-accent-foreground" : "hover:bg-accent/60"}`}
+        >
+          <span
+            className={`size-4 rounded-full ${item === "olive" ? "bg-[#71764f]" : item === "sage" ? "bg-[#548b70]" : item === "rose" ? "bg-[#b76572]" : "bg-[#4c78b8]"}`}
+            aria-hidden="true"
+          />
+          {item}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export function ChatActions({
   newChat,
   hasMessages,
@@ -91,7 +120,7 @@ export function ChatActions({
                 Settings
               </DrawerTitle>
               <DrawerDescription className="mt-1 text-left text-sm">
-                Theme and Gemini usage
+                Appearance and Gemini usage
               </DrawerDescription>
             </div>
           </DrawerHeader>
@@ -103,6 +132,15 @@ export function ChatActions({
               Appearance
             </h3>
             <ThemeSetting />
+          </section>
+          <section aria-labelledby="flavour-heading" className="mt-6 space-y-2">
+            <h3
+              id="flavour-heading"
+              className="text-muted-foreground px-1 text-xs font-semibold tracking-wide uppercase"
+            >
+              Flavour
+            </h3>
+            <FlavorSetting />
           </section>
           <section aria-labelledby="gemini-heading" className="mt-6 space-y-2">
             <h3

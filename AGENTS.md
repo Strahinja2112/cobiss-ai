@@ -32,7 +32,7 @@
 
 ## Access control
 
-- Enforce the approved Google account on reader and import pages and their server routes. Check authorization on the server before reading saved books or calling Gemini.
+- Enforce the approved Google account on reader pages and their server routes. Check authorization on the server before reading saved books or calling Gemini.
 - Do not treat hidden buttons or client-side redirects as access control. Keep sign-in UI available when access is denied.
 
 ## Continuity Ledger (compaction-safe)

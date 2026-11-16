@@ -6,6 +6,7 @@ import { COBISS_CATALOG, type CrawlEvent } from "./cobiss.ts";
 export async function saveBooks(
   event: CrawlEvent,
   db: Pick<PrismaClient, "book">,
+  catalog = COBISS_CATALOG,
 ): Promise<void> {
   if (event.type === "page") {
     for (const book of event.books) {
@@ -16,12 +17,12 @@ export async function saveBooks(
       await db.book.upsert({
         where: {
           catalog_cobissId: {
-            catalog: COBISS_CATALOG,
+            catalog,
             cobissId: book.cobissId,
           },
         },
         create: {
-          catalog: COBISS_CATALOG,
+          catalog,
           cobissId: book.cobissId,
           title: book.title,
           authors: { connectOrCreate: authors },
@@ -42,7 +43,7 @@ export async function saveBooks(
       await db.book.update({
         where: {
           catalog_cobissId: {
-            catalog: COBISS_CATALOG,
+            catalog,
             cobissId: item.cobissId,
           },
         },
