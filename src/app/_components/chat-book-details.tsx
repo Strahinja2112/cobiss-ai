@@ -6,6 +6,10 @@ import type { RefObject } from "react";
 
 import type { ChatRecommendation } from "~/app/api/_lib/chat";
 import { Button } from "~/components/ui/button";
+import {
+  displayAuthorNames,
+  displayBookTitle,
+} from "~/lib/display-author-names";
 
 export function ChatBookDetails({
   selected,
@@ -39,10 +43,10 @@ export function ChatBookDetails({
           <div className="flex items-start justify-between gap-3">
             <div>
               <h2 className="min-w-0 text-2xl font-semibold tracking-tight break-words">
-                {selected.title}
+                {displayBookTitle(selected.title)}
               </h2>
               <p className="text-muted-foreground mt-1 text-sm">
-                {selected.authors.join(" · ") || "Author unknown"}
+                {displayAuthorNames(selected.authors) || "Author unknown"}
               </p>
             </div>
             <Button

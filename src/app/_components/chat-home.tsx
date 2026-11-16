@@ -2,16 +2,22 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, X } from "lucide-react";
-import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 import { ChatActions } from "~/app/_components/chat-actions";
 import { ChatBookDetails } from "~/app/_components/chat-book-details";
+import { ChatLoadingStatus } from "~/app/_components/chat-loading-status";
 import { Alert, AlertDescription } from "~/components/ui/alert";
 import { Button } from "~/components/ui/button";
 import { Label } from "~/components/ui/label";
-import { Spinner } from "~/components/ui/spinner";
 import { Textarea } from "~/components/ui/textarea";
 import { useChatHome } from "~/hooks/use-chat-home";
+import {
+  displayAuthorNames,
+  displayBookTitle,
+} from "~/lib/display-author-names";
 
 const starters = [
   "I want a tense, character-driven story",
@@ -26,6 +32,14 @@ export function ChatHome({
   readyCount: number;
   totalCount: number;
 }) {
+  const [transfer, setTransfer] = useState<{
+    id: string;
+    content: string;
+    from: { left: number; top: number };
+    to?: { left: number; top: number; width: number; height: number };
+  } | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const flightRef = useRef<HTMLParagraphElement>(null);
   const {
     messages,
     draft,
@@ -38,7 +52,6 @@ export function ChatHome({
     newChat,
     send,
     stop,
-    submit,
     openDetails,
     closeDetails,
     details,
@@ -74,6 +87,68 @@ export function ChatHome({
       textareaRef.current?.removeEventListener("blur", updatePosition);
     };
   }, []);
+
+  function sendFromComposer(value: string) {
+    const content = value.trim();
+    if (!content || pending || readyCount === 0) return;
+    const input = textareaRef.current?.getBoundingClientRect();
+    if (!input) return void send(content);
+    const id = crypto.randomUUID();
+    setTransfer({
+      id,
+      content,
+      from: {
+        left: input.left + window.scrollX,
+        top: input.top + window.scrollY,
+      },
+    });
+    requestAnimationFrame(() => void send(content, id));
+  }
+
+  useLayoutEffect(() => {
+    if (!transfer || transfer.to) return;
+    const target = document.querySelector<HTMLElement>(
+      `[data-user-message-id="${transfer.id}"]`,
+    );
+    if (!target) return;
+    const rect = target.getBoundingClientRect();
+    setTransfer((current) =>
+      current?.id === transfer.id
+        ? {
+            ...current,
+            to: {
+              left: rect.left + window.scrollX,
+              top: rect.top + window.scrollY,
+              width: rect.width,
+              height: rect.height,
+            },
+          }
+        : current,
+    );
+  }, [messages, transfer]);
+
+  useLayoutEffect(() => {
+    if (!transfer?.to || !flightRef.current) return;
+    if (reduceMotion) {
+      setTransfer(null);
+      return;
+    }
+    const animation = flightRef.current.animate(
+      [
+        { transform: "translate3d(0, 0, 0)" },
+        {
+          transform: `translate3d(${transfer.to.left - transfer.from.left}px, ${transfer.to.top - transfer.from.top}px, 0)`,
+        },
+      ],
+      {
+        duration: 260,
+        easing: "cubic-bezier(0.23, 1, 0.32, 1)",
+        fill: "forwards",
+      },
+    );
+    animation.onfinish = () => setTransfer(null);
+    return () => animation.cancel();
+  }, [reduceMotion, transfer]);
 
   return (
     <div className="bg-background text-foreground flex min-h-svh w-full flex-1 flex-col">
@@ -175,8 +250,20 @@ export function ChatHome({
                   {messages.map((message) => (
                     <motion.article
                       key={message.id}
-                      initial={{ opacity: 0, y: reduceMotion ? 0 : 10 }}
-                      animate={{ opacity: 1, y: 0 }}
+                      initial={{
+                        opacity: message.role === "user" ? 1 : 0,
+                        transform:
+                          message.role === "user" || reduceMotion
+                            ? "none"
+                            : "translateY(10px)",
+                      }}
+                      animate={{
+                        opacity: 1,
+                        transform:
+                          message.role === "user" || reduceMotion
+                            ? "none"
+                            : "translateY(0px)",
+                      }}
                       transition={
                         reduceMotion
                           ? { duration: 0.16 }
@@ -187,7 +274,13 @@ export function ChatHome({
                       }
                     >
                       {message.role === "user" ? (
-                        <p className="bg-secondary text-secondary-foreground max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 whitespace-pre-wrap">
+                        <p
+                          data-user-message-id={message.id}
+                          style={{
+                            opacity: transfer?.id === message.id ? 0 : 1,
+                          }}
+                          className="bg-secondary text-secondary-foreground max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 whitespace-pre-wrap"
+                        >
                           {message.content}
                         </p>
                       ) : (
@@ -218,18 +311,18 @@ export function ChatHome({
                                 >
                                   <span className="flex items-start gap-3">
                                     <BookOpen
-                                      className="text-muted-foreground mt-1 size-4 shrink-0"
+                                      className="text-primary mt-1 size-4 shrink-0"
                                       aria-hidden="true"
                                     />
                                     <span className="min-w-0 break-words">
-                                      <strong className="block font-semibold">
-                                        {book.title}
+                                      <strong className="block text-base font-semibold">
+                                        {displayBookTitle(book.title)}
                                       </strong>
-                                      <span className="text-muted-foreground mt-0.5 block text-xs">
-                                        {book.authors.join(" · ") ||
+                                      <span className="text-muted-foreground mt-1 block text-xs">
+                                        {displayAuthorNames(book.authors) ||
                                           "Author unknown"}
                                       </span>
-                                      <span className="mt-2 block text-sm leading-6">
+                                      <span className="text-muted-foreground mt-2 block text-sm leading-6">
                                         {book.reason}
                                       </span>
                                     </span>
@@ -244,13 +337,7 @@ export function ChatHome({
                   ))}
                 </AnimatePresence>
                 {pending && (
-                  <p
-                    role="status"
-                    className="text-muted-foreground flex items-center gap-2 text-sm"
-                  >
-                    <Spinner aria-hidden="true" />
-                    Reading your library…
-                  </p>
+                  <ChatLoadingStatus reduceMotion={Boolean(reduceMotion)} />
                 )}
               </div>
             )}
@@ -262,8 +349,11 @@ export function ChatHome({
             className="bg-background/90 fixed inset-x-0 bottom-0 z-30 px-4 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur-sm md:sticky md:inset-auto md:z-10 md:bg-transparent md:px-0 md:pb-6 md:backdrop-blur-none"
           >
             <form
-              onSubmit={submit}
-              className="border-border bg-card/50 focus-within:ring-ring/40 mx-auto flex max-w-3xl items-end justify-center gap-2 rounded-xl border p-2 backdrop-blur-sm focus-within:ring-2"
+              onSubmit={(event) => {
+                event.preventDefault();
+                sendFromComposer(draft);
+              }}
+              className="border-border bg-card/50 focus-within:ring-ring/40 relative mx-auto flex max-w-3xl items-end justify-center gap-2 rounded-xl border p-2 backdrop-blur-sm focus-within:ring-2"
             >
               <Label htmlFor="chat-message" className="sr-only">
                 Message your library
@@ -272,6 +362,7 @@ export function ChatHome({
                 id="chat-message"
                 ref={textareaRef}
                 value={draft}
+                style={{ opacity: transfer ? 0 : undefined }}
                 onChange={(event) => setDraft(event.target.value)}
                 onKeyDown={(event) => {
                   if (
@@ -280,7 +371,7 @@ export function ChatHome({
                     !event.nativeEvent.isComposing
                   ) {
                     event.preventDefault();
-                    void send(draft);
+                    sendFromComposer(draft);
                   }
                 }}
                 rows={1}
@@ -293,6 +384,22 @@ export function ChatHome({
                 }
                 className="max-h-40 min-h-11 flex-1 resize-none overflow-y-auto border-0 px-2 py-2.5 text-base focus-visible:border-0 disabled:cursor-not-allowed"
               />
+              {transfer?.to &&
+                createPortal(
+                  <p
+                    ref={flightRef}
+                    className="bg-secondary text-secondary-foreground pointer-events-none absolute z-[60] rounded-2xl px-4 py-3 text-sm leading-6 whitespace-pre-wrap"
+                    style={{
+                      left: transfer.from.left,
+                      top: transfer.from.top,
+                      width: transfer.to.width,
+                      height: transfer.to.height,
+                    }}
+                  >
+                    {transfer.content}
+                  </p>,
+                  document.body,
+                )}
               {pending ? (
                 <Button
                   variant="secondary"

@@ -6,6 +6,10 @@
 - 2026-11-16 [TOOL] Now: `feat/import-cli` including `--catalog gbvk-N` is committed and pushed to origin; fetch was left untouched.
 - 2026-11-16 [CODE] Next: use `pnpm books <command> --catalog gbvk-N` from the main checkout.
 - 2026-11-16 [CODE] Open: no blocking questions; sign-in UI and Gemini quota work remain separate.
+- 2026-11-16 [USER] Goal: improve composer-to-chat bubble animation.
+- 2026-11-16 [CODE] Now: source and destination share bubble dimensions; user-message parent no longer moves during transfer.
+- 2026-11-16 [CODE] Next: continue app readiness work.
+- 2026-11-15 [CODE] Open: project-wide quota permissions and whether sign-in UI change is temporary.
 
 ## Done (recent)
 

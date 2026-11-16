@@ -58,13 +58,10 @@ export function useChatHome(readyCount: number) {
     setPending(false);
   }
 
-  async function send(value: string) {
+  async function send(value: string, id = crypto.randomUUID()) {
     const content = value.trim();
     if (!content || active.current || readyCount === 0) return;
-    const next: Message[] = [
-      ...messages,
-      { id: crypto.randomUUID(), role: "user", content },
-    ];
+    const next: Message[] = [...messages, { id, role: "user", content }];
     setMessages(next);
     setDraft("");
     setError("");
