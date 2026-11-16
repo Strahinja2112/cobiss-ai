@@ -55,6 +55,12 @@ function ThemeSetting() {
 function FlavorSetting() {
   const { flavor, setFlavor } = useThemeFlavor();
   const reduceMotion = useReducedMotion();
+  const colors = {
+    olive: "#858b5a",
+    sage: "#648d73",
+    rose: "#b76572",
+    ocean: "#5d82b9",
+  } as const;
 
   return (
     <div
@@ -82,7 +88,14 @@ function FlavorSetting() {
               aria-hidden="true"
             />
           )}
-          <span className="relative">{item}</span>
+          <span className="relative inline-flex items-center justify-center gap-1.5">
+            {item}
+            <span
+              className="h-1.5 w-3 rounded-full"
+              style={{ backgroundColor: colors[item] }}
+              aria-hidden="true"
+            />
+          </span>
         </button>
       ))}
     </div>
