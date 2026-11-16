@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { Figtree } from "next/font/google";
 
 import { cn } from "~/lib/utils";
+import { ThemeFlavorProvider } from "~/components/theme-flavor";
 
 const font = Figtree({
   subsets: ["latin"],
@@ -39,7 +40,9 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
-          <main className="flex min-h-dvh w-full flex-col">{children}</main>
+          <ThemeFlavorProvider>
+            <main className="flex min-h-dvh w-full flex-col">{children}</main>
+          </ThemeFlavorProvider>
         </ThemeProvider>
       </body>
     </html>
