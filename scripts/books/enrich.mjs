@@ -10,7 +10,6 @@ export async function runEnrich(db, signal, apiKey, catalog) {
     where: { catalog, enrichment: { is: null } },
     include: { authors: { select: { name: true } } },
     orderBy: [{ lastFetchedAt: "desc" }, { id: "desc" }],
-    take: 25,
   });
   let saved = 0;
   let failed = 0;

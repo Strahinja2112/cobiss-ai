@@ -8,7 +8,7 @@ Commands:
   fetch             Fetch English COBISS books and save them
   list [page]       List saved books (50 per page)
   show <book-id>    Show metadata and enrichment for one saved book
-  enrich            Enrich up to 25 books without profiles
+  enrich            Enrich books without profiles until complete or blocked
   help              Show this help`;
 
 export function parseArgs(args) {

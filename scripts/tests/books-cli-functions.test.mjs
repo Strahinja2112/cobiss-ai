@@ -95,7 +95,7 @@ test("enrich command saves a profile for a pending book", async () => {
   const db = {
     book: {
       findMany: async (query) => {
-        assert.equal(query.take, 25);
+        assert.equal(query.take, undefined);
         assert.deepEqual(query.where, {
           catalog: "gbvk-17",
           enrichment: { is: null },

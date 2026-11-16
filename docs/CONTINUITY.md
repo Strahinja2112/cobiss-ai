@@ -2,6 +2,9 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: remove 25-book enrichment cap and let CLI run through pending books.
+- 2026-11-16 [CODE] Now: pending-book query has no fixed `take`; run ends after all pending books or exhausted Gemini model errors.
+- 2026-11-16 [CODE] Next: run `pnpm books enrich` to process pending books without a fixed cap.
 - 2026-11-16 [USER] Goal: add more fallback models after both 3.5 and 3.1 Flash-Lite returned high-demand HTTP 503.
 - 2026-11-16 [CODE] Now: CLI model order extends to Gemma 4 31B and 26B; 2.5 models were rejected for this API key.
 - 2026-11-16 [CODE] Next: rerun `pnpm books enrich` with Gemma fallbacks.
@@ -53,6 +56,7 @@
 
 ## Receipts
 
+- 2026-11-16 [TOOL] Cap-removal test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but existing unrelated lint errors blocked completion.
 - 2026-11-16 [TOOL] Expanded fallback test, typecheck, targeted ESLint, Prettier, and diff whitespace passed. Production build compiled but remains blocked by existing unrelated lint errors.
 - 2026-11-16 [TOOL] Live tiny Interactions requests: both Gemini 2.5 candidates returned 404 for this project; Gemma 4 31B returned 200 with structured JSON; Gemma 4 26B returned high-demand 503. Gemini 3.5 Flash timed out.
 - 2026-11-16 [TOOL] Model fallback tests, typecheck, and targeted ESLint passed. Production build compiled but failed on existing lint errors in chat tests and unrelated UI components.
@@ -71,5 +75,4 @@
 - 2026-11-16 [TOOL] Escalated production build compiled; lint failed on existing errors in chat tests and unrelated UI components. Isolated sandbox build first failed to fetch Google Fonts.
 - 2026-11-15 [TOOL] Floating-action change passed `pnpm typecheck`, targeted ESLint, Prettier, and `git diff --check`.
 - 2026-11-16 [TOOL] Created `feat/import-cli`; `node --test tests/*.test.mjs src/app/api/_lib/*.test.ts` passed 5 files and `pnpm typecheck` passed before edits.
-- 2026-11-15 [TOOL] Animation change passed `pnpm typecheck`, targeted ESLint, and `git diff --check`; browser host unavailable for visual feel-check.
 - 2026-11-15 [CODE] Earlier UI, settings, and validation receipts compressed; see `docs/GEMINI_USAGE_PLAN.md` and repository history.
