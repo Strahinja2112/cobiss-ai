@@ -65,7 +65,7 @@ function FlavorSetting() {
     <div
       role="group"
       aria-label="Colour flavour"
-      className="grid grid-cols-2 gap-3"
+      className="grid grid-cols-4 gap-2"
     >
       {themeFlavors.map((item) => (
         <button
@@ -73,15 +73,20 @@ function FlavorSetting() {
           type="button"
           aria-pressed={flavor === item}
           onClick={() => setFlavor(item)}
-          className={`focus-visible:outline-ring flex min-h-12 items-center gap-3 rounded-xl border px-3 text-left text-sm font-medium capitalize focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "border-primary bg-accent/40" : "border-border hover:bg-accent/40"}`}
+          className={`focus-visible:outline-ring relative flex min-h-16 min-w-0 flex-col items-center justify-center gap-1 rounded-xl border px-1 py-2 text-xs font-medium capitalize focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "border-primary bg-accent/40" : "border-border hover:bg-accent/40"}`}
         >
           <span
-            className="size-5 shrink-0 rounded-md"
+            className="size-4 shrink-0 rounded"
             style={{ backgroundColor: colors[item] }}
             aria-hidden="true"
           />
-          <span className="flex-1">{item}</span>
-          {flavor === item && <Check className="size-4" aria-hidden="true" />}
+          <span>{item}</span>
+          {flavor === item && (
+            <Check
+              className="absolute top-1 right-1 size-3"
+              aria-hidden="true"
+            />
+          )}
         </button>
       ))}
     </div>
