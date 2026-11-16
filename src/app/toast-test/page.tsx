@@ -58,7 +58,7 @@ export default function ToastTestPage() {
           <Button
             key={label}
             variant="outline"
-            className="rounded-full"
+            className="rounded-md"
             onClick={() => {
               playSound(label);
               toast.add({
@@ -73,7 +73,7 @@ export default function ToastTestPage() {
         ))}
         <Button
           variant="outline"
-          className="rounded-full"
+          className="rounded-md"
           onClick={() => {
             playSound("Action");
             toast.add({
@@ -93,7 +93,7 @@ export default function ToastTestPage() {
         </Button>
         <Button
           variant="outline"
-          className="rounded-full"
+          className="rounded-md"
           onClick={() => {
             playSound("Promise");
             void toast.promise(
@@ -110,7 +110,7 @@ export default function ToastTestPage() {
         </Button>
         <Button
           variant="secondary"
-          className="rounded-full"
+          className="rounded-md"
           onClick={() => toast.close()}
         >
           Dismiss all
