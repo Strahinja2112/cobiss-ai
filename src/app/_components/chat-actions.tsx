@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ExternalLink, Plus, Settings } from "lucide-react";
+import { Check, ExternalLink, Plus, Settings } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "~/components/ui/button";
@@ -54,12 +54,24 @@ function ThemeSetting() {
 
 function FlavorSetting() {
   const { flavor, setFlavor } = useThemeFlavor();
+  const previews = {
+    olive: ["#24251c", "#e9eadf", "#858b5a"],
+    sage: ["#1c2a21", "#e3eee6", "#648d73"],
+    rose: ["#2a1e21", "#f3e5e7", "#b76572"],
+    ocean: ["#1b2432", "#e4ebf5", "#5d82b9"],
+  } as const;
+  const descriptions = {
+    olive: "Earthy & grounded",
+    sage: "Fresh & calm",
+    rose: "Warm & soft",
+    ocean: "Cool & focused",
+  } as const;
 
   return (
     <div
       role="group"
       aria-label="Colour flavour"
-      className="grid grid-cols-4 gap-2"
+      className="grid grid-cols-2 gap-3"
     >
       {themeFlavors.map((item) => (
         <button
@@ -67,13 +79,40 @@ function FlavorSetting() {
           type="button"
           aria-pressed={flavor === item}
           onClick={() => setFlavor(item)}
-          className={`border-border focus-visible:outline-ring flex min-h-16 flex-col items-center justify-center gap-2 rounded-xl border text-xs font-medium capitalize focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "bg-accent text-accent-foreground" : "hover:bg-accent/60"}`}
+          className={`focus-visible:outline-ring group flex min-h-28 flex-col gap-2 rounded-xl border p-2 text-left focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "border-primary bg-accent/40" : "border-border hover:bg-accent/40"}`}
         >
           <span
-            className={`size-4 rounded-full ${item === "olive" ? "bg-[#71764f]" : item === "sage" ? "bg-[#548b70]" : item === "rose" ? "bg-[#b76572]" : "bg-[#4c78b8]"}`}
+            className="border-border bg-background flex h-12 w-full items-end gap-1.5 overflow-hidden rounded-lg border p-1.5"
             aria-hidden="true"
-          />
-          {item}
+          >
+            <span
+              className="h-full flex-1 rounded-md"
+              style={{ backgroundColor: previews[item][0] }}
+            />
+            <span
+              className="h-3/4 flex-1 rounded-md"
+              style={{ backgroundColor: previews[item][1] }}
+            />
+            <span
+              className="size-5 shrink-0 rounded-full"
+              style={{ backgroundColor: previews[item][2] }}
+            />
+          </span>
+          <span className="flex w-full items-center justify-between gap-1 px-1">
+            <span className="min-w-0">
+              <span className="block text-sm font-medium capitalize">
+                {item}
+              </span>
+              <span className="text-muted-foreground block text-[11px]">
+                {descriptions[item]}
+              </span>
+            </span>
+            {flavor === item && (
+              <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full">
+                <Check className="size-3" aria-hidden="true" />
+              </span>
+            )}
+          </span>
         </button>
       ))}
     </div>

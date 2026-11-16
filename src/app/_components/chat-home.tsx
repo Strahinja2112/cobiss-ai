@@ -3,7 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUp, BookOpen, X } from "lucide-react";
 import Link from "next/link";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { ChatActions } from "~/app/_components/chat-actions";
@@ -57,7 +57,6 @@ export function ChatHome({
     details,
   } = useChatHome(readyCount);
   const reduceMotion = useReducedMotion();
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const composerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
