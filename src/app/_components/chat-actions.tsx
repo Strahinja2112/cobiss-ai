@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Check, ExternalLink, Plus, Settings } from "lucide-react";
+import { ExternalLink, Plus, Settings } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "~/components/ui/button";
@@ -54,18 +54,13 @@ function ThemeSetting() {
 
 function FlavorSetting() {
   const { flavor, setFlavor } = useThemeFlavor();
-  const colors = {
-    olive: "#858b5a",
-    sage: "#648d73",
-    rose: "#b76572",
-    ocean: "#5d82b9",
-  } as const;
+  const reduceMotion = useReducedMotion();
 
   return (
     <div
       role="group"
       aria-label="Colour flavour"
-      className="grid grid-cols-4 gap-2"
+      className="bg-secondary flex rounded-xl p-1"
     >
       {themeFlavors.map((item) => (
         <button
@@ -73,20 +68,21 @@ function FlavorSetting() {
           type="button"
           aria-pressed={flavor === item}
           onClick={() => setFlavor(item)}
-          className={`focus-visible:outline-ring relative flex min-h-16 min-w-0 flex-col items-center justify-center gap-1 rounded-xl border px-1 py-2 text-xs font-medium capitalize focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "border-primary bg-accent/40" : "border-border hover:bg-accent/40"}`}
+          className={`focus-visible:outline-ring relative min-h-11 min-w-0 flex-1 touch-manipulation rounded-lg px-1 text-xs font-medium capitalize select-none focus-visible:outline-2 focus-visible:outline-offset-2 ${flavor === item ? "text-foreground" : "text-muted-foreground"}`}
         >
-          <span
-            className="size-4 shrink-0 rounded"
-            style={{ backgroundColor: colors[item] }}
-            aria-hidden="true"
-          />
-          <span>{item}</span>
           {flavor === item && (
-            <Check
-              className="absolute top-1 right-1 size-3"
+            <motion.span
+              layoutId="selected-flavour"
+              transition={
+                reduceMotion
+                  ? { duration: 0 }
+                  : { type: "spring", bounce: 0, duration: 0.25 }
+              }
+              className="bg-popover absolute inset-0 rounded-lg shadow-sm"
               aria-hidden="true"
             />
           )}
+          <span className="relative">{item}</span>
         </button>
       ))}
     </div>
