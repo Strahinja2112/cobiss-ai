@@ -54,7 +54,7 @@ export function ChatHome({
           <ChatActions newChat={newChat} hasMessages={messages.length > 0} />
 
           <div
-            className="mx-auto w-full max-w-3xl flex-1 py-8 sm:py-12"
+            className="mx-auto w-full max-w-3xl flex-1 pt-16 pb-12"
             role="log"
             aria-live="polite"
             aria-label="Conversation"
