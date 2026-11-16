@@ -2,6 +2,9 @@
 
 ## Snapshot
 
+- 2026-11-16 [USER] Goal: plan clearer `pnpm books enrich` logs before implementation.
+- 2026-11-16 [CODE] Now: logging plan covers run totals, per-book progress/model, fallback reasons, elapsed time, and final stop/resume state.
+- 2026-11-16 [CODE] Next: implement logging plan when requested; no code change in planning turn.
 - 2026-11-16 [USER] Goal: remove 25-book enrichment cap and let CLI run through pending books.
 - 2026-11-16 [CODE] Now: pending-book query has no fixed `take`; run ends after all pending books or exhausted Gemini model errors.
 - 2026-11-16 [CODE] Next: run `pnpm books enrich` to process pending books without a fixed cap.
